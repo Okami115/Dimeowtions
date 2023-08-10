@@ -12,9 +12,13 @@ namespace Terrain
         
         private void Update()
         {
-            transform.position += destination.position * Time.deltaTime;
+            Vector3 newPos = transform.position;
 
-            if (GetDistance() < minDistanceToRespawn)
+            newPos.z += destination.position.z * Time.deltaTime;
+
+            transform.position = newPos;
+
+            if (transform.position.z < destination.position.z)
             {
                 ReSpawn();
             }
