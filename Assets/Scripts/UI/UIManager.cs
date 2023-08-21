@@ -2,17 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIManager : MonoBehaviour
+
+namespace Menu
 {
-    [SerializeField] private GameObject canvas;
-
-    private void Start()
+    public class UIManager : MonoBehaviour
     {
-        ToggleCanvas(true);
+      [SerializeField] private GameObject menu;
+
+      private void Start()
+      {
+          ToggleCanvas(true);
+      }
+
+      public void ToggleCanvas(bool active)
+      {
+          menu.SetActive(active);
+      }
     }
 
-    public void ToggleCanvas(bool active)
-    {
-        canvas.SetActive(active);
-    }
 }

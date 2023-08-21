@@ -13,7 +13,7 @@ namespace Terrain
         [SerializeField] private float accelerationRate = 0.01f;
         [SerializeField] private float minDistanceToRespawn;
         
-        private float currentSpeed;
+        [SerializeField] private float currentSpeed;
 
         private void Start()
         {
