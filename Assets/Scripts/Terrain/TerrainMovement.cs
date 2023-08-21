@@ -8,13 +8,28 @@ namespace Terrain
     {
         [SerializeField] private Transform destination;
         [SerializeField] private Transform spawn;
+        [SerializeField] private float initialSpeed = 1.0f;
+        [SerializeField] private float maxSpeed = 10.0f;
+        [SerializeField] private float accelerationRate = 0.01f;
         [SerializeField] private float minDistanceToRespawn;
         
+        private float currentSpeed;
+
+        private void Start()
+        {
+            currentSpeed = initialSpeed;
+        }
+
         private void Update()
         {
+            if (currentSpeed < maxSpeed)
+            {
+                currentSpeed += accelerationRate * Time.deltaTime;
+            }
+
             Vector3 newPos = transform.position;
 
-            newPos.z += destination.position.z * Time.deltaTime;
+            newPos.z += destination.position.z * Time.deltaTime * currentSpeed;
 
             transform.position = newPos;
 
@@ -28,11 +43,5 @@ namespace Terrain
         {
             transform.position = spawn.position;
         }
-
-        private float GetDistance()
-        {
-            return Vector3.Distance(transform.position, destination.position);
-        }
     }
-
 }
