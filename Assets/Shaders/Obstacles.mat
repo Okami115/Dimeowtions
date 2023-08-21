@@ -37,13 +37,13 @@ Material:
     - _Brightness: 0.288
     - _Detail: 0.138
     - _Grayscale: 1
-    - _HatchIntensity: 0.477
-    - _Intensity: 1
+    - _HatchIntensity: 1
+    - _Intensity: 0.95
     - _OutlineColor: 1
-    - _OutlineThickness: 0.098
+    - _OutlineThickness: 0.5
     - _Saturation: 1
     - _ShadingDetail: 0.8
-    - _Steps: 0.98
+    - _Steps: 0
     - _Strength: 0.001
     m_Colors:
     - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
