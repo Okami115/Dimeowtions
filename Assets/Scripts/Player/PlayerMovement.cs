@@ -96,6 +96,18 @@ namespace player
             }
         }
 
+        public void OnPause()
+        {
+            if(Time.timeScale == 1.0f)
+            {
+                Time.timeScale = 0.0f;
+            }
+            else
+            {
+                Time.timeScale = 1.0f;
+            }
+        }
+
 
 
         private void Update()

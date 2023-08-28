@@ -12,11 +12,13 @@ namespace Menu
       private void Start()
       {
           ToggleCanvas(true);
+          Time.timeScale = 0f;
       }
 
       public void ToggleCanvas(bool active)
       {
           menu.SetActive(active);
+          Time.timeScale = 1f;
       }
     }
 
