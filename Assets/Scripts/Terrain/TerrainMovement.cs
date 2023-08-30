@@ -1,5 +1,7 @@
+using Menu;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 namespace Terrain
@@ -12,6 +14,8 @@ namespace Terrain
         [SerializeField] private float maxSpeed = 10.0f;
         [SerializeField] private float accelerationRate = 0.01f;
         [SerializeField] private float minDistanceToRespawn;
+
+        [SerializeField] private UIManager ui;
         
         [SerializeField] private float currentSpeed;
 
@@ -37,11 +41,13 @@ namespace Terrain
             {
                 ReSpawn();
             }
+            
         }
 
         private void ReSpawn()
         {
             transform.position = spawn.position;
+            ui.score += 100;
         }
     }
 }
