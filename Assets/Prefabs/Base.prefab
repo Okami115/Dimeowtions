@@ -47,7 +47,7 @@ MonoBehaviour:
   obstacles:
   - {fileID: 3055373439924693926, guid: 4496b1d18cff7a3418a9019178d20e77, type: 3}
   - {fileID: 1715421657189805718, guid: 200c0be0bc59fb94994d73ae5dfc4104, type: 3}
-  - {fileID: 3055373439924693926, guid: 7ff855fe0227c2c4bbd58e33e62afbe1, type: 3}
+  - {fileID: 1715421657189805718, guid: 87991f61fb797c94f811ae543ac8b8c9, type: 3}
   - {fileID: 3055373439924693926, guid: 7ff855fe0227c2c4bbd58e33e62afbe1, type: 3}
   - {fileID: 3055373439924693926, guid: 7ff855fe0227c2c4bbd58e33e62afbe1, type: 3}
   - {fileID: 3055373439924693926, guid: 7ff855fe0227c2c4bbd58e33e62afbe1, type: 3}
