@@ -577,7 +577,8 @@ GameObject:
   m_Component:
   - component: {fileID: 499877651}
   - component: {fileID: 499877653}
-  - component: {fileID: 499877652}
+  - component: {fileID: 499877655}
+  - component: {fileID: 499877654}
   m_Layer: 0
   m_Name: RawImage
   m_TagString: Untagged
@@ -604,7 +605,15 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &499877652
+--- !u!222 &499877653
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499877650}
+  m_CullTransparentMesh: 1
+--- !u!114 &499877654
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -613,7 +622,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 499877650}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b7f63a7a24048f4c8b927e27ef346fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  artStyleSO: {fileID: 11400000, guid: b5da7999976c34d41836991f824faf87, type: 2}
+  image: {fileID: 499877655}
+  sprites:
+  - {fileID: 21300000, guid: c6c6f5b8ac6c34a4c911158879caab68, type: 3}
+  - {fileID: 21300000, guid: 2a63275549c693442bdc099b4fdbdd64, type: 3}
+  - {fileID: 21300000, guid: d6bee4da49352b944a8b456f35b0d599, type: 3}
+--- !u!114 &499877655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499877650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -624,21 +651,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &499877653
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 499877650}
-  m_CullTransparentMesh: 1
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &593964391
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,7 +1026,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &773333439
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1237,6 +1259,7 @@ GameObject:
   - component: {fileID: 881736979}
   - component: {fileID: 881736978}
   - component: {fileID: 881736977}
+  - component: {fileID: 881736980}
   m_Layer: 0
   m_Name: Play Button
   m_TagString: Untagged
@@ -1286,9 +1309,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 0.47450984, b: 0.47450984, a: 1}
-    m_PressedColor: {r: 1, g: 0.4764151, b: 0.4764151, a: 1}
-    m_SelectedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1358,6 +1381,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 881736975}
   m_CullTransparentMesh: 1
+--- !u!114 &881736980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881736975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b7f63a7a24048f4c8b927e27ef346fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  artStyleSO: {fileID: 11400000, guid: b5da7999976c34d41836991f824faf87, type: 2}
+  image: {fileID: 881736978}
+  sprites:
+  - {fileID: 21300000, guid: bc635f8dde1280642a546f560b588250, type: 3}
+  - {fileID: 21300000, guid: 6a13bd74a4c3b5d4782115c259dd779c, type: 3}
+  - {fileID: 21300000, guid: 6a13bd74a4c3b5d4782115c259dd779c, type: 3}
 --- !u!1 &932347336
 GameObject:
   m_ObjectHideFlags: 0
@@ -1505,7 +1546,7 @@ GameObject:
   - component: {fileID: 1104554946}
   - component: {fileID: 1104554945}
   m_Layer: 0
-  m_Name: MenuRandomizer
+  m_Name: Art Sytle Randomizer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1523,16 +1564,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a729c0b9040d4545a2cfaa1aa0b48c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuBackground: {fileID: 499877652}
   settingsButtonImage: {fileID: 1840924854}
-  menuBackgrounds:
-  - {fileID: 21300000, guid: c6c6f5b8ac6c34a4c911158879caab68, type: 3}
-  - {fileID: 21300000, guid: 2a63275549c693442bdc099b4fdbdd64, type: 3}
-  - {fileID: 21300000, guid: d6bee4da49352b944a8b456f35b0d599, type: 3}
   settingsButtonSprites:
   - {fileID: 21300000, guid: 9a1eeecf02154f04db37d793f8a6a399, type: 3}
   - {fileID: 21300000, guid: 6a319987f91f04548835d1f793fbe3e5, type: 3}
   - {fileID: 21300000, guid: 1e69bfb56b93ba847b15c0db8af3e965, type: 3}
+  artStyleSO: {fileID: 11400000, guid: b5da7999976c34d41836991f824faf87, type: 2}
 --- !u!4 &1104554946
 Transform:
   m_ObjectHideFlags: 0
@@ -2071,6 +2108,7 @@ GameObject:
   - component: {fileID: 1840924856}
   - component: {fileID: 1840924854}
   - component: {fileID: 1840924855}
+  - component: {fileID: 1840924858}
   m_Layer: 0
   m_Name: Settings Button
   m_TagString: Untagged
@@ -2180,6 +2218,24 @@ RectTransform:
   m_AnchoredPosition: {x: 133.7, y: 72}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1840924858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840924853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b7f63a7a24048f4c8b927e27ef346fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  artStyleSO: {fileID: 11400000, guid: b5da7999976c34d41836991f824faf87, type: 2}
+  image: {fileID: 1840924854}
+  sprites:
+  - {fileID: 21300000, guid: 573f2cd3c3cd9524c9a59dbf17f37d64, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: f35ee67c7cda60349908096178cff5ec, type: 3}
 --- !u!1 &1908487518
 GameObject:
   m_ObjectHideFlags: 0
