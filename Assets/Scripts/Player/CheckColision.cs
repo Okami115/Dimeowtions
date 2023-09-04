@@ -12,7 +12,6 @@ namespace player
         [SerializeField] private GameObject[] UI;
 
         private string obstacleTag = "Obstacle"; 
-        private string doorTag = "Door"; 
         private string emptyTag = "Empty"; 
         private float raycastDistanceObjetc = 1f;
         private float raycastDistanceEmpty = 2f;
@@ -34,11 +33,6 @@ namespace player
                     UI[1].SetActive(true);
                     Time.timeScale = 0.0f;
                 }
-
-                if (hitInfo.collider.CompareTag(doorTag))
-                {
-                    Debug.Log("enter");
-                }
             }
 
             if (Physics.Raycast(groundRay, out hitInfo, raycastDistanceEmpty))
@@ -53,6 +47,7 @@ namespace player
                 }
             }
         }
+
 
         private void OnDrawGizmos()
         {

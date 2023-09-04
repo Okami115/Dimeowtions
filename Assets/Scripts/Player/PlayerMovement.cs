@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine;
+using System;
+using UnityEngine.Windows;
 
 namespace player
 {
@@ -18,6 +20,9 @@ namespace player
         [SerializeField] private Transform rightTop;
         [SerializeField] private Transform leftTop;
         private float velocidad = 100;
+        
+        public event Action Paused;
+        public event Action<bool> interaction;
 
         private void Start()
         {
@@ -98,6 +103,7 @@ namespace player
 
         public void OnPause()
         {
+            Paused?.Invoke();
             if(Time.timeScale == 1.0f)
             {
                 Time.timeScale = 0.0f;
@@ -108,7 +114,10 @@ namespace player
             }
         }
 
-
+        public void OnInteraction(InputValue input)
+        {
+            interaction?.Invoke(input.isPressed);
+        }
 
         private void Update()
         {
@@ -119,6 +128,7 @@ namespace player
             transform.position = Vector3.MoveTowards(transform.position, currentPos.position, distanciaEsteFrame);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, currentPos.rotation, 300 * Time.deltaTime);
         }
+
     }
 
 
