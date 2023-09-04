@@ -9,9 +9,10 @@ namespace Menu
 {
     public class UIManager : MonoBehaviour
     {
-        [SerializeField] private GameObject menu;
         [SerializeField] private TextMeshProUGUI scoreText;
         [SerializeField] private TextMeshProUGUI scoreTextLose;
+        [SerializeField] private GameObject menuPanel;
+        [SerializeField] private GameObject settingsPanel;
 
         [SerializeField] public int score = 0;
 
@@ -20,6 +21,7 @@ namespace Menu
           ToggleCanvas(true);
           Time.timeScale = 0f;
         }
+            ToggleMenuCanvas(true);
 
         public void ToggleCanvas(bool active)
         {
@@ -31,6 +33,15 @@ namespace Menu
         {
             scoreText.text = score.ToString();
             scoreTextLose.text = score.ToString();
+        }
+        public void ToggleMenuCanvas(bool active)
+        {
+            menuPanel.SetActive(active);
+        }
+
+        public void ToggleSetingsCanvas(bool active)
+        {
+            settingsPanel.SetActive(active);
         }
     }
 
