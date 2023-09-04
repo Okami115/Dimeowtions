@@ -7,15 +7,15 @@ public class SpriteApplier : MonoBehaviour
     [SerializeField] private ArtStyle artStyleSO;
 
     [SerializeField] Image image;
-    [SerializeField] private Sprite[] sprites;
+    [SerializeField] private Sprite[] baseSprites;
+    [SerializeField] private Sprite[] selectedButtonSprites;
 
-    // Start is called before the first frame update
     public void Start()
     {
-        ApplySprite(sprites);
+        ApplySpriteFromArray(baseSprites);
     }
 
-    public void ApplySprite(Sprite[] newSprite)
+    public void ApplySpriteFromArray(Sprite[] newSprite)
     {
         if (artStyleSO.isNoirSelected)
             image.sprite = newSprite[0];
@@ -24,4 +24,19 @@ public class SpriteApplier : MonoBehaviour
         else if (artStyleSO.isSynthwaveSelected)
             image.sprite = newSprite[2];
     }
+
+    public void ApplyDeselected()
+    {
+        ApplySpriteFromArray(baseSprites);
+    }
+
+    public void ApplySelected()
+    {
+        ApplySpriteFromArray(selectedButtonSprites);
+    }
+
+    //public void ApplySprite(Sprite newSprite)
+    //{
+    //    image.sprite = newSprite;
+    //}
 }
