@@ -13,8 +13,10 @@ namespace Menu
         [SerializeField] private TextMeshProUGUI scoreTextLose;
         [SerializeField] private GameObject menuPanel;
         [SerializeField] private GameObject settingsPanel;
+        [SerializeField] private GameObject pausePanel;
 
         [SerializeField] public int score = 0;
+
 
         private void Start()
         {
@@ -24,8 +26,11 @@ namespace Menu
 
         private void Update()
         {
-            scoreText.text = score.ToString();
-            scoreTextLose.text = score.ToString();
+            if (scoreText)
+            {
+                scoreText.text = score.ToString();
+                scoreTextLose.text = score.ToString();
+            }
         }
         public void ToggleMenuCanvas(bool active)
         {
@@ -36,6 +41,11 @@ namespace Menu
         public void ToggleSetingsCanvas(bool active)
         {
             settingsPanel.SetActive(active);
+        }
+
+        public void TogglePausePanel(bool active)
+        {
+            pausePanel.SetActive(active);
         }
     }
 
