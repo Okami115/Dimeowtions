@@ -18,15 +18,8 @@ namespace Menu
 
         private void Start()
         {
-          ToggleCanvas(true);
-          Time.timeScale = 0f;
-        }
             ToggleMenuCanvas(true);
-
-        public void ToggleCanvas(bool active)
-        {
-            menu.SetActive(active);
-            Time.timeScale = 1f;
+            Time.timeScale = 0f;
         }
 
         private void Update()
@@ -37,6 +30,7 @@ namespace Menu
         public void ToggleMenuCanvas(bool active)
         {
             menuPanel.SetActive(active);
+            Time.timeScale = 1f;
         }
 
         public void ToggleSetingsCanvas(bool active)

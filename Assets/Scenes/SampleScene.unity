@@ -3389,7 +3389,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1065173194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3402,9 +3402,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f63f2b09c9fef5d43b8392b71404da40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menu: {fileID: 1882014570}
   scoreText: {fileID: 526201737}
   scoreTextLose: {fileID: 310310735}
+  menuPanel: {fileID: 0}
+  settingsPanel: {fileID: 0}
   score: 0
 --- !u!4 &1065173195
 Transform:
