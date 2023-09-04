@@ -1087,8 +1087,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f63f2b09c9fef5d43b8392b71404da40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
+  scoreTextLose: {fileID: 0}
   menuPanel: {fileID: 1339618387}
   settingsPanel: {fileID: 307997213}
+  score: 0
 --- !u!1 &773333438
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,7 +1415,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1353084657}
+      - m_Target: {fileID: 1353084658}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
         m_MethodName: LoadLevel
         m_Mode: 5
@@ -2191,6 +2194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1353084656}
   - component: {fileID: 1353084657}
+  - component: {fileID: 1353084658}
   m_Layer: 0
   m_Name: SceneLoader
   m_TagString: Untagged
@@ -2223,6 +2227,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43bf7339f9641fc40912e539bb23ffc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1353084658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353084655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ddd9659fab19440a6349e0f5716a17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1416170552

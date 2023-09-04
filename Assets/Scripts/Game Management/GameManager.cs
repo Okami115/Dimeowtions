@@ -1,16 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+namespace GameManager
 {
-    [SerializeField] private GameObject[] platforms;
-
-    public void StartLevel()
+    public class GameManager : MonoBehaviour
     {
-        for (int i = 0; i < platforms.Length; i++) 
+        [SerializeField] private GameObject[] platforms;
+        public void StartLevel()
         {
-            platforms[i].SetActive(true);       
+            for (int i = 0; i < platforms.Length; i++)
+            {
+                platforms[i].SetActive(true);
+            }
         }
+
+        public void ReloadScene()
+        {
+
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+
+            SceneManager.LoadScene(currentSceneIndex);
+        }
+
+
     }
 }
