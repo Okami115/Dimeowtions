@@ -17,13 +17,6 @@ namespace Menu
 
         [SerializeField] public int score = 0;
 
-
-        private void Start()
-        {
-            ToggleMenuCanvas(true);
-            Time.timeScale = 0f;
-        }
-
         private void Update()
         {
             if (scoreText)
@@ -31,11 +24,6 @@ namespace Menu
                 scoreText.text = score.ToString();
                 scoreTextLose.text = score.ToString();
             }
-        }
-        public void ToggleMenuCanvas(bool active)
-        {
-            menuPanel.SetActive(active);
-            Time.timeScale = 1f;
         }
 
         public void ToggleSetingsCanvas(bool active)
