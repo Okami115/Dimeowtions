@@ -101,24 +101,6 @@ namespace player
             }
         }
 
-        public void OnPause()
-        {
-            Paused?.Invoke();
-            if(Time.timeScale == 1.0f)
-            {
-                Time.timeScale = 0.0f;
-            }
-            else
-            {
-                Time.timeScale = 1.0f;
-            }
-        }
-
-        public void OnInteraction(InputValue input)
-        {
-            interaction?.Invoke(input.isPressed);
-        }
-
         private void Update()
         {
             Vector3 direccion = currentPos.position - transform.position;
