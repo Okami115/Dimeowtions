@@ -563,7 +563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
   scoreTextLose: {fileID: 0}
-  menuPanel: {fileID: 0}
+  menuPanel: {fileID: 422966326}
   settingsPanel: {fileID: 307997213}
   score: 0
 --- !u!1 &773333438

@@ -18,14 +18,18 @@ namespace Menu
 
         private void Start()
         {
-            ToggleMenuCanvas(true);
+            if (menuPanel)
+                ToggleMenuCanvas(true);
             Time.timeScale = 0f;
         }
 
         private void Update()
         {
-            scoreText.text = score.ToString();
-            scoreTextLose.text = score.ToString();
+            if (scoreText)
+                scoreText.text = score.ToString();
+
+            if (scoreTextLose)
+                scoreTextLose.text = score.ToString();
         }
         public void ToggleMenuCanvas(bool active)
         {
