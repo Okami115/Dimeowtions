@@ -46,7 +46,7 @@ namespace Terrain
 
         private void ReSpawn()
         {
-            transform.position = spawn.position;
+            transform.position += spawn.position;
             ui.score += 100;
         }
     }

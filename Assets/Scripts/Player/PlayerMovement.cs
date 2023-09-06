@@ -22,7 +22,7 @@ namespace player
         private float velocidad = 100;
         
         public event Action Paused;
-        public event Action<bool> interaction;
+        public event Action interaction;
 
         private void Start()
         {
@@ -101,6 +101,10 @@ namespace player
             }
         }
 
+        public void OnInteraction()
+        {
+            interaction?.Invoke();
+        }
         private void Update()
         {
             Vector3 direccion = currentPos.position - transform.position;
