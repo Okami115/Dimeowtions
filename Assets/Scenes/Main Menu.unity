@@ -436,7 +436,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1353084657}
+      - m_Target: {fileID: 1353084658}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
         m_MethodName: ExitGame
         m_Mode: 1
@@ -968,7 +968,7 @@ MonoBehaviour:
   artStyleSO: {fileID: 11400000, guid: b5da7999976c34d41836991f824faf87, type: 2}
   image: {fileID: 881736978}
   baseSprites:
-  - {fileID: 21300000, guid: bc635f8dde1280642a546f560b588250, type: 3}
+  - {fileID: 21300000, guid: 13d02f7477c9b9b479e83a54d1fe638f, type: 3}
   - {fileID: 21300000, guid: 6a13bd74a4c3b5d4782115c259dd779c, type: 3}
   - {fileID: 21300000, guid: bdb218c50f9836e43bae49148f49aa5d, type: 3}
   selectedButtonSprites:
