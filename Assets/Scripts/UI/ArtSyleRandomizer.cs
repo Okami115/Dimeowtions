@@ -3,10 +3,6 @@ using UnityEngine.UI;
 
 public class ArtSyleRandomizer : MonoBehaviour
 {
-    [SerializeField] private Image settingsButtonImage;
-
-    [SerializeField] private Sprite[] settingsButtonSprites;
-
     [SerializeField] private ArtStyle artStyleSO;
 
     private void Awake()
@@ -31,8 +27,6 @@ public class ArtSyleRandomizer : MonoBehaviour
                 artStyleSO.isSynthwaveSelected = true;
             break;
         }
-
-        //settingsButtonImage.sprite = settingsButtonSprites[randomIndex];
     }
 
     private void OnDisable()
