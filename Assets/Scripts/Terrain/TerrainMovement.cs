@@ -1,4 +1,5 @@
 using Menu;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -16,8 +17,9 @@ namespace Terrain
         [SerializeField] private float minDistanceToRespawn;
 
         [SerializeField] private UIManager ui;
-        
         [SerializeField] private float currentSpeed;
+
+        public event Action spawnSignal;
 
         private void Start()
         {
@@ -47,6 +49,7 @@ namespace Terrain
         private void ReSpawn()
         {
             transform.position += spawn.position;
+            spawnSignal?.Invoke();
             ui.score += 100;
         }
     }
