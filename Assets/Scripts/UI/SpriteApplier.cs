@@ -12,7 +12,10 @@ public class SpriteApplier : MonoBehaviour
 
     public void Start()
     {
-        ApplySpriteFromArray(baseSprites);
+        if (baseSprites.Length > 1)
+            ApplySpriteFromArray(baseSprites);
+        else if (baseSprites.Length == 1)
+            ApplySprite(baseSprites[0]);
     }
 
     public void ApplySpriteFromArray(Sprite[] newSprite)
@@ -35,8 +38,8 @@ public class SpriteApplier : MonoBehaviour
         ApplySpriteFromArray(selectedButtonSprites);
     }
 
-    //public void ApplySprite(Sprite newSprite)
-    //{
-    //    image.sprite = newSprite;
-    //}
+    public void ApplySprite(Sprite newSprite)
+    {
+        image.sprite = newSprite;
+    }
 }
