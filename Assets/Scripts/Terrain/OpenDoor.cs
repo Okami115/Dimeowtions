@@ -7,6 +7,7 @@ using UnityEngine;
 public class OpenDoor : MonoBehaviour
 {
     [SerializeField] private player.PlayerMovement pm;
+    [SerializeField] private GameObject door;
     public event Action<String> canOpen;
 
     private void Awake()
@@ -42,6 +43,6 @@ public class OpenDoor : MonoBehaviour
     private void OpenningDoor()
     {
         canOpen?.Invoke("");
-        this.gameObject.SetActive(false);
+        Destroy(door);
     }
 }

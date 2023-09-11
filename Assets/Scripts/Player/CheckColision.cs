@@ -29,6 +29,7 @@ namespace player
 
                 if (hitInfo.collider.CompareTag(obstacleTag))
                 {
+                    Debug.Log("PARED");
                     UI[2].SetActive(false);
                     UI[1].SetActive(true);
                     Time.timeScale = 0.0f;
@@ -40,6 +41,7 @@ namespace player
 
                 if (hitInfo.collider.CompareTag(emptyTag))
                 {
+                    Debug.Log("SUELO");
                     UI[2].SetActive(false);
                     UI[1].SetActive(true);
                     Time.timeScale = 0.0f;

@@ -1,22 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class SpawnObstacles : MonoBehaviour
+namespace Terrain
 {
-    [SerializeField] private GameObject[] obstacles;
-
-    private int value;
-
-    private void Start()
+    public class SpawnObstacles : MonoBehaviour
     {
-        SpawnRandomObstacles();
-    }
 
-    private void SpawnRandomObstacles()
-    {
-        value = Random.Range(0, obstacles.Length);
+        [SerializeField] private GameObject[] fragments;
+        [SerializeField] private GameObject children;
+        private TerrainMovement tMovement;
 
-        Instantiate(obstacles[value], transform);
+        private int value;
+
+        private void Start()
+        {
+            tMovement = GetComponent<TerrainMovement>();
+            tMovement.spawnSignal += SpawnRandomObstacles;
+        }
+
+        private void SpawnRandomObstacles()
+        {
+            value = Random.Range(0, fragments.Length);
+
+            Destroy(children);
+
+            children = Instantiate(fragments[value]);
+
+            children.transform.parent = this.transform;
+
+            children.transform.localPosition = Vector3.zero;
+            children.transform.localRotation = Quaternion.identity;
+        }
     }
 }
