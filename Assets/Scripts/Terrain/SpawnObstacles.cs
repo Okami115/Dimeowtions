@@ -23,7 +23,7 @@ namespace Terrain
         private void SpawnRandomObstacles()
         {
             value = Random.Range(0, fragments.Length);
-
+            Debug.Break();
             Destroy(children);
 
             children = Instantiate(fragments[value]);

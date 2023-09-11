@@ -10,20 +10,23 @@ namespace player
         [SerializeField] private Transform pivot;
 
         [SerializeField] private GameObject[] UI;
+        [SerializeField] private LayerMask ground;
 
         private string obstacleTag = "Obstacle"; 
         private string emptyTag = "Empty"; 
         private float raycastDistanceObjetc = 1f;
         private float raycastDistanceEmpty = 2f;
+        Ray objetcRay;
+        Ray groundRay;
 
         void Update()
         {
 
-            Ray objetcRay = new Ray(pivot.position, pivot.forward);
-            Ray groundRay = new Ray(pivot.position, -pivot.up);
             RaycastHit hitInfo;
+            objetcRay = new Ray(pivot.position, pivot.forward);
+            groundRay = new Ray(pivot.position, -pivot.up);
 
-
+            /*
             if (Physics.Raycast(objetcRay, out hitInfo, raycastDistanceObjetc))
             {
 
@@ -35,13 +38,19 @@ namespace player
                     Time.timeScale = 0.0f;
                 }
             }
+            */
 
-            if (Physics.Raycast(groundRay, out hitInfo, raycastDistanceEmpty))
+            if (Physics.Raycast(groundRay, out hitInfo, raycastDistanceEmpty, ground))
             {
+                Vector3 forward = transform.TransformDirection(Vector3.down) * raycastDistanceEmpty;
+                Debug.Log(hitInfo.collider.transform.parent.name, hitInfo.collider.gameObject);
+                Debug.Break();
+
 
                 if (hitInfo.collider.CompareTag(emptyTag))
                 {
-                    Debug.Log("SUELO");
+                    Debug.Log("VOID");
+
                     UI[2].SetActive(false);
                     UI[1].SetActive(true);
                     Time.timeScale = 0.0f;
@@ -53,8 +62,8 @@ namespace player
 
         private void OnDrawGizmos()
         {
-            Gizmos.DrawRay(pivot.position, transform.forward);
-            Gizmos.DrawRay(pivot.position, -transform.up);
+            Gizmos.DrawRay(objetcRay);
+            Gizmos.DrawRay(groundRay);
         }
     }
 }
