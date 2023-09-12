@@ -26,7 +26,7 @@ namespace player
             objetcRay = new Ray(pivot.position, pivot.forward);
             groundRay = new Ray(pivot.position, -pivot.up);
 
-            /*
+            
             if (Physics.Raycast(objetcRay, out hitInfo, raycastDistanceObjetc))
             {
 
@@ -38,13 +38,12 @@ namespace player
                     Time.timeScale = 0.0f;
                 }
             }
-            */
-
+            
+            /*
             if (Physics.Raycast(groundRay, out hitInfo, raycastDistanceEmpty, ground))
             {
                 Vector3 forward = transform.TransformDirection(Vector3.down) * raycastDistanceEmpty;
                 Debug.Log(hitInfo.collider.transform.parent.name, hitInfo.collider.gameObject);
-                Debug.Break();
 
 
                 if (hitInfo.collider.CompareTag(emptyTag))
@@ -57,6 +56,7 @@ namespace player
                     
                 }
             }
+            */
         }
 
 
