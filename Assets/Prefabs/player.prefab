@@ -4862,7 +4862,7 @@ GameObject:
   - component: {fileID: 5318597222730325984}
   - component: {fileID: 4012270064366968324}
   - component: {fileID: 3126657341757686682}
-  - component: {fileID: 1850186594652562728}
+  - component: {fileID: 5459710001043078097}
   - component: {fileID: 4461224420460068493}
   - component: {fileID: 4358142924231640228}
   - component: {fileID: 5834923617488784445}
@@ -4961,8 +4961,8 @@ MonoBehaviour:
   top: {fileID: 0}
   rightTop: {fileID: 0}
   leftTop: {fileID: 0}
---- !u!136 &1850186594652562728
-CapsuleCollider:
+--- !u!65 &5459710001043078097
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4979,11 +4979,9 @@ CapsuleCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 3
+  m_Size: {x: 0.12435995, y: 7.175276, z: 0.072769895}
+  m_Center: {x: 0.021931298, y: -4.239072, z: 0.08198642}
 --- !u!54 &4461224420460068493
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5055,6 +5053,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pivot: {fileID: 7545010591035610786}
   UI: []
+  ground:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &6464156403485631533
 GameObject:
   m_ObjectHideFlags: 0

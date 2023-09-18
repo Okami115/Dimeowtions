@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 namespace player
@@ -38,25 +39,7 @@ namespace player
                     Time.timeScale = 0.0f;
                 }
             }
-            
-            /*
-            if (Physics.Raycast(groundRay, out hitInfo, raycastDistanceEmpty, ground))
-            {
-                Vector3 forward = transform.TransformDirection(Vector3.down) * raycastDistanceEmpty;
-                Debug.Log(hitInfo.collider.transform.parent.name, hitInfo.collider.gameObject);
 
-
-                if (hitInfo.collider.CompareTag(emptyTag))
-                {
-                    Debug.Log("VOID");
-
-                    UI[2].SetActive(false);
-                    UI[1].SetActive(true);
-                    Time.timeScale = 0.0f;
-                    
-                }
-            }
-            */
         }
 
 
@@ -65,5 +48,19 @@ namespace player
             Gizmos.DrawRay(objetcRay);
             Gizmos.DrawRay(groundRay);
         }
+
+        public void OnTriggerEnter(Collider other)
+        {
+            Debug.Log("VOID");
+
+            if (other.gameObject.CompareTag(emptyTag))
+            {
+                UI[2].SetActive(false);
+                UI[1].SetActive(true);
+                Time.timeScale = 0.0f;
+            }
+        }
+
+
     }
 }
