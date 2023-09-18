@@ -14,10 +14,12 @@ namespace Menu
         [SerializeField] private TextMeshProUGUI scoreTextLose;
         [SerializeField] private TextMeshProUGUI mensajesText;
         [SerializeField] private GameObject pausePanel;
+        [SerializeField] private Material synthweaveSkybox;
 
         private OpenDoor[] openDoorList;
 
         [SerializeField] public int score = 0;
+        public event Action nextLevel;
 
         private void Start()
         {
@@ -36,6 +38,12 @@ namespace Menu
 
             if (scoreTextLose)
                 scoreTextLose.text = score.ToString();
+
+            if (score == 0)
+            {
+                nextLevel?.Invoke();
+                RenderSettings.skybox = synthweaveSkybox;
+            }
         }
 
         public void TogglePausePanel(bool active)

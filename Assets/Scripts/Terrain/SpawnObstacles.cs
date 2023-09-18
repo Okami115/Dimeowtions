@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Terrain
@@ -8,9 +5,11 @@ namespace Terrain
     public class SpawnObstacles : MonoBehaviour
     {
 
-        [SerializeField] private GameObject[] fragments;
+        [SerializeField] private GameObject[][] fragments;
         [SerializeField] private GameObject children;
+        [SerializeField] private GameManager.GameManager gameManager;
         private TerrainMovement tMovement;
+        private GameManager.Aesthetic currentAesthetic;
 
         private int value;
 
@@ -22,10 +21,11 @@ namespace Terrain
 
         private void SpawnRandomObstacles()
         {
+            currentAesthetic = gameManager.CurrentAesthetic;
             value = Random.Range(0, fragments.Length);
             Destroy(children);
 
-            children = Instantiate(fragments[value]);
+            children = Instantiate(fragments[value][(int)currentAesthetic]);
 
             children.transform.parent = this.transform;
 
