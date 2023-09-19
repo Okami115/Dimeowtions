@@ -50,6 +50,7 @@ namespace Terrain
         {
             transform.position += spawn.position;
             spawnSignal?.Invoke();
+            ui.Nextlevel();
             ui.score += 100;
         }
     }

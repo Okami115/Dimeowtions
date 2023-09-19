@@ -39,7 +39,12 @@ namespace Menu
             if (scoreTextLose)
                 scoreTextLose.text = score.ToString();
 
-            if (score == 0)
+
+        }
+
+        public void Nextlevel()
+        {
+            if (score == 5000)
             {
                 nextLevel?.Invoke();
                 RenderSettings.skybox = synthweaveSkybox;

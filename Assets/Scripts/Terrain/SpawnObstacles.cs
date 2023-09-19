@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Terrain
@@ -5,7 +6,9 @@ namespace Terrain
     public class SpawnObstacles : MonoBehaviour
     {
 
-        [SerializeField] private GameObject[][] fragments;
+        [SerializeField] private GameObject[] Noir;
+        [SerializeField] private GameObject[] Synthwave;
+        [SerializeField] private GameObject[] SciFi;
         [SerializeField] private GameObject children;
         [SerializeField] private GameManager.GameManager gameManager;
         private TerrainMovement tMovement;
@@ -22,10 +25,26 @@ namespace Terrain
         private void SpawnRandomObstacles()
         {
             currentAesthetic = gameManager.CurrentAesthetic;
-            value = Random.Range(0, fragments.Length);
             Destroy(children);
+            Debug.Log(currentAesthetic.HumanName());
 
-            children = Instantiate(fragments[value][(int)currentAesthetic]);
+            if(currentAesthetic == GameManager.Aesthetic.Noir)
+            {
+                value = Random.Range(0, Noir.Length);
+                children = Instantiate(Noir[value]); 
+            }
+            else if (currentAesthetic == GameManager.Aesthetic.Synthwave)
+            {
+                value = Random.Range(0, Synthwave.Length);
+                Debug.Log(value);
+                children = Instantiate(Synthwave[value]);
+            }
+            else if (currentAesthetic == GameManager.Aesthetic.Scifi)
+            {
+                value = Random.Range(0, Synthwave.Length);
+                children = Instantiate(SciFi[value]);
+            }
+
 
             children.transform.parent = this.transform;
 

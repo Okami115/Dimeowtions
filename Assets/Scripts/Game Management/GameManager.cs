@@ -40,6 +40,7 @@ namespace GameManager
 
         private void ChangeAestetic()
         {
+            Debug.Log("Next Level");
             currentAesthetic++;
         }
 
