@@ -179,7 +179,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &210084845
 RectTransform:
   m_ObjectHideFlags: 0
@@ -365,6 +365,8 @@ GameObject:
   - component: {fileID: 598839986}
   - component: {fileID: 598839985}
   - component: {fileID: 598839984}
+  - component: {fileID: 598839988}
+  - component: {fileID: 598839987}
   m_Layer: 0
   m_Name: Exit Button
   m_TagString: Untagged
@@ -414,9 +416,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 0.47450984, b: 0.47450984, a: 1}
-    m_PressedColor: {r: 1, g: 0.4764151, b: 0.4764151, a: 1}
-    m_SelectedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -486,6 +488,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 598839982}
   m_CullTransparentMesh: 1
+--- !u!114 &598839987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598839982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 598839988}
+          m_TargetAssemblyTypeName: SpriteApplier, Assembly-CSharp
+          m_MethodName: ApplySprite
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 21300000, guid: 18a971687a5c602439eda4faf3cde5ae, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 598839988}
+          m_TargetAssemblyTypeName: SpriteApplier, Assembly-CSharp
+          m_MethodName: ApplySprite
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 21300000, guid: 6d75c27add1d2a4419e8a18c17ba8352, type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &598839988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598839982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b7f63a7a24048f4c8b927e27ef346fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  artStyleSO: {fileID: 11400000, guid: b5da7999976c34d41836991f824faf87, type: 2}
+  image: {fileID: 598839985}
+  baseSprites:
+  - {fileID: 21300000, guid: 6d75c27add1d2a4419e8a18c17ba8352, type: 3}
+  selectedButtonSprites: []
 --- !u!1 &659451506
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,8 +999,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 1c2b8b3bdd23147469177c3fecd2a8aa, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -968,13 +1032,13 @@ MonoBehaviour:
   artStyleSO: {fileID: 11400000, guid: b5da7999976c34d41836991f824faf87, type: 2}
   image: {fileID: 881736978}
   baseSprites:
-  - {fileID: 21300000, guid: 13d02f7477c9b9b479e83a54d1fe638f, type: 3}
-  - {fileID: 21300000, guid: 6a13bd74a4c3b5d4782115c259dd779c, type: 3}
-  - {fileID: 21300000, guid: bdb218c50f9836e43bae49148f49aa5d, type: 3}
+  - {fileID: 2115190205, guid: bb4b60b792c91c94a886deec4075339a, type: 3}
+  - {fileID: 879717298, guid: bb4b60b792c91c94a886deec4075339a, type: 3}
+  - {fileID: -1747311730, guid: bb4b60b792c91c94a886deec4075339a, type: 3}
   selectedButtonSprites:
-  - {fileID: 21300000, guid: 843e430fcb7486a47a4d00d923125d3b, type: 3}
-  - {fileID: 21300000, guid: 6a319987f91f04548835d1f793fbe3e5, type: 3}
-  - {fileID: 21300000, guid: e9f0faee0be0b6d43b1eeccdde3b755c, type: 3}
+  - {fileID: -1123063563, guid: 45a85d91fc87ba446bde96fa642860b2, type: 3}
+  - {fileID: -739168536, guid: 45a85d91fc87ba446bde96fa642860b2, type: 3}
+  - {fileID: -634275213, guid: 45a85d91fc87ba446bde96fa642860b2, type: 3}
 --- !u!114 &881736981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1952,7 +2016,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840924853}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0000038146973}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 3.939, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1961,7 +2025,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -190, y: -188.17004}
+  m_AnchoredPosition: {x: -214, y: -157}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1840924858
@@ -1979,13 +2043,13 @@ MonoBehaviour:
   artStyleSO: {fileID: 11400000, guid: b5da7999976c34d41836991f824faf87, type: 2}
   image: {fileID: 1840924854}
   baseSprites:
-  - {fileID: 21300000, guid: 573f2cd3c3cd9524c9a59dbf17f37d64, type: 3}
-  - {fileID: 0}
-  - {fileID: 21300000, guid: f35ee67c7cda60349908096178cff5ec, type: 3}
+  - {fileID: 21300000, guid: ff575f04add269b41a05d40b1ddbfcc7, type: 3}
+  - {fileID: 21300000, guid: 2d9d2722f6888e243a77c73d978458ca, type: 3}
+  - {fileID: 21300000, guid: 2db8925494703a54099951b1e3ae7a55, type: 3}
   selectedButtonSprites:
-  - {fileID: 21300000, guid: 9a1eeecf02154f04db37d793f8a6a399, type: 3}
-  - {fileID: 0}
-  - {fileID: 21300000, guid: 1e69bfb56b93ba847b15c0db8af3e965, type: 3}
+  - {fileID: 21300000, guid: baf0f8e3f0174d345bfd3bb40c23d118, type: 3}
+  - {fileID: 21300000, guid: 632bd717ded25744ea391aa7313c515b, type: 3}
+  - {fileID: 21300000, guid: 1ac70f98a490a9b479d2d95eca310274, type: 3}
 --- !u!114 &1840924859
 MonoBehaviour:
   m_ObjectHideFlags: 0
