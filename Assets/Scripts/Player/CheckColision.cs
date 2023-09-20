@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.PackageManager;
 using UnityEngine;
 
 namespace player
@@ -16,7 +12,6 @@ namespace player
         private string obstacleTag = "Obstacle"; 
         private string emptyTag = "Empty"; 
         private float raycastDistanceObjetc = 1f;
-        private float raycastDistanceEmpty = 2f;
         Ray objetcRay;
         Ray groundRay;
 

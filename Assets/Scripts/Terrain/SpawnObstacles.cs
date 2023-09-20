@@ -26,7 +26,6 @@ namespace Terrain
         {
             currentAesthetic = gameManager.CurrentAesthetic;
             Destroy(children);
-            Debug.Log(currentAesthetic.HumanName());
 
             if(currentAesthetic == GameManager.Aesthetic.Noir)
             {
@@ -36,7 +35,6 @@ namespace Terrain
             else if (currentAesthetic == GameManager.Aesthetic.Synthwave)
             {
                 value = Random.Range(0, Synthwave.Length);
-                Debug.Log(value);
                 children = Instantiate(Synthwave[value]);
             }
             else if (currentAesthetic == GameManager.Aesthetic.Scifi)
