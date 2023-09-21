@@ -13,20 +13,30 @@ namespace Menu
         [SerializeField] private GameObject pausePanel;
         [SerializeField] private Material synthweaveSkybox;
 
-        private OpenDoor[] openDoorList;
+        //private OpenDoor[] openDoorList;
 
         [SerializeField] public int score = 0;
         public event Action nextLevel;
 
-        private void Start()
+        private void OnEnable()
         {
-            openDoorList = FindObjectsOfType<OpenDoor>();
-
-            for (int i = 0; i < openDoorList.Length; i++)
-            {
-                openDoorList[i].canOpen += ChangeMensajes;
-            }
+            OpenDoor.canOpen += ChangeMensajes;
         }
+
+        private void OnDisable()
+        {
+            OpenDoor.canOpen -= ChangeMensajes;
+        }
+
+        //private void Start()
+        //{
+        //    openDoorList = FindObjectsOfType<OpenDoor>();
+
+        //    for (int i = 0; i < openDoorList.Length; i++)
+        //    {
+        //        openDoorList[i].canOpen += ChangeMensajes;
+        //    }
+        //}
 
         private void Update()
         {

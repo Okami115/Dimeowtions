@@ -8,7 +8,8 @@ public class OpenDoor : MonoBehaviour
 {
     [SerializeField] private player.PlayerMovement pm;
     [SerializeField] private GameObject door;
-    public event Action<String> canOpen;
+    public static event Action<String> canOpen;
+    public static event Action openDoor;
 
     private void Awake()
     {
@@ -43,6 +44,7 @@ public class OpenDoor : MonoBehaviour
     private void OpenningDoor()
     {
         canOpen?.Invoke("");
+        openDoor?.Invoke();
         Destroy(door);
     }
 }
