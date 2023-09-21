@@ -35,7 +35,5 @@ public class AnimationTrigger : MonoBehaviour
         animator.speed = (interactionAnimationDuration / playerStats.initialSpeed) / speedFactor;
 
         animator.Play(interactionAnimationName);
-
-        //animator.speed = animatorDefaultSpeed;
     }
 }
