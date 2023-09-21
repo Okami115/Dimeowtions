@@ -12,10 +12,8 @@ namespace Menu
         [SerializeField] private TextMeshProUGUI mensajesText;
         [SerializeField] private GameObject pausePanel;
         [SerializeField] private Material synthweaveSkybox;
+        [SerializeField] private PlayerStats playerStats;
 
-        //private OpenDoor[] openDoorList;
-
-        [SerializeField] public int score = 0;
         public event Action nextLevel;
 
         private void OnEnable()
@@ -28,30 +26,18 @@ namespace Menu
             OpenDoor.canOpen -= ChangeMensajes;
         }
 
-        //private void Start()
-        //{
-        //    openDoorList = FindObjectsOfType<OpenDoor>();
-
-        //    for (int i = 0; i < openDoorList.Length; i++)
-        //    {
-        //        openDoorList[i].canOpen += ChangeMensajes;
-        //    }
-        //}
-
         private void Update()
         {
             if (scoreText)
-                scoreText.text = score.ToString();
+                scoreText.text = playerStats.score.ToString();
 
             if (scoreTextLose)
-                scoreTextLose.text = score.ToString();
-
-
+                scoreTextLose.text = playerStats.score.ToString();
         }
 
         public void Nextlevel()
         {
-            if (score == 5000)
+            if (playerStats.score == 5000)
             {
                 nextLevel?.Invoke();
                 RenderSettings.skybox = synthweaveSkybox;

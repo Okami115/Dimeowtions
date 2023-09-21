@@ -6,4 +6,6 @@ public class PlayerStats : ScriptableObject
     public float currentSpeed;
     public float initialSpeed;
     public float maxSpeed;
+    public int score;
+    public int maxScore;
 }
