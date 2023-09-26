@@ -6,33 +6,33 @@ namespace Terrain
 {
     public class TerrainMovement : MonoBehaviour
     {
+        [SerializeField] private PlayerStats playerStats;
+
         [SerializeField] private Transform destination;
         [SerializeField] private Transform spawn;
-        [SerializeField] private float initialSpeed = 1.0f;
-        [SerializeField] private float maxSpeed = 10.0f;
-        [SerializeField] private float accelerationRate = 0.01f;
+        [SerializeField] private float accelerationRate = 0.001f;
         [SerializeField] private float minDistanceToRespawn;
 
         [SerializeField] private UIManager ui;
-        [SerializeField] private float currentSpeed;
 
         public event Action spawnSignal;
 
         private void Start()
         {
-            currentSpeed = initialSpeed;
+            playerStats.currentSpeed = playerStats.initialSpeed;
+            playerStats.score = 0;
         }
 
         private void Update()
         {
-            if (currentSpeed < maxSpeed)
+            if (playerStats.currentSpeed < playerStats.maxSpeed)
             {
-                currentSpeed += accelerationRate * Time.deltaTime;
+                playerStats.currentSpeed += accelerationRate * Time.deltaTime;
             }
 
             Vector3 newPos = transform.position;
 
-            newPos.z += destination.position.z * Time.deltaTime * currentSpeed;
+            newPos.z += destination.position.z * Time.deltaTime * playerStats.currentSpeed;
 
             transform.position = newPos;
 
@@ -48,7 +48,7 @@ namespace Terrain
             transform.position += spawn.position;
             spawnSignal?.Invoke();
             ui.Nextlevel();
-            ui.score += 100;
+            playerStats.score += 100;
         }
     }
 }
