@@ -1,9 +1,13 @@
+using System;
 using UnityEngine;
 
 public class LevelSelectorMovement : MonoBehaviour
 {
     [SerializeField] private Transform[] positions;
+    [SerializeField] private ArtStyle artStyleSO;
     private int currentPositionIndex;
+
+    public static event Action changeArtStyle;
 
     private void OnEnable()
     {
@@ -16,7 +20,6 @@ public class LevelSelectorMovement : MonoBehaviour
         InputManager.onMoveLeft -= MovePlatformLeft;
         InputManager.onMoveRight -= MovePlatformRight;
     }
-
 
     private void Start()
     {
@@ -42,5 +45,33 @@ public class LevelSelectorMovement : MonoBehaviour
         {
             transform.position = positions[currentPositionIndex].position;
         }
+
+        UpdateArtStyle();
+    }
+
+    private void UpdateArtStyle()
+    {
+        switch (currentPositionIndex)
+        {
+            case 0:             
+                artStyleSO.isNoirSelected = false;
+                artStyleSO.isSynthwaveSelected = false;
+                artStyleSO.isSpaceSelected = true;
+                break;
+            case 1:
+                artStyleSO.isNoirSelected = false;
+                artStyleSO.isSynthwaveSelected = true;
+                artStyleSO.isSpaceSelected = false;
+                break;
+            case 2:
+                artStyleSO.isNoirSelected = true;
+                artStyleSO.isSynthwaveSelected = false;
+                artStyleSO.isSpaceSelected = false;
+                break;
+            default:
+                break;
+        }
+
+        changeArtStyle?.Invoke();
     }
 }
