@@ -3292,7 +3292,7 @@ MonoBehaviour:
   - {fileID: 702984946}
   scenographySynthWave: []
   scenographySciFi: []
-  uiManager: {fileID: 0}
+  uiManager: {fileID: 1065173194}
 --- !u!1001 &1133238922
 PrefabInstance:
   m_ObjectHideFlags: 0
