@@ -154,6 +154,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseScript: {fileID: 951582703}
   uiManager: {fileID: 1065173194}
+  portal: {fileID: 1692563495}
+  portalImage: {fileID: 1692563493}
 --- !u!4 &26147097
 Transform:
   m_ObjectHideFlags: 0
@@ -549,6 +551,7 @@ MonoBehaviour:
   SciFi: []
   children: {fileID: 1139245261}
   gameManager: {fileID: 26147096}
+  uiManager: {fileID: 1065173194}
 --- !u!1 &99794898 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1642843760390861595, guid: f8238c4b78d3c3e4c84ed564893bc84f, type: 3}
@@ -641,6 +644,7 @@ MonoBehaviour:
   SciFi: []
   children: {fileID: 1256939364}
   gameManager: {fileID: 26147096}
+  uiManager: {fileID: 1065173194}
 --- !u!1 &238222644 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1642843760390861595, guid: f8238c4b78d3c3e4c84ed564893bc84f, type: 3}
@@ -1162,6 +1166,7 @@ MonoBehaviour:
   SciFi: []
   children: {fileID: 410666245}
   gameManager: {fileID: 26147096}
+  uiManager: {fileID: 1065173194}
 --- !u!1 &410666245 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1642843760390861595, guid: f8238c4b78d3c3e4c84ed564893bc84f, type: 3}
@@ -1756,6 +1761,7 @@ MonoBehaviour:
   SciFi: []
   children: {fileID: 1340937396}
   gameManager: {fileID: 26147096}
+  uiManager: {fileID: 1065173194}
 --- !u!1 &626292356
 GameObject:
   m_ObjectHideFlags: 0
@@ -2937,6 +2943,7 @@ MonoBehaviour:
   SciFi: []
   children: {fileID: 636278557}
   gameManager: {fileID: 26147096}
+  uiManager: {fileID: 1065173194}
 --- !u!1001 &979231297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3076,6 +3083,7 @@ MonoBehaviour:
   SciFi: []
   children: {fileID: 284429493}
   gameManager: {fileID: 26147096}
+  uiManager: {fileID: 1065173194}
 --- !u!1 &1021303169
 GameObject:
   m_ObjectHideFlags: 0
@@ -3158,6 +3166,7 @@ MonoBehaviour:
   SciFi: []
   children: {fileID: 1413690154}
   gameManager: {fileID: 26147096}
+  uiManager: {fileID: 1065173194}
 --- !u!1001 &1027313115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3753,6 +3762,7 @@ MonoBehaviour:
   SciFi: []
   children: {fileID: 506503399}
   gameManager: {fileID: 26147096}
+  uiManager: {fileID: 1065173194}
 --- !u!1 &1337463953
 GameObject:
   m_ObjectHideFlags: 0
@@ -8963,6 +8973,7 @@ MonoBehaviour:
   SciFi: []
   children: {fileID: 238222644}
   gameManager: {fileID: 26147096}
+  uiManager: {fileID: 1065173194}
 --- !u!1 &1683910107
 GameObject:
   m_ObjectHideFlags: 0
@@ -9183,7 +9194,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1692563491
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9191,17 +9202,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1692563490}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 16, y: 9, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 626292357}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1692563493
 MonoBehaviour:
@@ -9223,7 +9234,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 8400000, guid: 8ffd8c6e9c473a24a81410e481728eea, type: 2}
+  m_Texture: {fileID: 8400000, guid: 2d4938843e054a94cba538d4978ac4b5, type: 2}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -9246,29 +9257,27 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1692563490}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 1c79aa2e84142de4baa0b1e69f5ca420, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 2eec174abc3ee984bbe937a3fc5eeef2, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 8400000, guid: 8ffd8c6e9c473a24a81410e481728eea, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: 2d4938843e054a94cba538d4978ac4b5, type: 2}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 2
-  m_AspectRatio: 2
+  m_AspectRatio: 5
   m_DataSource: 0
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
   m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 01
-  m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 0
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
+  m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 0
   m_WaitForFirstFrame: 1
@@ -9506,6 +9515,7 @@ MonoBehaviour:
   SciFi: []
   children: {fileID: 683902384}
   gameManager: {fileID: 26147096}
+  uiManager: {fileID: 1065173194}
 --- !u!1 &1866916312
 GameObject:
   m_ObjectHideFlags: 0
@@ -9588,6 +9598,7 @@ MonoBehaviour:
   SciFi: []
   children: {fileID: 99794898}
   gameManager: {fileID: 26147096}
+  uiManager: {fileID: 1065173194}
 --- !u!1 &1968339506
 GameObject:
   m_ObjectHideFlags: 0
@@ -10298,6 +10309,10 @@ PrefabInstance:
       propertyPath: field of view
       value: 120
       objectReference: {fileID: 0}
+    - target: {fileID: 1626697998236953445, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
+      propertyPath: uiManager
+      value: 
+      objectReference: {fileID: 1065173194}
     - target: {fileID: 3126657341757686682, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
       propertyPath: mid
       value: 
@@ -10384,7 +10399,7 @@ PrefabInstance:
       objectReference: {fileID: 1162649121}
     - target: {fileID: 5834923617488784445, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5834923617488784445, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
       propertyPath: UI.Array.size

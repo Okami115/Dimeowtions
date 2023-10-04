@@ -57,6 +57,10 @@ namespace GameManager
                 portalImage.color = color;
                 Time.timeScale = 1.0f;
             }
+            else
+            {
+                Time.timeScale = 0.0f;
+            }
         }
 
         private void ChangeAestetic()
