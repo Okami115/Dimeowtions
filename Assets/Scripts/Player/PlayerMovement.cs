@@ -105,6 +105,7 @@ namespace player
         {
             interaction?.Invoke();
         }
+
         private void Update()
         {
             Vector3 direccion = currentPos.position - transform.position;

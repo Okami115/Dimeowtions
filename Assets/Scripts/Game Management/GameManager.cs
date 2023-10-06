@@ -48,18 +48,14 @@ namespace GameManager
 
         private void Update()
         {
-            if(portal.isPaused)
+            if(portal.isPaused && !pauseScript.IsPaused)
             {
                 color.a -= Time.deltaTime;
 
                 if(color.a < 0.0f) { color.a = 0.0f; }
 
                 portalImage.color = color;
-                Time.timeScale = 1.0f;
-            }
-            else
-            {
-                Time.timeScale = 0.0f;
+                ControlTimeScale(1.0f);
             }
         }
 
@@ -69,7 +65,7 @@ namespace GameManager
             portalImage.enabled = true;
             color.a = 1.0f;
             portalImage.color = color;
-            Time.timeScale = 0.0f;
+            ControlTimeScale(0.0f);
             portal.Play();
             currentAesthetic++;
         }
@@ -78,7 +74,6 @@ namespace GameManager
         {
             Time.timeScale = timeScale;
         }
-
 
         public void ReloadScene()
         {

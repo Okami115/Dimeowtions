@@ -8,7 +8,9 @@ public class PauseScript : MonoBehaviour
 
     public event Action<float> pauseEvent;
 
+    public bool IsPaused { get => isPaused; set => isPaused = value; }
     private bool isPaused = false;
+
 
     public void OnPause()
     {
@@ -16,6 +18,7 @@ public class PauseScript : MonoBehaviour
         {
             pauseEvent?.Invoke(1.0f);
             isPaused = false;
+            UIManager.TogglePausePanel(false);
         }
         else
         {
