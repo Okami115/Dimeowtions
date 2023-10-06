@@ -10,12 +10,20 @@ public class SpriteApplier : MonoBehaviour
     [SerializeField] private Sprite[] baseSprites;
     [SerializeField] private Sprite[] selectedButtonSprites;
 
+    private void OnEnable()
+    {
+        LevelSelectorMovement.changeArtStyle += UpdateSrite;
+        UpdateSrite();
+    }
+
+    private void OnDisable()
+    {
+        LevelSelectorMovement.changeArtStyle -= UpdateSrite;
+    }
+
     public void Start()
     {
-        if (baseSprites.Length > 1)
-            ApplySpriteFromArray(baseSprites);
-        else if (baseSprites.Length == 1)
-            ApplySprite(baseSprites[0]);
+        UpdateSrite();
     }
 
     public void ApplySpriteFromArray(Sprite[] newSprite)
@@ -26,6 +34,14 @@ public class SpriteApplier : MonoBehaviour
             image.sprite = newSprite[1];
         else if (artStyleSO.isSynthwaveSelected)
             image.sprite = newSprite[2];
+    }
+
+    private void UpdateSrite()
+    {
+        if (baseSprites.Length > 1)
+            ApplySpriteFromArray(baseSprites);
+        else if (baseSprites.Length == 1)
+            ApplySprite(baseSprites[0]);
     }
 
     public void ApplyDeselected()

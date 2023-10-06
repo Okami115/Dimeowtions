@@ -40,7 +40,7 @@ Material:
     - _HatchIntensity: 0.477
     - _Intensity: 1
     - _OutlineColor: 1
-    - _OutlineThickness: 0.098
+    - _OutlineThickness: 0.5
     - _Saturation: 1
     - _ShadingDetail: 0.8
     - _Steps: 0.98
