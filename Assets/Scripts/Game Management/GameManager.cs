@@ -41,7 +41,7 @@ namespace GameManager
 
         private void Start()
         {
-            ControlTimeScale(1.0f);
+            ControlTimeScale(0.0f);
             currentAesthetic = Aesthetic.Noir;
             color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
         }

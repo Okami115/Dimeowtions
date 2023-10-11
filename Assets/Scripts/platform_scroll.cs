@@ -14,7 +14,6 @@ public class platform_scroll : MonoBehaviour
     void Awake()
     {
         mesh_renderer = GetComponent<MeshRenderer>();
-        Time.timeScale = 1F;
     }
 
     // Update is called once per frame
