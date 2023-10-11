@@ -12,12 +12,24 @@ namespace player
         private Transform currentPos;
 
         [SerializeField] private Transform[] pos;
+        [SerializeField] private Transform Jumptarget;
+        [SerializeField] private BoxCollider boxCollider;
 
-        private float moveVelocity = 100;
-        private const int rotationVelocity = 300;
+        private int moveVelocity = 100;
+        private int rotationVelocity = 300;
+        private int jumpVelocity = 500;
 
         private int indexPos = 0;
-        
+
+        [SerializeField] private float timeOnAir;
+        private float timmer;
+
+        [SerializeField] private const float maxJumpCooldown = 1;
+        private float cooldown = maxJumpCooldown;
+
+        private bool isCounting;
+        private bool inCooldown;
+
         public event Action Paused;
         public event Action interaction;
 
@@ -28,20 +40,28 @@ namespace player
 
         public void OnLeft()
         {
-            indexPos++;
-            if (indexPos >= pos.Length - 1)
-                indexPos = 0;
+            if(!isCounting) 
+            {
+                indexPos++;
+                if (indexPos > pos.Length - 1)
+                    indexPos = 0;
 
-            currentPos = pos[indexPos];
+                currentPos = pos[indexPos];
+            }
+
         }
 
         public void OnRight()
         {
-            indexPos--;
-            if (indexPos < 0)
-                indexPos = pos.Length - 1;
+            if(!isCounting)
+            {
+                indexPos--;
+                if (indexPos < 0)
+                    indexPos = pos.Length - 1;
 
-            currentPos = pos[indexPos];
+                currentPos = pos[indexPos];
+            }
+
         }
 
         public void OnInteraction()
@@ -49,15 +69,54 @@ namespace player
             interaction?.Invoke();
         }
 
-        private void Update()
+        public void OnJump()
         {
-            float distanciaEsteFrame = moveVelocity * Time.deltaTime;
-
-            transform.position = Vector3.MoveTowards(transform.position, currentPos.position, distanciaEsteFrame);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, currentPos.rotation, rotationVelocity * Time.deltaTime);
+            if(!inCooldown)
+            {
+                boxCollider.enabled = false;
+                inCooldown = true;
+                isCounting = true;
+            }
         }
 
+        private void Update()
+        {
+            Debug.Log(indexPos);
+            if (isCounting)
+            {
+                timmer += Time.deltaTime;
+
+                float newDistance = jumpVelocity * Time.deltaTime;
+                transform.position = Vector3.MoveTowards(transform.position, Jumptarget.position, newDistance);
+
+                if (timmer >= timeOnAir)
+                {
+                    isCounting = false;
+                    currentPos = pos[indexPos];
+                    timmer = 0;
+                }
+            }
+            else
+            {
+
+                if(inCooldown)
+                {
+                    cooldown -= Time.deltaTime;
+
+                    if (cooldown < 0)
+                    {
+                        boxCollider.enabled = true;
+                        cooldown = maxJumpCooldown;
+                        inCooldown = false;
+                    }
+                }
+
+
+                float newDistance = moveVelocity * Time.deltaTime;
+
+                transform.position = Vector3.MoveTowards(transform.position, currentPos.position, newDistance);
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, currentPos.rotation, rotationVelocity * Time.deltaTime);
+            }
+        }
     }
-
-
 }
