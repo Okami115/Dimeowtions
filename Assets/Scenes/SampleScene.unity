@@ -611,6 +611,7 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 7558e1643a7431b439d22bc9f808dea4, type: 3}
   - {fileID: 1642843760390861595, guid: 7afc65c860e605444b430a27bcb1f855, type: 3}
   - {fileID: 1642843760390861595, guid: 91297832cdc642249a63020a9a3aa991, type: 3}
+  - {fileID: 1642843760390861595, guid: d3cdfd2c82a4d6c4491b19fc97242b1e, type: 3}
   SciFi: []
   children: {fileID: 1139245261}
   gameManager: {fileID: 26147096}
@@ -704,6 +705,7 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 7558e1643a7431b439d22bc9f808dea4, type: 3}
   - {fileID: 1642843760390861595, guid: 7afc65c860e605444b430a27bcb1f855, type: 3}
   - {fileID: 1642843760390861595, guid: 91297832cdc642249a63020a9a3aa991, type: 3}
+  - {fileID: 1642843760390861595, guid: d3cdfd2c82a4d6c4491b19fc97242b1e, type: 3}
   SciFi: []
   children: {fileID: 1256939364}
   gameManager: {fileID: 26147096}
@@ -1226,6 +1228,7 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 7558e1643a7431b439d22bc9f808dea4, type: 3}
   - {fileID: 1642843760390861595, guid: 7afc65c860e605444b430a27bcb1f855, type: 3}
   - {fileID: 1642843760390861595, guid: 91297832cdc642249a63020a9a3aa991, type: 3}
+  - {fileID: 1642843760390861595, guid: d3cdfd2c82a4d6c4491b19fc97242b1e, type: 3}
   SciFi: []
   children: {fileID: 410666245}
   gameManager: {fileID: 26147096}
@@ -1821,6 +1824,7 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 7558e1643a7431b439d22bc9f808dea4, type: 3}
   - {fileID: 1642843760390861595, guid: 7afc65c860e605444b430a27bcb1f855, type: 3}
   - {fileID: 1642843760390861595, guid: 91297832cdc642249a63020a9a3aa991, type: 3}
+  - {fileID: 1642843760390861595, guid: d3cdfd2c82a4d6c4491b19fc97242b1e, type: 3}
   SciFi: []
   children: {fileID: 1340937396}
   gameManager: {fileID: 26147096}
@@ -3034,6 +3038,7 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 7558e1643a7431b439d22bc9f808dea4, type: 3}
   - {fileID: 1642843760390861595, guid: 7afc65c860e605444b430a27bcb1f855, type: 3}
   - {fileID: 1642843760390861595, guid: 91297832cdc642249a63020a9a3aa991, type: 3}
+  - {fileID: 1642843760390861595, guid: d3cdfd2c82a4d6c4491b19fc97242b1e, type: 3}
   SciFi: []
   children: {fileID: 636278557}
   gameManager: {fileID: 26147096}
@@ -3174,6 +3179,7 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 7558e1643a7431b439d22bc9f808dea4, type: 3}
   - {fileID: 1642843760390861595, guid: 7afc65c860e605444b430a27bcb1f855, type: 3}
   - {fileID: 1642843760390861595, guid: 91297832cdc642249a63020a9a3aa991, type: 3}
+  - {fileID: 1642843760390861595, guid: d3cdfd2c82a4d6c4491b19fc97242b1e, type: 3}
   SciFi: []
   children: {fileID: 284429493}
   gameManager: {fileID: 26147096}
@@ -3354,6 +3360,7 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 7558e1643a7431b439d22bc9f808dea4, type: 3}
   - {fileID: 1642843760390861595, guid: 7afc65c860e605444b430a27bcb1f855, type: 3}
   - {fileID: 1642843760390861595, guid: 91297832cdc642249a63020a9a3aa991, type: 3}
+  - {fileID: 1642843760390861595, guid: d3cdfd2c82a4d6c4491b19fc97242b1e, type: 3}
   SciFi: []
   children: {fileID: 1413690154}
   gameManager: {fileID: 26147096}
@@ -3927,6 +3934,7 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 7558e1643a7431b439d22bc9f808dea4, type: 3}
   - {fileID: 1642843760390861595, guid: 7afc65c860e605444b430a27bcb1f855, type: 3}
   - {fileID: 1642843760390861595, guid: 91297832cdc642249a63020a9a3aa991, type: 3}
+  - {fileID: 1642843760390861595, guid: d3cdfd2c82a4d6c4491b19fc97242b1e, type: 3}
   SciFi: []
   children: {fileID: 506503399}
   gameManager: {fileID: 26147096}
@@ -9213,6 +9221,7 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 7558e1643a7431b439d22bc9f808dea4, type: 3}
   - {fileID: 1642843760390861595, guid: 7afc65c860e605444b430a27bcb1f855, type: 3}
   - {fileID: 1642843760390861595, guid: 91297832cdc642249a63020a9a3aa991, type: 3}
+  - {fileID: 1642843760390861595, guid: d3cdfd2c82a4d6c4491b19fc97242b1e, type: 3}
   SciFi: []
   children: {fileID: 238222644}
   gameManager: {fileID: 26147096}
@@ -9760,6 +9769,7 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 7558e1643a7431b439d22bc9f808dea4, type: 3}
   - {fileID: 1642843760390861595, guid: 7afc65c860e605444b430a27bcb1f855, type: 3}
   - {fileID: 1642843760390861595, guid: 91297832cdc642249a63020a9a3aa991, type: 3}
+  - {fileID: 1642843760390861595, guid: d3cdfd2c82a4d6c4491b19fc97242b1e, type: 3}
   SciFi: []
   children: {fileID: 683902384}
   gameManager: {fileID: 26147096}
@@ -9843,6 +9853,7 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 7558e1643a7431b439d22bc9f808dea4, type: 3}
   - {fileID: 1642843760390861595, guid: 7afc65c860e605444b430a27bcb1f855, type: 3}
   - {fileID: 1642843760390861595, guid: 91297832cdc642249a63020a9a3aa991, type: 3}
+  - {fileID: 1642843760390861595, guid: d3cdfd2c82a4d6c4491b19fc97242b1e, type: 3}
   SciFi: []
   children: {fileID: 99794898}
   gameManager: {fileID: 26147096}
@@ -10652,7 +10663,7 @@ PrefabInstance:
       objectReference: {fileID: 1162649121}
     - target: {fileID: 5834923617488784445, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5834923617488784445, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
       propertyPath: UI.Array.size
