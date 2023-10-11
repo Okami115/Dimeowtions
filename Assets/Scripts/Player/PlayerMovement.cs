@@ -11,94 +11,37 @@ namespace player
     {
         private Transform currentPos;
 
-        [SerializeField] private Transform left;
-        [SerializeField] private Transform mid;
-        [SerializeField] private Transform right;
-        [SerializeField] private Transform rightMid;
-        [SerializeField] private Transform leftMid;
-        [SerializeField] private Transform top;
-        [SerializeField] private Transform rightTop;
-        [SerializeField] private Transform leftTop;
-        private float velocidad = 100;
+        [SerializeField] private Transform[] pos;
+
+        private float moveVelocity = 100;
+        private const int rotationVelocity = 300;
+
+        private int indexPos = 0;
         
         public event Action Paused;
         public event Action interaction;
 
         private void Start()
         {
-            currentPos = mid;
+            currentPos = pos[indexPos];
         }
 
         public void OnLeft()
         {
-            if(currentPos == right) 
-            {
-                currentPos = mid;
-            }
-            else if (currentPos == mid)
-            {
-                currentPos = left;
-            }
-            else if ( currentPos == left)
-            {
-                currentPos = leftMid;
-            }
-            else if(currentPos == leftMid)
-            {
-                currentPos = leftTop;
-            }
-            else if( currentPos == leftTop)
-            {
-                currentPos = top;
-            }
-            else if (currentPos == top)
-            {
-                currentPos = rightTop;
-            }
-            else if (currentPos == rightTop)
-            {
-                currentPos = rightMid;
-            }
-            else
-            {
-                currentPos = right;
-            }
+            indexPos++;
+            if (indexPos >= pos.Length - 1)
+                indexPos = 0;
+
+            currentPos = pos[indexPos];
         }
 
         public void OnRight()
         {
-            if (currentPos == left)
-            {
-                currentPos = mid;
-            }
-            else if (currentPos == mid)
-            {
-                currentPos = right;
-            }
-            else if (currentPos == right)
-            {
-                currentPos = rightMid;
-            }
-            else if(currentPos == rightMid)
-            {
-                currentPos = rightTop;
-            }
-            else if (currentPos == rightTop)
-            {
-                currentPos = top;
-            }
-            else if (currentPos == top)
-            {
-                currentPos = leftTop;
-            }
-            else if(currentPos == leftTop)
-            {
-                currentPos = leftMid;
-            }
-            else
-            {
-                currentPos = left;
-            }
+            indexPos--;
+            if (indexPos < 0)
+                indexPos = pos.Length - 1;
+
+            currentPos = pos[indexPos];
         }
 
         public void OnInteraction()
@@ -108,12 +51,10 @@ namespace player
 
         private void Update()
         {
-            Vector3 direccion = currentPos.position - transform.position;
-
-            float distanciaEsteFrame = velocidad * Time.deltaTime;
+            float distanciaEsteFrame = moveVelocity * Time.deltaTime;
 
             transform.position = Vector3.MoveTowards(transform.position, currentPos.position, distanciaEsteFrame);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, currentPos.rotation, 300 * Time.deltaTime);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, currentPos.rotation, rotationVelocity * Time.deltaTime);
         }
 
     }
