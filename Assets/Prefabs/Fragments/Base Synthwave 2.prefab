@@ -101,7 +101,6 @@ Transform:
   - {fileID: 2360928964747757279}
   - {fileID: 6130812400006914378}
   - {fileID: 7290218939687943657}
-  - {fileID: 8641936699290241468}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2065768562588944594
@@ -667,68 +666,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2390581648886313244, guid: 5e0f04eef54f4ea41933616e8d5d9f74, type: 3}
   m_PrefabInstance: {fileID: 4676795491406760937}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &5807315846662970039
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 6815016041834156212}
-    m_Modifications:
-    - target: {fileID: 2844561214133801739, guid: 2f5b88cc583c8a34d89d04677603d370, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2844561214133801739, guid: 2f5b88cc583c8a34d89d04677603d370, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -61
-      objectReference: {fileID: 0}
-    - target: {fileID: 2844561214133801739, guid: 2f5b88cc583c8a34d89d04677603d370, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2844561214133801739, guid: 2f5b88cc583c8a34d89d04677603d370, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 2844561214133801739, guid: 2f5b88cc583c8a34d89d04677603d370, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2844561214133801739, guid: 2f5b88cc583c8a34d89d04677603d370, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 2844561214133801739, guid: 2f5b88cc583c8a34d89d04677603d370, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2844561214133801739, guid: 2f5b88cc583c8a34d89d04677603d370, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2844561214133801739, guid: 2f5b88cc583c8a34d89d04677603d370, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 2844561214133801739, guid: 2f5b88cc583c8a34d89d04677603d370, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8003562231015643298, guid: 2f5b88cc583c8a34d89d04677603d370, type: 3}
-      propertyPath: m_Name
-      value: Edificios tuki (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2f5b88cc583c8a34d89d04677603d370, type: 3}
---- !u!4 &8641936699290241468 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2844561214133801739, guid: 2f5b88cc583c8a34d89d04677603d370, type: 3}
-  m_PrefabInstance: {fileID: 5807315846662970039}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6827190553769700175
 PrefabInstance:
