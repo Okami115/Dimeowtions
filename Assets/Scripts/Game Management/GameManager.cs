@@ -21,6 +21,7 @@ namespace GameManager
         [SerializeField] private UIManager uiManager;
         [SerializeField] private VideoPlayer portal;
         [SerializeField] private RawImage portalImage;
+        [SerializeField] private GameObject pauseManager;
 
         private Color color;
 
@@ -42,6 +43,7 @@ namespace GameManager
         private void Start()
         {
             ControlTimeScale(0.0f);
+            pauseManager.SetActive(false);
             currentAesthetic = Aesthetic.Noir;
             color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
         }
@@ -56,6 +58,7 @@ namespace GameManager
 
                 portalImage.color = color;
                 ControlTimeScale(1.0f);
+                pauseManager.SetActive(true);
             }
         }
 

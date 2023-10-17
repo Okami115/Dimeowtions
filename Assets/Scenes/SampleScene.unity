@@ -156,6 +156,7 @@ MonoBehaviour:
   uiManager: {fileID: 1065173194}
   portal: {fileID: 1692563495}
   portalImage: {fileID: 1692563493}
+  pauseManager: {fileID: 951582700}
 --- !u!4 &26147097
 Transform:
   m_ObjectHideFlags: 0
@@ -10431,6 +10432,10 @@ PrefabInstance:
       propertyPath: uiManager
       value: 
       objectReference: {fileID: 1065173194}
+    - target: {fileID: 1626697998236953445, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
+      propertyPath: pauseManager
+      value: 
+      objectReference: {fileID: 951582700}
     - target: {fileID: 3126657341757686682, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
       propertyPath: mid
       value: 
