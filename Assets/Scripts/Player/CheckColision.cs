@@ -9,6 +9,8 @@ namespace player
         [SerializeField] private GameObject[] UI;
         [SerializeField] private LayerMask ground;
 
+        [SerializeField] private GameObject pauseManager;
+
         private string obstacleTag = "Obstacle"; 
         private string emptyTag = "Empty"; 
         private float raycastDistanceObjetc = 1f;
@@ -28,6 +30,7 @@ namespace player
 
                 if (hitInfo.collider.CompareTag(obstacleTag))
                 {
+                    pauseManager.SetActive(false);
                     Debug.Log("PARED");
                     UI[2].SetActive(false);
                     UI[1].SetActive(true);
@@ -50,6 +53,7 @@ namespace player
 
             if (other.gameObject.CompareTag(emptyTag))
             {
+                pauseManager.SetActive(false);
                 UI[2].SetActive(false);
                 UI[1].SetActive(true);
                 Time.timeScale = 0.0f;

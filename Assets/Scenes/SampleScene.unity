@@ -10572,6 +10572,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5834923617488784445, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
+      propertyPath: pauseScript
+      value: 
+      objectReference: {fileID: 951582703}
+    - target: {fileID: 5834923617488784445, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
+      propertyPath: pauseManager
+      value: 
+      objectReference: {fileID: 951582700}
+    - target: {fileID: 5834923617488784445, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
       propertyPath: UI.Array.size
       value: 3
       objectReference: {fileID: 0}
