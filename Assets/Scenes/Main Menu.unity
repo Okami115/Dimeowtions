@@ -1958,11 +1958,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1353084658}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
         m_MethodName: LoadLevel
-        m_Mode: 5
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: SampleScene
           m_BoolArgument: 0
@@ -3260,7 +3260,7 @@ PrefabInstance:
     - target: {fileID: -8475364253570867933, guid: 8b74782f517b0734180360f1ec6689e5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 05ec2b4b31360184994037be578295cd, type: 2}
+      objectReference: {fileID: 2100000, guid: 359cc56f04f7fd6469e07a0ff31ee0d6, type: 2}
     - target: {fileID: -8241685558748060224, guid: 8b74782f517b0734180360f1ec6689e5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
