@@ -64,7 +64,6 @@ namespace GameManager
 
         private void ChangeAestetic()
         {
-            Debug.Log("Next Level");
             portalImage.enabled = true;
             color.a = 1.0f;
             portalImage.color = color;

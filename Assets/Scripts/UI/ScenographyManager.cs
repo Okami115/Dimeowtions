@@ -17,15 +17,15 @@ public class ScenographyManager : MonoBehaviour
         uiManager.nextLevel += ChangeScenography;
 
         for (int i = 0; i < scenographyNoir.Length; i++) { scenographyNoir[i].SetActive(true); }
-        for (int i = 0; i < scenographySynthWave.Length; i++) { scenographyNoir[i].SetActive(false); }
-        for (int i = 0; i < scenographySciFi.Length; i++) { scenographyNoir[i].SetActive(false); }
+        for (int i = 0; i < scenographySynthWave.Length; i++) { scenographySynthWave[i].SetActive(false); }
+        for (int i = 0; i < scenographySciFi.Length; i++) { scenographySciFi[i].SetActive(false); }
     }
 
     private void ChangeScenography()
     {
         for (int i = 0; i < scenographyNoir.Length; i++) { scenographyNoir[i].SetActive(false); }
-        for (int i = 0; i < scenographySynthWave.Length; i++) { scenographyNoir[i].SetActive(true); }
-        for (int i = 0; i < scenographySciFi.Length; i++) { scenographyNoir[i].SetActive(false); }
+        for (int i = 0; i < scenographySynthWave.Length; i++) { scenographySynthWave[i].SetActive(true); }
+        for (int i = 0; i < scenographySciFi.Length; i++) { scenographySciFi[i].SetActive(false); }
     }
 
 }

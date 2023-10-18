@@ -31,7 +31,6 @@ namespace player
                 if (hitInfo.collider.CompareTag(obstacleTag))
                 {
                     pauseManager.SetActive(false);
-                    Debug.Log("PARED");
                     UI[2].SetActive(false);
                     UI[1].SetActive(true);
                     Time.timeScale = 0.0f;
@@ -49,8 +48,6 @@ namespace player
 
         public void OnTriggerEnter(Collider other)
         {
-            Debug.Log("VOID");
-
             if (other.gameObject.CompareTag(emptyTag))
             {
                 pauseManager.SetActive(false);

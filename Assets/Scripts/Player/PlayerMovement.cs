@@ -81,7 +81,6 @@ namespace player
 
         private void Update()
         {
-            Debug.Log(indexPos);
             if (isCounting)
             {
                 timmer += Time.deltaTime;
