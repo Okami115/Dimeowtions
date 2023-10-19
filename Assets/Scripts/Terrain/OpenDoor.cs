@@ -20,15 +20,8 @@ public class OpenDoor : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            canOpen?.Invoke("Press E to OPEN");
-        }
-    }
-
-    private void OnTriggerStay(Collider other)
-    {
-        if(other.tag == "Player")
-        {
             pm.interaction += OpenningDoor;
+            canOpen?.Invoke("Press E to OPEN");
         }
     }
 

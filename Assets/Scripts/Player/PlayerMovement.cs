@@ -85,8 +85,8 @@ namespace player
             {
                 timmer += Time.deltaTime;
 
-                float newDistance = jumpVelocity * Time.deltaTime;
-                transform.position = Vector3.MoveTowards(transform.position, Jumptarget.position, newDistance);
+                float speed = jumpVelocity * Time.deltaTime;
+                transform.position = Vector3.MoveTowards(transform.position, Jumptarget.position, speed);
 
                 if (timmer >= timeOnAir)
                 {
@@ -111,9 +111,9 @@ namespace player
                 }
 
 
-                float newDistance = moveVelocity * Time.deltaTime;
+                float speed = moveVelocity * Time.deltaTime;
 
-                transform.position = Vector3.MoveTowards(transform.position, currentPos.position, newDistance);
+                transform.position = Vector3.MoveTowards(transform.position, currentPos.position, speed);
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, currentPos.rotation, rotationVelocity * Time.deltaTime);
             }
         }
