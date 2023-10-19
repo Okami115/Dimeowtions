@@ -17,7 +17,7 @@ namespace GameManager
 
     public class GameManager : MonoBehaviour
     {
-        [SerializeField] private PauseScript pauseScript;
+        [SerializeField] private PauseManager pauseScript;
         [SerializeField] private UIManager uiManager;
         [SerializeField] private VideoPlayer portal;
         [SerializeField] private RawImage portalImage;

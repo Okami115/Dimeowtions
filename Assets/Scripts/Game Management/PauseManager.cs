@@ -2,7 +2,7 @@ using Menu;
 using System;
 using UnityEngine;
 
-public class PauseScript : MonoBehaviour
+public class PauseManager : MonoBehaviour
 {
     [SerializeField] private UIManager UIManager;
 

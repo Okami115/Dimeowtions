@@ -27,7 +27,7 @@ namespace player
         [SerializeField] private const float maxJumpCooldown = 1;
         private float cooldown = maxJumpCooldown;
 
-        private bool isCounting;
+        private bool isCounting => timmer == 0;
         private bool inCooldown;
 
         public event Action Paused;
@@ -75,7 +75,6 @@ namespace player
             {
                 boxCollider.enabled = false;
                 inCooldown = true;
-                isCounting = true;
             }
         }
 
@@ -90,7 +89,6 @@ namespace player
 
                 if (timmer >= timeOnAir)
                 {
-                    isCounting = false;
                     currentPos = pos[indexPos];
                     timmer = 0;
                 }

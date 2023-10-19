@@ -37,9 +37,11 @@ namespace Menu
 
         public void Nextlevel()
         {
+            // Mover a GameManager
             if (playerStats.score == 5000)
             {
                 nextLevel?.Invoke();
+                // Mover a scenography
                 RenderSettings.skybox = synthweaveSkybox;
             }
         }
