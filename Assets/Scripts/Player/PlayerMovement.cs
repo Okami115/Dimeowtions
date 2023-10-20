@@ -1,9 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.InputSystem;
 using UnityEngine;
 using System;
-using UnityEngine.Windows;
 
 namespace player
 {
@@ -27,7 +23,7 @@ namespace player
         [SerializeField] private const float maxJumpCooldown = 1;
         private float cooldown = maxJumpCooldown;
 
-        private bool isCounting => timmer == 0;
+        private bool isCounting;
         private bool inCooldown;
 
         public event Action Paused;
@@ -40,7 +36,7 @@ namespace player
 
         public void OnLeft()
         {
-            if(!isCounting) 
+            if (!isCounting)
             {
                 indexPos++;
                 if (indexPos > pos.Length - 1)
@@ -53,7 +49,7 @@ namespace player
 
         public void OnRight()
         {
-            if(!isCounting)
+            if (!isCounting)
             {
                 indexPos--;
                 if (indexPos < 0)
@@ -71,24 +67,27 @@ namespace player
 
         public void OnJump()
         {
-            if(!inCooldown)
+            if (!inCooldown)
             {
                 boxCollider.enabled = false;
                 inCooldown = true;
+                isCounting = true;
             }
         }
 
         private void Update()
         {
+            Debug.Log(indexPos);
             if (isCounting)
             {
                 timmer += Time.deltaTime;
 
-                float speed = jumpVelocity * Time.deltaTime;
-                transform.position = Vector3.MoveTowards(transform.position, Jumptarget.position, speed);
+                float newDistance = jumpVelocity * Time.deltaTime;
+                transform.position = Vector3.MoveTowards(transform.position, Jumptarget.position, newDistance);
 
                 if (timmer >= timeOnAir)
                 {
+                    isCounting = false;
                     currentPos = pos[indexPos];
                     timmer = 0;
                 }
@@ -96,7 +95,7 @@ namespace player
             else
             {
 
-                if(inCooldown)
+                if (inCooldown)
                 {
                     cooldown -= Time.deltaTime;
 
@@ -109,9 +108,9 @@ namespace player
                 }
 
 
-                float speed = moveVelocity * Time.deltaTime;
+                float newDistance = moveVelocity * Time.deltaTime;
 
-                transform.position = Vector3.MoveTowards(transform.position, currentPos.position, speed);
+                transform.position = Vector3.MoveTowards(transform.position, currentPos.position, newDistance);
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, currentPos.rotation, rotationVelocity * Time.deltaTime);
             }
         }
