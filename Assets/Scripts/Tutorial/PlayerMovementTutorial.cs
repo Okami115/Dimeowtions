@@ -7,13 +7,17 @@ using UnityEngine.Windows;
 
 namespace player
 {
-    public class PlayerMovement : MonoBehaviour
+    public class PlayerMovementTutorial : MonoBehaviour
     {
         private Transform currentPos;
 
         [SerializeField] private Transform[] pos;
         [SerializeField] private Transform Jumptarget;
         [SerializeField] private BoxCollider boxCollider;
+
+        private bool isMovingAvailable = false;
+        private bool isOpeningDoorAvailable = true;
+        private bool isJumpingAvailable = false;
 
         private int moveVelocity = 100;
         private int rotationVelocity = 300;
@@ -42,7 +46,7 @@ namespace player
 
         public void OnLeft()
         {
-            if(!isCounting) 
+            if (!isCounting && isMovingAvailable)
             {
                 indexPos++;
                 if (indexPos > pos.Length - 1)
@@ -56,7 +60,7 @@ namespace player
 
         public void OnRight()
         {
-            if(!isCounting)
+            if (!isCounting && isMovingAvailable)
             {
                 indexPos--;
                 if (indexPos < 0)
@@ -70,17 +74,22 @@ namespace player
 
         public void OnInteraction()
         {
-            interaction?.Invoke();
+            if (isOpeningDoorAvailable)
+            {
+                interaction?.Invoke();
+                isJumpingAvailable = true;
+            }
         }
 
         public void OnJump()
         {
-            if(!inCooldown)
+            if (!inCooldown && isJumpingAvailable)
             {
                 boxCollider.enabled = false;
                 inCooldown = true;
                 isCounting = true;
                 jump?.Invoke();
+                isMovingAvailable = true;
             }
         }
 
@@ -103,7 +112,7 @@ namespace player
             else
             {
 
-                if(inCooldown)
+                if (inCooldown)
                 {
                     cooldown -= Time.deltaTime;
 

@@ -1,24 +1,31 @@
-using Menu;
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using Terrain;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SpawnObstaclesTutorial : MonoBehaviour
 {
     [SerializeField] private GameObject Base;
     [SerializeField] private GameObject Doors;
     [SerializeField] private GameObject Holes;
+    [SerializeField] private GameObject Obstacles;
     [SerializeField] private GameObject children;
     [SerializeField] private TutorialSteps tutorialStepsSO;
     private TerrainMovement tMovement;
 
-    private int value;
+    public event Action avoidObstaclesCompleted;
+
+    private int randomValue;
+
+    private int obstaclesPassed;
+    private int obstaclesPassedNeeded;
 
     private void Start()
     {
         tMovement = GetComponent<TerrainMovement>();
         tMovement.spawnSignal += SpawnRandomObstacles;
+        obstaclesPassed = 0;
+        obstaclesPassedNeeded = 10;
     }
 
     private void SpawnRandomObstacles()
@@ -31,18 +38,32 @@ public class SpawnObstaclesTutorial : MonoBehaviour
         }
         else if (tutorialStepsSO.isAvoidingObstacleAvailable)
         {
-            value = Random.Range(0, 4);
-            if (value == 3)
+            randomValue = UnityEngine.Random.Range(0, 5);
+            if (randomValue == 3)
+            {
                 children = Instantiate(Holes);
+                obstaclesPassed++;
+            }
+            else if (randomValue == 4)
+            {
+                children = Instantiate(Obstacles);
+                obstaclesPassed++;
+            }
             else
                 children = Instantiate(Base);
 
-            Debug.Log(value);
+            //obstaclesPassed++;
+            Debug.Log(obstaclesPassed);
+
+            if (obstaclesPassed == obstaclesPassedNeeded)
+            {
+                avoidObstaclesCompleted?.Invoke();
+            }
         }
         else if (tutorialStepsSO.isOpeningDoorAvailable)
         {
-            value = Random.Range(0, 4);
-            if (value == 3)
+            randomValue = UnityEngine.Random.Range(0, 4);
+            if (randomValue == 3)
                 children = Instantiate(Doors);
             else
                 children = Instantiate(Base);

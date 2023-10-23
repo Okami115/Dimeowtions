@@ -23,10 +23,13 @@ namespace GameManager
         [SerializeField] private RawImage portalImage;
         [SerializeField] private GameObject pauseManager;
 
+        private bool inTutorial;
+
         private Color color;
 
         private Aesthetic currentAesthetic;
         internal Aesthetic CurrentAesthetic { get => currentAesthetic; }
+        public bool InTutorial { get => inTutorial; set => inTutorial = value; }
 
         private void OnEnable()
         {
@@ -50,7 +53,7 @@ namespace GameManager
 
         private void Update()
         {
-            if(portal.isPaused && !pauseScript.IsPaused)
+            if(portal.isPaused && !pauseScript.IsPaused && !inTutorial)
             {
                 color.a -= Time.deltaTime;
 

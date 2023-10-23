@@ -18,8 +18,6 @@ namespace player
         Ray objetcRay;
         Ray groundRay;
 
-        public Action collisionEffective;
-
         void Update()
         {
 
