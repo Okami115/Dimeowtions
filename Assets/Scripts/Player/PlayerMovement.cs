@@ -10,6 +10,7 @@ namespace player
         [SerializeField] private Transform[] pos;
         [SerializeField] private Transform Jumptarget;
         [SerializeField] private BoxCollider boxCollider;
+        [SerializeField] private PauseManager pauseScript;
 
         private int moveVelocity = 100;
         private int rotationVelocity = 300;
@@ -36,7 +37,7 @@ namespace player
 
         public void OnLeft()
         {
-            if (!isCounting)
+            if (!isCounting && !pauseScript.IsPaused)
             {
                 indexPos++;
                 if (indexPos > pos.Length - 1)
@@ -49,7 +50,7 @@ namespace player
 
         public void OnRight()
         {
-            if (!isCounting)
+            if (!isCounting && !pauseScript.IsPaused)
             {
                 indexPos--;
                 if (indexPos < 0)
@@ -62,12 +63,15 @@ namespace player
 
         public void OnInteraction()
         {
-            interaction?.Invoke();
+            if(!pauseScript.IsPaused)
+            {
+                interaction?.Invoke();
+            }
         }
 
         public void OnJump()
         {
-            if (!inCooldown)
+            if (!inCooldown && !pauseScript.IsPaused)
             {
                 boxCollider.enabled = false;
                 inCooldown = true;
