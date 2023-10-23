@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace player
@@ -16,6 +17,8 @@ namespace player
         private float raycastDistanceObjetc = 1f;
         Ray objetcRay;
         Ray groundRay;
+
+        public Action collisionEffective;
 
         void Update()
         {

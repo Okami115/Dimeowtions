@@ -32,6 +32,8 @@ namespace player
 
         public event Action Paused;
         public event Action interaction;
+        public event Action jump;
+        public event Action moveAction;
 
         private void Start()
         {
@@ -47,6 +49,7 @@ namespace player
                     indexPos = 0;
 
                 currentPos = pos[indexPos];
+                moveAction?.Invoke();
             }
 
         }
@@ -60,6 +63,7 @@ namespace player
                     indexPos = pos.Length - 1;
 
                 currentPos = pos[indexPos];
+                moveAction?.Invoke();
             }
 
         }
@@ -75,6 +79,7 @@ namespace player
             {
                 boxCollider.enabled = false;
                 inCooldown = true;
+                jump?.Invoke();
             }
         }
 
