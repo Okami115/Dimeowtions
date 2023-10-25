@@ -182,8 +182,8 @@ TextureImporter:
         y: 0
         width: 414
         height: 640
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -200,11 +200,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1074
+        y: 1081
         width: 775
-        height: 615
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 608
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -224,8 +224,8 @@ TextureImporter:
         y: 2163
         width: 765
         height: 627
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -242,11 +242,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 3234
-        width: 771
-        height: 187
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 3240
+        width: 770
+        height: 181
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -262,12 +262,12 @@ TextureImporter:
       name: Interaccion_Noir_13
       rect:
         serializedVersion: 2
-        x: 1914
+        x: 1920
         y: 0
-        width: 821
+        width: 815
         height: 645
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,12 +283,12 @@ TextureImporter:
       name: Interaccion_Noir_9
       rect:
         serializedVersion: 2
-        x: 1914
-        y: 1074
-        width: 812
-        height: 660
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1920
+        y: 1080
+        width: 806
+        height: 654
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -304,12 +304,12 @@ TextureImporter:
       name: Interaccion_Noir_5
       rect:
         serializedVersion: 2
-        x: 1899
-        y: 2154
-        width: 812
-        height: 627
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1918
+        y: 2159
+        width: 793
+        height: 622
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,12 +325,12 @@ TextureImporter:
       name: Interaccion_Noir_1
       rect:
         serializedVersion: 2
-        x: 1915
-        y: 3234
-        width: 809
-        height: 202
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1928
+        y: 3241
+        width: 796
+        height: 195
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -346,12 +346,12 @@ TextureImporter:
       name: Interaccion_Noir_10
       rect:
         serializedVersion: 2
-        x: 3834
-        y: 1066
-        width: 808
-        height: 686
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 3839
+        y: 1078
+        width: 803
+        height: 674
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -367,12 +367,12 @@ TextureImporter:
       name: Interaccion_Noir_6
       rect:
         serializedVersion: 2
-        x: 3834
-        y: 2154
-        width: 803
-        height: 627
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 3839
+        y: 2160
+        width: 798
+        height: 621
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -389,11 +389,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3849
-        y: 3234
+        y: 3240
         width: 795
-        height: 197
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 191
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -409,12 +409,12 @@ TextureImporter:
       name: Interaccion_Noir_14
       rect:
         serializedVersion: 2
-        x: 3850
+        x: 3894
         y: 0
-        width: 792
+        width: 748
         height: 640
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -430,12 +430,12 @@ TextureImporter:
       name: Interaccion_Noir_11
       rect:
         serializedVersion: 2
-        x: 5754
-        y: 1074
-        width: 774
-        height: 686
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 5760
+        y: 1080
+        width: 768
+        height: 680
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -451,12 +451,12 @@ TextureImporter:
       name: Interaccion_Noir_7
       rect:
         serializedVersion: 2
-        x: 5754
-        y: 2154
-        width: 779
-        height: 627
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 5760
+        y: 2159
+        width: 772
+        height: 621
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -472,12 +472,12 @@ TextureImporter:
       name: Interaccion_Noir_3
       rect:
         serializedVersion: 2
-        x: 5754
+        x: 5760
         y: 3240
-        width: 778
+        width: 772
         height: 318
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

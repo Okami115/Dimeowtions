@@ -2,20 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimationTrigger : MonoBehaviour
+public class ControlAnimationSpeed : MonoBehaviour
 {
-    [SerializeField] private string interactionAnimationName;
     [SerializeField] private Animator animator;
     [SerializeField] private PlayerStats playerStats;
 
-    [SerializeField] private float interactionAnimationDuration;
-
-    private float animatorDefaultSpeed;
+    [SerializeField] private string animationName;
+    [SerializeField] private float animationDuration;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
-        animatorDefaultSpeed = 1.0f;
     }
 
     private void OnEnable()
@@ -31,9 +28,7 @@ public class AnimationTrigger : MonoBehaviour
 
     void TriggerIntractionAnimation()
     {
-        float speedFactor = playerStats.currentSpeed / playerStats.maxSpeed;
-        animator.speed = (interactionAnimationDuration / playerStats.initialSpeed) / speedFactor;
-
-        animator.Play(interactionAnimationName);
+        animator.speed = (animationDuration * playerStats.currentSpeed);
+        animator.Play(animationName);
     }
 }

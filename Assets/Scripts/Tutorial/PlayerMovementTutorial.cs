@@ -1,16 +1,23 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.InputSystem;
 using UnityEngine;
 using System;
+using UnityEngine.Windows;
 
 namespace player
 {
-    public class PlayerMovement : MonoBehaviour
+    public class PlayerMovementTutorial : MonoBehaviour
     {
         private Transform currentPos;
 
         [SerializeField] private Transform[] pos;
         [SerializeField] private Transform Jumptarget;
         [SerializeField] private BoxCollider boxCollider;
-        [SerializeField] private PauseManager pauseScript;
+
+        private bool isMovingAvailable = false;
+        private bool isOpeningDoorAvailable = true;
+        private bool isJumpingAvailable = false;
 
         private int moveVelocity = 100;
         private int rotationVelocity = 300;
@@ -39,7 +46,7 @@ namespace player
 
         public void OnLeft()
         {
-            if (!isCounting && !pauseScript.IsPaused)
+            if (!isCounting && isMovingAvailable)
             {
                 indexPos++;
                 if (indexPos > pos.Length - 1)
@@ -53,7 +60,7 @@ namespace player
 
         public void OnRight()
         {
-            if (!isCounting && !pauseScript.IsPaused)
+            if (!isCounting && isMovingAvailable)
             {
                 indexPos--;
                 if (indexPos < 0)
@@ -67,32 +74,33 @@ namespace player
 
         public void OnInteraction()
         {
-            if(!pauseScript.IsPaused)
+            if (isOpeningDoorAvailable)
             {
                 interaction?.Invoke();
+                isJumpingAvailable = true;
             }
         }
 
         public void OnJump()
         {
-            if (!inCooldown && !pauseScript.IsPaused)
+            if (!inCooldown && isJumpingAvailable)
             {
                 boxCollider.enabled = false;
                 inCooldown = true;
                 isCounting = true;
                 jump?.Invoke();
+                isMovingAvailable = true;
             }
         }
 
         private void Update()
         {
-            Debug.Log(indexPos);
             if (isCounting)
             {
                 timmer += Time.deltaTime;
 
-                float newDistance = jumpVelocity * Time.deltaTime;
-                transform.position = Vector3.MoveTowards(transform.position, Jumptarget.position, newDistance);
+                float speed = jumpVelocity * Time.deltaTime;
+                transform.position = Vector3.MoveTowards(transform.position, Jumptarget.position, speed);
 
                 if (timmer >= timeOnAir)
                 {
@@ -117,9 +125,9 @@ namespace player
                 }
 
 
-                float newDistance = moveVelocity * Time.deltaTime;
+                float speed = moveVelocity * Time.deltaTime;
 
-                transform.position = Vector3.MoveTowards(transform.position, currentPos.position, newDistance);
+                transform.position = Vector3.MoveTowards(transform.position, currentPos.position, speed);
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, currentPos.rotation, rotationVelocity * Time.deltaTime);
             }
         }
