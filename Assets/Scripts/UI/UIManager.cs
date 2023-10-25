@@ -12,6 +12,7 @@ namespace Menu
         [SerializeField] private TextMeshProUGUI mensajesText;
         [SerializeField] private GameObject pausePanel;
         [SerializeField] private Material synthweaveSkybox;
+        [SerializeField] private Material scifiSkybox;
         [SerializeField] private PlayerStats playerStats;
 
         public event Action nextLevel;
@@ -43,6 +44,13 @@ namespace Menu
                 nextLevel?.Invoke();
                 // Mover a scenography
                 RenderSettings.skybox = synthweaveSkybox;
+            }
+
+            if (playerStats.score == 10000)
+            {
+                nextLevel?.Invoke();
+                // Mover a scenography
+                RenderSettings.skybox = scifiSkybox;
             }
         }
 

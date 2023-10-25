@@ -1,6 +1,5 @@
+using GameManager;
 using Menu;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ScenographyManager : MonoBehaviour
@@ -9,6 +8,9 @@ public class ScenographyManager : MonoBehaviour
     [SerializeField] private GameObject[] scenographySynthWave; 
     [SerializeField] private GameObject[] scenographySciFi;
 
+    private Aesthetic currentAesthetic;
+    [SerializeField] private GameManager.GameManager gameManager;
+
     [SerializeField] private UIManager uiManager;
 
 
@@ -16,16 +18,31 @@ public class ScenographyManager : MonoBehaviour
     {
         uiManager.nextLevel += ChangeScenography;
 
-        for (int i = 0; i < scenographyNoir.Length; i++) { scenographyNoir[i].SetActive(true); }
-        for (int i = 0; i < scenographySynthWave.Length; i++) { scenographySynthWave[i].SetActive(false); }
-        for (int i = 0; i < scenographySciFi.Length; i++) { scenographySciFi[i].SetActive(false); }
+        ChangeScenography();
     }
 
     private void ChangeScenography()
     {
-        for (int i = 0; i < scenographyNoir.Length; i++) { scenographyNoir[i].SetActive(false); }
-        for (int i = 0; i < scenographySynthWave.Length; i++) { scenographySynthWave[i].SetActive(true); }
-        for (int i = 0; i < scenographySciFi.Length; i++) { scenographySciFi[i].SetActive(false); }
+        currentAesthetic = gameManager.CurrentAesthetic;
+
+        if (currentAesthetic == Aesthetic.Noir)
+        {
+            for (int i = 0; i < scenographyNoir.Length; i++) { scenographyNoir[i].SetActive(true); }
+            for (int i = 0; i < scenographySynthWave.Length; i++) { scenographySynthWave[i].SetActive(false); }
+            for (int i = 0; i < scenographySciFi.Length; i++) { scenographySciFi[i].SetActive(false); }
+        }
+        else if (currentAesthetic == Aesthetic.Synthwave)
+        {
+            for (int i = 0; i < scenographyNoir.Length; i++) { scenographyNoir[i].SetActive(false); }
+            for (int i = 0; i < scenographySynthWave.Length; i++) { scenographySynthWave[i].SetActive(true); }
+            for (int i = 0; i < scenographySciFi.Length; i++) { scenographySciFi[i].SetActive(false); }
+        }
+        else if (currentAesthetic == Aesthetic.Scifi)
+        {
+            for (int i = 0; i < scenographyNoir.Length; i++) { scenographyNoir[i].SetActive(false); }
+            for (int i = 0; i < scenographySynthWave.Length; i++) { scenographySynthWave[i].SetActive(false); }
+            for (int i = 0; i < scenographySciFi.Length; i++) { scenographySciFi[i].SetActive(true); }
+        }
     }
 
 }
