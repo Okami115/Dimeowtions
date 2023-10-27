@@ -42,6 +42,7 @@ namespace Menu
             if (playerStats.score == 5000)
             {
                 nextLevel?.Invoke();
+                // Trigger
                 // Mover a scenography
                 RenderSettings.skybox = synthweaveSkybox;
             }
@@ -49,6 +50,7 @@ namespace Menu
             if (playerStats.score == 10000)
             {
                 nextLevel?.Invoke();
+                // Trigger
                 // Mover a scenography
                 RenderSettings.skybox = scifiSkybox;
             }

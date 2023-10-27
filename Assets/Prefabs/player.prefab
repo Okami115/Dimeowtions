@@ -4861,12 +4861,12 @@ GameObject:
   - component: {fileID: 3415292112200150144}
   - component: {fileID: 5318597222730325984}
   - component: {fileID: 4012270064366968324}
-  - component: {fileID: 3126657341757686682}
   - component: {fileID: 5459710001043078097}
   - component: {fileID: 4461224420460068493}
   - component: {fileID: 4358142924231640228}
   - component: {fileID: 5834923617488784445}
   - component: {fileID: 1626697998236953445}
+  - component: {fileID: 1409219202622637206}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -4942,26 +4942,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3126657341757686682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5370432131199041432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f05f8f29bfb3f7242a8fd53e486830d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  left: {fileID: 0}
-  mid: {fileID: 0}
-  right: {fileID: 0}
-  rightMid: {fileID: 0}
-  leftMid: {fileID: 0}
-  top: {fileID: 0}
-  rightTop: {fileID: 0}
-  leftTop: {fileID: 0}
 --- !u!65 &5459710001043078097
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5057,6 +5037,7 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 0
+  pauseManager: {fileID: 0}
 --- !u!114 &1626697998236953445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5071,6 +5052,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collider: {fileID: 5459710001043078097}
   checkColision: {fileID: 5834923617488784445}
+  uiManager: {fileID: 0}
+  pauseManager: {fileID: 0}
+  maxTime: 0
+  currentTime: 0
+--- !u!114 &1409219202622637206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5370432131199041432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787f7eed29104a74bbfc40d711a6d775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  Jumptarget: {fileID: 0}
+  boxCollider: {fileID: 5459710001043078097}
+  timeOnAir: 0.1
 --- !u!1 &6464156403485631533
 GameObject:
   m_ObjectHideFlags: 0

@@ -63,12 +63,18 @@ namespace GameManager
                 ControlTimeScale(1.0f);
                 pauseManager.SetActive(true);
             }
+            
+            if (portalImage.enabled)
+            {
+                color.a += Time.deltaTime;
+
+                if (color.a > 1.0f) { color.a = 1.0f; }
+            }
         }
 
         private void ChangeAestetic()
         {
             portalImage.enabled = true;
-            color.a = 1.0f;
             portalImage.color = color;
             ControlTimeScale(0.0f);
             portal.Play();
