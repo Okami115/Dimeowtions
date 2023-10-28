@@ -110,57 +110,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Interaccion_Scifi_sheet_0
-      rect:
-        serializedVersion: 2
-        x: 1171
-        y: 0
-        width: 512
-        height: 315
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02ac3f0c29c21dd4fab273b5de2f42cc
-      internalID: 459684492
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Interaccion_Scifi_sheet_1
-      rect:
-        serializedVersion: 2
-        x: 1683
-        y: 0
-        width: 563
-        height: 315
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bfbf8e5906472784b8e855af26bbd912
-      internalID: 2015415450
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Interaccion_Scifi_sheet_2
       rect:
         serializedVersion: 2
-        x: 2246
-        y: 0
-        width: 551
-        height: 315
+        x: 1119
+        y: 942
+        width: 220
+        height: 83
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,12 +134,12 @@ TextureImporter:
       name: Interaccion_Scifi_sheet_3
       rect:
         serializedVersion: 2
-        x: 2797
-        y: 0
-        width: 563
-        height: 315
+        x: 1679
+        y: 942
+        width: 208
+        height: 107
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,12 +155,12 @@ TextureImporter:
       name: Interaccion_Scifi_sheet_4
       rect:
         serializedVersion: 2
-        x: 3360
-        y: 0
-        width: 562
-        height: 315
+        x: 0
+        y: 627
+        width: 194
+        height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -218,12 +176,12 @@ TextureImporter:
       name: Interaccion_Scifi_sheet_5
       rect:
         serializedVersion: 2
-        x: 3922
-        y: 0
-        width: 559
-        height: 315
+        x: 559
+        y: 627
+        width: 179
+        height: 140
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -239,12 +197,12 @@ TextureImporter:
       name: Interaccion_Scifi_sheet_6
       rect:
         serializedVersion: 2
-        x: 4481
-        y: 0
-        width: 560
-        height: 315
+        x: 1119
+        y: 627
+        width: 162
+        height: 160
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -260,12 +218,12 @@ TextureImporter:
       name: Interaccion_Scifi_sheet_7
       rect:
         serializedVersion: 2
-        x: 5041
-        y: 0
-        width: 561
-        height: 315
+        x: 1679
+        y: 627
+        width: 145
+        height: 176
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -281,12 +239,12 @@ TextureImporter:
       name: Interaccion_Scifi_sheet_8
       rect:
         serializedVersion: 2
-        x: 5602
-        y: 0
-        width: 561
-        height: 315
+        x: 0
+        y: 312
+        width: 130
+        height: 190
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -302,12 +260,12 @@ TextureImporter:
       name: Interaccion_Scifi_sheet_9
       rect:
         serializedVersion: 2
-        x: 6163
-        y: 0
-        width: 562
-        height: 315
+        x: 559
+        y: 312
+        width: 126
+        height: 196
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -323,12 +281,12 @@ TextureImporter:
       name: Interaccion_Scifi_sheet_10
       rect:
         serializedVersion: 2
-        x: 6725
-        y: 0
-        width: 560
-        height: 315
+        x: 1119
+        y: 312
+        width: 117
+        height: 196
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -344,12 +302,12 @@ TextureImporter:
       name: Interaccion_Scifi_sheet_11
       rect:
         serializedVersion: 2
-        x: 7285
-        y: 0
-        width: 556
-        height: 315
+        x: 1679
+        y: 312
+        width: 120
+        height: 167
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -365,12 +323,12 @@ TextureImporter:
       name: Interaccion_Scifi_sheet_12
       rect:
         serializedVersion: 2
-        x: 7841
+        x: 0
         y: 0
-        width: 560
-        height: 315
+        width: 183
+        height: 131
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -386,12 +344,12 @@ TextureImporter:
       name: Interaccion_Scifi_sheet_13
       rect:
         serializedVersion: 2
-        x: 8401
+        x: 582
         y: 0
-        width: 573
-        height: 315
+        width: 163
+        height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -404,13 +362,55 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: Interaccion_Scifi_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 942
+        width: 95
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ced455db73ba194cb4cd5fdc26750f2
+      internalID: 459684492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interaccion_Scifi_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 942
+        width: 230
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec15fa94876c7e478b330a872e11af3
+      internalID: 2015415450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: Interaccion_Scifi_sheet_14
       rect:
         serializedVersion: 2
-        x: 8974
-        y: 0
-        width: 546
-        height: 315
+        x: 1100
+        y: 1
+        width: 212
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,8 +418,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e95a1d90912d74e46a8f85cc3cabc2c7
-      internalID: -1918910862
+      spriteID: 75f23571cbdd5fd4fb00a77e89c76f49
+      internalID: 1311004892
       vertices: []
       indices: 
       edges: []
@@ -441,7 +441,7 @@ TextureImporter:
       Interaccion_Scifi_sheet_11: -1705057039
       Interaccion_Scifi_sheet_12: 1560731003
       Interaccion_Scifi_sheet_13: -1350297301
-      Interaccion_Scifi_sheet_14: -1918910862
+      Interaccion_Scifi_sheet_14: 1311004892
       Interaccion_Scifi_sheet_2: -2143884188
       Interaccion_Scifi_sheet_3: -728395095
       Interaccion_Scifi_sheet_4: -1603520299

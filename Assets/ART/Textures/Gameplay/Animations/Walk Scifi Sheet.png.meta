@@ -114,9 +114,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 506
-        height: 315
+        y: 973
+        width: 297
+        height: 117
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -126,111 +126,6 @@ TextureImporter:
       bones: []
       spriteID: bbf32d9f13c2d8d4bbe4c1db027851d8
       internalID: -397605431
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk Scifi Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 506
-        y: 0
-        width: 511
-        height: 314
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f25ca3d739a89fe48b471a144840a068
-      internalID: 1408264428
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk Scifi Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 1017
-        y: 0
-        width: 633
-        height: 315
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9faaf37a611cb5d4c87843a0167ba52c
-      internalID: 1618693182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk Scifi Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 1650
-        y: 0
-        width: 608
-        height: 315
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7122560b75baadb41b211a5379db09a1
-      internalID: -34872754
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk Scifi Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 2258
-        y: 0
-        width: 583
-        height: 315
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b4e73f69334c97a49b9680ea9f24d799
-      internalID: 839719944
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk Scifi Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 2841
-        y: 0
-        width: 555
-        height: 315
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f9c5004cc42076b49af6a938189fd178
-      internalID: 1113334451
       vertices: []
       indices: 
       edges: []
@@ -307,7 +202,7 @@ TextureImporter:
         width: 531
         height: 315
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -315,6 +210,195 @@ TextureImporter:
       bones: []
       spriteID: 227ffa9be74a2e44a86f7abf728a3346
       internalID: 808153921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk Scifi Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 973
+        width: 297
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdaac0e4cc296204c892f3598c20096a
+      internalID: 1408264428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk Scifi Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 973
+        width: 297
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3780267f6d61a974aad629bb29556799
+      internalID: 1618693182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk Scifi Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 973
+        width: 297
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e8cde7a937fcc4badf2d0d03f35e23
+      internalID: -34872754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk Scifi Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 658
+        width: 297
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609feaf8389ef4b4793ffefde17766af
+      internalID: 839719944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk Scifi Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 658
+        width: 297
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e38d0b9435b780479ba6b2146f0e59c
+      internalID: 1113334451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk Scifi Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 658
+        width: 297
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e4a1c20c70487459e30f226b20ad7a
+      internalID: 1062580855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk Scifi Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 658
+        width: 297
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aac109ea988caa4eb52db175803e6ff
+      internalID: -907730557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk Scifi Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 343
+        width: 297
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3facab7e4398c45872428b97d4d706
+      internalID: -1785073333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk Scifi Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 353
+        width: 297
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187f9d57ffa5b2a48b4e6ea92ecb5fe5
+      internalID: 992371624
       vertices: []
       indices: 
       edges: []
@@ -332,6 +416,10 @@ TextureImporter:
     nameFileIdTable:
       Walk Scifi Sheet_0: -397605431
       Walk Scifi Sheet_1: 1408264428
+      Walk Scifi Sheet_10: 992371624
+      Walk Scifi Sheet_12: 1062580855
+      Walk Scifi Sheet_13: -907730557
+      Walk Scifi Sheet_14: -1785073333
       Walk Scifi Sheet_2: 1618693182
       Walk Scifi Sheet_3: -34872754
       Walk Scifi Sheet_4: 839719944

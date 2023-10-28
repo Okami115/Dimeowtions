@@ -114,9 +114,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 470
-        height: 315
+        y: 859
+        width: 293
+        height: 117
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: Walk Synth Sheet_1
       rect:
         serializedVersion: 2
-        x: 470
-        y: 0
-        width: 553
-        height: 315
+        x: 522
+        y: 859
+        width: 293
+        height: 117
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: Walk Synth Sheet_2
       rect:
         serializedVersion: 2
-        x: 1023
-        y: 0
-        width: 623
-        height: 315
+        x: 1071
+        y: 859
+        width: 293
+        height: 117
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: Walk Synth Sheet_3
       rect:
         serializedVersion: 2
-        x: 1646
-        y: 0
-        width: 607
-        height: 315
+        x: 1649
+        y: 859
+        width: 293
+        height: 117
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: Walk Synth Sheet_4
       rect:
         serializedVersion: 2
-        x: 2253
-        y: 0
-        width: 568
-        height: 315
+        x: 0
+        y: 544
+        width: 293
+        height: 117
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +218,10 @@ TextureImporter:
       name: Walk Synth Sheet_5
       rect:
         serializedVersion: 2
-        x: 2821
-        y: 0
-        width: 574
-        height: 315
+        x: 559
+        y: 544
+        width: 293
+        height: 117
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,7 +244,7 @@ TextureImporter:
         width: 631
         height: 315
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -265,7 +265,7 @@ TextureImporter:
         width: 557
         height: 315
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -286,7 +286,7 @@ TextureImporter:
         width: 519
         height: 315
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -307,7 +307,7 @@ TextureImporter:
         width: 479
         height: 315
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -315,6 +315,90 @@ TextureImporter:
       bones: []
       spriteID: 37a56cdcb062ef14f81f62b5bd11c47e
       internalID: 2129775260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk Synth Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 544
+        width: 293
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccef2bb900cf2cd47846a003831de2af
+      internalID: -781655145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk Synth Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 544
+        width: 293
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce22c35add65296419f0abfbbee35450
+      internalID: 1715611751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk Synth Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 229
+        width: 293
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 191cd7b4febcacd488cc7c9ce13c7cb6
+      internalID: -810382076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk Synth Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 236
+        width: 293
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f673401de48704d87d1f5653c10cf1
+      internalID: 1449024562
       vertices: []
       indices: 
       edges: []
@@ -332,6 +416,10 @@ TextureImporter:
     nameFileIdTable:
       Walk Synth Sheet_0: -1982841596
       Walk Synth Sheet_1: -1174649341
+      Walk Synth Sheet_10: -781655145
+      Walk Synth Sheet_11: 1715611751
+      Walk Synth Sheet_12: -810382076
+      Walk Synth Sheet_13: 1449024562
       Walk Synth Sheet_2: -2139341556
       Walk Synth Sheet_3: -668823728
       Walk Synth Sheet_4: 1853779453

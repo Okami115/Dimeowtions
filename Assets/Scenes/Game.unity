@@ -292,6 +292,7 @@ GameObject:
   - component: {fileID: 40801156}
   - component: {fileID: 40801158}
   - component: {fileID: 40801157}
+  - component: {fileID: 40801159}
   m_Layer: 0
   m_Name: Walk Animation
   m_TagString: Untagged
@@ -306,9 +307,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40801155}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 11.401164, y: 5.11929, z: 1.7513}
+  m_LocalScale: {x: 11.401162, y: 5.119289, z: 1.7512997}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 141360648}
@@ -356,6 +357,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40801155}
   m_CullTransparentMesh: 1
+--- !u!114 &40801159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40801155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 820dddb93b32d754eadbfb4af0856c21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 141360650}
+  playerStats: {fileID: 11400000, guid: 3b0d911bf7ddf6b4f91f7798a73b6989, type: 2}
+  animationDuration: 1
 --- !u!1 &87861380
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,7 +761,7 @@ GameObject:
   m_Component:
   - component: {fileID: 141360648}
   - component: {fileID: 141360650}
-  - component: {fileID: 141360649}
+  - component: {fileID: 141360651}
   m_Layer: 0
   m_Name: Cat Claws
   m_TagString: Untagged
@@ -765,8 +781,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1534486402}
   - {fileID: 40801156}
+  - {fileID: 1534486402}
   m_Father: {fileID: 2062856949}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -774,22 +790,6 @@ RectTransform:
   m_AnchoredPosition: {x: 960.00006, y: 253}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &141360649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 141360647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 820dddb93b32d754eadbfb4af0856c21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 141360650}
-  playerStats: {fileID: 11400000, guid: 3b0d911bf7ddf6b4f91f7798a73b6989, type: 2}
-  animationName: Interaction_Noir
-  animationDuration: 2
 --- !u!95 &141360650
 Animator:
   serializedVersion: 5
@@ -811,6 +811,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &141360651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141360647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73508c290923f0249882e9b2e3e69a91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 26147096}
+  uiIManager: {fileID: 1065173194}
+  animator: {fileID: 141360650}
 --- !u!1 &176276610
 GameObject:
   m_ObjectHideFlags: 0
@@ -9894,6 +9909,8 @@ GameObject:
   - component: {fileID: 1534486402}
   - component: {fileID: 1534486404}
   - component: {fileID: 1534486403}
+  - component: {fileID: 1534486405}
+  - component: {fileID: 1534486406}
   m_Layer: 0
   m_Name: Interaction Animation
   m_TagString: Untagged
@@ -9908,9 +9925,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1534486401}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.3592, y: 2.6146, z: 1}
+  m_LocalScale: {x: 4.359199, y: 2.6145995, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 141360648}
@@ -9958,6 +9975,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1534486401}
   m_CullTransparentMesh: 1
+--- !u!114 &1534486405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534486401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 820dddb93b32d754eadbfb4af0856c21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 141360650}
+  playerStats: {fileID: 11400000, guid: 3b0d911bf7ddf6b4f91f7798a73b6989, type: 2}
+  animationDuration: 2
+--- !u!114 &1534486406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534486401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1f438e69b055d04786426890a7e93ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 141360650}
+  isOpeningDoorName: isOpeningDoor
 --- !u!1001 &1540056558
 PrefabInstance:
   m_ObjectHideFlags: 0
