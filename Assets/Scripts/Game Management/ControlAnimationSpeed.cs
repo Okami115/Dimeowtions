@@ -7,10 +7,10 @@ public class ControlAnimationSpeed : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private PlayerStats playerStats;
 
-    [SerializeField] private float animationDuration;
+    [SerializeField] private float animationDurationSec;
 
     private void Update()
     {
-        animator.speed = (animationDuration * playerStats.currentSpeed);
+        animator.speed = (animationDurationSec * playerStats.currentSpeed);
     }
 }
