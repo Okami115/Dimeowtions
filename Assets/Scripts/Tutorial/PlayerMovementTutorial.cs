@@ -95,8 +95,7 @@ namespace player
                 boxCollider.enabled = false;
                 inCooldown = true;
                 isCounting = true;
-                jump?.Invoke();
-                isMovingAvailable = true;
+                jump?.Invoke();               
                 isAntiGravityAvailable = true;
             }
         }
@@ -120,6 +119,7 @@ namespace player
                             currentPos = pos[i += halfPosCount];
                         }
 
+                        isMovingAvailable = true;
                         changeGravAction?.Invoke();
                         return;
                     }

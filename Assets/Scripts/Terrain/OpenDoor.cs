@@ -21,7 +21,7 @@ public class OpenDoor : MonoBehaviour
         if (other.tag == "Player")
         {
             pm.interaction += OpenningDoor;
-            canOpen?.Invoke("Press E to OPEN");
+            canOpen?.Invoke("");
         }
     }
 
