@@ -13,6 +13,7 @@ namespace player
         [SerializeField] private GameObject pauseManager;
 
         private string obstacleTag = "Obstacle"; 
+        private string coinTag = "Coin"; 
         private string emptyTag = "Empty"; 
         private float raycastDistanceObjetc = 1f;
         Ray objetcRay;
@@ -35,6 +36,11 @@ namespace player
                     UI[2].SetActive(false);
                     UI[1].SetActive(true);
                     Time.timeScale = 0.0f;
+                }
+                
+                if (hitInfo.collider.CompareTag(coinTag))
+                {
+                    
                 }
             }
 
