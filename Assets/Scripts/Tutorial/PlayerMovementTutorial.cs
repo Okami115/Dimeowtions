@@ -43,6 +43,7 @@ namespace player
         public event Action interaction;
         public event Action jump;
         public event Action moveAction;
+        public event Action changeGravAction;
 
         private void Start()
         {
@@ -119,6 +120,7 @@ namespace player
                             currentPos = pos[i += halfPosCount];
                         }
 
+                        changeGravAction?.Invoke();
                         return;
                     }
                 }

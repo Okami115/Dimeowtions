@@ -13,6 +13,7 @@ public class TutorialSlowMotion : MonoBehaviour
     [SerializeField] private bool isSlowMoAfterJump;
     [SerializeField] private bool isSlowMoAfterDoor;
     [SerializeField] private bool isSlowMoAfterMoving;
+    [SerializeField] private bool isSlowMoAfterChangeGrav;
     [SerializeField] private GameObject door;
 
     [SerializeField] private TutorialUIManager tutorialUIManager;
@@ -26,6 +27,8 @@ public class TutorialSlowMotion : MonoBehaviour
             player.interaction += ExitSlowMotion;
         if (isSlowMoAfterMoving)
             player.moveAction += ExitSlowMotion;
+        if (isSlowMoAfterChangeGrav)
+            player.changeGravAction += ExitSlowMotion;
     }
 
     private void OnTriggerEnter(Collider other)
