@@ -63,13 +63,13 @@ AnimationClip:
     - time: 0.25
       value: {fileID: 1408264428, guid: 6af7fe3a39021ed458ebb8eda486227a, type: 3}
     - time: 0.3
-      value: {fileID: 1113334451, guid: 6af7fe3a39021ed458ebb8eda486227a, type: 3}
-    - time: 0.35
       value: {fileID: 1618693182, guid: 6af7fe3a39021ed458ebb8eda486227a, type: 3}
-    - time: 0.4
+    - time: 0.35
       value: {fileID: -34872754, guid: 6af7fe3a39021ed458ebb8eda486227a, type: 3}
-    - time: 0.45
+    - time: 0.4
       value: {fileID: 839719944, guid: 6af7fe3a39021ed458ebb8eda486227a, type: 3}
+    - time: 0.45
+      value: {fileID: 1113334451, guid: 6af7fe3a39021ed458ebb8eda486227a, type: 3}
     attribute: m_Sprite
     path: Walk Animation
     classID: 114
@@ -107,10 +107,10 @@ AnimationClip:
     - {fileID: -1998816982, guid: 6af7fe3a39021ed458ebb8eda486227a, type: 3}
     - {fileID: 808153921, guid: 6af7fe3a39021ed458ebb8eda486227a, type: 3}
     - {fileID: 1408264428, guid: 6af7fe3a39021ed458ebb8eda486227a, type: 3}
-    - {fileID: 1113334451, guid: 6af7fe3a39021ed458ebb8eda486227a, type: 3}
     - {fileID: 1618693182, guid: 6af7fe3a39021ed458ebb8eda486227a, type: 3}
     - {fileID: -34872754, guid: 6af7fe3a39021ed458ebb8eda486227a, type: 3}
     - {fileID: 839719944, guid: 6af7fe3a39021ed458ebb8eda486227a, type: 3}
+    - {fileID: 1113334451, guid: 6af7fe3a39021ed458ebb8eda486227a, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

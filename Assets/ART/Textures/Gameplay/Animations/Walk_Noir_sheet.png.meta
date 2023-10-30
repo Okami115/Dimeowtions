@@ -113,10 +113,10 @@ TextureImporter:
       name: Walk_Noid_sheet_0
       rect:
         serializedVersion: 2
-        x: 71
+        x: 113
         y: 630
-        width: 297
-        height: 107
+        width: 293
+        height: 117
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: Walk_Noid_sheet_1
       rect:
         serializedVersion: 2
-        x: 684
-        y: 630
-        width: 286
-        height: 103
+        x: 654
+        y: 631
+        width: 293
+        height: 117
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: Walk_Noid_sheet_2
       rect:
         serializedVersion: 2
-        x: 1276
+        x: 1220
         y: 630
-        width: 279
-        height: 107
+        width: 293
+        height: 117
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: Walk_Noid_sheet_3
       rect:
         serializedVersion: 2
-        x: 1826
+        x: 1807
         y: 630
-        width: 282
-        height: 105
+        width: 293
+        height: 117
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: Walk_Noid_sheet_4
       rect:
         serializedVersion: 2
-        x: 126
+        x: 148
         y: 315
-        width: 283
-        height: 119
+        width: 293
+        height: 117
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +218,10 @@ TextureImporter:
       name: Walk_Noid_sheet_5
       rect:
         serializedVersion: 2
-        x: 662
+        x: 707
         y: 315
-        width: 283
-        height: 119
+        width: 293
+        height: 117
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +239,10 @@ TextureImporter:
       name: Walk_Noid_sheet_6
       rect:
         serializedVersion: 2
-        x: 1231
+        x: 1264
         y: 315
-        width: 273
-        height: 122
+        width: 293
+        height: 117
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +260,10 @@ TextureImporter:
       name: Walk_Noid_sheet_7
       rect:
         serializedVersion: 2
-        x: 1814
+        x: 1799
         y: 315
-        width: 273
-        height: 119
+        width: 293
+        height: 117
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,9 +281,9 @@ TextureImporter:
       name: Walk_Noid_sheet_8
       rect:
         serializedVersion: 2
-        x: 157
+        x: 127
         y: 0
-        width: 297
+        width: 293
         height: 117
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -302,9 +302,9 @@ TextureImporter:
       name: Walk_Noid_sheet_9
       rect:
         serializedVersion: 2
-        x: 727
+        x: 698
         y: 0
-        width: 288
+        width: 293
         height: 117
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

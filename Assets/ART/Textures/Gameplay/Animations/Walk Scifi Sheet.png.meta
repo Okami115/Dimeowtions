@@ -282,7 +282,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 658
+        y: 659
         width: 297
         height: 117
       alignment: 0
@@ -320,7 +320,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk Scifi Sheet_12
+      name: Walk Scifi Sheet_G
       rect:
         serializedVersion: 2
         x: 1117
@@ -383,7 +383,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk Scifi Sheet_10
+      name: Walk Scifi Sheet_15
       rect:
         serializedVersion: 2
         x: 542
@@ -416,10 +416,9 @@ TextureImporter:
     nameFileIdTable:
       Walk Scifi Sheet_0: -397605431
       Walk Scifi Sheet_1: 1408264428
-      Walk Scifi Sheet_10: 992371624
-      Walk Scifi Sheet_12: 1062580855
       Walk Scifi Sheet_13: -907730557
       Walk Scifi Sheet_14: -1785073333
+      Walk Scifi Sheet_15: 992371624
       Walk Scifi Sheet_2: 1618693182
       Walk Scifi Sheet_3: -34872754
       Walk Scifi Sheet_4: 839719944
@@ -428,6 +427,7 @@ TextureImporter:
       Walk Scifi Sheet_7: 1777580363
       Walk Scifi Sheet_8: -1998816982
       Walk Scifi Sheet_9: 808153921
+      Walk Scifi Sheet_G: 1062580855
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
