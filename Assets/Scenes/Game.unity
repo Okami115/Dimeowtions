@@ -4142,7 +4142,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 100
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -12088,7 +12088,7 @@ PrefabInstance:
       objectReference: {fileID: 1162649121}
     - target: {fileID: 5834923617488784445, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5834923617488784445, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
       propertyPath: pauseScript
@@ -12206,6 +12206,10 @@ MonoBehaviour:
   - {fileID: 2099964076}
   Jumptarget: {fileID: 724248928}
   boxCollider: {fileID: 1702334624}
+  moveVelocity: 100
+  rotationVelocity: 300
+  jumpVelocity: 500
+  gravChangeVelocity: 1000
   timeOnAir: 0.1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
