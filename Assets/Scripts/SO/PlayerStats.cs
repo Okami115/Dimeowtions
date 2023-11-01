@@ -6,6 +6,7 @@ public class PlayerStats : ScriptableObject
     public float currentSpeed;
     public float initialSpeed;
     public float maxSpeed;
-    public int score;
+    public int distanceTraveled;
+    public int collectedObjects;
     public int maxScore;
 }

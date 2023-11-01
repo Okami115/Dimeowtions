@@ -5,6 +5,8 @@ namespace player
 {
     public class CheckColision : MonoBehaviour
     {
+        [SerializeField] private PlayerStats playerStats;
+
         [SerializeField] private Transform pivot;
 
         [SerializeField] private GameObject[] UI;
@@ -40,7 +42,8 @@ namespace player
                 
                 if (hitInfo.collider.CompareTag(coinTag))
                 {
-                    
+                    playerStats.collectedObjects += 100;
+                    Destroy(hitInfo.collider);
                 }
             }
 

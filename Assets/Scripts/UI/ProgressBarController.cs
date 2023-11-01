@@ -18,6 +18,6 @@ public class ProgressBarController : MonoBehaviour
 
     private float CalculateProgress()
     {
-        return Mathf.Clamp01((playerStats.score * 0.01f) / (playerStats.maxScore * 0.01f)) ;
+        return Mathf.Clamp01((playerStats.distanceTraveled * 0.01f) / (playerStats.maxScore * 0.01f)) ;
     }
 }

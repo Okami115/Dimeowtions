@@ -20,7 +20,7 @@ namespace Terrain
         private void Start()
         {
             playerStats.currentSpeed = playerStats.initialSpeed;
-            playerStats.score = 0;
+            playerStats.distanceTraveled = 0;
         }
 
         private void Update()
@@ -51,7 +51,7 @@ namespace Terrain
             if (ui)
                 ui.Nextlevel();
 
-            playerStats.score += 100;
+            playerStats.distanceTraveled += 100;
         }
     }
 }

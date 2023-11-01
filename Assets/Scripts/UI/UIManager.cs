@@ -30,16 +30,16 @@ namespace Menu
         private void Update()
         {
             if (scoreText)
-                scoreText.text = playerStats.score.ToString();
+                scoreText.text = playerStats.collectedObjects.ToString();
 
             if (scoreTextLose)
-                scoreTextLose.text = playerStats.score.ToString();
+                scoreTextLose.text = playerStats.collectedObjects.ToString();
         }
 
         public void Nextlevel()
         {
             // Mover a GameManager
-            if (playerStats.score == 5000)
+            if (playerStats.distanceTraveled == 5000)
             {
                 nextLevel?.Invoke();
                 // Trigger
@@ -47,7 +47,7 @@ namespace Menu
                 RenderSettings.skybox = synthweaveSkybox;
             }
 
-            if (playerStats.score == 10000)
+            if (playerStats.distanceTraveled == 10000)
             {
                 nextLevel?.Invoke();
                 // Trigger

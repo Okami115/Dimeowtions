@@ -17,6 +17,8 @@ namespace GameManager
 
     public class GameManager : MonoBehaviour
     {
+        [SerializeField] private PlayerStats playerStats;
+
         [SerializeField] private PauseManager pauseScript;
         [SerializeField] private UIManager uiManager;
         [SerializeField] private VideoPlayer portal;
@@ -45,6 +47,7 @@ namespace GameManager
 
         private void Start()
         {
+            playerStats.collectedObjects = 0;
             ControlTimeScale(0.0f);
             pauseManager.SetActive(false);
             currentAesthetic = Aesthetic.Noir;
