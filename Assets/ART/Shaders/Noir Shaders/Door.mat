@@ -37,14 +37,14 @@ Material:
     - _Brightness: 0.288
     - _Detail: 0.138
     - _Grayscale: 1
-    - _HatchIntensity: 1
-    - _Intensity: 0.949
+    - _HatchIntensity: 0
+    - _Intensity: 1
     - _OutlineColor: 1
     - _OutlineThickness: 0.5
     - _Saturation: 1
     - _ShadingDetail: 0.8
     - _Steps: 0.293
-    - _Strength: 1
+    - _Strength: 0.6
     m_Colors:
     - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
