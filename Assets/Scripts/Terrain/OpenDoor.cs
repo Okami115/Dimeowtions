@@ -6,14 +6,14 @@ using UnityEngine;
 
 public class OpenDoor : MonoBehaviour
 {
-    [SerializeField] private player.PlayerMovement pm;
+    [SerializeField] private player.PlayerMovementTutorial pm;
     [SerializeField] private GameObject door;
     public static event Action<String> canOpen;
     public static event Action openDoor;
 
     private void Awake()
     {
-        pm = FindAnyObjectByType<player.PlayerMovement>();
+        pm = FindAnyObjectByType<player.PlayerMovementTutorial>();
     }
 
     private void OnTriggerEnter(Collider other)
