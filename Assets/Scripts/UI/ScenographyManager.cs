@@ -32,7 +32,7 @@ public class ScenographyManager : MonoBehaviour
         if(currentScenery)
             currentScenery.Hide();
         currentAesthetic = gameManager.CurrentAesthetic;
-        for (int i = 0; i < sceneries.Length - 1; i++)
+        for (int i = 0; i < sceneries.Length; i++)
         {
             if (sceneries[i].id == currentAesthetic)
             {

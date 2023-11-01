@@ -8,12 +8,17 @@ public class Scenery : MonoBehaviour
     internal void Hide()
     {
         foreach (GameObject gameObject in gameObjects)
+        {
             gameObject.SetActive(false);
+        }
+
     }
 
     internal void Show()
     {
         foreach (GameObject gameObject in gameObjects)
+        {
             gameObject.SetActive(true);
+        }
     }
 }
