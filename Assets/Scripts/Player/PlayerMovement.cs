@@ -12,9 +12,9 @@ namespace player
         [SerializeField] private BoxCollider boxCollider;
         [SerializeField] private PauseManager pauseScript;
 
-        private int moveVelocity = 100;
-        private int rotationVelocity = 300;
-        private int jumpVelocity = 500;
+        [SerializeField] private int moveVelocity = 100;
+        [SerializeField] private int rotationVelocity = 300;
+        [SerializeField] private int jumpVelocity = 500;
 
         private int indexPos = 0;
 
