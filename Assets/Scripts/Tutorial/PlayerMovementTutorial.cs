@@ -12,16 +12,21 @@ namespace player
         private Transform currentPos;
 
         [SerializeField] private Transform[] pos;
+        private int halfPosCount;
+
         [SerializeField] private Transform Jumptarget;
         [SerializeField] private BoxCollider boxCollider;
+
+        [SerializeField] private int moveVelocity = 100;
+        [SerializeField] private int rotationVelocity = 300;
+        [SerializeField] private int jumpVelocity = 500;
+        [SerializeField] private int gravChangeVelocity = 1000;
 
         private bool isMovingAvailable = false;
         private bool isOpeningDoorAvailable = true;
         private bool isJumpingAvailable = false;
+        private bool isAntiGravityAvailable = false;
 
-        private int moveVelocity = 100;
-        private int rotationVelocity = 300;
-        private int jumpVelocity = 500;
 
         private int indexPos = 0;
 
@@ -38,10 +43,12 @@ namespace player
         public event Action interaction;
         public event Action jump;
         public event Action moveAction;
+        public event Action changeGravAction;
 
         private void Start()
         {
             currentPos = pos[indexPos];
+            halfPosCount = pos.Length / 2;
         }
 
         public void OnLeft()
@@ -88,8 +95,35 @@ namespace player
                 boxCollider.enabled = false;
                 inCooldown = true;
                 isCounting = true;
-                jump?.Invoke();
-                isMovingAvailable = true;
+                jump?.Invoke();               
+                isAntiGravityAvailable = true;
+            }
+        }
+
+        public void OnGravitationalChange()
+        {
+            if (!isCounting && isAntiGravityAvailable)
+            {
+                for (int i = 0; i < pos.Length; i++)
+                {
+                    if (transform.position == pos[i].position)
+                    {
+                        if ((i + pos.Length / 2) >= pos.Length)
+                        {
+                            indexPos -= halfPosCount;
+                            currentPos = pos[i -= halfPosCount];
+                        }
+                        else
+                        {
+                            indexPos += halfPosCount;
+                            currentPos = pos[i += halfPosCount];
+                        }
+
+                        isMovingAvailable = true;
+                        changeGravAction?.Invoke();
+                        return;
+                    }
+                }
             }
         }
 

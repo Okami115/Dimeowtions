@@ -8,6 +8,7 @@ TagManager:
   - Obstacle
   - Empty
   - Door
+  - Coin
   layers:
   - Default
   - TransparentFX
