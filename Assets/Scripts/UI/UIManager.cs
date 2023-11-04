@@ -1,7 +1,8 @@
 using System;
 using TMPro;
 using UnityEngine;
-
+using UnityEngine.UI;
+using UnityEngine.Video;
 
 namespace Menu
 {
@@ -14,6 +15,9 @@ namespace Menu
         [SerializeField] private Material synthweaveSkybox;
         [SerializeField] private Material scifiSkybox;
         [SerializeField] private PlayerStats playerStats;
+
+        [SerializeField] public RawImage portalImage;
+        [SerializeField] public VideoPlayer portal;
 
         public event Action nextLevel;
 

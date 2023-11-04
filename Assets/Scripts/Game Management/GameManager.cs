@@ -1,9 +1,7 @@
 using Menu;
-using System;
 using UnityEngine;
+using UnityEngine.InputSystem.LowLevel;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-using UnityEngine.Video;
 
 namespace GameManager
 {
@@ -17,69 +15,36 @@ namespace GameManager
 
     public class GameManager : MonoBehaviour
     {
-        [SerializeField] private PlayerStats playerStats;
+        [SerializeField] public PlayerStats playerStats;
 
         [SerializeField] private PauseManager pauseScript;
-        [SerializeField] private UIManager uiManager;
-        [SerializeField] private VideoPlayer portal;
-        [SerializeField] private RawImage portalImage;
+        [SerializeField] public UIManager uiManager;
         [SerializeField] private GameObject pauseManager;
 
+        [SerializeField] private StateMachine stateMachine;
+
         private bool inTutorial;
-
-        private Color color;
-
-        private Aesthetic currentAesthetic;
-        internal Aesthetic CurrentAesthetic { get => currentAesthetic; }
         public bool InTutorial { get => inTutorial; set => inTutorial = value; }
 
-        private void OnEnable()
-        {
-            pauseScript.pauseEvent += ControlTimeScale;
-            uiManager.nextLevel += ChangeAestetic;
-        }
-
-        private void OnDisable()
-        {
-            pauseScript.pauseEvent -= ControlTimeScale;
-            uiManager.nextLevel -= ChangeAestetic;
-        }
+        private Aesthetic currentAesthetic;
+        internal Aesthetic CurrentAesthetic { get => currentAesthetic; set => currentAesthetic = value; }
 
         private void Start()
         {
             playerStats.collectedObjects = 0;
-            ControlTimeScale(0.0f);
             pauseManager.SetActive(false);
-            currentAesthetic = Aesthetic.Noir;
-            color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+
+            stateMachine = new StateMachine();
+            stateMachine.AddState<NoirState>(new NoirState(stateMachine, this, 5000));
+            stateMachine.AddState<SynthwaveState>(new SynthwaveState(stateMachine, this, 10000));
+            stateMachine.AddState<SciFiState>(new SciFiState(stateMachine, this, 15000));
+
+            stateMachine.ChangeState<NoirState>();
         }
 
         private void Update()
         {
-            if(portal.isPaused && !pauseScript.IsPaused && !inTutorial)
-            {
-                color.a -= Time.deltaTime;
-
-                color.a = 0;
-                portalImage.color = color;
-                ControlTimeScale(1.0f);
-                pauseManager.SetActive(true);
-            }
-        }
-
-        private void ChangeAestetic()
-        {
-            portalImage.enabled = true;
-            color.a = 1.0f;
-            portalImage.color = color;
-            ControlTimeScale(0.0f);
-            portal.Play();
-            currentAesthetic++;
-        }
-
-        private void ControlTimeScale(float timeScale)
-        {
-            Time.timeScale = timeScale;
+            stateMachine.Update();
         }
 
         public void ReloadScene()
