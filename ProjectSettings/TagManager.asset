@@ -9,6 +9,7 @@ TagManager:
   - Empty
   - Door
   - Coin
+  - Button
   layers:
   - Default
   - TransparentFX
