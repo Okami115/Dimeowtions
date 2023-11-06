@@ -18,7 +18,7 @@ namespace GameManager
     {
         [SerializeField] public PlayerStats playerStats;
 
-        [SerializeField] private PauseManager pauseScript;
+        [SerializeField] private PauseState pauseScript;
         [SerializeField] public UIManager uiManager;
         [SerializeField] private GameObject pauseManager;
 
@@ -43,8 +43,17 @@ namespace GameManager
             stateMachine.AddState<SciFiState>(new SciFiState(stateMachine, this, 15000));
 
             stateMachine.ChangeState<TutorialState>();
+            stateMachine.onTransition += HandleTransition;
         }
 
+        private void HandleTransition(Aesthetic nextAesthetic)
+        {
+
+            Color color = new Color(1, 1, 1, 1);
+            uiManager.portalImage.enabled = true;
+            uiManager.portalImage.color = color;
+            uiManager.portal.Play();
+        }
         private void Update()
         {
             stateMachine.Update();

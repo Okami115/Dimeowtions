@@ -10,7 +10,7 @@ namespace player
         [SerializeField] private Transform[] pos;
         [SerializeField] private Transform Jumptarget;
         [SerializeField] private BoxCollider boxCollider;
-        [SerializeField] private PauseManager pauseScript;
+        [SerializeField] private PauseState pauseScript;
 
         [SerializeField] private int moveVelocity = 100;
         [SerializeField] private int rotationVelocity = 300;

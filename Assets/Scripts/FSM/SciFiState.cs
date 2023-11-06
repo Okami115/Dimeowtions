@@ -37,7 +37,7 @@ public class SciFiState : State
         {
             Time.timeScale = 0.0f;
         }
-        else if (gameManager.uiManager.portal.isPaused && !gameManager.InTutorial)
+        else if (gameManager.uiManager.portal.isPaused)
         {
             Time.timeScale = 1.0f;
             Color color = new Color(1, 1, 1, 1);

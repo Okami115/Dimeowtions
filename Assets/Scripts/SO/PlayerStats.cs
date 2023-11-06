@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New PlayerStats", menuName = "Custom/PlayerStats")]
-public class PlayerStats : ScriptableObject
+public class PlayerStats : ScriptableObject, IPlayerStats
 {
     public float currentSpeed;
     public float initialSpeed;
@@ -9,4 +9,5 @@ public class PlayerStats : ScriptableObject
     public int distanceTraveled;
     public int collectedObjects;
     public int maxScore;
+    public bool isPause;
 }

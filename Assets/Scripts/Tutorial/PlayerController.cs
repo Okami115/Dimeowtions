@@ -4,11 +4,14 @@ using UnityEngine.InputSystem;
 using UnityEngine;
 using System;
 using UnityEngine.Windows;
+using Menu;
 
 namespace player
 {
-    public class PlayerMovementTutorial : MonoBehaviour
+    public class PlayerController : MonoBehaviour
     {
+        [SerializeField] private PlayerStats playerStats;
+
         private Transform currentPos;
 
         [SerializeField] private Transform[] pos;
@@ -127,6 +130,10 @@ namespace player
             }
         }
 
+        public void OnPause()
+        {
+            playerStats.isPause = !playerStats.isPause;
+        }
         private void Update()
         {
             if (isCounting)

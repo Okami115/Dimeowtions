@@ -90,3 +90,8 @@ public class EndLevel : Condition
         return playerStats.distanceTraveled > distance;
     }
 }
+
+public class Pause : Condition
+{
+
+}

@@ -7,7 +7,7 @@ using UnityEngine;
 public class TutorialSlowMotion : MonoBehaviour
 {
     public event Action<string> triggerExitEvent;
-    [SerializeField] private PlayerMovementTutorial player;
+    [SerializeField] private PlayerController player;
     [SerializeField] private GameManager.GameManager gameManager;
     [SerializeField] private string nextStepName;
     [SerializeField] private bool isSlowMoAfterJump;
