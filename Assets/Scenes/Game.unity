@@ -470,7 +470,6 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   children: {fileID: 962601063}
   gameManager: {fileID: 26147096}
-  uiManager: {fileID: 1065173194}
 --- !u!1 &87861380
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,7 +854,6 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   children: {fileID: 1139245261}
   gameManager: {fileID: 26147096}
-  uiManager: {fileID: 1065173194}
 --- !u!1001 &134733990
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1048,7 +1046,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 26147096}
-  uiIManager: {fileID: 1065173194}
   animator: {fileID: 141360650}
 --- !u!1 &176276610
 GameObject:
@@ -1335,7 +1332,6 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   children: {fileID: 1256939364}
   gameManager: {fileID: 26147096}
-  uiManager: {fileID: 1065173194}
 --- !u!1 &250916034
 GameObject:
   m_ObjectHideFlags: 0
@@ -2100,7 +2096,6 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   children: {fileID: 410666245}
   gameManager: {fileID: 26147096}
-  uiManager: {fileID: 1065173194}
 --- !u!1 &388650605
 GameObject:
   m_ObjectHideFlags: 0
@@ -2873,7 +2868,6 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   children: {fileID: 1340937396}
   gameManager: {fileID: 26147096}
-  uiManager: {fileID: 1065173194}
 --- !u!1 &616789178
 GameObject:
   m_ObjectHideFlags: 0
@@ -2935,7 +2929,6 @@ MonoBehaviour:
   - {fileID: 1625704302}
   - {fileID: 1550380095}
   gameManager: {fileID: 26147096}
-  uiManager: {fileID: 1065173194}
   sceneries:
   - id: 0
     scenery: {fileID: 776680332}
@@ -4045,7 +4038,6 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   children: {fileID: 1780488752}
   gameManager: {fileID: 26147096}
-  uiManager: {fileID: 1065173194}
 --- !u!1001 &883708606
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4519,7 +4511,6 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   children: {fileID: 636278557}
   gameManager: {fileID: 26147096}
-  uiManager: {fileID: 1065173194}
 --- !u!1001 &979231297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4676,7 +4667,6 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   children: {fileID: 284429493}
   gameManager: {fileID: 26147096}
-  uiManager: {fileID: 1065173194}
 --- !u!1 &1009263644
 GameObject:
   m_ObjectHideFlags: 0
@@ -4873,7 +4863,6 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   children: {fileID: 1413690154}
   gameManager: {fileID: 26147096}
-  uiManager: {fileID: 1065173194}
 --- !u!1001 &1027469636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4995,6 +4984,7 @@ MonoBehaviour:
   synthweaveSkybox: {fileID: 2100000, guid: 374384d4b67d554498a702a614079f51, type: 2}
   scifiSkybox: {fileID: 2100000, guid: a4be220830e90ea4eb88b48b7fd376ce, type: 2}
   playerStats: {fileID: 11400000, guid: 3b0d911bf7ddf6b4f91f7798a73b6989, type: 2}
+  gameManager: {fileID: 26147096}
   portalImage: {fileID: 1692563493}
   portal: {fileID: 1692563495}
 --- !u!4 &1065173195
@@ -5129,7 +5119,6 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   children: {fileID: 2100936276}
   gameManager: {fileID: 26147096}
-  uiManager: {fileID: 1065173194}
 --- !u!1001 &1133238922
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5376,7 +5365,6 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   children: {fileID: 1644501173}
   gameManager: {fileID: 26147096}
-  uiManager: {fileID: 1065173194}
 --- !u!1 &1223485344
 GameObject:
   m_ObjectHideFlags: 0
@@ -5476,7 +5464,6 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   children: {fileID: 2018593803}
   gameManager: {fileID: 26147096}
-  uiManager: {fileID: 1065173194}
 --- !u!1 &1229378031
 GameObject:
   m_ObjectHideFlags: 0
@@ -5776,7 +5763,6 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   children: {fileID: 883708609}
   gameManager: {fileID: 26147096}
-  uiManager: {fileID: 1065173194}
 --- !u!1 &1303366906
 GameObject:
   m_ObjectHideFlags: 0
@@ -11982,7 +11968,6 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   children: {fileID: 1921683446}
   gameManager: {fileID: 26147096}
-  uiManager: {fileID: 1065173194}
 --- !u!1 &1644501173 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1642843760390861595, guid: 440ee010112a6804ebb8fff3683f8da3, type: 3}
@@ -12337,7 +12322,6 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   children: {fileID: 1937054959}
   gameManager: {fileID: 26147096}
-  uiManager: {fileID: 1065173194}
 --- !u!1 &1692563490
 GameObject:
   m_ObjectHideFlags: 0
@@ -12839,7 +12823,6 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   children: {fileID: 1072574035}
   gameManager: {fileID: 26147096}
-  uiManager: {fileID: 1065173194}
 --- !u!1 &1831325111
 GameObject:
   m_ObjectHideFlags: 0
@@ -12939,7 +12922,6 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   children: {fileID: 1649764550}
   gameManager: {fileID: 26147096}
-  uiManager: {fileID: 1065173194}
 --- !u!1 &1854686094
 GameObject:
   m_ObjectHideFlags: 0
@@ -13091,7 +13073,6 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   children: {fileID: 1589565936}
   gameManager: {fileID: 26147096}
-  uiManager: {fileID: 1065173194}
 --- !u!1 &1870954075
 GameObject:
   m_ObjectHideFlags: 0
@@ -13191,7 +13172,6 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   children: {fileID: 929561365}
   gameManager: {fileID: 26147096}
-  uiManager: {fileID: 1065173194}
 --- !u!1 &1890760960
 GameObject:
   m_ObjectHideFlags: 0
@@ -13404,7 +13384,6 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   children: {fileID: 266097334}
   gameManager: {fileID: 26147096}
-  uiManager: {fileID: 1065173194}
 --- !u!1 &1937054959 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1642843760390861595, guid: d9fb42c9bc51eae489bc2646c58c6c83, type: 3}
@@ -14061,7 +14040,6 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   children: {fileID: 789592498}
   gameManager: {fileID: 26147096}
-  uiManager: {fileID: 1065173194}
 --- !u!1 &2099964075
 GameObject:
   m_ObjectHideFlags: 0
@@ -14323,6 +14301,10 @@ PrefabInstance:
       propertyPath: uiManager
       value: 
       objectReference: {fileID: 1065173194}
+    - target: {fileID: 1626697998236953445, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 26147096}
     - target: {fileID: 1626697998236953445, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
       propertyPath: pauseManager
       value: 

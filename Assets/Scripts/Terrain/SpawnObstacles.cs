@@ -12,7 +12,6 @@ namespace Terrain
         [SerializeField] private GameObject[] SciFi;
         [SerializeField] private GameObject children;
         [SerializeField] private GameManager.GameManager gameManager;
-        [SerializeField] private UIManager uiManager;
         private TerrainMovement tMovement;
         private GameManager.Aesthetic currentAesthetic;
 
@@ -22,7 +21,7 @@ namespace Terrain
         {
             tMovement = GetComponent<TerrainMovement>();
             tMovement.spawnSignal += SpawnRandomObstacles;
-            uiManager.nextLevel += SpawnRandomObstacles;
+            gameManager.nextLevel += SpawnRandomObstacles;
         }
 
         private void SpawnRandomObstacles()

@@ -1,4 +1,5 @@
 using Menu;
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem.LowLevel;
 using UnityEngine.SceneManagement;
@@ -23,6 +24,8 @@ namespace GameManager
 
         [SerializeField] private StateMachine stateMachine;
 
+        public event Action nextLevel;
+
         private bool inTutorial;
         public bool InTutorial { get => inTutorial; set => inTutorial = value; }
 
@@ -32,14 +35,14 @@ namespace GameManager
         private void Start()
         {
             playerStats.collectedObjects = 0;
-            pauseManager.SetActive(false);
 
             stateMachine = new StateMachine();
+            stateMachine.AddState<TutorialState>(new TutorialState(stateMachine, this, 5000));
             stateMachine.AddState<NoirState>(new NoirState(stateMachine, this, 5000));
             stateMachine.AddState<SynthwaveState>(new SynthwaveState(stateMachine, this, 10000));
             stateMachine.AddState<SciFiState>(new SciFiState(stateMachine, this, 15000));
 
-            stateMachine.ChangeState<NoirState>();
+            stateMachine.ChangeState<TutorialState>();
         }
 
         private void Update()
@@ -54,6 +57,10 @@ namespace GameManager
             SceneManager.LoadScene(currentSceneIndex);
         }
 
+        public void CallNextLevel()
+        {
+            nextLevel.Invoke();
+        }
 
     }
 }

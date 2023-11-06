@@ -14,6 +14,7 @@ public class SciFiState : State
         Debug.Log("Enter: SCIFI :: State");
         Time.timeScale = 0.0f;
         gameManager.CurrentAesthetic = GameManager.Aesthetic.Scifi;
+        gameManager.CallNextLevel();
         Color color = new Color ( 1, 1, 1, 1 );
         gameManager.uiManager.portalImage.enabled = true;
         gameManager.uiManager.portalImage.color = color;

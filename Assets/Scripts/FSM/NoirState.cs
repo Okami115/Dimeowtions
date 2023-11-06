@@ -15,6 +15,7 @@ public class NoirState : State
         Debug.Log("Enter: NOIR :: State");
         Time.timeScale = 0.0f;
         gameManager.CurrentAesthetic = GameManager.Aesthetic.Noir;
+        gameManager.CallNextLevel();
         Color color = new Color ( 1, 1, 1, 1 );
         gameManager.uiManager.portalImage.enabled = true;
         gameManager.uiManager.portalImage.color = color;

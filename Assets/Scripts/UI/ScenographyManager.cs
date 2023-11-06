@@ -17,13 +17,12 @@ public class ScenographyManager : MonoBehaviour
 
     [SerializeField] private GameManager.GameManager gameManager;
 
-    [SerializeField] private UIManager uiManager;
     private Scenery currentScenery = null;
     [SerializeField] private IdSceneryPair[] sceneries;
 
     void Start()
     {
-        uiManager.nextLevel += ChangeScenography;
+        gameManager.nextLevel += ChangeScenography;
         ChangeScenography();
     }
 

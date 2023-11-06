@@ -47,9 +47,6 @@ namespace Terrain
         {
             transform.position += spawn.position;
             spawnSignal?.Invoke();
-            
-            if (ui)
-                ui.Nextlevel();
 
             playerStats.distanceTraveled += 100;
         }

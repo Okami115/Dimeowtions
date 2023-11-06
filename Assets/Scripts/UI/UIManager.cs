@@ -1,4 +1,3 @@
-using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,19 +15,21 @@ namespace Menu
         [SerializeField] private Material scifiSkybox;
         [SerializeField] private PlayerStats playerStats;
 
+        [SerializeField] private GameManager.GameManager gameManager;
+
         [SerializeField] public RawImage portalImage;
         [SerializeField] public VideoPlayer portal;
-
-        public event Action nextLevel;
 
         private void OnEnable()
         {
             OpenDoor.canOpen += ChangeMensajes;
+            gameManager.nextLevel += SetSkybox;
         }
 
         private void OnDisable()
         {
             OpenDoor.canOpen -= ChangeMensajes;
+            gameManager.nextLevel -= SetSkybox;
         }
 
         private void Update()
@@ -40,25 +41,7 @@ namespace Menu
                 scoreTextLose.text = playerStats.collectedObjects.ToString();
         }
 
-        public void Nextlevel()
-        {
-            // Mover a GameManager
-            if (playerStats.distanceTraveled == 5000)
-            {
-                nextLevel?.Invoke();
-                // Trigger
-                // Mover a scenography
-                RenderSettings.skybox = synthweaveSkybox;
-            }
 
-            if (playerStats.distanceTraveled == 10000)
-            {
-                nextLevel?.Invoke();
-                // Trigger
-                // Mover a scenography
-                RenderSettings.skybox = scifiSkybox;
-            }
-        }
 
         public void TogglePausePanel(bool active)
         {
@@ -68,6 +51,23 @@ namespace Menu
         private void ChangeMensajes(string mensajes)
         {
             mensajesText.text = mensajes;
+        }
+
+        private void SetSkybox()
+        {
+            if (playerStats.distanceTraveled == 5000)
+            {
+                // Trigger
+                // Mover a scenography
+                RenderSettings.skybox = synthweaveSkybox;
+            }
+
+            if (playerStats.distanceTraveled == 10000)
+            {
+                // Trigger
+                // Mover a scenography
+                RenderSettings.skybox = scifiSkybox;
+            }
         }
 
     }

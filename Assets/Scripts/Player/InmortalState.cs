@@ -8,7 +8,7 @@ public class InmortalState : MonoBehaviour
 {
     [SerializeField] private BoxCollider collider;
     [SerializeField] private CheckColision checkColision;
-    [SerializeField] private UIManager uiManager;
+    [SerializeField] private GameManager.GameManager gameManager;
     [SerializeField] private GameObject pauseManager;
 
     [SerializeField] private float maxTime;
@@ -18,7 +18,7 @@ public class InmortalState : MonoBehaviour
 
     private void Start()
     {
-        uiManager.nextLevel += ChangeInmortalState;
+        gameManager.nextLevel += ChangeInmortalState;
     }
     void Update()
     {

@@ -5,27 +5,23 @@ using UnityEngine;
 public class CatAnimatorManager : MonoBehaviour
 {
     [SerializeField] private GameManager.GameManager gameManager;
-    [SerializeField] private UIManager uiIManager;
     [SerializeField] private Animator animator;
-
-    private int currentLevel = 0;
 
     private void OnEnable()
     {
-        uiIManager.nextLevel += ChangeAnimation;
+        gameManager.nextLevel += ChangeAnimation;
         OpenDoor.openDoor += ChangeOpenDoorAnimaton;
     }
 
     private void OnDisable()
     {
-        uiIManager.nextLevel -= ChangeAnimation;
+        gameManager.nextLevel -= ChangeAnimation;
         OpenDoor.openDoor -= ChangeOpenDoorAnimaton;
     }
 
     private void ChangeAnimation()
     {
-        currentLevel = animator.GetInteger("Level");
-        animator.SetInteger("Level", currentLevel + 1);
+        animator.SetInteger("Level", (int)gameManager.CurrentAesthetic);
     }
 
     void ChangeOpenDoorAnimaton()
