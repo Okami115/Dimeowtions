@@ -8,13 +8,16 @@ using UnityEngine.UI;
 
 public class ButtonClickHandler : MonoBehaviour
 {
+    [SerializeField] private PlayerStats playerStats;
+    [SerializeField] private int playerDistanceTraveled;
+
     [SerializeField] private Camera mainCamera;
     [SerializeField] private Transform camZoomPos;
     [SerializeField] private SceneLoader sceneLoader;
     [SerializeField] private int gameSceneIndexer;
     [SerializeField] private float fadeInDuration;
     [SerializeField] private float zoomDuration;
-    [SerializeField] private string obstacleTag = "Button";
+    [SerializeField] private string obstacleTag;
 
     [SerializeField] private Image panel;
     private Color initialColor;
@@ -38,15 +41,17 @@ public class ButtonClickHandler : MonoBehaviour
 
     private void TriggerRaycast()
     {
+        Vector3 raycastOrigin = mainCamera.transform.position;
         Ray ray = mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue());
         RaycastHit hitInfo;
 
-        if (Physics.Raycast(ray, out hitInfo))
+        if (Physics.Raycast(raycastOrigin, ray.direction, out hitInfo))
         {
             if (hitInfo.collider.CompareTag(obstacleTag))
             {
                 StartCoroutine(FadeInAnimation());
                 StartCoroutine(ZoomAnimation());
+                //playerStats.distanceTraveled = playerDistanceTraveled;
             }
         }
     }
@@ -80,8 +85,6 @@ public class ButtonClickHandler : MonoBehaviour
 
             float zoomTime = elapsedTime / zoomDuration;
 
-            //mainCamera.transform.position = Vector3.Lerp(mainCamera.transform.position, camZoomPos.position, zoomTime);
-
             float newZ = Mathf.Lerp(mainCamera.transform.position.z, camZoomPos.position.z, zoomTime);
             Vector3 newPosition = new Vector3(mainCamera.transform.position.x, mainCamera.transform.position.y, newZ);
 
@@ -94,30 +97,4 @@ public class ButtonClickHandler : MonoBehaviour
 
         sceneLoader.LoadLevel(gameSceneIndexer);
     }
-
-    //private IEnumerator ShrinkAnimation()
-    //{
-    //    float fadeInElapsedTime = 0.0f;
-    //    float zoomElapsedTime = 0.0f;
-
-    //    while (fadeInElapsedTime < fadeInDuration || zoomElapsedTime < zoomDuration)
-    //    {
-    //        fadeInElapsedTime += Time.deltaTime;
-    //        zoomElapsedTime += Time.deltaTime;
-
-    //        float fadeInTime = fadeInElapsedTime / fadeInDuration;
-    //        float zoomTime = zoomElapsedTime / zoomDuration;
-
-    //        float alpha = Mathf.Lerp(initialColor.a, targetColor.a, fadeInTime);
-    //        panel.color = new Color(initialColor.r, initialColor.g, initialColor.b, alpha);
-
-    //        mainCamera.transform.position = Vector3.Lerp(mainCamera.transform.position, camZoomPos.position, zoomTime);
-    //        yield return null;
-    //    }
-
-    //    panel.color = targetColor;
-    //    mainCamera.transform.position = camZoomPos.position;
-
-    //    sceneLoader.LoadLevel(gameSceneIndexer);
-    //}
 }

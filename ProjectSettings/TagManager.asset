@@ -9,7 +9,9 @@ TagManager:
   - Empty
   - Door
   - Coin
-  - Button
+  - NoirButton
+  - SynthwaveButton
+  - SciFiButton
   layers:
   - Default
   - TransparentFX
