@@ -1,14 +1,14 @@
 using System;
 using TMPro;
 using UnityEngine;
-
+using UnityEngine.UI;
 
 namespace Menu
 {
     public class UIManager : MonoBehaviour
     {
-        [SerializeField] private TextMeshProUGUI scoreText;
-        [SerializeField] private TextMeshProUGUI scoreTextLose;
+        [SerializeField] private Text scoreText;
+        [SerializeField] private Text scoreTextLose;
         [SerializeField] private TextMeshProUGUI mensajesText;
         [SerializeField] private GameObject pausePanel;
         [SerializeField] private Material synthweaveSkybox;
@@ -33,7 +33,7 @@ namespace Menu
                 scoreText.text = playerStats.collectedObjects.ToString();
 
             if (scoreTextLose)
-                scoreTextLose.text = playerStats.collectedObjects.ToString();
+                scoreTextLose.text = "Score: " + playerStats.collectedObjects.ToString();
         }
 
         public void Nextlevel()
