@@ -1772,7 +1772,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: V0.10.0
+  m_text: V0.11.0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6203,7 +6203,6 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: d6e4e9086a59b194e8f9c92212830fd4, type: 3}
   children: {fileID: 883708609}
   gameManager: {fileID: 26147096}
-  uiManager: {fileID: 1065173194}
 --- !u!1 &1301493261
 GameObject:
   m_ObjectHideFlags: 0
@@ -12586,7 +12585,6 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: d6e4e9086a59b194e8f9c92212830fd4, type: 3}
   children: {fileID: 1921683446}
   gameManager: {fileID: 26147096}
-  uiManager: {fileID: 1065173194}
 --- !u!1 &1649764550 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1642843760390861595, guid: 7298cf09fb8d77b4ca9bb010acef6e7a, type: 3}

@@ -6,7 +6,7 @@ using UnityEngine;
 public class CatAnimatorManager : MonoBehaviour
 {
     [SerializeField] private GameManager.GameManager gameManager;
-    [SerializeField] private PlayerMovementTutorial player;
+    [SerializeField] private PlayerController player;
     [SerializeField] private UIManager uiIManager;
     [SerializeField] private Animator animator;
 

@@ -47,6 +47,13 @@ namespace Menu
 
             if (scoreTextLose)
                 scoreTextLose.text = playerStats.collectedObjects.ToString();
+
+            if(portal.isPaused)
+            {
+                Color color = new Color(1, 1, 1, 0);
+                portalImage.enabled = true;
+                portalImage.color = color;
+            }
         }
 
 
@@ -63,7 +70,7 @@ namespace Menu
 
         private void SetSkybox()
         {
-            if(playerStats.distanceTraveled == 100)
+            if(playerStats.distanceTraveled == 0)
             {
 
                 RenderSettings.skybox = synthweaveSkybox;

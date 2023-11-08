@@ -18,6 +18,7 @@ public class TutorialState : State
     public override void Enter()
     {
         Debug.Log("Enter: TUTORIAL :: State");
+        gameManager.playerStats.isPause = false;
         Time.timeScale = 0.0f;
         enterTime = Time.unscaledTime;
         gameManager.CurrentAesthetic = GameManager.Aesthetic.Noir;
@@ -39,7 +40,7 @@ public class TutorialState : State
             return;
         }
 
-        if (Time.unscaledTime < enterTime + delay)
+        if (Time.unscaledTime < enterTime + (delay * 1.5))
         {
             return;
         }
