@@ -25,22 +25,25 @@ namespace Terrain
 
         private void Update()
         {
-            if (playerStats.currentSpeed < playerStats.maxSpeed)
+            if(!playerStats.isPause)
             {
-                playerStats.currentSpeed += accelerationRate * Time.deltaTime;
+                if (playerStats.currentSpeed < playerStats.maxSpeed)
+                {
+                    playerStats.currentSpeed += accelerationRate * Time.deltaTime;
+                }
+
+                Vector3 newPos = transform.position;
+
+                newPos.z += destination.position.z * Time.deltaTime * playerStats.currentSpeed;
+
+                transform.position = newPos;
+
+                if (transform.position.z < destination.position.z)
+                {
+                    ReSpawn();
+                }
+
             }
-
-            Vector3 newPos = transform.position;
-
-            newPos.z += destination.position.z * Time.deltaTime * playerStats.currentSpeed;
-
-            transform.position = newPos;
-
-            if (transform.position.z < destination.position.z)
-            {
-                ReSpawn();
-            }
-            
         }
 
         private void ReSpawn()

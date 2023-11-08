@@ -2,23 +2,24 @@ using UnityEngine;
 
 public class SynthwaveState : State
 {
-
-    public SynthwaveState(StateMachine machine, GameManager.GameManager gameManager, int distance) : base(machine)
+    private readonly float delay;
+    private float enterTime;
+    public SynthwaveState(StateMachine machine, GameManager.GameManager gameManager, int distance, float delay) : base(machine)
     {
         this.gameManager = gameManager;
         conditions.Add(typeof(EndLevel), new EndLevel(distance, gameManager.playerStats));
+        this.delay = delay;
     }
 
     public override void Enter()
     {
         Debug.Log("Enter: SYNTHWAVE :: State");
         Time.timeScale = 0.0f;
+        enterTime = Time.unscaledTime;
         gameManager.CurrentAesthetic = GameManager.Aesthetic.Synthwave;
+        CallPortal();
         gameManager.CallNextLevel();
-        Color color = new Color ( 1, 1, 1, 1 );
-        gameManager.uiManager.portalImage.enabled = true;
-        gameManager.uiManager.portalImage.color = color;
-        gameManager.uiManager.portal.Play();
+        //gameManager.playerStats.distanceTraveled = 5000;
     }
 
     public override void Exit()
@@ -30,19 +31,19 @@ public class SynthwaveState : State
     {
         if (CheckCondition<EndLevel>())
         {
+
+
             machine.ChangeState<SciFiState>();
+            return;
         }
 
-        if (gameManager.uiManager.portal.isPlaying)
+        if (Time.unscaledTime < enterTime + delay)
         {
-            Time.timeScale = 0.0f;
+            return;
         }
-        else if (gameManager.uiManager.portal.isPaused)
+        else if (Time.unscaledTime > enterTime + delay)
         {
             Time.timeScale = 1.0f;
-            Color color = new Color(1, 1, 1, 1);
-            color.a = 0;
-            gameManager.uiManager.portalImage.color = color;
         }
     }
 }

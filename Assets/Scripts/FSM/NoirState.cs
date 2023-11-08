@@ -20,6 +20,7 @@ public class NoirState : State
         Time.timeScale = 0.0f;
         enterTime = Time.unscaledTime;
         gameManager.CurrentAesthetic = GameManager.Aesthetic.Noir;
+        CallPortal();
         gameManager.CallNextLevel();
         gameManager.playerStats.distanceTraveled = 0;
     }
@@ -35,17 +36,16 @@ public class NoirState : State
         if (CheckCondition<EndLevel>())
         {
             machine.ChangeState<SynthwaveState>();
+            return;
         }
+
         if(Time.unscaledTime < enterTime + delay)
         {
             return;
         }
-        Time.timeScale = 1.0f;
-        //se va para el uiManager
-        if (gameManager.uiManager.portal.isPaused)
+        else if (Time.unscaledTime > enterTime + delay)
         {
-            Color color = new Color(1, 1, 1, 0);
-            gameManager.uiManager.portalImage.color = color;
+            Time.timeScale = 1.0f;
         }
     }
 }

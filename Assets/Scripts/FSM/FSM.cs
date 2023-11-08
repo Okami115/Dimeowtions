@@ -1,3 +1,4 @@
+using GameManager;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,7 @@ public class StateMachine
 {
     private State currentState;
     private Dictionary<Type, State> states;
-
+    internal Action<Aesthetic> onTransition;
 
     public StateMachine()
     {
@@ -47,6 +48,7 @@ public abstract class State
     protected StateMachine machine;
     protected Dictionary<Type, Condition> conditions = new Dictionary<Type, Condition> ();
     public GameManager.GameManager gameManager;
+    public static event Action enterLevel;
 
     protected State(StateMachine machine)
     {
@@ -67,6 +69,11 @@ public abstract class State
     public abstract void Enter();
     public abstract void Update();
     public abstract void Exit();
+
+    protected void CallPortal()
+    {
+        enterLevel?.Invoke();
+    }
 }
 
 public class Condition
@@ -93,5 +100,15 @@ public class EndLevel : Condition
 
 public class Pause : Condition
 {
+    private PlayerStats playerStats;
 
+    public Pause(PlayerStats playerStats)
+    {
+        this.playerStats = playerStats;
+    }
+
+    public override bool Check()
+    {
+        return playerStats.isPause;
+    }
 }

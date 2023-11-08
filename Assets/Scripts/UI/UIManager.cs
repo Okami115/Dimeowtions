@@ -1,3 +1,4 @@
+using GameManager;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,8 +12,11 @@ namespace Menu
         [SerializeField] private TextMeshProUGUI scoreTextLose;
         [SerializeField] private TextMeshProUGUI mensajesText;
         [SerializeField] private GameObject pausePanel;
+
+        [SerializeField] private Material noirSkybox;
         [SerializeField] private Material synthweaveSkybox;
         [SerializeField] private Material scifiSkybox;
+
         [SerializeField] private PlayerStats playerStats;
 
         [SerializeField] private GameManager.GameManager gameManager;
@@ -24,12 +28,16 @@ namespace Menu
         {
             OpenDoor.canOpen += ChangeMensajes;
             gameManager.nextLevel += SetSkybox;
+            State.enterLevel += HandleTransition;
+            PauseState.pauseStateOn += TogglePausePanel;
         }
 
         private void OnDisable()
         {
             OpenDoor.canOpen -= ChangeMensajes;
             gameManager.nextLevel -= SetSkybox;
+            State.enterLevel -= HandleTransition;
+            PauseState.pauseStateOn -= TogglePausePanel;
         }
 
         private void Update()
@@ -39,6 +47,12 @@ namespace Menu
 
             if (scoreTextLose)
                 scoreTextLose.text = playerStats.collectedObjects.ToString();
+
+            if (gameManager.uiManager.portal.isPaused)
+            {
+                Color color = new Color(1, 1, 1, 0);
+                gameManager.uiManager.portalImage.color = color;
+            }
         }
 
 
@@ -55,19 +69,34 @@ namespace Menu
 
         private void SetSkybox()
         {
-            if (playerStats.distanceTraveled == 5000)
+            if(playerStats.distanceTraveled == 100)
+            {
+
+                RenderSettings.skybox = synthweaveSkybox;
+            }
+
+            if (playerStats.distanceTraveled == 5100)
             {
                 // Trigger
                 // Mover a scenography
                 RenderSettings.skybox = synthweaveSkybox;
             }
 
-            if (playerStats.distanceTraveled == 10000)
+            if (playerStats.distanceTraveled == 10100)
             {
                 // Trigger
                 // Mover a scenography
                 RenderSettings.skybox = scifiSkybox;
             }
+        }
+
+        private void HandleTransition()
+        {
+
+            Color color = new Color(1, 1, 1, 1);
+            portalImage.enabled = true;
+            portalImage.color = color;
+            portal.Play();
         }
 
     }

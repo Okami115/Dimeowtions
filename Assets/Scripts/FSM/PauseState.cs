@@ -1,25 +1,34 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PauseState : State
 {
-    public PauseState(StateMachine machine) : base(machine)
+    public static event Action<bool> pauseStateOn;
+    private State currentState;
+    public PauseState(StateMachine machine, GameManager.GameManager gameManager) : base(machine)
     {
+        this.gameManager = gameManager;
+        conditions.Add(typeof(Pause), new Pause(gameManager.playerStats));
     }
 
     public override void Enter()
     {
-        throw new System.NotImplementedException();
+        pauseStateOn.Invoke(true);
     }
 
     public override void Exit()
     {
-        throw new System.NotImplementedException();
+        pauseStateOn.Invoke(false);
     }
 
     public override void Update()
     {
-        throw new System.NotImplementedException();
+        if (!CheckCondition<Pause>())
+        {
+            //machine.ChangeState<currentState>();
+        }
     }
 }
