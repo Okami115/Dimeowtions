@@ -8,8 +8,8 @@ namespace Menu
 {
     public class UIManager : MonoBehaviour
     {
-        [SerializeField] private TextMeshProUGUI scoreText;
-        [SerializeField] private TextMeshProUGUI scoreTextLose;
+        [SerializeField] private Text scoreText;
+        [SerializeField] private Text scoreTextLose;
         [SerializeField] private TextMeshProUGUI mensajesText;
         [SerializeField] private GameObject pausePanel;
 
@@ -47,12 +47,6 @@ namespace Menu
 
             if (scoreTextLose)
                 scoreTextLose.text = playerStats.collectedObjects.ToString();
-
-            if (gameManager.uiManager.portal.isPaused)
-            {
-                Color color = new Color(1, 1, 1, 0);
-                gameManager.uiManager.portalImage.color = color;
-            }
         }
 
 
