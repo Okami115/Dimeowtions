@@ -43,7 +43,7 @@ namespace player
                 if (hitInfo.collider.CompareTag(coinTag))
                 {
                     playerStats.collectedObjects += 100;
-                    Destroy(hitInfo.collider);
+                    Destroy(hitInfo.collider.gameObject);
                 }
             }
 
