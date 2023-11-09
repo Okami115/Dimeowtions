@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.UI;
 
-public class ButtonClickHandler : MonoBehaviour
+public class PlayButtonClickHandler : MonoBehaviour
 {
     [SerializeField] private PlayerStats playerStats;
     [SerializeField] private int playerDistanceTraveled;
