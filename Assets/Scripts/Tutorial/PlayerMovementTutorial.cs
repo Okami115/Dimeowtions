@@ -44,6 +44,7 @@ namespace player
         public event Action jump;
         public event Action moveAction;
         public event Action changeGravAction;
+        public event Action<bool> jumpCooldown;
 
         private void Start()
         {
@@ -95,7 +96,8 @@ namespace player
                 boxCollider.enabled = false;
                 inCooldown = true;
                 isCounting = true;
-                jump?.Invoke();               
+                jump?.Invoke();
+                jumpCooldown?.Invoke(true);
                 isAntiGravityAvailable = true;
             }
         }
@@ -155,6 +157,7 @@ namespace player
                         boxCollider.enabled = true;
                         cooldown = maxJumpCooldown;
                         inCooldown = false;
+                        jumpCooldown?.Invoke(false);
                     }
                 }
 
