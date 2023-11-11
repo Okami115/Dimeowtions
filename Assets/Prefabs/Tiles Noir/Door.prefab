@@ -54,8 +54,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 9.376995, y: 7.580833, z: 8.30593}
-  m_Center: {x: -0.5664091, y: 3.290416, z: -1.0657607}
+  m_Size: {x: 9.376995, y: 7.580833, z: 22.26294}
+  m_Center: {x: -0.5664091, y: 3.290416, z: -8.044264}
 --- !u!114 &4199914714247974144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,6 +70,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pm: {fileID: 0}
   door: {fileID: 4798112191014869987}
+  animator: {fileID: 2482887726416375711}
+  boxCollider: {fileID: 4960741513573267450}
+  DoorOpeningStateName: DoorOpening
 --- !u!1001 &2721655108974941409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -208,6 +211,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b332404c6de0cce4cb734ed655fd2467, type: 2}
+    - target: {fileID: -4207553045490728812, guid: fae0c10fd847c3248b1b0b3c7d8e2871, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 79.00263
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: fae0c10fd847c3248b1b0b3c7d8e2871, type: 3}
       propertyPath: m_Name
       value: "Obst\xE1culo interactuable Noir"
@@ -220,6 +227,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b332404c6de0cce4cb734ed655fd2467, type: 2}
+    - target: {fileID: 4817424096424370023, guid: fae0c10fd847c3248b1b0b3c7d8e2871, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -82.75469
+      objectReference: {fileID: 0}
     - target: {fileID: 5033877158547026998, guid: fae0c10fd847c3248b1b0b3c7d8e2871, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -236,6 +247,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fae0c10fd847c3248b1b0b3c7d8e2871, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4960741513573267450}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fae0c10fd847c3248b1b0b3c7d8e2871, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2482887726416375711}
   m_SourcePrefab: {fileID: 100100000, guid: fae0c10fd847c3248b1b0b3c7d8e2871, type: 3}
 --- !u!1 &4798112191014869987 stripped
 GameObject:
@@ -263,6 +277,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 8.14073, y: 14.848526, z: 1}
   m_Center: {x: -0.019475937, y: -6.924264, z: 6.713547e-24}
+--- !u!95 &2482887726416375711
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4798112191014869987}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3c1f36d0f30db3543a6c3b0336630173, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &5322552383607783769 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fae0c10fd847c3248b1b0b3c7d8e2871, type: 3}

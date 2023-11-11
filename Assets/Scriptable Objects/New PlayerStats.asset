@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dedca58d11b6a844be07c2b39296a5c, type: 3}
   m_Name: New PlayerStats
   m_EditorClassIdentifier: 
-  currentSpeed: 5.6435566
+  currentSpeed: 5.2257395
   initialSpeed: 1
   maxSpeed: 6
-  distanceTraveled: 14800
-  collectedObjects: 1700
+  distanceTraveled: 12700
+  collectedObjects: 0
   maxScore: 15000
