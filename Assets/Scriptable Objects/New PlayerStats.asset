@@ -17,4 +17,5 @@ MonoBehaviour:
   maxSpeed: 6
   distanceTraveled: 12700
   collectedObjects: 0
+  objectsToCollect: 5
   maxScore: 15000

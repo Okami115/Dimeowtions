@@ -8,40 +8,27 @@ namespace Menu
 {
     public class UIManager : MonoBehaviour
     {
-        [SerializeField] private TextMeshProUGUI scoreText;
-        [SerializeField] private Text scoreTextLose;
         [SerializeField] private TextMeshProUGUI mensajesText;
         [SerializeField] private GameObject pausePanel;      
         [SerializeField] private Material synthweaveSkybox;
         [SerializeField] private Material scifiSkybox;
         [SerializeField] private PlayerStats playerStats;
         [SerializeField] private PlayerMovementTutorial player;
-
-        [SerializeField] private Image JumpCooldownImage;
-        [SerializeField] private Sprite JumpCooldownSprite;
-        [SerializeField] private Sprite NoJumpCooldownSprite;
+     
+        [SerializeField] private Image jumpCooldownImage;
+        [SerializeField] private Sprite jumpCooldownSprite;
+        [SerializeField] private Sprite noJumpCooldownSprite;
 
         public event Action nextLevel;
 
         private void OnEnable()
         {
-            OpenDoor.canOpen += ChangeMensajes;
             player.jumpCooldown += ChangeJumpCooldownImage;
         }
 
         private void OnDisable()
         {
-            OpenDoor.canOpen -= ChangeMensajes;
             player.jumpCooldown -= ChangeJumpCooldownImage;
-        }
-
-        private void Update()
-        {
-            if (scoreText)
-                scoreText.text = playerStats.collectedObjects.ToString();
-
-            if (scoreTextLose)
-                scoreTextLose.text = playerStats.collectedObjects.ToString();
         }
 
         public void Nextlevel()
@@ -69,19 +56,12 @@ namespace Menu
             pausePanel.SetActive(active);
         }
 
-        private void ChangeMensajes(string mensajes)
-        {
-            mensajesText.text = mensajes;
-        }
-
         private void ChangeJumpCooldownImage(bool isCooldownActive)
         {
             if (!isCooldownActive)
-                JumpCooldownImage.sprite = JumpCooldownSprite;
+                jumpCooldownImage.sprite = jumpCooldownSprite;
             else
-                JumpCooldownImage.sprite = NoJumpCooldownSprite;
+                jumpCooldownImage.sprite = noJumpCooldownSprite;
         }
-
     }
-
 }

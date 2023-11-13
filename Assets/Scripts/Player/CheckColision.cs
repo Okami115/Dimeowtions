@@ -21,6 +21,8 @@ namespace player
         Ray objetcRay;
         Ray groundRay;
 
+        public event Action objectCollected;
+
         void Update()
         {
 
@@ -42,7 +44,8 @@ namespace player
                 
                 if (hitInfo.collider.CompareTag(coinTag))
                 {
-                    playerStats.collectedObjects += 100;
+                    playerStats.collectedObjects += 1;
+                    objectCollected?.Invoke();
                     Destroy(hitInfo.collider.gameObject);
                 }
             }
