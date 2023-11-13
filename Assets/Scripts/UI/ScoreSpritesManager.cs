@@ -13,8 +13,10 @@ public class ScoreSpritesManager : MonoBehaviour
     [SerializeField] private float relativeOffsetPorcentage;
 
     [SerializeField] private UIManager uiManager;
+    [SerializeField] private GameManager.GameManager gameManager;
 
     private int lastCollectedIndex;
+    int maxObjects = 0;
 
     private void OnEnable()
     {
@@ -33,19 +35,22 @@ public class ScoreSpritesManager : MonoBehaviour
     {
         for (int i = 0; i < scoreObjectsParents.Length; i++)
         {
-            for (int j = 1; j < playerStats.objectsToCollect; j++)
+            CalculateMaxObjects();
+
+            for (int j = 1; j < maxObjects; j++)
             {
                 GameObject newObj = Instantiate(scoreObjects[i], scoreObjects[i].transform.position, scoreObjects[i].transform.rotation, scoreObjectsParents[i].transform);
                 float relativeOffset = Screen.width * relativeOffsetPorcentage;
                 newObj.transform.position = newObj.transform.position + new Vector3(j * relativeOffset, 0f, 0f);
             }
         }
-
     }
 
     private void ChangeScoreSprite()
-    {       
-        if (lastCollectedIndex < playerStats.objectsToCollect)
+    {
+        CalculateMaxObjects();
+
+        if (lastCollectedIndex < maxObjects)
         {
             for (int i = 0; i < scoreObjectsParents.Length; i++)
             {
@@ -68,5 +73,15 @@ public class ScoreSpritesManager : MonoBehaviour
     private void ResetCollectiblesIndexer()
     {
         lastCollectedIndex = 0;
+    }
+
+    private void CalculateMaxObjects()
+    {
+        if (gameManager.CurrentAesthetic == GameManager.Aesthetic.Noir)
+            maxObjects = playerStats.objectsToCollectNoir;
+        else if (gameManager.CurrentAesthetic == GameManager.Aesthetic.Synthwave)
+            maxObjects = playerStats.objectsToCollectSynthwave;
+        else if (gameManager.CurrentAesthetic == GameManager.Aesthetic.Scifi)
+            maxObjects = playerStats.objectsToCollectSpace;
     }
 }

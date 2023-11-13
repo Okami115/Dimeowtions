@@ -16,6 +16,10 @@ MonoBehaviour:
   initialSpeed: 1
   maxSpeed: 6
   distanceTraveled: 12700
-  collectedObjects: 0
-  objectsToCollect: 5
+  collectedObjectsNoir: 0
+  collectedObjectsSynthwave: 0
+  collectedObjectsSpace: 0
+  objectsToCollectNoir: 5
+  objectsToCollectSynthwave: 5
+  objectsToCollectSpace: 5
   maxScore: 15000

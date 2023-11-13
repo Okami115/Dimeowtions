@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 2769390564964080376}
   m_Layer: 0
   m_Name: Casco
-  m_TagString: Coin
+  m_TagString: SpaceCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -47,7 +47,9 @@ namespace GameManager
 
         private void Start()
         {
-            playerStats.collectedObjects = 0;
+            playerStats.collectedObjectsNoir = 0;
+            playerStats.collectedObjectsSynthwave = 0;
+            playerStats.collectedObjectsSpace = 0;
             ControlTimeScale(0.0f);
             pauseManager.SetActive(false);
             currentAesthetic = Aesthetic.Noir;

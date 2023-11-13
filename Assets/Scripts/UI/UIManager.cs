@@ -14,21 +14,29 @@ namespace Menu
         [SerializeField] private Material scifiSkybox;
         [SerializeField] private PlayerStats playerStats;
         [SerializeField] private PlayerMovementTutorial player;
+        [SerializeField] private CheckColision playerCollision;
      
         [SerializeField] private Image jumpCooldownImage;
         [SerializeField] private Sprite jumpCooldownSprite;
         [SerializeField] private Sprite noJumpCooldownSprite;
+
+        [SerializeField] private TextMeshProUGUI noirScoreText;
+        [SerializeField] private TextMeshProUGUI synthwaveScoreText;
+        [SerializeField] private TextMeshProUGUI spaceScoreText;
+
 
         public event Action nextLevel;
 
         private void OnEnable()
         {
             player.jumpCooldown += ChangeJumpCooldownImage;
+            playerCollision.deathAction += CalculateScoreTexts;
         }
 
         private void OnDisable()
         {
             player.jumpCooldown -= ChangeJumpCooldownImage;
+            playerCollision.deathAction -= CalculateScoreTexts;
         }
 
         public void Nextlevel()
@@ -62,6 +70,13 @@ namespace Menu
                 jumpCooldownImage.sprite = jumpCooldownSprite;
             else
                 jumpCooldownImage.sprite = noJumpCooldownSprite;
+        }
+
+        private void CalculateScoreTexts()
+        {
+            noirScoreText.text = playerStats.collectedObjectsNoir.ToString() + " X ";
+            synthwaveScoreText.text = playerStats.collectedObjectsSynthwave.ToString() + " X ";
+            spaceScoreText.text = playerStats.collectedObjectsSpace.ToString() + " X ";
         }
     }
 }
