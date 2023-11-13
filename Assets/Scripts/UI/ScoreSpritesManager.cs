@@ -33,7 +33,7 @@ public class ScoreSpritesManager : MonoBehaviour
     {
         for (int i = 0; i < scoreObjectsParents.Length; i++)
         {
-            for (int j = 0; j < playerStats.objectsToCollect; j++)
+            for (int j = 1; j < playerStats.objectsToCollect; j++)
             {
                 GameObject newObj = Instantiate(scoreObjects[i], scoreObjects[i].transform.position, scoreObjects[i].transform.rotation, scoreObjectsParents[i].transform);
                 float relativeOffset = Screen.width * relativeOffsetPorcentage;
