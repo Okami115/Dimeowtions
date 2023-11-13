@@ -24,6 +24,15 @@ namespace Terrain
 
         private void Update()
         {
+            if(!playerStats.isPause) 
+            { 
+                MoveTerrain();
+            }
+
+        }
+
+        private void MoveTerrain()
+        {
             if (playerStats.currentSpeed < playerStats.maxSpeed)
             {
                 playerStats.currentSpeed += playerStats.accelerationRate * Time.deltaTime;
@@ -39,7 +48,6 @@ namespace Terrain
             {
                 ReSpawn();
             }
-            
         }
 
         private void ReSpawn()

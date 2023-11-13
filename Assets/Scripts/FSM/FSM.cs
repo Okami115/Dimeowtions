@@ -6,8 +6,10 @@ using UnityEngine;
 public class StateMachine
 {
     private State currentState;
+    private State lastState;
     private Dictionary<Type, State> states;
 
+    public State LastState { get => lastState; set => lastState = value; }
 
     public StateMachine()
     {
@@ -26,9 +28,14 @@ public class StateMachine
 
     public void ChangeState<T>() where T : State
     {
-        currentState?.Exit();
+        ChangeState(typeof(T));
+    }
+    public void ChangeState(Type nextStateType)
+    {
+        if(currentState != null)
+            lastState = currentState;
 
-        Type nextStateType = typeof(T);
+        currentState?.Exit();
 
         if (states.TryGetValue(nextStateType, out var state)) 
         { 
@@ -103,6 +110,6 @@ public class Pause : Condition
 
     public override bool Check()
     {
-        return playerStats.isPause;
+        return false;
     }
 }
