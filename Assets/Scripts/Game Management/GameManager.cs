@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem.LowLevel;
 using UnityEngine.SceneManagement;
 
-namespace GameManager
+namespace Manager
 {
     public enum Aesthetic
     {
@@ -33,6 +33,8 @@ namespace GameManager
             playerStats.collectedObjects = 0;
 
             stateMachine = new StateMachine();
+            stateMachine.AddState<PauseState>(new PauseState(stateMachine, this));
+
             stateMachine.AddState<TutorialState>(new TutorialState(stateMachine, this, 5000, 4));
             stateMachine.AddState<NoirState>(new NoirState(stateMachine, this, 5000, 4));
             stateMachine.AddState<SynthwaveState>(new SynthwaveState(stateMachine, this, 10000, 4));

@@ -1,3 +1,4 @@
+using Manager;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -36,7 +37,7 @@ public class StateMachine
         }
     }
 
-    public void SetGameManager(GameManager.GameManager gameManager)
+    public void SetGameManager(GameManager gameManager)
     {
         currentState.gameManager = gameManager;
     }
@@ -46,7 +47,7 @@ public abstract class State
 {
     protected StateMachine machine;
     protected Dictionary<Type, Condition> conditions = new Dictionary<Type, Condition> ();
-    public GameManager.GameManager gameManager;
+    public GameManager gameManager;
 
     protected State(StateMachine machine)
     {
@@ -93,5 +94,15 @@ public class EndLevel : Condition
 
 public class Pause : Condition
 {
+    private PlayerStats playerStats;
 
+    public Pause(PlayerStats playerStats)
+    {
+        this.playerStats = playerStats;
+    }
+
+    public override bool Check()
+    {
+        return playerStats.isPause;
+    }
 }

@@ -1,10 +1,11 @@
+using Manager;
 using Menu;
 using System;
 using UnityEngine;
 
 public class CatAnimatorManager : MonoBehaviour
 {
-    [SerializeField] private GameManager.GameManager gameManager;
+    [SerializeField] private GameManager gameManager;
     [SerializeField] private Animator animator;
 
     private void OnEnable()

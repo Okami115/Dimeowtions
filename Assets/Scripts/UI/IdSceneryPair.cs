@@ -1,4 +1,4 @@
-﻿using GameManager;
+﻿using Manager;
 using System;
 
 [Serializable]

@@ -1,3 +1,4 @@
+using Manager;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,7 +16,7 @@ namespace Menu
         [SerializeField] private Material scifiSkybox;
         [SerializeField] private PlayerStats playerStats;
 
-        [SerializeField] private GameManager.GameManager gameManager;
+        [SerializeField] private GameManager gameManager;
 
         [SerializeField] public RawImage portalImage;
         [SerializeField] public VideoPlayer portal;

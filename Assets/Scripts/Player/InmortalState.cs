@@ -1,3 +1,4 @@
+using Manager;
 using Menu;
 using player;
 using System.Collections;
@@ -8,7 +9,7 @@ public class InmortalState : MonoBehaviour
 {
     [SerializeField] private BoxCollider collider;
     [SerializeField] private CheckColision checkColision;
-    [SerializeField] private GameManager.GameManager gameManager;
+    [SerializeField] private GameManager gameManager;
     [SerializeField] private GameObject pauseManager;
 
     [SerializeField] private float maxTime;

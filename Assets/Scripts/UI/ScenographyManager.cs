@@ -1,4 +1,4 @@
-using GameManager;
+using Manager;
 using Menu;
 using System;
 using System.Collections.Generic;
@@ -15,7 +15,7 @@ public class ScenographyManager : MonoBehaviour
 
     private Aesthetic currentAesthetic;
 
-    [SerializeField] private GameManager.GameManager gameManager;
+    [SerializeField] private GameManager gameManager;
 
     private Scenery currentScenery = null;
     [SerializeField] private IdSceneryPair[] sceneries;

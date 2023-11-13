@@ -130,10 +130,6 @@ namespace player
             }
         }
 
-        public void OnPause()
-        {
-            playerStats.isPause = !playerStats.isPause;
-        }
         private void Update()
         {
             if (isCounting)
