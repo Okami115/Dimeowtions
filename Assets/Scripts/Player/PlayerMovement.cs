@@ -39,7 +39,7 @@ namespace player
 
         public void OnLeft()
         {
-            if (!isCounting && !pauseScript.IsPaused)
+            if (!isCounting)
             {
                 indexPos++;
                 if (indexPos > pos.Length - 1)
@@ -53,7 +53,7 @@ namespace player
 
         public void OnRight()
         {
-            if (!isCounting && !pauseScript.IsPaused)
+            if (!isCounting)
             {
                 indexPos--;
                 if (indexPos < 0)
@@ -67,15 +67,13 @@ namespace player
 
         public void OnInteraction()
         {
-            if(!pauseScript.IsPaused)
-            {
-                interaction?.Invoke();
-            }
+            interaction?.Invoke();
+
         }
 
         public void OnJump()
         {
-            if (!inCooldown && !pauseScript.IsPaused)
+            if (!inCooldown)
             {
                 boxCollider.enabled = false;
                 inCooldown = true;

@@ -18,10 +18,6 @@ namespace GameManager
     {
         [SerializeField] public PlayerStats playerStats;
 
-        [SerializeField] private PauseState pauseScript;
-        [SerializeField] public UIManager uiManager;
-        [SerializeField] private GameObject pauseManager;
-
         [SerializeField] private StateMachine stateMachine;
 
         public event Action nextLevel;
@@ -37,22 +33,12 @@ namespace GameManager
             playerStats.collectedObjects = 0;
 
             stateMachine = new StateMachine();
-            stateMachine.AddState<TutorialState>(new TutorialState(stateMachine, this, 5000));
-            stateMachine.AddState<NoirState>(new NoirState(stateMachine, this, 5000));
-            stateMachine.AddState<SynthwaveState>(new SynthwaveState(stateMachine, this, 10000));
-            stateMachine.AddState<SciFiState>(new SciFiState(stateMachine, this, 15000));
+            stateMachine.AddState<TutorialState>(new TutorialState(stateMachine, this, 5000, 4));
+            stateMachine.AddState<NoirState>(new NoirState(stateMachine, this, 5000, 4));
+            stateMachine.AddState<SynthwaveState>(new SynthwaveState(stateMachine, this, 10000, 4));
+            stateMachine.AddState<SciFiState>(new SciFiState(stateMachine, this, 15000, 4));
 
             stateMachine.ChangeState<TutorialState>();
-            stateMachine.onTransition += HandleTransition;
-        }
-
-        private void HandleTransition(Aesthetic nextAesthetic)
-        {
-
-            Color color = new Color(1, 1, 1, 1);
-            uiManager.portalImage.enabled = true;
-            uiManager.portalImage.color = color;
-            uiManager.portal.Play();
         }
         private void Update()
         {

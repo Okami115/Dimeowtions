@@ -24,12 +24,14 @@ namespace Menu
         {
             OpenDoor.canOpen += ChangeMensajes;
             gameManager.nextLevel += SetSkybox;
+            gameManager.nextLevel += CallPortal;
         }
 
         private void OnDisable()
         {
             OpenDoor.canOpen -= ChangeMensajes;
             gameManager.nextLevel -= SetSkybox;
+            gameManager.nextLevel -= CallPortal;
         }
 
         private void Update()
@@ -39,6 +41,13 @@ namespace Menu
 
             if (scoreTextLose)
                 scoreTextLose.text = playerStats.collectedObjects.ToString();
+
+            if (portal.isPaused && !gameManager.InTutorial)
+            {
+                Debug.Log("Ocultar");
+                Color color = new Color(1, 1, 1, 0);
+                portalImage.color = color;
+            }
         }
 
 
@@ -68,6 +77,16 @@ namespace Menu
                 // Mover a scenography
                 RenderSettings.skybox = scifiSkybox;
             }
+        }
+
+        private void CallPortal()
+        {
+            Debug.Log("Mostrar");
+            Color color = new Color(1, 1, 1, 1);
+            portalImage.color = color;
+            portalImage.enabled = true;
+            portal.frame = 0;
+            portal.Play();
         }
 
     }
