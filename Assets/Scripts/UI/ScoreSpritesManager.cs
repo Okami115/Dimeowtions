@@ -10,23 +10,22 @@ public class ScoreSpritesManager : MonoBehaviour
     [SerializeField] private CheckColision playerCollision;
     [SerializeField] private GameObject[] scoreObjectsParents;
     [SerializeField] private GameObject[] scoreObjects;
-    [SerializeField] private float offset;
+    [SerializeField] private float relativeOffsetPorcentage;
 
     [SerializeField] private UIManager uiManager;
-    private int levelIndexer = 0;
 
     private int lastCollectedIndex;
 
     private void OnEnable()
     {
         playerCollision.objectCollected += ChangeScoreSprite;
-        uiManager.nextLevel += ToggleScoreSpriteParents;
+        uiManager.nextLevel += ResetCollectiblesIndexer;
     }
 
     private void OnDisable()
     {
         playerCollision.objectCollected -= ChangeScoreSprite;
-        uiManager.nextLevel -= ToggleScoreSpriteParents;
+        uiManager.nextLevel -= ResetCollectiblesIndexer;
     }
 
 
@@ -37,29 +36,11 @@ public class ScoreSpritesManager : MonoBehaviour
             for (int j = 0; j < playerStats.objectsToCollect; j++)
             {
                 GameObject newObj = Instantiate(scoreObjects[i], scoreObjects[i].transform.position, scoreObjects[i].transform.rotation, scoreObjectsParents[i].transform);
-                newObj.transform.position = newObj.transform.position + new Vector3(j * offset, 0f, 0f);
+                float relativeOffset = Screen.width * relativeOffsetPorcentage;
+                newObj.transform.position = newObj.transform.position + new Vector3(j * relativeOffset, 0f, 0f);
             }
         }
 
-        ToggleScoreSpriteParents();
-    }
-
-    private void ToggleScoreSpriteParents()
-    {
-        for(int i = 0; i < scoreObjectsParents.Length;i++)
-        {
-            if (i == levelIndexer)
-            {
-                scoreObjectsParents[i].SetActive(true);
-            }
-            else
-            {
-                scoreObjectsParents[i].SetActive(false);
-            }
-        }
-
-        levelIndexer++;
-        lastCollectedIndex = 0;
     }
 
     private void ChangeScoreSprite()
@@ -78,10 +59,14 @@ public class ScoreSpritesManager : MonoBehaviour
                     {
                         scoreSprite.ChangeToFilledSprite();
                         lastCollectedIndex++;
-                        Debug.Log(lastCollectedIndex);
                     }
                 }
             }         
         }        
+    }
+
+    private void ResetCollectiblesIndexer()
+    {
+        lastCollectedIndex = 0;
     }
 }

@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SynthwaveDoorAnimationControllerOverride
+  m_Controller: {fileID: 9100000, guid: 3c1f36d0f30db3543a6c3b0336630173, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 1827226128182048838, guid: fae0c10fd847c3248b1b0b3c7d8e2871, type: 3}
+    m_OverrideClip: {fileID: 1827226128182048838, guid: 1ab1af4f59d7aac4ca11ca75bde9a467, type: 3}

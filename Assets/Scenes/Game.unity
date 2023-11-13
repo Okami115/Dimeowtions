@@ -2359,7 +2359,7 @@ MonoBehaviour:
   - {fileID: 417697684}
   - {fileID: 875300815}
   - {fileID: 764390511}
-  offset: 100
+  relativeOffsetPorcentage: 0.05
   uiManager: {fileID: 1065173194}
 --- !u!1 &491847642
 GameObject:
@@ -2484,6 +2484,7 @@ MonoBehaviour:
   - {fileID: 1550380095}
   - {fileID: 1625704302}
   - {fileID: 388650605}
+  - {fileID: 2108346321}
 --- !u!4 &561758381 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8510826148680255523, guid: 7298cf09fb8d77b4ca9bb010acef6e7a, type: 3}
@@ -3476,6 +3477,7 @@ MonoBehaviour:
   - {fileID: 702984946}
   - {fileID: 1337463953}
   - {fileID: 1229378031}
+  - {fileID: 264623810}
 --- !u!1001 &778230223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5341,8 +5343,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f63f2b09c9fef5d43b8392b71404da40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 1142447093}
-  scoreTextLose: {fileID: 1178541927}
   mensajesText: {fileID: 600240939}
   pausePanel: {fileID: 37427336}
   synthweaveSkybox: {fileID: 2100000, guid: 374384d4b67d554498a702a614079f51, type: 2}
@@ -12147,7 +12147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1415314594
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14264,6 +14264,7 @@ MonoBehaviour:
   - {fileID: 1328608471}
   - {fileID: 1383132597}
   - {fileID: 327127444}
+  - {fileID: 1415314593}
 --- !u!1 &1866916312
 GameObject:
   m_ObjectHideFlags: 0
@@ -15516,7 +15517,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2108346322
 RectTransform:
   m_ObjectHideFlags: 0

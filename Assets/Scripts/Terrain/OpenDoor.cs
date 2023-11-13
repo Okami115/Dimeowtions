@@ -12,7 +12,7 @@ public class OpenDoor : MonoBehaviour
     [SerializeField] private BoxCollider boxCollider;
     public static event Action<String> canOpen;
     public static event Action openDoor;
-    [SerializeField] private string DoorOpeningStateName;
+    [SerializeField] private string doorOpenTriggerName;
 
     private void Awake()
     {
@@ -41,8 +41,7 @@ public class OpenDoor : MonoBehaviour
     {
         canOpen?.Invoke("");
         openDoor?.Invoke();
-        animator.Play(DoorOpeningStateName);
-        //animator.SetBool(isDoorOpening, true);
+        animator.SetTrigger(doorOpenTriggerName);
         boxCollider.enabled = false;
     }
 }

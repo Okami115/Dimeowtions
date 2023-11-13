@@ -72,7 +72,7 @@ MonoBehaviour:
   door: {fileID: 4798112191014869987}
   animator: {fileID: 2482887726416375711}
   boxCollider: {fileID: 4960741513573267450}
-  DoorOpeningStateName: DoorOpening
+  doorOpenTriggerName: open
 --- !u!1001 &2721655108974941409
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -42,7 +42,6 @@ public class TutorialSlowMotion : MonoBehaviour
     {
         Time.timeScale = 1f;
         tutorialUIManager.ToggleImage(false);
-        Destroy(door);
         gameManager.InTutorial = false;
     }
 }
