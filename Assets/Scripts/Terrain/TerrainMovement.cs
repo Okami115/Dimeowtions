@@ -10,7 +10,6 @@ namespace Terrain
 
         [SerializeField] private Transform destination;
         [SerializeField] private Transform spawn;
-        [SerializeField] private float accelerationRate = 0.001f;
         [SerializeField] private float minDistanceToRespawn;
 
         [SerializeField] private UIManager ui;
@@ -25,12 +24,19 @@ namespace Terrain
 
         private void Update()
         {
-            if(!playerStats.isPause)
+            if(!playerStats.isPause) 
+            { 
+                MoveTerrain();
+            }
+
+        }
+
+        private void MoveTerrain()
+        {
+            if (playerStats.currentSpeed < playerStats.maxSpeed)
             {
-                if (playerStats.currentSpeed < playerStats.maxSpeed)
-                {
-                    playerStats.currentSpeed += accelerationRate * Time.deltaTime;
-                }
+                playerStats.currentSpeed += playerStats.accelerationRate * Time.deltaTime;
+            }
 
                 Vector3 newPos = transform.position;
 

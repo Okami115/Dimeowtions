@@ -1,3 +1,4 @@
+using Manager;
 using Menu;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -11,9 +12,9 @@ namespace Terrain
         [SerializeField] private GameObject[] Synthwave;
         [SerializeField] private GameObject[] SciFi;
         [SerializeField] private GameObject children;
-        [SerializeField] private GameManager.GameManager gameManager;
+        [SerializeField] private GameManager gameManager;
         private TerrainMovement tMovement;
-        private GameManager.Aesthetic currentAesthetic;
+        private Aesthetic currentAesthetic;
 
         private int value;
 
@@ -29,17 +30,17 @@ namespace Terrain
             currentAesthetic = gameManager.CurrentAesthetic;
             Destroy(children);
 
-            if(currentAesthetic == GameManager.Aesthetic.Noir)
+            if(currentAesthetic == Aesthetic.Noir)
             {
                 value = Random.Range(0, Noir.Length);
                 children = Instantiate(Noir[value]); 
             }
-            else if (currentAesthetic == GameManager.Aesthetic.Synthwave)
+            else if (currentAesthetic == Aesthetic.Synthwave)
             {
                 value = Random.Range(0, Synthwave.Length);
                 children = Instantiate(Synthwave[value]);
             }
-            else if (currentAesthetic == GameManager.Aesthetic.Scifi)
+            else if (currentAesthetic == Aesthetic.Scifi)
             {
                 value = Random.Range(0, Synthwave.Length);
                 children = Instantiate(SciFi[value]);

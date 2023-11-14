@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem.LowLevel;
 using UnityEngine.SceneManagement;
 
-namespace GameManager
+namespace Manager
 {
     public enum Aesthetic
     {
@@ -17,12 +17,6 @@ namespace GameManager
     public class GameManager : MonoBehaviour
     {
         [SerializeField] public PlayerStats playerStats;
-
-        [SerializeField] private PauseState pauseScript;
-        [SerializeField] public UIManager uiManager;
-        [SerializeField] private GameObject pauseManager;
-
-        [SerializeField] private float portalDuration;
 
         [SerializeField] private StateMachine stateMachine;
 
@@ -40,14 +34,14 @@ namespace GameManager
 
             stateMachine = new StateMachine();
             stateMachine.AddState<PauseState>(new PauseState(stateMachine, this));
-            stateMachine.AddState<TutorialState>(new TutorialState(stateMachine, this, 5000, portalDuration));
-            stateMachine.AddState<NoirState>(new NoirState(stateMachine, this, 5000, portalDuration));
-            stateMachine.AddState<SynthwaveState>(new SynthwaveState(stateMachine, this, 10000, portalDuration));
-            stateMachine.AddState<SciFiState>(new SciFiState(stateMachine, this, 15000, portalDuration));
+
+            stateMachine.AddState<TutorialState>(new TutorialState(stateMachine, this, 5000, 4));
+            stateMachine.AddState<NoirState>(new NoirState(stateMachine, this, 5000, 4));
+            stateMachine.AddState<SynthwaveState>(new SynthwaveState(stateMachine, this, 10000, 4));
+            stateMachine.AddState<SciFiState>(new SciFiState(stateMachine, this, 15000, 4));
 
             stateMachine.ChangeState<TutorialState>();
         }
-
         private void Update()
         {
             if(!playerStats.isPause) 

@@ -1,3 +1,4 @@
+using Manager;
 using player;
 using System;
 using System.Collections;
@@ -8,7 +9,7 @@ public class TutorialSlowMotion : MonoBehaviour
 {
     public event Action<string> triggerExitEvent;
     [SerializeField] private PlayerController player;
-    [SerializeField] private GameManager.GameManager gameManager;
+    [SerializeField] private GameManager gameManager;
     [SerializeField] private string nextStepName;
     [SerializeField] private bool isSlowMoAfterJump;
     [SerializeField] private bool isSlowMoAfterDoor;

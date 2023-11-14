@@ -1,4 +1,4 @@
-using System;
+using Manager;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -6,9 +6,7 @@ using UnityEngine;
 
 public class PauseState : State
 {
-    public static event Action<bool> pauseStateOn;
-    private State currentState;
-    public PauseState(StateMachine machine, GameManager.GameManager gameManager) : base(machine)
+    public PauseState(StateMachine machine, GameManager gameManager) : base(machine)
     {
         this.gameManager = gameManager;
         conditions.Add(typeof(Pause), new Pause(gameManager.playerStats));
@@ -16,19 +14,20 @@ public class PauseState : State
 
     public override void Enter()
     {
-        pauseStateOn.Invoke(true);
+        Debug.LogWarning("Enter: PAUSE :: State");
     }
 
     public override void Exit()
     {
-        pauseStateOn.Invoke(false);
+        Debug.LogWarning("Exit: PAUSE :: State");
     }
 
     public override void Update()
     {
         if (!CheckCondition<Pause>())
         {
-            //machine.ChangeState<currentState>();
+            var lastState = machine.LastState.GetType();
+            machine.ChangeState(lastState);
         }
     }
 }

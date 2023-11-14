@@ -1,3 +1,4 @@
+using Manager;
 using Menu;
 using player;
 using System;
@@ -5,9 +6,7 @@ using UnityEngine;
 
 public class CatAnimatorManager : MonoBehaviour
 {
-    [SerializeField] private GameManager.GameManager gameManager;
-    [SerializeField] private PlayerController player;
-    [SerializeField] private UIManager uiIManager;
+    [SerializeField] private GameManager gameManager;
     [SerializeField] private Animator animator;
 
     private void OnEnable()

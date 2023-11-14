@@ -1,4 +1,4 @@
-using GameManager;
+using Manager;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,8 +6,11 @@ using UnityEngine;
 public class StateMachine
 {
     private State currentState;
+    private State lastState;
     private Dictionary<Type, State> states;
     internal Action<Aesthetic> onTransition;
+
+    public State LastState { get => lastState; set => lastState = value; }
 
     public StateMachine()
     {
@@ -26,9 +29,14 @@ public class StateMachine
 
     public void ChangeState<T>() where T : State
     {
-        currentState?.Exit();
+        ChangeState(typeof(T));
+    }
+    public void ChangeState(Type nextStateType)
+    {
+        if(currentState != null)
+            lastState = currentState;
 
-        Type nextStateType = typeof(T);
+        currentState?.Exit();
 
         if (states.TryGetValue(nextStateType, out var state)) 
         { 
@@ -37,7 +45,7 @@ public class StateMachine
         }
     }
 
-    public void SetGameManager(GameManager.GameManager gameManager)
+    public void SetGameManager(GameManager gameManager)
     {
         currentState.gameManager = gameManager;
     }
@@ -47,8 +55,7 @@ public abstract class State
 {
     protected StateMachine machine;
     protected Dictionary<Type, Condition> conditions = new Dictionary<Type, Condition> ();
-    public GameManager.GameManager gameManager;
-    public static event Action enterLevel;
+    public GameManager gameManager;
 
     protected State(StateMachine machine)
     {
@@ -109,6 +116,6 @@ public class Pause : Condition
 
     public override bool Check()
     {
-        return playerStats.isPause;
+        return false;
     }
 }

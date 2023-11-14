@@ -1,4 +1,4 @@
-using GameManager;
+using Manager;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,7 +19,7 @@ namespace Menu
 
         [SerializeField] private PlayerStats playerStats;
 
-        [SerializeField] private GameManager.GameManager gameManager;
+        [SerializeField] private GameManager gameManager;
 
         [SerializeField] public RawImage portalImage;
         [SerializeField] public VideoPlayer portal;
@@ -28,16 +28,14 @@ namespace Menu
         {
             OpenDoor.canOpen += ChangeMensajes;
             gameManager.nextLevel += SetSkybox;
-            State.enterLevel += HandleTransition;
-            PauseState.pauseStateOn += TogglePausePanel;
+            gameManager.nextLevel += CallPortal;
         }
 
         private void OnDisable()
         {
             OpenDoor.canOpen -= ChangeMensajes;
             gameManager.nextLevel -= SetSkybox;
-            State.enterLevel -= HandleTransition;
-            PauseState.pauseStateOn -= TogglePausePanel;
+            gameManager.nextLevel -= CallPortal;
         }
 
         private void Update()
@@ -48,10 +46,10 @@ namespace Menu
             if (scoreTextLose)
                 scoreTextLose.text = playerStats.collectedObjects.ToString();
 
-            if(portal.isPaused)
+            if (portal.isPaused && !gameManager.InTutorial)
             {
+                Debug.Log("Ocultar");
                 Color color = new Color(1, 1, 1, 0);
-                portalImage.enabled = true;
                 portalImage.color = color;
             }
         }
@@ -91,12 +89,13 @@ namespace Menu
             }
         }
 
-        private void HandleTransition()
+        private void CallPortal()
         {
-
+            Debug.Log("Mostrar");
             Color color = new Color(1, 1, 1, 1);
-            portalImage.enabled = true;
             portalImage.color = color;
+            portalImage.enabled = true;
+            portal.frame = 0;
             portal.Play();
         }
 
