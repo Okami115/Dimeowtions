@@ -8,9 +8,8 @@ using UnityEngine;
 public class TutorialSlowMotion : MonoBehaviour
 {
     public event Action<string> triggerExitEvent;
-    [SerializeField] private PlayerController player;
-    [SerializeField] private GameManager gameManager;
-    [SerializeField] private string nextStepName;
+    [SerializeField] private PlayerMovementTutorial player;
+    [SerializeField] private GameManager.GameManager gameManager;
     [SerializeField] private bool isSlowMoAfterJump;
     [SerializeField] private bool isSlowMoAfterDoor;
     [SerializeField] private bool isSlowMoAfterMoving;
@@ -36,14 +35,14 @@ public class TutorialSlowMotion : MonoBehaviour
     {
         gameManager.InTutorial = true;
         Time.timeScale = 0.1f;
-        tutorialUIManager.ChangeText(nextStepName);
+        tutorialUIManager.ToggleImage(true);
+        tutorialUIManager.ChangeText();
     }
 
     private void ExitSlowMotion()
     {
         Time.timeScale = 1f;
-        tutorialUIManager.ChangeText("");
-        Destroy(door);
+        tutorialUIManager.ToggleImage(false);
         gameManager.InTutorial = false;
     }
 }

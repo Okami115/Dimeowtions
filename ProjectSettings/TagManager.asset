@@ -8,10 +8,13 @@ TagManager:
   - Obstacle
   - Empty
   - Door
-  - Coin
   - NoirButton
   - SynthwaveButton
   - SciFiButton
+  - Button
+  - NoirCoin
+  - SynthwaveCoin
+  - SpaceCoin
   layers:
   - Default
   - TransparentFX

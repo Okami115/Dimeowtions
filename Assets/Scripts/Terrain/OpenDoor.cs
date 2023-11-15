@@ -8,8 +8,11 @@ public class OpenDoor : MonoBehaviour
 {
     [SerializeField] private player.PlayerController pm;
     [SerializeField] private GameObject door;
+    [SerializeField] private Animator animator;
+    [SerializeField] private BoxCollider boxCollider;
     public static event Action<String> canOpen;
     public static event Action openDoor;
+    [SerializeField] private string doorOpenTriggerName;
 
     private void Awake()
     {
@@ -38,6 +41,7 @@ public class OpenDoor : MonoBehaviour
     {
         canOpen?.Invoke("");
         openDoor?.Invoke();
-        Destroy(door);
+        animator.SetTrigger(doorOpenTriggerName);
+        boxCollider.enabled = false;
     }
 }

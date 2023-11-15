@@ -33,8 +33,10 @@ namespace Manager
 
         private void Start()
         {
+            playerStats.collectedObjectsNoir = 0;
+            playerStats.collectedObjectsSynthwave = 0;
+            playerStats.collectedObjectsSpace = 0;
             InTutorial = true;
-            playerStats.collectedObjects = 0;
 
             stateMachine = new StateMachine();
             stateMachine.AddState<PauseState>(new PauseState(stateMachine, this));

@@ -8,7 +8,12 @@ public class PlayerStats : ScriptableObject
     public float initialSpeed;
     public float maxSpeed;
     public int distanceTraveled;
-    public int collectedObjects;
+    public int collectedObjectsNoir;
+    public int collectedObjectsSynthwave;
+    public int collectedObjectsSpace;
+    public int objectsToCollectNoir;
+    public int objectsToCollectSynthwave;
+    public int objectsToCollectSpace;
     public int maxScore;
     public bool isPause;
 }

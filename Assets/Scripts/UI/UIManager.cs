@@ -1,4 +1,6 @@
 using Manager;
+using player;
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,8 +10,6 @@ namespace Menu
 {
     public class UIManager : MonoBehaviour
     {
-        [SerializeField] private Text scoreText;
-        [SerializeField] private Text scoreTextLose;
         [SerializeField] private TextMeshProUGUI mensajesText;
         [SerializeField] private GameObject pausePanel;
 
@@ -18,7 +18,19 @@ namespace Menu
         [SerializeField] private Material scifiSkybox;
 
         [SerializeField] private PlayerStats playerStats;
+        [SerializeField] private PlayerMovementTutorial player;
+        [SerializeField] private CheckColision playerCollision;
+     
+        [SerializeField] private Image jumpCooldownImage;
+        [SerializeField] private Sprite jumpCooldownSprite;
+        [SerializeField] private Sprite noJumpCooldownSprite;
 
+        [SerializeField] private TextMeshProUGUI noirScoreText;
+        [SerializeField] private TextMeshProUGUI synthwaveScoreText;
+        [SerializeField] private TextMeshProUGUI spaceScoreText;
+
+
+        public event Action nextLevel;
         [SerializeField] private GameManager gameManager;
 
         [SerializeField] public RawImage portalImage;
@@ -26,6 +38,8 @@ namespace Menu
 
         private void OnEnable()
         {
+            player.jumpCooldown += ChangeJumpCooldownImage;
+            playerCollision.deathAction += CalculateScoreTexts;
             OpenDoor.canOpen += ChangeMensajes;
             gameManager.nextLevel += SetSkybox;
             gameManager.CallPortal += CallPortal;
@@ -33,9 +47,8 @@ namespace Menu
 
         private void OnDisable()
         {
-            OpenDoor.canOpen -= ChangeMensajes;
-            gameManager.nextLevel -= SetSkybox;
-            gameManager.CallPortal -= CallPortal;
+            player.jumpCooldown -= ChangeJumpCooldownImage;
+            playerCollision.deathAction -= CalculateScoreTexts;
         }
 
         private void Update()
@@ -98,6 +111,19 @@ namespace Menu
             portal.Play();
         }
 
-    }
+        private void ChangeJumpCooldownImage(bool isCooldownActive)
+        {
+            if (!isCooldownActive)
+                jumpCooldownImage.sprite = jumpCooldownSprite;
+            else
+                jumpCooldownImage.sprite = noJumpCooldownSprite;
+        }
 
+        private void CalculateScoreTexts()
+        {
+            noirScoreText.text = playerStats.collectedObjectsNoir.ToString() + " X ";
+            synthwaveScoreText.text = playerStats.collectedObjectsSynthwave.ToString() + " X ";
+            spaceScoreText.text = playerStats.collectedObjectsSpace.ToString() + " X ";
+        }
+    }
 }

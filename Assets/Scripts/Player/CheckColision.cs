@@ -13,13 +13,19 @@ namespace player
         [SerializeField] private LayerMask ground;
 
         [SerializeField] private GameObject pauseManager;
+        
+        [SerializeField] private string noirCoinTag;
+        [SerializeField] private string synthwaveCoinTag;
+        [SerializeField] private string spaceCoinTag;
 
         private string obstacleTag = "Obstacle"; 
-        private string coinTag = "Coin"; 
         private string emptyTag = "Empty"; 
         private float raycastDistanceObjetc = 1f;
         Ray objetcRay;
         Ray groundRay;
+
+        public event Action deathAction;
+        public event Action objectCollected;
 
         void Update()
         {
@@ -37,13 +43,27 @@ namespace player
                     pauseManager.SetActive(false);
                     UI[2].SetActive(false);
                     UI[1].SetActive(true);
+                    deathAction?.Invoke();
                     Time.timeScale = 0.0f;
                 }
                 
-                if (hitInfo.collider.CompareTag(coinTag))
+                if (hitInfo.collider.CompareTag(noirCoinTag))
                 {
-                    playerStats.collectedObjects += 100;
-                    Destroy(hitInfo.collider);
+                    playerStats.collectedObjectsNoir += 1;
+                    objectCollected?.Invoke();
+                    Destroy(hitInfo.collider.gameObject);
+                }
+                else if (hitInfo.collider.CompareTag(synthwaveCoinTag))
+                {
+                    playerStats.collectedObjectsSynthwave += 1;
+                    objectCollected?.Invoke();
+                    Destroy(hitInfo.collider.gameObject);
+                }
+                else if (hitInfo.collider.CompareTag(spaceCoinTag))
+                {
+                    playerStats.collectedObjectsSpace += 1;
+                    objectCollected?.Invoke();
+                    Destroy(hitInfo.collider.gameObject);
                 }
             }
 
