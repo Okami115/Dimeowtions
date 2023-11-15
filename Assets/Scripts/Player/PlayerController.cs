@@ -105,6 +105,17 @@ namespace player
             }
         }
 
+        public void OnCancelJump()
+        {
+            if(isCounting)
+            {
+                isCounting = false;
+                float speed = 10000 * Time.deltaTime;
+
+                transform.position = Vector3.MoveTowards(transform.position, currentPos.position, speed);
+            }
+        }
+
         public void OnGravitationalChange()
         {
             if (!isCounting && isAntiGravityAvailable)

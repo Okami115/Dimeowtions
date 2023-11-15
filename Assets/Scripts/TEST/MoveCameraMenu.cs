@@ -36,7 +36,6 @@ public class MoveCameraMenu : MonoBehaviour
         currentPos = camaraPos[indexPos];
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         Time.timeScale = 1;
