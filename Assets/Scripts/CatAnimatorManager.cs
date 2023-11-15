@@ -8,12 +8,13 @@ public class CatAnimatorManager : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager;
     [SerializeField] private Animator animator;
+    [SerializeField] private PlayerController playerController;
 
     private void OnEnable()
     {
         gameManager.nextLevel += ChangeAnimation;
         OpenDoor.openDoor += ChangeOpenDoorAnimaton;
-        player.jump += ChangeJumpAnimaton;
+        playerController.jump += ChangeJumpAnimaton;
     }
 
     private void OnDisable()

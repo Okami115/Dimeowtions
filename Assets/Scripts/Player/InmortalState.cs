@@ -9,8 +9,6 @@ public class InmortalState : MonoBehaviour
 {
     [SerializeField] private BoxCollider collider;
     [SerializeField] private CheckColision checkColision;
-    [SerializeField] private GameManager gameManager;
-    [SerializeField] private GameObject pauseManager;
 
     [SerializeField] private float maxTime;
     [SerializeField] private float currentTime;
@@ -19,14 +17,13 @@ public class InmortalState : MonoBehaviour
 
     private void Start()
     {
-        gameManager.nextLevel += ChangeInmortalState;
+        
     }
     void Update()
     {
         
         if(isInmortal) 
         {
-            pauseManager.SetActive(false);
             currentTime += Time.deltaTime;
 
             if(currentTime > maxTime) 
@@ -45,7 +42,5 @@ public class InmortalState : MonoBehaviour
         checkColision.enabled = !isInmortal;
 
         currentTime = 0;
-
-        pauseManager.SetActive(true);
     }
 }

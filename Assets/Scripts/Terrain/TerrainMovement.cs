@@ -24,8 +24,8 @@ namespace Terrain
 
         private void Update()
         {
-            if(!playerStats.isPause) 
-            { 
+            if (!playerStats.isPause)
+            {
                 MoveTerrain();
             }
 
@@ -38,26 +38,24 @@ namespace Terrain
                 playerStats.currentSpeed += playerStats.accelerationRate * Time.deltaTime;
             }
 
-                Vector3 newPos = transform.position;
+            Vector3 newPos = transform.position;
 
-                newPos.z += destination.position.z * Time.deltaTime * playerStats.currentSpeed;
+            newPos.z += destination.position.z * Time.deltaTime * playerStats.currentSpeed;
 
-                transform.position = newPos;
+            transform.position = newPos;
 
-                if (transform.position.z < destination.position.z)
-                {
-                    ReSpawn();
-                }
-
+            if (transform.position.z < destination.position.z)
+            {
+                ReSpawn();
             }
-        }
 
+        }
         private void ReSpawn()
         {
             transform.position += spawn.position;
             spawnSignal?.Invoke();
-
             playerStats.distanceTraveled += 100;
         }
     }
 }
+    

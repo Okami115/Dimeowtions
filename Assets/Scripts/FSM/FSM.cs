@@ -1,4 +1,5 @@
 using Manager;
+using Menu;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -57,6 +58,8 @@ public abstract class State
     protected Dictionary<Type, Condition> conditions = new Dictionary<Type, Condition> ();
     public GameManager gameManager;
 
+    public Action enterLevel;
+
     protected State(StateMachine machine)
     {
         this.machine = machine;
@@ -81,6 +84,8 @@ public abstract class State
     {
         enterLevel?.Invoke();
     }
+
+
 }
 
 public class Condition
@@ -101,7 +106,7 @@ public class EndLevel : Condition
 
     public override bool Check()
     {
-        return playerStats.distanceTraveled > distance;
+        return playerStats.distanceTraveled >= distance;
     }
 }
 
@@ -117,5 +122,20 @@ public class Pause : Condition
     public override bool Check()
     {
         return false;
+    }
+}
+
+public class ClosePortal : Condition
+{
+    private UIManager uiManager;
+
+    public ClosePortal(UIManager uiManager)
+    {
+        this.uiManager = uiManager;
+    }
+
+    public override bool Check()
+    {
+        return uiManager.portal.isPaused;
     }
 }

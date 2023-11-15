@@ -28,14 +28,14 @@ namespace Menu
         {
             OpenDoor.canOpen += ChangeMensajes;
             gameManager.nextLevel += SetSkybox;
-            gameManager.nextLevel += CallPortal;
+            gameManager.CallPortal += CallPortal;
         }
 
         private void OnDisable()
         {
             OpenDoor.canOpen -= ChangeMensajes;
             gameManager.nextLevel -= SetSkybox;
-            gameManager.nextLevel -= CallPortal;
+            gameManager.CallPortal -= CallPortal;
         }
 
         private void Update()
@@ -46,9 +46,9 @@ namespace Menu
             if (scoreTextLose)
                 scoreTextLose.text = playerStats.collectedObjects.ToString();
 
-            if (portal.isPaused && !gameManager.InTutorial)
+            if (portal.isPaused)
             {
-                Debug.Log("Ocultar");
+                portal.frame = 0;
                 Color color = new Color(1, 1, 1, 0);
                 portalImage.color = color;
             }
@@ -70,18 +70,17 @@ namespace Menu
         {
             if(playerStats.distanceTraveled == 0)
             {
-
-                RenderSettings.skybox = synthweaveSkybox;
+                RenderSettings.skybox = noirSkybox;
             }
 
-            if (playerStats.distanceTraveled == 5100)
+            if (playerStats.distanceTraveled == 5000)
             {
                 // Trigger
                 // Mover a scenography
                 RenderSettings.skybox = synthweaveSkybox;
             }
 
-            if (playerStats.distanceTraveled == 10100)
+            if (playerStats.distanceTraveled == 10000)
             {
                 // Trigger
                 // Mover a scenography
@@ -91,11 +90,11 @@ namespace Menu
 
         private void CallPortal()
         {
-            Debug.Log("Mostrar");
             Color color = new Color(1, 1, 1, 1);
             portalImage.color = color;
             portalImage.enabled = true;
-            portal.frame = 0;
+            portal.Stop();
+            portal.time = 0;
             portal.Play();
         }
 
