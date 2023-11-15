@@ -15,6 +15,8 @@ public class ScoreSpritesManager : MonoBehaviour
 
     [SerializeField] private UIManager uiManager;
     [SerializeField] private GameManager gameManager;
+    [SerializeField] private Animator portalAnimator;
+    [SerializeField] private string portalAnimatorPreviousBoolName;
 
     private int lastCollectedIndex;
     int maxObjects = 0;
@@ -45,6 +47,8 @@ public class ScoreSpritesManager : MonoBehaviour
                 newObj.transform.position = newObj.transform.position + new Vector3(j * relativeOffset, 0f, 0f);
             }
         }
+
+        portalAnimator.SetBool(portalAnimatorPreviousBoolName, false);
     }
 
     private void ChangeScoreSprite()
@@ -65,6 +69,9 @@ public class ScoreSpritesManager : MonoBehaviour
                     {
                         scoreSprite.ChangeToFilledSprite();
                         lastCollectedIndex++;
+
+                        if (lastCollectedIndex == maxObjects - 1) 
+                            portalAnimator.SetBool(portalAnimatorPreviousBoolName, true);
                     }
                 }
             }         

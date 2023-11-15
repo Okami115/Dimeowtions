@@ -33,8 +33,12 @@ namespace Menu
         public event Action nextLevel;
         [SerializeField] private GameManager gameManager;
 
-        [SerializeField] public RawImage portalImage;
-        [SerializeField] public VideoPlayer portal;
+        //[SerializeField] public RawImage portalImage;
+        //[SerializeField] public VideoPlayer portal;
+
+        [SerializeField] public Animator portalAnimator;
+        [SerializeField] public string portalBoolName;
+        [SerializeField] public bool portalBool;
 
         private void OnEnable()
         {
@@ -49,19 +53,11 @@ namespace Menu
         {
             player.jumpCooldown -= ChangeJumpCooldownImage;
             playerCollision.deathAction -= CalculateScoreTexts;
+            OpenDoor.canOpen -= ChangeMensajes;
+            gameManager.nextLevel -= SetSkybox;
+            gameManager.CallPortal -= CallPortal;
+
         }
-
-        private void Update()
-        {
-            if (portal.isPaused)
-            {
-                portal.frame = 0;
-                Color color = new Color(1, 1, 1, 0);
-                portalImage.color = color;
-            }
-        }
-
-
 
         public void TogglePausePanel(bool active)
         {
@@ -95,14 +91,18 @@ namespace Menu
             }
         }
 
+        private void Update()
+        {
+            if (!portalAnimator.GetBool(portalBoolName))
+            {
+                portalBool = false;
+            }
+        }
+
         private void CallPortal()
         {
-            Color color = new Color(1, 1, 1, 1);
-            portalImage.color = color;
-            portalImage.enabled = true;
-            portal.Stop();
-            portal.time = 0;
-            portal.Play();
+            portalAnimator.SetBool(portalBoolName, true);
+            portalBool = true;
         }
 
         private void ChangeJumpCooldownImage(bool isCooldownActive)

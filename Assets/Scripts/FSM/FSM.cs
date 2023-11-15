@@ -136,6 +136,7 @@ public class ClosePortal : Condition
 
     public override bool Check()
     {
-        return uiManager.portal.isPaused;
+        //return uiManager.portalAnimator.GetCurrentAnimatorStateInfo(0).IsName(uiManager.portalAnimationName) && uiManager.portalAnimator.IsInTransition(0);
+        return !uiManager.portalBool;
     }
 }
