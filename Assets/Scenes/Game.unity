@@ -16321,6 +16321,10 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1409219202622637206, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
+      propertyPath: maxJumpCooldown
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409219202622637206, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
       propertyPath: pos.Array.data[0]
       value: 
       objectReference: {fileID: 29005787}
