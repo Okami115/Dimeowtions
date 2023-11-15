@@ -13,6 +13,7 @@ public class MoveCameraMenu : MonoBehaviour
 
     public event Action moveCameraLeft;
     public event Action moveCameraRight;
+    public event Action back;
 
     public void OnLeft()
     {
@@ -34,6 +35,11 @@ public class MoveCameraMenu : MonoBehaviour
         moveCameraRight?.Invoke();
 
         currentPos = camaraPos[indexPos];
+    }
+
+    public void OnPause()
+    {
+        back?.Invoke();
     }
 
     void Start()
