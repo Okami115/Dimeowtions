@@ -1,3 +1,4 @@
+using Manager;
 using Menu;
 using player;
 using System.Collections;
@@ -13,7 +14,7 @@ public class ScoreSpritesManager : MonoBehaviour
     [SerializeField] private float relativeOffsetPorcentage;
 
     [SerializeField] private UIManager uiManager;
-    [SerializeField] private GameManager.GameManager gameManager;
+    [SerializeField] private GameManager gameManager;
 
     private int lastCollectedIndex;
     int maxObjects = 0;
@@ -77,11 +78,11 @@ public class ScoreSpritesManager : MonoBehaviour
 
     private void CalculateMaxObjects()
     {
-        if (gameManager.CurrentAesthetic == GameManager.Aesthetic.Noir)
+        if (gameManager.CurrentAesthetic == Aesthetic.Noir)
             maxObjects = playerStats.objectsToCollectNoir;
-        else if (gameManager.CurrentAesthetic == GameManager.Aesthetic.Synthwave)
+        else if (gameManager.CurrentAesthetic == Aesthetic.Synthwave)
             maxObjects = playerStats.objectsToCollectSynthwave;
-        else if (gameManager.CurrentAesthetic == GameManager.Aesthetic.Scifi)
+        else if (gameManager.CurrentAesthetic == Aesthetic.Scifi)
             maxObjects = playerStats.objectsToCollectSpace;
     }
 }

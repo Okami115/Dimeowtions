@@ -18,7 +18,7 @@ namespace Menu
         [SerializeField] private Material scifiSkybox;
 
         [SerializeField] private PlayerStats playerStats;
-        [SerializeField] private PlayerMovementTutorial player;
+        [SerializeField] private PlayerController player;
         [SerializeField] private CheckColision playerCollision;
      
         [SerializeField] private Image jumpCooldownImage;
@@ -53,12 +53,6 @@ namespace Menu
 
         private void Update()
         {
-            if (scoreText)
-                scoreText.text = playerStats.collectedObjects.ToString();
-
-            if (scoreTextLose)
-                scoreTextLose.text = playerStats.collectedObjects.ToString();
-
             if (portal.isPaused)
             {
                 portal.frame = 0;

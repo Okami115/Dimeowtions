@@ -17,13 +17,11 @@ public class PortalState : State
     {
         Debug.LogWarning("Enter: PORTAL :: State");
         gameManager.CallPortalState();
-        Time.timeScale = 0.0f;
     }
 
     public override void Exit()
     {
         Debug.LogWarning("Exit: PORTAL :: State");
-        Time.timeScale = 1.0f;
     }
 
     public override void Update()
