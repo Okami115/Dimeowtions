@@ -450,7 +450,18 @@
                 {
                     "name": "",
                     "id": "f9283df8-110a-443b-bbd8-6e052422127a",
-                    "path": "<Keyboard>/enter",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SkipCinematic",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8ee9dc56-40d7-46cd-acee-5f2341a8d361",
+                    "path": "<DualShockGamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
