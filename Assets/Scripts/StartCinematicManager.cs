@@ -15,7 +15,10 @@ public class StartCinematicManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isHoldingKey)
+        if (video.isPaused)
+            LoadNextScene();
+
+        if (isHoldingKey )
         {
             holdTimer += Time.deltaTime;
 

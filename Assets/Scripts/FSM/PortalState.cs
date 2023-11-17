@@ -30,7 +30,7 @@ public class PortalState : State
             if(gameManager.InTutorial) { machine.ChangeState<TutorialState>(); }
             if(gameManager.playerStats.distanceTraveled == 5000) { machine.ChangeState<SynthwaveState>(); }
             if(gameManager.playerStats.distanceTraveled == 10000) { machine.ChangeState<SciFiState>(); }
-            if(gameManager.playerStats.distanceTraveled == 15000) { machine.ChangeState<NoirState>(); }
+            if(gameManager.playerStats.distanceTraveled == 15000) {  machine.ChangeState<EndState>();}
         }
     }
 }
