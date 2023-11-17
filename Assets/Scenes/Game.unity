@@ -4940,20 +4940,6 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!114 &963194234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 918041415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e9054837acaf2549bd68c39f51e2ef2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerController: {fileID: 4874120583695425626}
-  camera: {fileID: 963194227}
 --- !u!1 &965950522
 GameObject:
   m_ObjectHideFlags: 0
@@ -16491,10 +16477,6 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1409219202622637206, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
-      propertyPath: maxJumpCooldown
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1409219202622637206, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
       propertyPath: pos.Array.data[0]
       value: 
       objectReference: {fileID: 29005787}
@@ -16788,9 +16770,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6464156403485631533, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 963194230}
-    - targetCorrespondingSourceObject: {fileID: 6464156403485631533, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 963194234}
     - targetCorrespondingSourceObject: {fileID: 6464156403485631533, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 963194233}
