@@ -10,21 +10,14 @@ public class InmortalState : MonoBehaviour
     [SerializeField] private BoxCollider collider;
     [SerializeField] private CheckColision checkColision;
 
-    [SerializeField] private GameManager gameManager;
-
     [SerializeField] private float maxTime;
     [SerializeField] private float currentTime;
 
     private bool isInmortal;
 
-    private void OnEnable()
+    private void Start()
     {
-        gameManager.SetInmortalState += ChangeInmortalState;
-    }
-
-    private void OnDisable()
-    {
-        gameManager.SetInmortalState -= ChangeInmortalState;
+        
     }
     void Update()
     {

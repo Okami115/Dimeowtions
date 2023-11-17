@@ -13,7 +13,6 @@ public class MoveCameraMenu : MonoBehaviour
 
     public event Action moveCameraLeft;
     public event Action moveCameraRight;
-    public event Action back;
 
     public void OnLeft()
     {
@@ -37,11 +36,7 @@ public class MoveCameraMenu : MonoBehaviour
         currentPos = camaraPos[indexPos];
     }
 
-    public void OnPause()
-    {
-        back?.Invoke();
-    }
-
+    // Start is called before the first frame update
     void Start()
     {
         Time.timeScale = 1;

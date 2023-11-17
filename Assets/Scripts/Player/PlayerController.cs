@@ -30,13 +30,14 @@ namespace player
         private bool isJumpingAvailable = false;
         private bool isAntiGravityAvailable = false;
 
+
         private int indexPos = 0;
 
         [SerializeField] private float timeOnAir;
         private float timmer;
 
-        [SerializeField] private float maxJumpCooldown = 1;
-        private float cooldown;
+        [SerializeField] private const float maxJumpCooldown = 1;
+        private float cooldown = maxJumpCooldown;
 
         private bool isCounting;
         private bool inCooldown;
@@ -52,7 +53,6 @@ namespace player
         {
             currentPos = pos[indexPos];
             halfPosCount = pos.Length / 2;
-            cooldown = maxJumpCooldown;
         }
 
         public void OnLeft()
@@ -105,23 +105,10 @@ namespace player
             }
         }
 
-        public void OnCancelJump()
-        {
-            if(isCounting)
-            {
-                isCounting = false;
-                float speed = 10000 * Time.deltaTime;
-
-                transform.position = Vector3.MoveTowards(transform.position, currentPos.position, speed);
-            }
-        }
-
         public void OnGravitationalChange()
         {
-            if (!isCounting && isAntiGravityAvailable && !inCooldown)
+            if (!isCounting && isAntiGravityAvailable)
             {
-                inCooldown = true;
-
                 for (int i = 0; i < pos.Length; i++)
                 {
                     if (transform.position == pos[i].position)
@@ -166,7 +153,7 @@ namespace player
 
                 if (inCooldown)
                 {
-                    cooldown -= Time.deltaTime * playerStats.currentSpeed;
+                    cooldown -= Time.deltaTime;
 
                     if (cooldown < 0)
                     {
