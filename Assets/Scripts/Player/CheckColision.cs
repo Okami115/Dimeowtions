@@ -44,7 +44,7 @@ namespace player
                     UI[2].SetActive(false);
                     UI[1].SetActive(true);
                     deathAction?.Invoke();
-                    Time.timeScale = 0.0f;
+                    playerStats.isPause = true;
                 }
                 
                 if (hitInfo.collider.CompareTag(noirCoinTag))
@@ -80,10 +80,9 @@ namespace player
         {
             if (other.gameObject.CompareTag(emptyTag))
             {
-                pauseManager.SetActive(false);
                 UI[2].SetActive(false);
                 UI[1].SetActive(true);
-                Time.timeScale = 0.0f;
+                playerStats.isPause = true;
             }
         }
 
