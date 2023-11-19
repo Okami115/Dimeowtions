@@ -1,9 +1,8 @@
 using Manager;
 using Menu;
 using player;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreSpritesManager : MonoBehaviour
 {
@@ -16,7 +15,8 @@ public class ScoreSpritesManager : MonoBehaviour
     [SerializeField] private UIManager uiManager;
     [SerializeField] private GameManager gameManager;
     [SerializeField] private Animator portalAnimator;
-    [SerializeField] private string portalAnimatorPreviousBoolName;
+    [SerializeField] private string[] portalAnimatorPreviousTriggerNames;
+    private int portalAnimatorPreviousTriggerSteps;
 
     private int lastCollectedIndex;
     int maxObjects = 0;
@@ -48,7 +48,8 @@ public class ScoreSpritesManager : MonoBehaviour
             }
         }
 
-        portalAnimator.SetBool(portalAnimatorPreviousBoolName, false);
+        portalAnimatorPreviousTriggerSteps = 0;
+
     }
 
     private void ChangeScoreSprite()
@@ -70,8 +71,8 @@ public class ScoreSpritesManager : MonoBehaviour
                         scoreSprite.ChangeToFilledSprite();
                         lastCollectedIndex++;
 
-                        if (lastCollectedIndex == maxObjects - 1) 
-                            portalAnimator.SetBool(portalAnimatorPreviousBoolName, true);
+                        portalAnimator.SetTrigger(portalAnimatorPreviousTriggerNames[portalAnimatorPreviousTriggerSteps]);
+                        portalAnimatorPreviousTriggerSteps++;
                     }
                 }
             }         
@@ -81,6 +82,7 @@ public class ScoreSpritesManager : MonoBehaviour
     private void ResetCollectiblesIndexer()
     {
         lastCollectedIndex = 0;
+        portalAnimatorPreviousTriggerSteps = 0;
     }
 
     private void CalculateMaxObjects()

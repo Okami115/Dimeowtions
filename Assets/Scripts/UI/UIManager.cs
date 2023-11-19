@@ -40,6 +40,10 @@ namespace Menu
         [SerializeField] public string portalBoolName;
         [SerializeField] public bool portalBool;
 
+        [SerializeField] private GameObject portalVideoObject; 
+        [SerializeField] private VideoPlayer portalVideo; 
+        private bool isPortalVideoReachable; 
+
         private void OnEnable()
         {
             player.jumpCooldown += ChangeJumpCooldownImage;
@@ -47,6 +51,9 @@ namespace Menu
             OpenDoor.canOpen += ChangeMensajes;
             gameManager.nextLevel += SetSkybox;
             gameManager.CallPortal += CallPortal;
+            portalVideo.loopPointReached += VideoPlaybackComplete;
+
+            isPortalVideoReachable = true;
         }
 
         private void OnDisable()
@@ -56,6 +63,7 @@ namespace Menu
             OpenDoor.canOpen -= ChangeMensajes;
             gameManager.nextLevel -= SetSkybox;
             gameManager.CallPortal -= CallPortal;
+            portalVideo.loopPointReached -= VideoPlaybackComplete;
 
         }
 
@@ -93,10 +101,18 @@ namespace Menu
 
         private void Update()
         {
+
+            if (isPortalVideoReachable)
+            {
+                portalVideo.Play();
+                isPortalVideoReachable = false;
+            }
+
             if (!portalAnimator.GetBool(portalBoolName))
             {
                 portalBool = false;
             }
+
         }
 
         private void CallPortal()
@@ -118,6 +134,14 @@ namespace Menu
             noirScoreText.text = playerStats.collectedObjectsNoir.ToString() + " X ";
             synthwaveScoreText.text = playerStats.collectedObjectsSynthwave.ToString() + " X ";
             spaceScoreText.text = playerStats.collectedObjectsSpace.ToString() + " X ";
+        }
+
+        private void VideoPlaybackComplete(VideoPlayer vp)
+        {
+            if (vp == portalVideo)
+            {
+                portalVideoObject.SetActive(false);
+            }
         }
     }
 }
