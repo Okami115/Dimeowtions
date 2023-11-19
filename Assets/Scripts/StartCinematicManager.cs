@@ -1,44 +1,73 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 using UnityEngine.Video;
 
-public class StartCinematicManager : MonoBehaviour
+public class CinematicManager : MonoBehaviour
 {
     [SerializeField] private VideoPlayer video;
     [SerializeField] private SceneLoader sceneLoader;
     [SerializeField] private int mainMenuLevelindex;
     [SerializeField] private float holdDuration = 1.0f;
+    [SerializeField] private bool isSkeappeable;
 
-    private bool isHoldingKey = false;
-    private float holdTimer = 0.0f;
+    [SerializeField] Image emptySprite;
+    [SerializeField] Image fullSprite;
 
-    // Update is called once per frame
-    void Update()
+    private bool transitioning = false;
+    float transitionTime = 3.0f;
+    float transitionTimer = 0.0f;
+
+    private void Start()
     {
-        if (video.isPaused)
-            LoadNextScene();
-
-        if (isHoldingKey )
+        if (isSkeappeable)
         {
-            holdTimer += Time.deltaTime;
-
-            if (holdTimer >= holdDuration)
-            {
-                LoadNextScene();
-            }
-
-            if (!Keyboard.current.anyKey.isPressed)
-            {
-                isHoldingKey = false;
-                holdTimer = 0.0f;
-            }
+            emptySprite.color = new Color(1f, 1f, 1f, 1f);
+            fullSprite.color = new Color(1f, 1f, 1f, 0f);
         }
     }
 
-    public void OnSkipCinematic()
+    private void Update()
     {
-        isHoldingKey = true;
-        holdTimer = 0.0f;
+        if (isSkeappeable) 
+        {
+            if (transitioning)
+            {
+                transitionTimer += Time.deltaTime;
+                float progress = Mathf.Clamp01(transitionTimer / transitionTime);
+
+                emptySprite.color = new Color(1f, 1f, 1f, 1f - progress);
+                fullSprite.color = new Color(1f, 1f, 1f, progress);
+
+                if (transitionTimer >= transitionTime)
+                {
+                    transitioning = false;
+                    transitionTimer = 0.0f;
+                    LoadNextScene();
+                }
+            }
+        }
+        
+        if (video.isPaused)
+            LoadNextScene();
+        
+       
+    }
+
+    public void SkipCinematic(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            transitioning = true;
+        }
+        else if (context.canceled)
+        {
+            transitioning = false;
+            transitionTimer = 0.0f;
+
+            emptySprite.color = new Color(1f, 1f, 1f, 1f);
+            fullSprite.color = new Color(1f, 1f, 1f, 0f);
+        }
     }
 
     private void LoadNextScene()
