@@ -95,7 +95,7 @@
                 {
                     "name": "",
                     "id": "87c550dc-db62-471e-8548-6b6f3088f4d2",
-                    "path": "<DualShockGamepad>/rightTrigger",
+                    "path": "<DualShockGamepad>/rightShoulder",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -128,7 +128,7 @@
                 {
                     "name": "",
                     "id": "1ff0d1f5-5ffe-460b-bd1b-777f78b8cafd",
-                    "path": "<DualShockGamepad>/leftTrigger",
+                    "path": "<DualShockGamepad>/leftShoulder",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

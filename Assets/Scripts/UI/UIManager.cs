@@ -13,10 +13,6 @@ namespace Menu
         [SerializeField] private TextMeshProUGUI mensajesText;
         [SerializeField] private GameObject pausePanel;
 
-        [SerializeField] private Material noirSkybox;
-        [SerializeField] private Material synthweaveSkybox;
-        [SerializeField] private Material scifiSkybox;
-
         [SerializeField] private PlayerStats playerStats;
         [SerializeField] private PlayerController player;
         [SerializeField] private CheckColision playerCollision;
@@ -41,7 +37,6 @@ namespace Menu
             player.jumpCooldown += ChangeJumpCooldownImage;
             playerCollision.deathAction += CalculateScoreTexts;
             OpenDoor.canOpen += ChangeMensajes;
-            gameManager.nextLevel += SetSkybox;
             gameManager.CallPortal += CallPortal;
         }
 
@@ -71,28 +66,6 @@ namespace Menu
         private void ChangeMensajes(string mensajes)
         {
             mensajesText.text = mensajes;
-        }
-
-        private void SetSkybox()
-        {
-            if(playerStats.distanceTraveled == 0)
-            {
-                RenderSettings.skybox = noirSkybox;
-            }
-
-            if (playerStats.distanceTraveled == 5000)
-            {
-                // Trigger
-                // Mover a scenography
-                RenderSettings.skybox = synthweaveSkybox;
-            }
-
-            if (playerStats.distanceTraveled == 10000)
-            {
-                // Trigger
-                // Mover a scenography
-                RenderSettings.skybox = scifiSkybox;
-            }
         }
 
         private void CallPortal()
