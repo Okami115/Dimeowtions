@@ -12,7 +12,7 @@ public class ScoreSpritesManager : MonoBehaviour
     [SerializeField] private GameObject[] scoreObjects;
     [SerializeField] private float relativeOffsetPorcentage;
 
-    [SerializeField] private UIManager uiManager;
+    //[SerializeField] private UIManager uiManager;
     [SerializeField] private GameManager gameManager;
     [SerializeField] private Animator portalAnimator;
     [SerializeField] private string[] portalAnimatorPreviousTriggerNames;
@@ -24,13 +24,13 @@ public class ScoreSpritesManager : MonoBehaviour
     private void OnEnable()
     {
         playerCollision.objectCollected += ChangeScoreSprite;
-        uiManager.nextLevel += ResetCollectiblesIndexer;
+        gameManager.nextLevel += ResetCollectiblesIndexer;
     }
 
     private void OnDisable()
     {
         playerCollision.objectCollected -= ChangeScoreSprite;
-        uiManager.nextLevel -= ResetCollectiblesIndexer;
+        gameManager.nextLevel -= ResetCollectiblesIndexer;
     }
 
 
@@ -48,7 +48,7 @@ public class ScoreSpritesManager : MonoBehaviour
             }
         }
 
-        portalAnimatorPreviousTriggerSteps = 0;
+        ResetCollectiblesIndexer();
 
     }
 
