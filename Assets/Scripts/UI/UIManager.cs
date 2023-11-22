@@ -79,19 +79,19 @@ namespace Menu
 
         private void SetSkybox()
         {
-            if(playerStats.distanceTraveled == 0)
+            if(playerStats.collectedObjectsNoir == playerStats.objectsToCollectNoir)
             {
                 RenderSettings.skybox = noirSkybox;
             }
 
-            if (playerStats.distanceTraveled == 5000)
+            if (playerStats.collectedObjectsSynthwave == playerStats.objectsToCollectSynthwave)
             {
                 // Trigger
                 // Mover a scenography
                 RenderSettings.skybox = synthweaveSkybox;
             }
 
-            if (playerStats.distanceTraveled == 10000)
+            if (playerStats.collectedObjectsSpace == playerStats.objectsToCollectSpace)
             {
                 // Trigger
                 // Mover a scenography

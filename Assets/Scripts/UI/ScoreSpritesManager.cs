@@ -15,6 +15,7 @@ public class ScoreSpritesManager : MonoBehaviour
     //[SerializeField] private UIManager uiManager;
     [SerializeField] private GameManager gameManager;
     [SerializeField] private Animator portalAnimator;
+    [SerializeField] public string portalBoolPhasesFinishedName;
     [SerializeField] private string[] portalAnimatorPreviousTriggerNames;
     private int portalAnimatorPreviousTriggerSteps;
 
@@ -55,10 +56,10 @@ public class ScoreSpritesManager : MonoBehaviour
     private void ChangeScoreSprite()
     {
         CalculateMaxObjects();
-
-        if (lastCollectedIndex < maxObjects)
+        
+        for (int i = 0; i < scoreObjectsParents.Length; i++)
         {
-            for (int i = 0; i < scoreObjectsParents.Length; i++)
+            if (lastCollectedIndex < maxObjects)
             {
                 GameObject childObject = scoreObjectsParents[i].transform.GetChild(lastCollectedIndex).gameObject;
 
@@ -71,18 +72,26 @@ public class ScoreSpritesManager : MonoBehaviour
                         scoreSprite.ChangeToFilledSprite();
                         lastCollectedIndex++;
 
-                        portalAnimator.SetTrigger(portalAnimatorPreviousTriggerNames[portalAnimatorPreviousTriggerSteps]);
-                        portalAnimatorPreviousTriggerSteps++;
+                        if (lastCollectedIndex <= portalAnimatorPreviousTriggerNames.Length)
+                        {
+                            portalAnimator.SetTrigger(portalAnimatorPreviousTriggerNames[portalAnimatorPreviousTriggerSteps]);
+                            portalAnimatorPreviousTriggerSteps++;
+                        }
+
+                        if(lastCollectedIndex == maxObjects)                       
+                            portalAnimator.SetBool(portalBoolPhasesFinishedName, true);
                     }
                 }
-            }         
-        }        
+            }
+        }         
+             
     }
 
     private void ResetCollectiblesIndexer()
     {
         lastCollectedIndex = 0;
         portalAnimatorPreviousTriggerSteps = 0;
+        portalAnimator.SetBool(portalBoolPhasesFinishedName, false);
     }
 
     private void CalculateMaxObjects()
