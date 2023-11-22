@@ -11,6 +11,61 @@
 
 namespace AK
 {
+    namespace EVENTS
+    {
+        static const AkUniqueID SET_STATE_MENU = 2302270969U;
+        static const AkUniqueID SET_STATE_NOIR = 4109907276U;
+        static const AkUniqueID SET_STATE_SCIFI = 1446812956U;
+        static const AkUniqueID SET_STATE_SYNTHWAVE = 21388497U;
+        static const AkUniqueID SFX_JUMP = 3695098761U;
+        static const AkUniqueID SFX_LATERAL_MOVEMENT = 3187317502U;
+        static const AkUniqueID SFX_OPEN_DOOR = 3913579892U;
+        static const AkUniqueID START_BMG_MACHINE = 3941323550U;
+        static const AkUniqueID STOP_BMG_MACHINE = 454668116U;
+        static const AkUniqueID UI_EXIT_BUTTON = 2170883505U;
+        static const AkUniqueID UI_PLAY_BUTTON = 705989075U;
+        static const AkUniqueID UI_SLICE_MENU = 1337377386U;
+    } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace MUSIC_STATES
+        {
+            static const AkUniqueID GROUP = 1690668539U;
+
+            namespace STATE
+            {
+                static const AkUniqueID MENU = 2607556080U;
+                static const AkUniqueID NOIR = 799227909U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID SCIFI = 1794634511U;
+                static const AkUniqueID SYNTHWAVE = 2932583730U;
+            } // namespace STATE
+        } // namespace MUSIC_STATES
+
+    } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace DOORS
+        {
+            static const AkUniqueID GROUP = 2150196036U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID NOIR = 799227909U;
+                static const AkUniqueID SCIFI = 1794634511U;
+                static const AkUniqueID SYNTHWAVE = 2932583730U;
+            } // namespace SWITCH
+        } // namespace DOORS
+
+    } // namespace SWITCHES
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID PORTAL_TRIGGER = 2843586610U;
+    } // namespace TRIGGERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
