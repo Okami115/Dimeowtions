@@ -56,6 +56,12 @@ public class PlayButtonClickHandler : MonoBehaviour
         }
     }
 
+    public void TriggerCorrotines()
+    {
+        StartCoroutine(FadeInAnimation());
+        StartCoroutine(ZoomAnimation());
+    }
+
     private IEnumerator FadeInAnimation()
     {
         float elapsedTime = 0.0f;
