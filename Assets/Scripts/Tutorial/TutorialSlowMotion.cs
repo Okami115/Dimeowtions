@@ -9,6 +9,7 @@ public class TutorialSlowMotion : MonoBehaviour
 {
     public event Action<string> triggerExitEvent;
     [SerializeField] private PlayerController player;
+    [SerializeField] private PlayerStats playerStats;
     [SerializeField] private GameManager gameManager;
     [SerializeField] private bool isSlowMoAfterJump;
     [SerializeField] private bool isSlowMoAfterDoor;
@@ -20,29 +21,37 @@ public class TutorialSlowMotion : MonoBehaviour
 
     private void OnEnable()
     {
-        if (isSlowMoAfterJump)
-            player.jump += ExitSlowMotion;
-
-        if (isSlowMoAfterDoor)
-            player.interaction += ExitSlowMotion;
-        if (isSlowMoAfterMoving)
-            player.moveAction += ExitSlowMotion;
-        if (isSlowMoAfterChangeGrav)
-            player.changeGravAction += ExitSlowMotion;
+        if (!playerStats.isEndlessActive)
+        {
+            if (isSlowMoAfterJump)
+                player.jump += ExitSlowMotion;
+            if (isSlowMoAfterDoor)
+                player.interaction += ExitSlowMotion;
+            if (isSlowMoAfterMoving)
+                player.moveAction += ExitSlowMotion;
+            if (isSlowMoAfterChangeGrav)
+                player.changeGravAction += ExitSlowMotion;
+        }       
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        gameManager.InTutorial = true;
-        Time.timeScale = 0.1f;
-        tutorialUIManager.ToggleImage(true);
-        tutorialUIManager.ChangeText();
+        if (!playerStats.isEndlessActive)
+        {
+            gameManager.InTutorial = true;
+            Time.timeScale = 0.1f;
+            tutorialUIManager.ToggleImage(true);
+            tutorialUIManager.ChangeText();
+        }      
     }
 
     private void ExitSlowMotion()
     {
-        Time.timeScale = 1f;
-        tutorialUIManager.ToggleImage(false);
-        gameManager.InTutorial = false;
+        if (!playerStats.isEndlessActive)
+        {
+            Time.timeScale = 1f;
+            tutorialUIManager.ToggleImage(false);
+            gameManager.InTutorial = false;
+        }      
     }
 }

@@ -8,7 +8,7 @@ public class EndState : State
     SceneLoader sceneManager;
     int endSceneIndex;
 
-    public EndState(StateMachine machine, SceneLoader sceneManager, int endSceneIndex) : base(machine)
+    public EndState(StateMachine machine, SceneLoader sceneManager, int endSceneIndex, GameManager gameManager) : base(machine)
     {
         this.sceneManager = sceneManager;
         this.endSceneIndex = endSceneIndex;
@@ -16,6 +16,7 @@ public class EndState : State
 
     public override void Enter()
     {
+        gameManager.playerStats.isEndlessAvailable = true;
         sceneManager.LoadLevel(endSceneIndex);
     }
 

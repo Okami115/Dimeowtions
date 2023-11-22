@@ -28,11 +28,10 @@ public class NoirState : State
 
     public override void Update()
     {
-        if (CheckCondition<EndLevelNoir>())
+        if (CheckCondition<EndLevelNoir>() && !gameManager.playerStats.isEndlessActive)
         {
             machine.ChangeState<PortalState>();
             return;
         }
-
     }
 }

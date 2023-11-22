@@ -25,7 +25,7 @@ public class SynthwaveState : State
 
     public override void Update()
     {
-        if (CheckCondition<EndLevelSynthwave>())
+        if (CheckCondition<EndLevelSynthwave>() && !gameManager.playerStats.isEndlessActive)
         {
             machine.ChangeState<PortalState>();
             return;

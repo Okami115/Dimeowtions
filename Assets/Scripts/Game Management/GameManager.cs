@@ -39,11 +39,12 @@ namespace Manager
             playerStats.collectedObjectsSynthwave = 0;
             playerStats.collectedObjectsSpace = 0;
             InTutorial = true;
+            playerStats.isEndlessAvailable = false;
 
             stateMachine = new StateMachine();
             stateMachine.AddState<PauseState>(new PauseState(stateMachine, this));
             stateMachine.AddState<PortalState>(new PortalState(stateMachine, this, uiManager));
-            stateMachine.AddState<EndState>(new EndState(stateMachine, sceneLoader, 3));
+            stateMachine.AddState<EndState>(new EndState(stateMachine, sceneLoader, 3, this));
 
             stateMachine.AddState<TutorialState>(new TutorialState(stateMachine, this));
             stateMachine.AddState<NoirState>(new NoirState(stateMachine, this));
