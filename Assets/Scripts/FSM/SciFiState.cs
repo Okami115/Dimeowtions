@@ -3,12 +3,10 @@ using UnityEngine;
 
 public class SciFiState : State
 {
-    private readonly float delay;
-    private float enterTime;
-    public SciFiState(StateMachine machine, GameManager gameManager, int distance) : base(machine)
+    public SciFiState(StateMachine machine, GameManager gameManager) : base(machine)
     {
         this.gameManager = gameManager;
-        conditions.Add(typeof(EndLevel), new EndLevel(distance, gameManager.playerStats));
+        conditions.Add(typeof(EndLevelSpace), new EndLevelSpace(gameManager.playerStats));
     }
 
     public override void Enter()
@@ -27,7 +25,7 @@ public class SciFiState : State
 
     public override void Update()
     {
-        if (CheckCondition<EndLevel>())
+        if (CheckCondition<EndLevelSpace>() && !gameManager.playerStats.isEndlessActive)
         {
             machine.ChangeState<PortalState>();
             return;

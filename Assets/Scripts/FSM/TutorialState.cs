@@ -6,10 +6,10 @@ using UnityEngine;
 
 public class TutorialState : State
 {
-    public TutorialState(StateMachine machine, GameManager gameManager, int distance) : base(machine)
+    public TutorialState(StateMachine machine, GameManager gameManager) : base(machine)
     {
         this.gameManager = gameManager;
-        conditions.Add(typeof(EndLevel), new EndLevel(distance, gameManager.playerStats));
+        conditions.Add(typeof(EndLevelNoir), new EndLevelNoir(gameManager.playerStats));
     }
 
     public override void Enter()
@@ -28,7 +28,7 @@ public class TutorialState : State
     public override void Update()
     {
 
-        if (CheckCondition<EndLevel>())
+        if (CheckCondition<EndLevelNoir>())
         {
             machine.ChangeState<PortalState>();
             return;

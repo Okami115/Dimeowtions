@@ -93,20 +93,48 @@ public class Condition
     public virtual bool Check() => true;
 }
 
-public class EndLevel : Condition
+public class EndLevelNoir : Condition
 {
     private PlayerStats playerStats;
-    private int distance;
 
-    public EndLevel(int distance, PlayerStats playerStats)
+    public EndLevelNoir(PlayerStats playerStats)
     {
-        this.distance = distance;
         this.playerStats = playerStats;
     }
 
     public override bool Check()
     {
-        return playerStats.distanceTraveled >= distance;
+        return playerStats.collectedObjectsNoir == playerStats.objectsToCollectNoir;
+    }
+}
+
+public class EndLevelSynthwave : Condition
+{
+    private PlayerStats playerStats;
+
+    public EndLevelSynthwave(PlayerStats playerStats)
+    {
+        this.playerStats = playerStats;
+    }
+
+    public override bool Check()
+    {
+        return playerStats.collectedObjectsSynthwave == playerStats.objectsToCollectSynthwave;
+    }
+}
+
+public class EndLevelSpace : Condition
+{
+    private PlayerStats playerStats;
+
+    public EndLevelSpace(PlayerStats playerStats)
+    {
+        this.playerStats = playerStats;
+    }
+
+    public override bool Check()
+    {
+        return playerStats.collectedObjectsSpace == playerStats.objectsToCollectSpace;
     }
 }
 

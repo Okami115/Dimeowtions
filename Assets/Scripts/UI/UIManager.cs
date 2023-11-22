@@ -20,7 +20,7 @@ namespace Menu
         [SerializeField] private PlayerStats playerStats;
         [SerializeField] private PlayerController player;
         [SerializeField] private CheckColision playerCollision;
-     
+
         [SerializeField] private Image jumpCooldownImage;
         [SerializeField] private Sprite jumpCooldownSprite;
         [SerializeField] private Sprite noJumpCooldownSprite;
@@ -29,6 +29,7 @@ namespace Menu
         [SerializeField] private TextMeshProUGUI synthwaveScoreText;
         [SerializeField] private TextMeshProUGUI spaceScoreText;
 
+        [SerializeField] private GameObject scoreObjectContainer;
 
         public event Action nextLevel;
         [SerializeField] private GameManager gameManager;
@@ -67,6 +68,13 @@ namespace Menu
 
         }
 
+        private void Start()
+        {
+            if (playerStats.isEndlessActive) scoreObjectContainer.SetActive(false);
+            else scoreObjectContainer.SetActive(true);
+
+        }
+
         public void TogglePausePanel(bool active)
         {
             pausePanel.SetActive(active);
@@ -79,19 +87,19 @@ namespace Menu
 
         private void SetSkybox()
         {
-            if(playerStats.distanceTraveled == 0)
+            if(playerStats.collectedObjectsNoir == playerStats.objectsToCollectNoir)
             {
                 RenderSettings.skybox = noirSkybox;
             }
 
-            if (playerStats.distanceTraveled == 5000)
+            if (playerStats.collectedObjectsSynthwave == playerStats.objectsToCollectSynthwave)
             {
                 // Trigger
                 // Mover a scenography
                 RenderSettings.skybox = synthweaveSkybox;
             }
 
-            if (playerStats.distanceTraveled == 10000)
+            if (playerStats.collectedObjectsSpace == playerStats.objectsToCollectSpace)
             {
                 // Trigger
                 // Mover a scenography
