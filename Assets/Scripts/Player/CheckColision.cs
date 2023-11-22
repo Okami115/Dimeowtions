@@ -82,6 +82,7 @@ namespace player
             {
                 UI[2].SetActive(false);
                 UI[1].SetActive(true);
+                deathAction?.Invoke();
                 playerStats.isPause = true;
             }
         }

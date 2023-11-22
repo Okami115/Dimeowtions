@@ -28,9 +28,9 @@ public class PortalState : State
         {
             gameManager.playerStats.isPause = false;
             if(gameManager.InTutorial) { machine.ChangeState<TutorialState>(); }
-            if(gameManager.playerStats.distanceTraveled == 5000) { machine.ChangeState<SynthwaveState>(); }
-            if(gameManager.playerStats.distanceTraveled == 10000) { machine.ChangeState<SciFiState>(); }
-            if(gameManager.playerStats.distanceTraveled == 15000) { machine.ChangeState<NoirState>(); }
+            if(gameManager.playerStats.collectedObjectsNoir == gameManager.playerStats.objectsToCollectNoir) { machine.ChangeState<SynthwaveState>(); }
+            if(gameManager.playerStats.collectedObjectsSynthwave == gameManager.playerStats.objectsToCollectSynthwave) { machine.ChangeState<SciFiState>(); }
+            if(gameManager.playerStats.collectedObjectsSpace == gameManager.playerStats.objectsToCollectSpace) {  machine.ChangeState<EndState>();}
         }
     }
 }

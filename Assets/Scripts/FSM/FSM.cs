@@ -93,20 +93,48 @@ public class Condition
     public virtual bool Check() => true;
 }
 
-public class EndLevel : Condition
+public class EndLevelNoir : Condition
 {
     private PlayerStats playerStats;
-    private int distance;
 
-    public EndLevel(int distance, PlayerStats playerStats)
+    public EndLevelNoir(PlayerStats playerStats)
     {
-        this.distance = distance;
         this.playerStats = playerStats;
     }
 
     public override bool Check()
     {
-        return playerStats.distanceTraveled >= distance;
+        return playerStats.collectedObjectsNoir == playerStats.objectsToCollectNoir;
+    }
+}
+
+public class EndLevelSynthwave : Condition
+{
+    private PlayerStats playerStats;
+
+    public EndLevelSynthwave(PlayerStats playerStats)
+    {
+        this.playerStats = playerStats;
+    }
+
+    public override bool Check()
+    {
+        return playerStats.collectedObjectsSynthwave == playerStats.objectsToCollectSynthwave;
+    }
+}
+
+public class EndLevelSpace : Condition
+{
+    private PlayerStats playerStats;
+
+    public EndLevelSpace(PlayerStats playerStats)
+    {
+        this.playerStats = playerStats;
+    }
+
+    public override bool Check()
+    {
+        return playerStats.collectedObjectsSpace == playerStats.objectsToCollectSpace;
     }
 }
 
@@ -136,6 +164,7 @@ public class ClosePortal : Condition
 
     public override bool Check()
     {
-        return uiManager.portal.isPaused;
+        //return uiManager.portalAnimator.GetCurrentAnimatorStateInfo(0).IsName(uiManager.portalAnimationName) && uiManager.portalAnimator.IsInTransition(0);
+        return !uiManager.portalBool;
     }
 }

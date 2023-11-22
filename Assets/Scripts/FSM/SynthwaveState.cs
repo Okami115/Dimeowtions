@@ -3,12 +3,10 @@ using UnityEngine;
 
 public class SynthwaveState : State
 {
-    private readonly float delay;
-    private float enterTime;
-    public SynthwaveState(StateMachine machine, GameManager gameManager, int distance) : base(machine)
+    public SynthwaveState(StateMachine machine, GameManager gameManager) : base(machine)
     {
         this.gameManager = gameManager;
-        conditions.Add(typeof(EndLevel), new EndLevel(distance, gameManager.playerStats));
+        conditions.Add(typeof(EndLevelSynthwave), new EndLevelSynthwave(gameManager.playerStats));
     }
 
     public override void Enter()
@@ -27,7 +25,7 @@ public class SynthwaveState : State
 
     public override void Update()
     {
-        if (CheckCondition<EndLevel>())
+        if (CheckCondition<EndLevelSynthwave>() && !gameManager.playerStats.isEndlessActive)
         {
             machine.ChangeState<PortalState>();
             return;

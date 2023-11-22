@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 40d80d316851dae41b1ce37ff24e89aa
+  - enabled: 1
+    path: Assets/Scenes/EndCinematic.unity
+    guid: c4044c1260d59c24ca3f0b807b81786f
   m_configObjects: {}

@@ -16,7 +16,7 @@ namespace Menu
         [SerializeField] private PlayerStats playerStats;
         [SerializeField] private PlayerController player;
         [SerializeField] private CheckColision playerCollision;
-     
+
         [SerializeField] private Image jumpCooldownImage;
         [SerializeField] private Sprite jumpCooldownSprite;
         [SerializeField] private Sprite noJumpCooldownSprite;
@@ -25,12 +25,21 @@ namespace Menu
         [SerializeField] private TextMeshProUGUI synthwaveScoreText;
         [SerializeField] private TextMeshProUGUI spaceScoreText;
 
+        [SerializeField] private GameObject scoreObjectContainer;
 
         public event Action nextLevel;
         [SerializeField] private GameManager gameManager;
 
-        [SerializeField] public RawImage portalImage;
-        [SerializeField] public VideoPlayer portal;
+        //[SerializeField] public RawImage portalImage;
+        //[SerializeField] public VideoPlayer portal;
+
+        [SerializeField] public Animator portalAnimator;
+        [SerializeField] public string portalBoolName;
+        [SerializeField] public bool portalBool;
+
+        [SerializeField] private GameObject portalVideoObject; 
+        [SerializeField] private VideoPlayer portalVideo; 
+        private bool isPortalVideoReachable; 
 
         private void OnEnable()
         {
@@ -38,25 +47,28 @@ namespace Menu
             playerCollision.deathAction += CalculateScoreTexts;
             OpenDoor.canOpen += ChangeMensajes;
             gameManager.CallPortal += CallPortal;
+            portalVideo.loopPointReached += VideoPlaybackComplete;
+
+            isPortalVideoReachable = true;
         }
 
         private void OnDisable()
         {
             player.jumpCooldown -= ChangeJumpCooldownImage;
             playerCollision.deathAction -= CalculateScoreTexts;
+            OpenDoor.canOpen -= ChangeMensajes;
+            gameManager.nextLevel -= SetSkybox;
+            gameManager.CallPortal -= CallPortal;
+            portalVideo.loopPointReached -= VideoPlaybackComplete;
+
         }
 
-        private void Update()
+        private void Start()
         {
-            if (portal.isPaused)
-            {
-                portal.frame = 0;
-                Color color = new Color(1, 1, 1, 0);
-                portalImage.color = color;
-            }
+            if (playerStats.isEndlessActive) scoreObjectContainer.SetActive(false);
+            else scoreObjectContainer.SetActive(true);
+
         }
-
-
 
         public void TogglePausePanel(bool active)
         {
@@ -68,14 +80,48 @@ namespace Menu
             mensajesText.text = mensajes;
         }
 
+        private void SetSkybox()
+        {
+            if(playerStats.collectedObjectsNoir == playerStats.objectsToCollectNoir)
+            {
+                RenderSettings.skybox = noirSkybox;
+            }
+
+            if (playerStats.collectedObjectsSynthwave == playerStats.objectsToCollectSynthwave)
+            {
+                // Trigger
+                // Mover a scenography
+                RenderSettings.skybox = synthweaveSkybox;
+            }
+
+            if (playerStats.collectedObjectsSpace == playerStats.objectsToCollectSpace)
+            {
+                // Trigger
+                // Mover a scenography
+                RenderSettings.skybox = scifiSkybox;
+            }
+        }
+
+        private void Update()
+        {
+
+            if (isPortalVideoReachable)
+            {
+                portalVideo.Play();
+                isPortalVideoReachable = false;
+            }
+
+            if (!portalAnimator.GetBool(portalBoolName))
+            {
+                portalBool = false;
+            }
+
+        }
+
         private void CallPortal()
         {
-            Color color = new Color(1, 1, 1, 1);
-            portalImage.color = color;
-            portalImage.enabled = true;
-            portal.Stop();
-            portal.time = 0;
-            portal.Play();
+            portalAnimator.SetBool(portalBoolName, true);
+            portalBool = true;
         }
 
         private void ChangeJumpCooldownImage(bool isCooldownActive)
@@ -91,6 +137,14 @@ namespace Menu
             noirScoreText.text = playerStats.collectedObjectsNoir.ToString() + " X ";
             synthwaveScoreText.text = playerStats.collectedObjectsSynthwave.ToString() + " X ";
             spaceScoreText.text = playerStats.collectedObjectsSpace.ToString() + " X ";
+        }
+
+        private void VideoPlaybackComplete(VideoPlayer vp)
+        {
+            if (vp == portalVideo)
+            {
+                portalVideoObject.SetActive(false);
+            }
         }
     }
 }

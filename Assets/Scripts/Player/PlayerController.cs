@@ -57,7 +57,7 @@ namespace player
 
         public void OnLeft()
         {
-            if (!isCounting && isMovingAvailable)
+            if (!isCounting && isMovingAvailable || playerStats.isEndlessActive)
             {
                 indexPos++;
                 if (indexPos > pos.Length - 1)
@@ -71,7 +71,7 @@ namespace player
 
         public void OnRight()
         {
-            if (!isCounting && isMovingAvailable)
+            if (!isCounting && isMovingAvailable || playerStats.isEndlessActive)
             {
                 indexPos--;
                 if (indexPos < 0)
@@ -85,7 +85,7 @@ namespace player
 
         public void OnInteraction()
         {
-            if (isOpeningDoorAvailable)
+            if (isOpeningDoorAvailable || playerStats.isEndlessActive)
             {
                 interaction?.Invoke();
                 isJumpingAvailable = true;
@@ -94,7 +94,7 @@ namespace player
 
         public void OnJump()
         {
-            if (!inCooldown && isJumpingAvailable)
+            if (!inCooldown && isJumpingAvailable || playerStats.isEndlessActive)
             {
                 boxCollider.enabled = false;
                 inCooldown = true;
@@ -118,7 +118,7 @@ namespace player
 
         public void OnGravitationalChange()
         {
-            if (!isCounting && isAntiGravityAvailable && !inCooldown)
+            if (!isCounting && isAntiGravityAvailable && !inCooldown || playerStats.isEndlessActive)
             {
                 inCooldown = true;
 

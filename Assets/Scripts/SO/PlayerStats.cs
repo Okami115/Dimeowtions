@@ -16,5 +16,6 @@ public class PlayerStats : ScriptableObject
     public int objectsToCollectSpace;
     public int maxScore;
     public bool isPause;
-    public bool isEndless;
+    public bool isEndlessActive;
+    public bool isEndlessAvailable;
 }

@@ -1,9 +1,8 @@
 using Manager;
 using Menu;
 using player;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreSpritesManager : MonoBehaviour
 {
@@ -13,8 +12,12 @@ public class ScoreSpritesManager : MonoBehaviour
     [SerializeField] private GameObject[] scoreObjects;
     [SerializeField] private float relativeOffsetPorcentage;
 
-    [SerializeField] private UIManager uiManager;
+    //[SerializeField] private UIManager uiManager;
     [SerializeField] private GameManager gameManager;
+    [SerializeField] private Animator portalAnimator;
+    [SerializeField] public string portalBoolPhasesFinishedName;
+    [SerializeField] private string[] portalAnimatorPreviousTriggerNames;
+    private int portalAnimatorPreviousTriggerSteps;
 
     private int lastCollectedIndex;
     int maxObjects = 0;
@@ -22,58 +25,80 @@ public class ScoreSpritesManager : MonoBehaviour
     private void OnEnable()
     {
         playerCollision.objectCollected += ChangeScoreSprite;
-        uiManager.nextLevel += ResetCollectiblesIndexer;
+        gameManager.nextLevel += ResetCollectiblesIndexer;
     }
 
     private void OnDisable()
     {
         playerCollision.objectCollected -= ChangeScoreSprite;
-        uiManager.nextLevel -= ResetCollectiblesIndexer;
+        gameManager.nextLevel -= ResetCollectiblesIndexer;
     }
 
 
     private void Start()
     {
-        for (int i = 0; i < scoreObjectsParents.Length; i++)
+        if (!playerStats.isEndlessActive)
         {
-            CalculateMaxObjects();
-
-            for (int j = 1; j < maxObjects; j++)
+            for (int i = 0; i < scoreObjectsParents.Length; i++)
             {
-                GameObject newObj = Instantiate(scoreObjects[i], scoreObjects[i].transform.position, scoreObjects[i].transform.rotation, scoreObjectsParents[i].transform);
-                float relativeOffset = Screen.width * relativeOffsetPorcentage;
-                newObj.transform.position = newObj.transform.position + new Vector3(j * relativeOffset, 0f, 0f);
+                CalculateMaxObjects();
+
+                for (int j = 1; j < maxObjects; j++)
+                {
+                    GameObject newObj = Instantiate(scoreObjects[i], scoreObjects[i].transform.position, scoreObjects[i].transform.rotation, scoreObjectsParents[i].transform);
+                    float relativeOffset = Screen.width * relativeOffsetPorcentage;
+                    newObj.transform.position = newObj.transform.position + new Vector3(j * relativeOffset, 0f, 0f);
+                }
             }
+
         }
+        
+        ResetCollectiblesIndexer();
+
     }
 
     private void ChangeScoreSprite()
     {
-        CalculateMaxObjects();
-
-        if (lastCollectedIndex < maxObjects)
+        if (!playerStats.isEndlessActive)
         {
+            CalculateMaxObjects();
+
             for (int i = 0; i < scoreObjectsParents.Length; i++)
             {
-                GameObject childObject = scoreObjectsParents[i].transform.GetChild(lastCollectedIndex).gameObject;
-
-                if (childObject.activeInHierarchy)
+                if (lastCollectedIndex < maxObjects)
                 {
-                    ScoreSprite scoreSprite = childObject.GetComponent<ScoreSprite>();
+                    GameObject childObject = scoreObjectsParents[i].transform.GetChild(lastCollectedIndex).gameObject;
 
-                    if (scoreSprite != null)
+                    if (childObject.activeInHierarchy)
                     {
-                        scoreSprite.ChangeToFilledSprite();
-                        lastCollectedIndex++;
+                        ScoreSprite scoreSprite = childObject.GetComponent<ScoreSprite>();
+
+                        if (scoreSprite != null)
+                        {
+                            scoreSprite.ChangeToFilledSprite();
+                            lastCollectedIndex++;
+
+                            if (lastCollectedIndex <= portalAnimatorPreviousTriggerNames.Length)
+                            {
+                                portalAnimator.SetTrigger(portalAnimatorPreviousTriggerNames[portalAnimatorPreviousTriggerSteps]);
+                                portalAnimatorPreviousTriggerSteps++;
+                            }
+
+                            if (lastCollectedIndex == maxObjects)
+                                portalAnimator.SetBool(portalBoolPhasesFinishedName, true);
+                        }
                     }
                 }
-            }         
-        }        
+            }
+        }
+                           
     }
 
     private void ResetCollectiblesIndexer()
     {
         lastCollectedIndex = 0;
+        portalAnimatorPreviousTriggerSteps = 0;
+        portalAnimator.SetBool(portalBoolPhasesFinishedName, false);
     }
 
     private void CalculateMaxObjects()
