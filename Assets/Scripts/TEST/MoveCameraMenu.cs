@@ -6,6 +6,7 @@ using UnityEngine;
 public class MoveCameraMenu : MonoBehaviour
 {
 
+    [SerializeField] private Transform creditsPos;
     [SerializeField] private float speed;
     public Transform[] camaraPos;
     private int indexPos = 0;
@@ -40,6 +41,12 @@ public class MoveCameraMenu : MonoBehaviour
     public void OnPause()
     {
         back?.Invoke();
+        currentPos = camaraPos[indexPos];
+    }
+
+    public void CredistOpen()
+    {
+        currentPos = creditsPos;
     }
 
     void Start()
