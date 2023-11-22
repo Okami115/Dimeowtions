@@ -59,6 +59,7 @@ namespace Manager
 
         public void ReloadScene()
         {
+            Time.timeScale = 1;
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
             SceneManager.LoadScene(currentSceneIndex);
