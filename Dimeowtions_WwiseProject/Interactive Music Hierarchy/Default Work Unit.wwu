@@ -83,9 +83,11 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicSegment Name="Tempo Twisters (Bobby Hackett) - That old gang of mine" ID="{35DD3B88-CB35-41BB-A52D-7D35065285F8}" ShortID="915896557">
+								<MusicSegment Name="Dimeowtions - Noir - v1_0" ID="{2920EF7B-71AB-4C34-8789-DE4642E20D5E}" ShortID="925808897">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="138798.301882723"/>
+										<Property Name="EndPosition" Type="Real64" Value="133073.119735671"/>
+										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+										<Property Name="Tempo" Type="Real64" Value="125"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -96,23 +98,23 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="Tempo Twisters (Bobby Hackett) - That old gang of mine" ID="{3CC746AE-5DF1-42EA-ACC8-A5CC373050B5}" ShortID="82740501">
+										<MusicTrack Name="Dimeowtions - Noir - v1_0" ID="{D2977A2E-80D1-494E-A646-4F5DE85B6D6F}" ShortID="586733154">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FA5E459-1B02-46DD-8489-E7668FDC6496}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Tempo Twisters (Bobby Hackett) - That old gang of mine" ID="{DAFDEF09-4EBE-40F9-9F12-BDF83EB30D19}">
+												<AudioFileSource Name="Dimeowtions - Noir - v1_0" ID="{98C1852B-AC07-402C-890D-ABDAB465F4B7}">
 													<Language>SFX</Language>
-													<AudioFile>Tempo Twisters (Bobby Hackett) - That old gang of mine.wav</AudioFile>
+													<AudioFile>Dimeowtions - Noir - v1.0.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="477596002"/>
+														<MediaID ID="84006049"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
-												<MusicTransition Name="Root" ID="{8EB6DE8F-53C7-4306-84CE-52BC32C3A35D}">
+												<MusicTransition Name="Root" ID="{041A7DCD-6BB0-461F-9EAC-F63FF7402C98}">
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
@@ -123,34 +125,31 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{9FD6EE21-82A6-4136-95D3-52A1C6E8DED0}">
+															<MusicTrackSequence Name="" ID="{6D7C3577-A0E6-4EDC-82CE-8E7452045628}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="Tempo Twisters (Bobby Hackett) - That old gang of mine" ID="{47664790-D354-42E9-B887-78815ED734CD}">
+																				<MusicClip Name="Dimeowtions - Noir - v1_0" ID="{7247AAE6-87B0-4A7D-BFEE-C26C7777D2D2}">
 																					<PropertyList>
-																						<Property Name="BeginTrimOffset" Type="Real64" Value="811.677283943657"/>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="139609.979166667"/>
-																						<Property Name="FadeInDuration" Type="Real64" Value="309.78814736751"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="127680"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																						<Property Name="PlayAt" Type="Real64" Value="-811.677283943657"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="Tempo Twisters (Bobby Hackett) - That old gang of mine" ID="{DAFDEF09-4EBE-40F9-9F12-BDF83EB30D19}"/>
+																					<AudioSourceRef Name="Dimeowtions - Noir - v1_0" ID="{98C1852B-AC07-402C-890D-ABDAB465F4B7}"/>
 																					<PropertyCurveList>
 																						<PropertyCurve PropertyName="Highpass">
-																							<Curve Name="" ID="{6095B32D-3EFA-4BEF-B239-9C2000DA4C98}">
+																							<Curve Name="" ID="{4A3A83EA-9DC0-4DFA-8DE5-696D6E6DC149}">
 																								<PropertyList>
 																									<Property Name="Flags" Type="int32" Value="1"/>
 																								</PropertyList>
 																								<PointList>
 																									<Point>
-																										<XPos>0.81168</XPos>
+																										<XPos>0</XPos>
 																										<YPos>0</YPos>
 																										<Flags>5</Flags>
 																									</Point>
 																									<Point>
-																										<XPos>139.609979166667</XPos>
+																										<XPos>127.68</XPos>
 																										<YPos>0</YPos>
 																										<Flags>37</Flags>
 																									</Point>
@@ -158,18 +157,18 @@
 																							</Curve>
 																						</PropertyCurve>
 																						<PropertyCurve PropertyName="Lowpass">
-																							<Curve Name="" ID="{2E6AFB7D-E91D-420B-A5B4-53FC0094E8C4}">
+																							<Curve Name="" ID="{69304C29-9805-474C-BB2B-B4B1A62ED1C2}">
 																								<PropertyList>
 																									<Property Name="Flags" Type="int32" Value="1"/>
 																								</PropertyList>
 																								<PointList>
 																									<Point>
-																										<XPos>0.81168</XPos>
+																										<XPos>0</XPos>
 																										<YPos>0</YPos>
 																										<Flags>5</Flags>
 																									</Point>
 																									<Point>
-																										<XPos>139.609979166667</XPos>
+																										<XPos>127.68</XPos>
 																										<YPos>0</YPos>
 																										<Flags>37</Flags>
 																									</Point>
@@ -177,18 +176,18 @@
 																							</Curve>
 																						</PropertyCurve>
 																						<PropertyCurve PropertyName="Volume">
-																							<Curve Name="" ID="{F3F62E40-733F-49B9-AFE8-72C5110FA285}">
+																							<Curve Name="" ID="{452B70ED-C2CC-427F-B015-7914EB1902AE}">
 																								<PropertyList>
 																									<Property Name="Flags" Type="int32" Value="3"/>
 																								</PropertyList>
 																								<PointList>
 																									<Point>
-																										<XPos>0.81168</XPos>
+																										<XPos>0</XPos>
 																										<YPos>0</YPos>
 																										<Flags>5</Flags>
 																									</Point>
 																									<Point>
-																										<XPos>139.609979166667</XPos>
+																										<XPos>127.68</XPos>
 																										<YPos>0</YPos>
 																										<Flags>37</Flags>
 																									</Point>
@@ -212,15 +211,19 @@
 										<ObjectList Name="Cues">
 											<Reference>
 												<Local>
-													<MusicCue Name="Entry Cue" ID="{9A7CF7FE-0E17-4571-889B-81A30B91A88A}"/>
+													<MusicCue Name="Entry Cue" ID="{5806A945-D593-4CE1-B210-3AB65A270ADA}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="12480"/>
+														</PropertyList>
+													</MusicCue>
 												</Local>
 											</Reference>
 											<Reference>
 												<Local>
-													<MusicCue Name="Exit Cue" ID="{CA4B0743-660C-40C7-B5E8-73719C5EB73B}">
+													<MusicCue Name="Exit Cue" ID="{E421BB06-CA87-4F5E-B1DD-308A07A0FAAD}">
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="138798.301882723"/>
+															<Property Name="TimeMs" Type="Real64" Value="127680"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -245,19 +248,25 @@
 							<ObjectLists/>
 							<Playlist>
 								<MusicPlaylistItem Name="" ID="{8444F92B-3394-4E04-8724-174516EC3721}" ShortID="1003828104">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
 									<ChildrenList>
-										<MusicPlaylistItem Name="" ID="{0C7CD444-59D5-4494-9DD9-210F54B2E794}" ShortID="138306475">
+										<MusicPlaylistItem Name="" ID="{A1CB17E5-2474-411F-813E-F623648523DC}" ShortID="459919851">
 											<PropertyList>
-												<Property Name="LoopCount" Type="int16" Value="0"/>
 												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 											</PropertyList>
-											<SegmentRef Name="Tempo Twisters (Bobby Hackett) - That old gang of mine" ID="{35DD3B88-CB35-41BB-A52D-7D35065285F8}"/>
+											<SegmentRef Name="Dimeowtions - Noir - v1_0" ID="{2920EF7B-71AB-4C34-8789-DE4642E20D5E}"/>
 										</MusicPlaylistItem>
 									</ChildrenList>
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
 						<MusicPlaylistContainer Name="Synthwave" ID="{1B8AB862-0AB4-41E6-B6CE-59C59E11507A}" ShortID="839218363">
+							<PropertyList>
+								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+								<Property Name="Tempo" Type="Real64" Value="135"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BD8A155B-1097-49E3-8D55-20A05F7338DA}"/>
@@ -266,6 +275,92 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FA5E459-1B02-46DD-8489-E7668FDC6496}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Dimeowtions - Synthwave - v1_0" ID="{D4774B71-CB4A-4C64-B202-67480B83AAE6}" ShortID="1048305090">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="129777.791666667"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BD8A155B-1097-49E3-8D55-20A05F7338DA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FA5E459-1B02-46DD-8489-E7668FDC6496}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Dimeowtions - Synthwave - v1_0" ID="{6A184176-4E4B-420C-82BA-49674E7D20AD}" ShortID="834715100">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FA5E459-1B02-46DD-8489-E7668FDC6496}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Dimeowtions - Synthwave - v1_0" ID="{87EE0E46-2063-41FD-912D-7CDC4BA8A2F0}">
+													<Language>SFX</Language>
+													<AudioFile>Dimeowtions - Synthwave - v1.0.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="289874703"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{D7D23D85-1880-42FE-A615-0F5D81B17571}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{FE888B1E-71E0-4DD5-BA7F-E2BD8505EB36}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Dimeowtions - Synthwave - v1_0" ID="{52D4B803-21AE-4E0B-8C79-3F645673E324}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="129777.791666667"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Dimeowtions - Synthwave - v1_0" ID="{87EE0E46-2063-41FD-912D-7CDC4BA8A2F0}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{3C19A726-B110-432B-B9C1-AF419456146B}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{9141240A-23DB-4D40-B701-44A3FF83EC96}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="128000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
 							<TransitionList>
 								<MusicTransition Name="Root" ID="{37164218-9547-4B4F-96E2-FCC482A315C5}">
 									<PropertyList>
@@ -281,7 +376,19 @@
 							</TransitionList>
 							<ObjectLists/>
 							<Playlist>
-								<MusicPlaylistItem Name="" ID="{D1BD4199-1B63-4C39-AF30-FE94C4F9C991}" ShortID="3025812"/>
+								<MusicPlaylistItem Name="" ID="{D1BD4199-1B63-4C39-AF30-FE94C4F9C991}" ShortID="3025812">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{B1B244D8-3E19-4A1F-AFE1-33B86BD05F5B}" ShortID="239919288">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Dimeowtions - Synthwave - v1_0" ID="{D4774B71-CB4A-4C64-B202-67480B83AAE6}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
 						<MusicPlaylistContainer Name="SciFi" ID="{FA97EC06-501D-42D0-A7C2-BD306DAB00B0}" ShortID="536515526">
@@ -308,7 +415,11 @@
 							</TransitionList>
 							<ObjectLists/>
 							<Playlist>
-								<MusicPlaylistItem Name="" ID="{AD4BB60A-DFA0-4229-ACAF-C8B84845A32E}" ShortID="906870244"/>
+								<MusicPlaylistItem Name="" ID="{AD4BB60A-DFA0-4229-ACAF-C8B84845A32E}" ShortID="906870244">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
 						<MusicPlaylistContainer Name="Menu" ID="{BEB97D36-571E-41AD-9FDC-46E851998C24}" ShortID="753454394">
@@ -478,7 +589,10 @@
 								<MusicTransition Name="Transition" ID="{B1DD8F44-F642-4644-91EC-422FDE096CD5}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
+										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
@@ -501,10 +615,38 @@
 										</SourceFadeOut>
 									</TransitionInfo>
 								</MusicTransition>
-								<MusicTransition Name="Transition" ID="{B95A831C-60E6-4E02-82D0-1A193D2BF692}">
+								<MusicTransition Name="Transition" ID="{FC8D3D8C-A96B-41FE-B8B2-4F4F1B9B1353}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
-										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Synthwave" ID="{1B8AB862-0AB4-41E6-B6CE-59C59E11507A}" WorkUnitID="{AC0EC91E-8641-4A0B-9DAE-5B42680BA471}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Noir" ID="{A4E6C11A-673C-45C8-8BAA-3755708BAB9D}" WorkUnitID="{AC0EC91E-8641-4A0B-9DAE-5B42680BA471}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="Noir_To_Synth_Translation" ID="{4F96194E-E468-4E41-9F8A-29FC6BE1E080}" WorkUnitID="{AC0EC91E-8641-4A0B-9DAE-5B42680BA471}"/>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{D9A3BCE4-37E2-47F8-95DC-FFE1AC27A140}">
+												<PropertyList>
+													<Property Name="FadeTime" Type="Real64" Value="1"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{B1BEFD8D-56E9-414B-9B86-2552728F048A}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
@@ -513,6 +655,38 @@
 										</Reference>
 										<Reference Name="SourceContextObject">
 											<ObjectRef Name="Noir" ID="{A4E6C11A-673C-45C8-8BAA-3755708BAB9D}" WorkUnitID="{AC0EC91E-8641-4A0B-9DAE-5B42680BA471}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo/>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{363EBAB4-8B54-41C0-AC14-EFC0E7482806}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Menu" ID="{BEB97D36-571E-41AD-9FDC-46E851998C24}" WorkUnitID="{AC0EC91E-8641-4A0B-9DAE-5B42680BA471}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Synthwave" ID="{1B8AB862-0AB4-41E6-B6CE-59C59E11507A}" WorkUnitID="{AC0EC91E-8641-4A0B-9DAE-5B42680BA471}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo/>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{1D9448AE-E6E0-42E2-9876-2210A997A783}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Menu" ID="{BEB97D36-571E-41AD-9FDC-46E851998C24}" WorkUnitID="{AC0EC91E-8641-4A0B-9DAE-5B42680BA471}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="SciFi" ID="{FA97EC06-501D-42D0-A7C2-BD306DAB00B0}" WorkUnitID="{AC0EC91E-8641-4A0B-9DAE-5B42680BA471}"/>
 										</Reference>
 									</ReferenceList>
 									<TransitionInfo/>
@@ -568,6 +742,94 @@
 						</Entry>
 					</EntryList>
 				</MusicSwitchContainer>
+				<Folder Name="Translations" ID="{18022B4A-59C9-4446-A5BD-57D7490839C3}" ShortID="146100365">
+					<ChildrenList>
+						<MusicSegment Name="Noir_To_Synth_Translation" ID="{4F96194E-E468-4E41-9F8A-29FC6BE1E080}" ShortID="823838154">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="7324.125"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BD8A155B-1097-49E3-8D55-20A05F7338DA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FA5E459-1B02-46DD-8489-E7668FDC6496}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Noir_To_Synth_Translation" ID="{2227F574-5955-4020-A659-D30A6FD54AC9}" ShortID="679599092">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FA5E459-1B02-46DD-8489-E7668FDC6496}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Noir_To_Synth_Translation" ID="{9B71150A-BBB8-4CF7-89D7-4256B5D1837D}">
+											<Language>SFX</Language>
+											<AudioFile>Noir_To_Synth_Translation.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1045465036"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{9C3BDDB7-20B2-4311-98DD-B0C0BE5E492F}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{22D7373F-1A1D-4D24-9C07-04380ABF466F}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Noir_To_Synth_Translation" ID="{902D1961-002D-407F-BB37-DA89A1376EEE}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="7324.125"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Noir_To_Synth_Translation" ID="{9B71150A-BBB8-4CF7-89D7-4256B5D1837D}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{FA6061D2-6519-412D-93DD-9B9EAB53DE0E}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{3973D303-D4BC-4626-B37F-AD3BFE7B20DA}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="7324.125"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>
