@@ -424,16 +424,10 @@
 						</MusicPlaylistContainer>
 						<MusicPlaylistContainer Name="Menu" ID="{BEB97D36-571E-41AD-9FDC-46E851998C24}" ShortID="753454394">
 							<PropertyList>
-								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
 										<Value>1</Value>
-									</ValueList>
-								</Property>
-								<Property Name="UseMaxSoundPerInstance" Type="bool">
-									<ValueList>
-										<Value>True</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
@@ -552,10 +546,12 @@
 							<ObjectLists/>
 							<Playlist>
 								<MusicPlaylistItem Name="" ID="{A5FEABD7-3D99-4C7F-9F4F-E67D97048A3D}" ShortID="632743662">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
 									<ChildrenList>
 										<MusicPlaylistItem Name="" ID="{33BFE50B-0546-4862-86B6-CF8AF4FB75F8}" ShortID="1001031537">
 											<PropertyList>
-												<Property Name="LoopCount" Type="int16" Value="0"/>
 												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 											</PropertyList>
 											<SegmentRef Name="GAMEVideo_Retro Games 8Bit Menu Tune With Melody CMajor 120BPM 01_B00M_ONE" ID="{E090BE45-D655-4DAB-9005-957F41139C0A}"/>
