@@ -1116,7 +1116,7 @@ MonoBehaviour:
           m_MethodName: ApplySprite
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 21300000, guid: 0e8892906dfe6ed4e82a0f60709c54e0, type: 3}
+            m_ObjectArgument: {fileID: 21300000, guid: 3bff4ecd77a5b43439e453a762427da3, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
