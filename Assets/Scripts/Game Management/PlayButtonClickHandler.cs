@@ -10,6 +10,7 @@ public class PlayButtonClickHandler : MonoBehaviour
 {
     [SerializeField] private PlayerStats playerStats;
     [SerializeField] private int playerDistanceTraveled;
+    [SerializeField] private MenuInputManger menuInputManger;
 
     [SerializeField] private Camera mainCamera;
     [SerializeField] private Transform camZoomPos;
@@ -31,12 +32,12 @@ public class PlayButtonClickHandler : MonoBehaviour
 
     private void OnEnable()
     {
-        InputManager.onClick += TriggerRaycast;
+        menuInputManger.onClick += TriggerRaycast;
     }
 
     private void OnDisable()
     {
-        InputManager.onClick -= TriggerRaycast;
+        menuInputManger.onClick -= TriggerRaycast;
     }
 
     private void TriggerRaycast()
