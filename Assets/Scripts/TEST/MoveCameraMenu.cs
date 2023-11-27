@@ -41,6 +41,11 @@ public class MoveCameraMenu : MonoBehaviour
         }
     }
 
+    public void CredistOpen()
+    {
+        currentPos = creditsPos;
+    }
+
     void Start()
     {
         Time.timeScale = 1;

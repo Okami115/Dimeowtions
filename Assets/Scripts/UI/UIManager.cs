@@ -13,10 +13,6 @@ namespace Menu
         [SerializeField] private TextMeshProUGUI mensajesText;
         [SerializeField] private GameObject pausePanel;
 
-        [SerializeField] private Material noirSkybox;
-        [SerializeField] private Material synthweaveSkybox;
-        [SerializeField] private Material scifiSkybox;
-
         [SerializeField] private PlayerStats playerStats;
         [SerializeField] private PlayerController player;
         [SerializeField] private CheckColision playerCollision;
@@ -50,7 +46,6 @@ namespace Menu
             player.jumpCooldown += ChangeJumpCooldownImage;
             playerCollision.deathAction += CalculateScoreTexts;
             OpenDoor.canOpen += ChangeMensajes;
-            gameManager.nextLevel += SetSkybox;
             gameManager.CallPortal += CallPortal;
             portalVideo.loopPointReached += VideoPlaybackComplete;
 
@@ -62,7 +57,7 @@ namespace Menu
             player.jumpCooldown -= ChangeJumpCooldownImage;
             playerCollision.deathAction -= CalculateScoreTexts;
             OpenDoor.canOpen -= ChangeMensajes;
-            gameManager.nextLevel -= SetSkybox;
+            //ameManager.nextLevel -= SetSkybox;
             gameManager.CallPortal -= CallPortal;
             portalVideo.loopPointReached -= VideoPlaybackComplete;
 
@@ -85,27 +80,27 @@ namespace Menu
             mensajesText.text = mensajes;
         }
 
-        private void SetSkybox()
-        {
-            if(playerStats.collectedObjectsNoir == playerStats.objectsToCollectNoir)
-            {
-                RenderSettings.skybox = noirSkybox;
-            }
+        //private void SetSkybox()
+        //{
+        //    if(playerStats.collectedObjectsNoir == playerStats.objectsToCollectNoir)
+        //    {
+        //        RenderSettings.skybox = noirSkybox;
+        //    }
 
-            if (playerStats.collectedObjectsSynthwave == playerStats.objectsToCollectSynthwave)
-            {
-                // Trigger
-                // Mover a scenography
-                RenderSettings.skybox = synthweaveSkybox;
-            }
+        //    if (playerStats.collectedObjectsSynthwave == playerStats.objectsToCollectSynthwave)
+        //    {
+        //        // Trigger
+        //        // Mover a scenography
+        //        RenderSettings.skybox = synthweaveSkybox;
+        //    }
 
-            if (playerStats.collectedObjectsSpace == playerStats.objectsToCollectSpace)
-            {
-                // Trigger
-                // Mover a scenography
-                RenderSettings.skybox = scifiSkybox;
-            }
-        }
+        //    if (playerStats.collectedObjectsSpace == playerStats.objectsToCollectSpace)
+        //    {
+        //        // Trigger
+        //        // Mover a scenography
+        //        RenderSettings.skybox = scifiSkybox;
+        //    }
+        //}
 
         private void Update()
         {
