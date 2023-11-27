@@ -21,6 +21,7 @@ public class SciFiState : State
     public override void Exit()
     {
         Debug.LogWarning("Exit: SCIFI :: State");
+        PlayerPrefs.SetInt("StoryMode", 0);
     }
 
     public override void Update()

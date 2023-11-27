@@ -30,9 +30,6 @@ namespace Menu
         public event Action nextLevel;
         [SerializeField] private GameManager gameManager;
 
-        //[SerializeField] public RawImage portalImage;
-        //[SerializeField] public VideoPlayer portal;
-
         [SerializeField] public Animator portalAnimator;
         [SerializeField] public string portalBoolName;
         [SerializeField] public bool portalBool;
@@ -57,7 +54,6 @@ namespace Menu
             player.jumpCooldown -= ChangeJumpCooldownImage;
             playerCollision.deathAction -= CalculateScoreTexts;
             OpenDoor.canOpen -= ChangeMensajes;
-            //ameManager.nextLevel -= SetSkybox;
             gameManager.CallPortal -= CallPortal;
             portalVideo.loopPointReached -= VideoPlaybackComplete;
 
@@ -79,29 +75,6 @@ namespace Menu
         {
             mensajesText.text = mensajes;
         }
-
-        //private void SetSkybox()
-        //{
-        //    if(playerStats.collectedObjectsNoir == playerStats.objectsToCollectNoir)
-        //    {
-        //        RenderSettings.skybox = noirSkybox;
-        //    }
-
-        //    if (playerStats.collectedObjectsSynthwave == playerStats.objectsToCollectSynthwave)
-        //    {
-        //        // Trigger
-        //        // Mover a scenography
-        //        RenderSettings.skybox = synthweaveSkybox;
-        //    }
-
-        //    if (playerStats.collectedObjectsSpace == playerStats.objectsToCollectSpace)
-        //    {
-        //        // Trigger
-        //        // Mover a scenography
-        //        RenderSettings.skybox = scifiSkybox;
-        //    }
-        //}
-
         private void Update()
         {
 

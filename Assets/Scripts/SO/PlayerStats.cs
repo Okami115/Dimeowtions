@@ -18,4 +18,5 @@ public class PlayerStats : ScriptableObject
     public bool isPause;
     public bool isEndlessActive;
     public bool isEndlessAvailable;
+    public bool isStoryModeFinished;
 }

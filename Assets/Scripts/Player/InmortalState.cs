@@ -27,8 +27,7 @@ public class InmortalState : MonoBehaviour
         gameManager.SetInmortalState -= ChangeInmortalState;
     }
     void Update()
-    {
-        
+    {      
         if(isInmortal) 
         {
             currentTime += Time.deltaTime;

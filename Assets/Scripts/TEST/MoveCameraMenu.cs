@@ -6,6 +6,7 @@ using UnityEngine;
 public class MoveCameraMenu : MonoBehaviour
 {
     [SerializeField] private MenuInputManger menuInputManger;
+    [SerializeField] private PlayerStats playerStats;
     [SerializeField] private float speed;
     public Transform[] camaraPos;
     private int indexPos = 0;
@@ -25,7 +26,7 @@ public class MoveCameraMenu : MonoBehaviour
 
     public void MoveCameraLeft()
     {       
-        if (indexPos > 0)
+        if (playerStats.isStoryModeFinished && indexPos > 0)
         {
             indexPos--;
             currentPos = camaraPos[indexPos];
@@ -34,7 +35,7 @@ public class MoveCameraMenu : MonoBehaviour
 
     public void MoveCameraRight()
     {        
-        if (indexPos < camaraPos.Length - 1)
+        if (playerStats.isStoryModeFinished  && indexPos < camaraPos.Length - 1)
         {
             indexPos++;
             currentPos = camaraPos[indexPos];

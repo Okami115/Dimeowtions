@@ -40,6 +40,7 @@ namespace Manager
             playerStats.collectedObjectsSpace = 0;
             InTutorial = true;
             playerStats.isEndlessAvailable = false;
+            playerStats.isStoryModeFinished = false;
 
             stateMachine = new StateMachine();
             stateMachine.AddState<PauseState>(new PauseState(stateMachine, this));

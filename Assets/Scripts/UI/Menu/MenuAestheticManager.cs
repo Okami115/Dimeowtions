@@ -20,6 +20,7 @@ public class MenuAestheticManager : MonoBehaviour
     internal MenuAesthetic PreviousAesthetic { get => previousAesthetic; set => previousAesthetic = value; }
 
     [SerializeField] private MenuInputManger menuInputManger;
+    [SerializeField] private PlayerStats playerStats;
 
     public event Action<MenuAesthetic, MenuAesthetic> menuAestheticChanged;
 
@@ -58,8 +59,11 @@ public class MenuAestheticManager : MonoBehaviour
 
     public void ChangeAesthetic(MenuAesthetic newMenuAesthetic)
     {
-        previousAesthetic = currentAesthetic;
-        currentAesthetic = newMenuAesthetic;
-        menuAestheticChanged?.Invoke(previousAesthetic, currentAesthetic);
+        if (/*PlayerPrefs.GetInt("StoryMode") == 0*/ playerStats.isStoryModeFinished)
+        {
+            previousAesthetic = currentAesthetic;
+            currentAesthetic = newMenuAesthetic;
+            menuAestheticChanged?.Invoke(previousAesthetic, currentAesthetic);
+        }
     }
 }

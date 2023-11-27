@@ -4,22 +4,32 @@ using UnityEngine;
 
 public class MenuUIManager : MonoBehaviour
 {
-    [SerializeField] private GameObject menuPanel;
-    [SerializeField] private GameObject optionsPanel;
+    [SerializeField] private PlayerStats playerStats;
 
-    private void Start()
-    {
-        menuPanel.SetActive(true);
-        optionsPanel.SetActive(false);
-    }
+    [SerializeField] private GameObject leftArrow;
+    [SerializeField] private GameObject rightArrow;
 
-    public void ToggleMenuPanel(bool active)
+    private void Awake()
     {
-        menuPanel.SetActive(active);
-    }
+        if (!PlayerPrefs.HasKey("StoryMode"))
+        {
+            PlayerPrefs.SetInt("StoryMode", 1);
+            playerStats.isStoryModeFinished = PlayerPrefs.GetInt("StoryMode") != 0;
+        }
+        //else
+        //{
+        //    playerStats.isStoryModeFinished = PlayerPrefs.GetInt("StoryMode") != 0;
+        //}
 
-    public void ToggleOptionsPanel(bool active)
-    {
-        optionsPanel.SetActive(active);
+        if (!playerStats.isStoryModeFinished)
+        {
+            leftArrow.SetActive(false);
+            rightArrow.SetActive(false);
+        }
+        else
+        {
+            leftArrow.SetActive(false);
+            rightArrow.SetActive(true);
+        }
     }
 }
