@@ -41,7 +41,7 @@ public class MenuAestheticManager : MonoBehaviour
         ChangeAesthetic(MenuAesthetic.Noir);
     }
 
-    private void CalculateAestheticLeft()
+    public void CalculateAestheticLeft()
     {
         if (currentAesthetic == MenuAesthetic.Synthwave)
             ChangeAesthetic(MenuAesthetic.Noir);
@@ -49,7 +49,7 @@ public class MenuAestheticManager : MonoBehaviour
             ChangeAesthetic(MenuAesthetic.Synthwave);
     }
 
-    private void CalculateAestheticRight()
+    public void CalculateAestheticRight()
     {
         if (currentAesthetic == MenuAesthetic.Noir)
             ChangeAesthetic(MenuAesthetic.Synthwave);

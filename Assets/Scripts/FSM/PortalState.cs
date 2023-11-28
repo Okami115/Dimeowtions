@@ -27,10 +27,24 @@ public class PortalState : State
         if (CheckCondition<ClosePortal>())
         {
             gameManager.playerStats.isPause = false;
-            if(gameManager.InTutorial) { machine.ChangeState<TutorialState>(); }
-            if(gameManager.playerStats.collectedObjectsNoir == gameManager.playerStats.objectsToCollectNoir) { machine.ChangeState<SynthwaveState>(); }
-            if(gameManager.playerStats.collectedObjectsSynthwave == gameManager.playerStats.objectsToCollectSynthwave) { machine.ChangeState<SciFiState>(); }
-            if(gameManager.playerStats.collectedObjectsSpace == gameManager.playerStats.objectsToCollectSpace) {  machine.ChangeState<EndState>();}
+
+            if (!gameManager.playerStats.isEndlessActive)
+            {
+                if (gameManager.InTutorial) { machine.ChangeState<TutorialState>(); }
+                if (gameManager.playerStats.collectedObjectsNoir == gameManager.playerStats.objectsToCollectNoir) { machine.ChangeState<SynthwaveState>(); }
+                if (gameManager.playerStats.collectedObjectsSynthwave == gameManager.playerStats.objectsToCollectSynthwave) { machine.ChangeState<SciFiState>(); }
+                if (gameManager.playerStats.collectedObjectsSpace == gameManager.playerStats.objectsToCollectSpace) { machine.ChangeState<EndState>(); }
+            }
+            else
+            {
+                if (gameManager.playerStats.endlessAestheticSelected == Aesthetic.Noir)
+                    machine.ChangeState<NoirState>();
+                else if (gameManager.playerStats.endlessAestheticSelected == Aesthetic.Synthwave)
+                    machine.ChangeState<SynthwaveState>();
+                else if (gameManager.playerStats.endlessAestheticSelected == Aesthetic.Scifi)
+                    machine.ChangeState<SciFiState>();
+            }
+            
         }
     }
 }

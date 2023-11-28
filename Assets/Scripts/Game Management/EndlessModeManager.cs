@@ -19,16 +19,21 @@ public class EndlessModeManager : MonoBehaviour
         //playerStats.isEndlessActive = false;
         modeIndexer = 0;
 
-        if (PlayerPrefs.GetInt("StoryMode", 1) == 1)
+        if (!playerStats.isStoryModeFinished)
         {
             gameObject.SetActive(false);
+        }
+        else
+        {
+            gameObject.SetActive(true);
+            playerStats.isEndlessActive = false;
         }
     }
 
     public void ToggleEndlessMode()
     {
         
-        //playerStats.isEndlessActive = PlayerPrefs.GetInt("StoryMode", 1);
+        playerStats.isEndlessActive = !playerStats.isEndlessActive;
 
         if (!playerStats.isStoryModeFinished) modeIndexer = 0;
         else modeIndexer = 1;

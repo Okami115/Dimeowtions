@@ -1,3 +1,4 @@
+using Manager;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -23,6 +24,8 @@ public class PlayButtonClickHandler : MonoBehaviour
     [SerializeField] private Image panel;
     private Color initialColor;
     private Color targetColor;
+
+    [SerializeField] private Aesthetic aestheticSelected;
 
     private void Start()
     {
@@ -52,7 +55,6 @@ public class PlayButtonClickHandler : MonoBehaviour
             {
                 StartCoroutine(FadeInAnimation());
                 StartCoroutine(ZoomAnimation());
-                //playerStats.distanceTraveled = playerDistanceTraveled;
             }
         }
     }
@@ -101,6 +103,11 @@ public class PlayButtonClickHandler : MonoBehaviour
         }
 
         mainCamera.transform.position = new Vector3 (mainCamera.transform.position.x, mainCamera.transform.position.y, camZoomPos.position.z);
+
+        if (playerStats.isEndlessActive)
+        {
+            playerStats.endlessAestheticSelected = aestheticSelected;
+        }
 
         sceneLoader.LoadLevel(gameSceneIndexer);
     }
