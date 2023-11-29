@@ -10,17 +10,6 @@ public class SpriteApplier : MonoBehaviour
     [SerializeField] private Sprite[] baseSprites;
     [SerializeField] private Sprite[] selectedButtonSprites;
 
-    private void OnEnable()
-    {
-        LevelSelectorMovement.changeArtStyle += UpdateSrite;
-        UpdateSrite();
-    }
-
-    private void OnDisable()
-    {
-        LevelSelectorMovement.changeArtStyle -= UpdateSrite;
-    }
-
     public void Start()
     {
         UpdateSrite();

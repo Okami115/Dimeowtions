@@ -1202,6 +1202,7 @@ MonoBehaviour:
   door: {fileID: 0}
   tutorialUIManager: {fileID: 1065173196}
   playerCollision: {fileID: 4874120583695425628}
+  tutorialStep: 2
 --- !u!65 &192628696
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1684,6 +1685,7 @@ MonoBehaviour:
   door: {fileID: 0}
   tutorialUIManager: {fileID: 1065173196}
   playerCollision: {fileID: 4874120583695425628}
+  tutorialStep: 3
 --- !u!65 &301012610
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2535,6 +2537,7 @@ MonoBehaviour:
   door: {fileID: 1921683445}
   tutorialUIManager: {fileID: 1065173196}
   playerCollision: {fileID: 4874120583695425628}
+  tutorialStep: 0
 --- !u!65 &438540056
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4065,6 +4068,7 @@ MonoBehaviour:
   door: {fileID: 0}
   tutorialUIManager: {fileID: 1065173196}
   playerCollision: {fileID: 4874120583695425628}
+  tutorialStep: 1
 --- !u!65 &780099593
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4354,6 +4358,81 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 79063583d579e1744894450fe3913fbd, type: 3}
   children: {fileID: 1780488752}
   gameManager: {fileID: 26147096}
+--- !u!1 &865639136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 865639137}
+  - component: {fileID: 865639138}
+  - component: {fileID: 865639139}
+  m_Layer: 0
+  m_Name: InputManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &865639137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865639136}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 107.21209, y: -49.790268, z: -140.14305}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1307872979}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &865639138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865639136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c609fc15ae5013448f1c7ce539ebb93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &865639139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865639136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 899836e7331e7d9499a81567c29eac80, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: world
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1001 &883708606
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5885,7 +5964,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f63f2b09c9fef5d43b8392b71404da40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mensajesText: {fileID: 600240939}
   pausePanel: {fileID: 37427336}
   playerStats: {fileID: 11400000, guid: 3b0d911bf7ddf6b4f91f7798a73b6989, type: 2}
   player: {fileID: 4874120583695425626}
@@ -7536,6 +7614,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 865639137}
   - {fileID: 26147097}
   - {fileID: 250916036}
   - {fileID: 951582702}
@@ -16595,6 +16674,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 3b0d911bf7ddf6b4f91f7798a73b6989, type: 2}
     - target: {fileID: 1409219202622637206, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
+      propertyPath: inputManager
+      value: 
+      objectReference: {fileID: 865639138}
+    - target: {fileID: 1409219202622637206, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
       propertyPath: jumpVelocity
       value: 250
       objectReference: {fileID: 0}
@@ -16638,6 +16721,26 @@ PrefabInstance:
       propertyPath: pos.Array.data[7]
       value: 
       objectReference: {fileID: 2099964076}
+    - target: {fileID: 1409219202622637206, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
+      propertyPath: tutorialSlowMotions.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409219202622637206, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
+      propertyPath: tutorialSlowMotions.Array.data[0]
+      value: 
+      objectReference: {fileID: 438540055}
+    - target: {fileID: 1409219202622637206, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
+      propertyPath: tutorialSlowMotions.Array.data[1]
+      value: 
+      objectReference: {fileID: 780099592}
+    - target: {fileID: 1409219202622637206, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
+      propertyPath: tutorialSlowMotions.Array.data[2]
+      value: 
+      objectReference: {fileID: 192628695}
+    - target: {fileID: 1409219202622637206, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
+      propertyPath: tutorialSlowMotions.Array.data[3]
+      value: 
+      objectReference: {fileID: 301012609}
     - target: {fileID: 1626697998236953445, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
       propertyPath: maxTime
       value: 3
@@ -16788,7 +16891,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4358142924231640228, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5370432131199041432, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
       propertyPath: m_Name
