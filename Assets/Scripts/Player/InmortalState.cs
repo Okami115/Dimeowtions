@@ -35,7 +35,7 @@ public class InmortalState : MonoBehaviour
 
             if(currentTime > maxTime) 
             {
-
+                currentTime = 0;
                 ChangeInmortalState();
             }
         }
@@ -47,7 +47,5 @@ public class InmortalState : MonoBehaviour
 
         collider.enabled = !isInmortal;
         checkColision.enabled = !isInmortal;
-
-        currentTime = 0;
     }
 }
