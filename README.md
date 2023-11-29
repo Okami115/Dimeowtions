@@ -50,4 +50,4 @@ This game was also possible thanks to the support of these professors:
 
 ## Links
 
-Download it from itch.io: [PONER LINK AL JUEGO DE ITCH ACA](https://drawnah.itch.io/dimeowtions)https://drawnah.itch.io/dimeowtions
+Download it from itch.io: https://drawnah.itch.io/dimeowtions
