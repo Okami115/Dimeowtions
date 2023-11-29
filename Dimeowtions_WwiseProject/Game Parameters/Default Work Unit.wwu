@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4C0DB5EC-629B-4F31-BD18-9013D475EE2F}" SchemaVersion="103">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{4C0DB5EC-629B-4F31-BD18-9013D475EE2F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{4C0DB5EC-629B-4F31-BD18-9013D475EE2F}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Paused" ID="{79DDC1B6-CA10-4511-9C5B-ABF849536C7C}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

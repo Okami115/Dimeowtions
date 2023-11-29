@@ -19,6 +19,8 @@ public class PlayButtonClickHandler : MonoBehaviour
     [SerializeField] private float zoomDuration;
     [SerializeField] private string obstacleTag;
 
+    [SerializeField] private AK.Wwise.Event playButton;
+
     [SerializeField] private Image panel;
     private Color initialColor;
     private Color targetColor;
@@ -32,6 +34,7 @@ public class PlayButtonClickHandler : MonoBehaviour
     private void OnEnable()
     {
         InputManager.onClick += TriggerRaycast;
+        
     }
 
     private void OnDisable()
@@ -43,17 +46,22 @@ public class PlayButtonClickHandler : MonoBehaviour
     {
         Vector3 raycastOrigin = mainCamera.transform.position;
         Ray ray = mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue());
-        RaycastHit hitInfo;
+        RaycastHit hitInfo;        
 
         if (Physics.Raycast(raycastOrigin, ray.direction, out hitInfo))
         {
+            
             if (hitInfo.collider.CompareTag(obstacleTag))
             {
                 StartCoroutine(FadeInAnimation());
                 StartCoroutine(ZoomAnimation());
                 //playerStats.distanceTraveled = playerDistanceTraveled;
+                playButton.Post(gameObject);
+                
             }
+            
         }
+        
     }
 
     private IEnumerator FadeInAnimation()
@@ -71,7 +79,7 @@ public class PlayButtonClickHandler : MonoBehaviour
 
             yield return null;
         }
-
+        
         panel.color = targetColor;
     }
 
@@ -93,7 +101,7 @@ public class PlayButtonClickHandler : MonoBehaviour
             yield return null;
         }
 
-        mainCamera.transform.position = new Vector3 (mainCamera.transform.position.x, mainCamera.transform.position.y, camZoomPos.position.z);
+        mainCamera.transform.position = new Vector3 (mainCamera.transform.position.x, mainCamera.transform.position.y, camZoomPos.position.z);        
 
         sceneLoader.LoadLevel(gameSceneIndexer);
     }

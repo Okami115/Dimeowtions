@@ -658,6 +658,7 @@ GameObject:
   m_Component:
   - component: {fileID: 255654186}
   - component: {fileID: 255654187}
+  - component: {fileID: 255654188}
   m_Layer: 0
   m_Name: Buttons
   m_TagString: Untagged
@@ -726,6 +727,39 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &255654188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255654185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef4f8740289d85a4493547293b5dc4ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slideMenu:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 63072181a95bb0746aa49188da31ccab, type: 2}
+  playButton:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e95d7bb0411375845a3822d3207c1893, type: 2}
+  exitButton:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 52ab281c00ff48c42985565797e3445e, type: 2}
+  creditsButton:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 209ed52d329371641afd384b57528425, type: 2}
+  pointerUI:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 77cedc27f7e89814592ab7d26832ac97, type: 2}
+  ip: {fileID: 943539938}
 --- !u!1 &260694695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,6 +1244,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 255654188}
+          m_TargetAssemblyTypeName: AudioMenuManager, Assembly-CSharp
+          m_MethodName: PointerUI
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - eventID: 1
     callback:
       m_PersistentCalls:
@@ -1299,6 +1345,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 255654188}
+        m_TargetAssemblyTypeName: AudioMenuManager, Assembly-CSharp
+        m_MethodName: ExitButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &779619902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1346,7 +1404,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 798689926}
-  - component: {fileID: 798689927}
+  - component: {fileID: 798689929}
+  - component: {fileID: 798689928}
   m_Layer: 0
   m_Name: MenuMusic
   m_TagString: Untagged
@@ -1369,7 +1428,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1259062818}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &798689927
+--- !u!114 &798689928
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1389,6 +1448,30 @@ MonoBehaviour:
     groupIdInternal: 0
     groupGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: eb07f8d277f441e47a73923ffa6ece6f, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
+--- !u!114 &798689929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798689925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 604148b846732534daf7c6fd333812cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 05c3ee89884e13f49acb30b7f4cf3b63, type: 2}
   valueIdInternal: 0
   groupIdInternal: 0
   valueGuidInternal: 
@@ -1457,6 +1540,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 21300000, guid: 942741aca2690a74a8cd6b8b5e922554, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 255654188}
+          m_TargetAssemblyTypeName: AudioMenuManager, Assembly-CSharp
+          m_MethodName: PointerUI
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -1542,6 +1637,18 @@ MonoBehaviour:
       - m_Target: {fileID: 196613621}
         m_TargetAssemblyTypeName: CreditsButton, Assembly-CSharp
         m_MethodName: Credits
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 255654188}
+        m_TargetAssemblyTypeName: AudioMenuManager, Assembly-CSharp
+        m_MethodName: CreditsButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1941,6 +2048,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 255654188}
+          m_TargetAssemblyTypeName: AudioMenuManager, Assembly-CSharp
+          m_MethodName: PointerUI
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - eventID: 1
     callback:
       m_PersistentCalls:
@@ -2133,6 +2252,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 21300000, guid: 7044b0efd11b7c1458a71e9292f6a607, type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 255654188}
+          m_TargetAssemblyTypeName: AudioMenuManager, Assembly-CSharp
+          m_MethodName: PointerUI
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -2740,6 +2871,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 255654188}
+          m_TargetAssemblyTypeName: AudioMenuManager, Assembly-CSharp
+          m_MethodName: PointerUI
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - eventID: 1
     callback:
       m_PersistentCalls:
@@ -2973,13 +3116,13 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1271252755}
+        - m_Target: {fileID: 1271252752}
           m_TargetAssemblyTypeName: SpriteApplier, Assembly-CSharp
-          m_MethodName: ApplySprite
-          m_Mode: 2
+          m_MethodName: 
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 21300000, guid: 6459ab08a8012e4449f72917ede26538, type: 3}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -3065,6 +3208,18 @@ MonoBehaviour:
       - m_Target: {fileID: 196613613}
         m_TargetAssemblyTypeName: MoveCameraMenu, Assembly-CSharp
         m_MethodName: OnLeft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 255654188}
+        m_TargetAssemblyTypeName: AudioMenuManager, Assembly-CSharp
+        m_MethodName: SlideMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3261,6 +3416,18 @@ MonoBehaviour:
       - m_Target: {fileID: 196613613}
         m_TargetAssemblyTypeName: MoveCameraMenu, Assembly-CSharp
         m_MethodName: OnRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 255654188}
+        m_TargetAssemblyTypeName: AudioMenuManager, Assembly-CSharp
+        m_MethodName: SlideMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4372,6 +4539,10 @@ PrefabInstance:
       propertyPath: gameSceneIndexer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4291778342334868596, guid: 9ea207f23f977fc4f85d48767841b4f8, type: 3}
+      propertyPath: playButton.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: e95d7bb0411375845a3822d3207c1893, type: 2}
     - target: {fileID: 5992437794896752291, guid: 9ea207f23f977fc4f85d48767841b4f8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -4476,6 +4647,10 @@ PrefabInstance:
       propertyPath: gameSceneIndexer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6421546407273354955, guid: 9ea207f23f977fc4f85d48767841b4f8, type: 3}
+      propertyPath: playButton.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: e95d7bb0411375845a3822d3207c1893, type: 2}
     - target: {fileID: 6956397349595372140, guid: 9ea207f23f977fc4f85d48767841b4f8, type: 3}
       propertyPath: m_TagString
       value: SciFiButton
@@ -4516,6 +4691,14 @@ PrefabInstance:
       propertyPath: gameSceneIndexer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7822670940882935869, guid: 9ea207f23f977fc4f85d48767841b4f8, type: 3}
+      propertyPath: exitButton.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: e95d7bb0411375845a3822d3207c1893, type: 2}
+    - target: {fileID: 7822670940882935869, guid: 9ea207f23f977fc4f85d48767841b4f8, type: 3}
+      propertyPath: playButton.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: e95d7bb0411375845a3822d3207c1893, type: 2}
     - target: {fileID: 8079358682456346023, guid: 9ea207f23f977fc4f85d48767841b4f8, type: 3}
       propertyPath: m_TagString
       value: NoirButton

@@ -18,6 +18,10 @@ namespace player
         [SerializeField] private string synthwaveCoinTag;
         [SerializeField] private string spaceCoinTag;
 
+        [SerializeField] public AK.Wwise.Event soundDefeat;
+        [SerializeField] public AK.Wwise.Event soundItems;
+        
+
         private string obstacleTag = "Obstacle"; 
         private string emptyTag = "Empty"; 
         private float raycastDistanceObjetc = 1f;
@@ -52,18 +56,21 @@ namespace player
                     playerStats.collectedObjectsNoir += 1;
                     objectCollected?.Invoke();
                     Destroy(hitInfo.collider.gameObject);
+                    soundItems.Post(gameObject);
                 }
                 else if (hitInfo.collider.CompareTag(synthwaveCoinTag))
                 {
                     playerStats.collectedObjectsSynthwave += 1;
                     objectCollected?.Invoke();
                     Destroy(hitInfo.collider.gameObject);
+                    soundItems.Post(gameObject);
                 }
                 else if (hitInfo.collider.CompareTag(spaceCoinTag))
                 {
                     playerStats.collectedObjectsSpace += 1;
                     objectCollected?.Invoke();
                     Destroy(hitInfo.collider.gameObject);
+                    soundItems.Post(gameObject);
                 }
             }
 
@@ -84,6 +91,8 @@ namespace player
                 UI[1].SetActive(true);
                 deathAction?.Invoke();
                 playerStats.isPause = true;
+                soundDefeat.Post(gameObject);                
+
             }
         }
 
