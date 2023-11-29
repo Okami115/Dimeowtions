@@ -224,6 +224,7 @@ MonoBehaviour:
   animator: {fileID: 4387797729362325734}
   boxCollider: {fileID: 8599577165553280518}
   doorOpenTriggerName: open
+  doorOpenBoolName: 
 --- !u!1001 &5635354899281659606
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -355,7 +356,7 @@ Animator:
   m_GameObject: {fileID: 4824943709852138375}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: 78cab50e2f03849438b3b790b03f5b0c, type: 2}
+  m_Controller: {fileID: 9100000, guid: b5cdf7f1cabae594c8402f919c9b0b2b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

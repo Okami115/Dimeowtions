@@ -10,7 +10,7 @@ namespace Menu
 {
     public class UIManager : MonoBehaviour
     {
-        [SerializeField] private TextMeshProUGUI mensajesText;
+        //[SerializeField] private TextMeshProUGUI mensajesText;
         [SerializeField] private GameObject pausePanel;
 
         [SerializeField] private PlayerStats playerStats;
@@ -37,7 +37,6 @@ namespace Menu
         private void OnEnable()
         {
             playerCollision.deathAction += CalculateScoreTexts;
-            OpenDoor.canOpen += ChangeMensajes;
             gameManager.CallPortal += CallPortal;
             portalVideo.loopPointReached += VideoPlaybackComplete;
 
@@ -47,7 +46,6 @@ namespace Menu
         private void OnDisable()
         {
             playerCollision.deathAction -= CalculateScoreTexts;
-            OpenDoor.canOpen -= ChangeMensajes;
             gameManager.CallPortal -= CallPortal;
             portalVideo.loopPointReached -= VideoPlaybackComplete;
 
@@ -65,10 +63,6 @@ namespace Menu
             pausePanel.SetActive(active);
         }
 
-        private void ChangeMensajes(string mensajes)
-        {
-            mensajesText.text = mensajes;
-        }
         private void Update()
         {
 

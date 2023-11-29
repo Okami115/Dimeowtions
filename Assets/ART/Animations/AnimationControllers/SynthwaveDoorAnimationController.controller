@@ -21,7 +21,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 1827226128182048838, guid: fae0c10fd847c3248b1b0b3c7d8e2871, type: 3}
+  m_Motion: {fileID: 1827226128182048838, guid: 1ab1af4f59d7aac4ca11ca75bde9a467, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -83,7 +83,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: NoirDoorAnimationController
+  m_Name: SynthwaveDoorAnimationController
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: open
