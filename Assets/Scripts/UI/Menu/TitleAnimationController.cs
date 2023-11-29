@@ -10,17 +10,16 @@ public class AestheticTransition
     public MenuAesthetic previousAesthetic;
     public MenuAesthetic currentAesthetic;
     public string triggerString;
-    public Sprite lastFrameSprite;
-    public string stateName;
 }
 
 public class TitleAnimationController : MonoBehaviour
 {
     [SerializeField] private MenuAestheticManager menuAestheticManager;
     [SerializeField] private Animator titleAnimator;
-    [SerializeField] private Image titleImage;
+    [SerializeField] public Image titleImage;
 
-    [SerializeField] private List<AestheticTransition> aestheticTransitions = new List<AestheticTransition>();
+    [SerializeField] public List<AestheticTransition> aestheticTransitions = new List<AestheticTransition>();
+
 
     private void OnEnable()
     {
@@ -39,30 +38,8 @@ public class TitleAnimationController : MonoBehaviour
             if (transition.previousAesthetic == previousAesthetic && transition.currentAesthetic == currentAesthetic)
             {
                 titleAnimator.SetTrigger(transition.triggerString);
-                StartCoroutine(SetLastFrameSpriteAfterAnimation(transition.lastFrameSprite, transition.stateName));
                 break;
             }
         }
-    }
-
-    private IEnumerator SetLastFrameSpriteAfterAnimation(Sprite lastFrameSprite, string stateName)
-    {
-        while (AnimatorIsPlaying(stateName))
-        {
-            yield return null;
-        }
-
-        titleImage.sprite = lastFrameSprite;
-    }
-
-    private bool AnimatorIsPlaying()
-    {
-        return titleAnimator.GetCurrentAnimatorStateInfo(0).length >
-               titleAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime;
-    }
-
-    private bool AnimatorIsPlaying(string stateName)
-    {
-        return AnimatorIsPlaying() && titleAnimator.GetCurrentAnimatorStateInfo(0).IsName(stateName);
     }
 }

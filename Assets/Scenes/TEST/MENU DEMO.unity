@@ -6016,22 +6016,18 @@ MonoBehaviour:
     currentAesthetic: 1
     triggerString: NoirToSynthwaveTrigger
     lastFrameSprite: {fileID: 1234794465, guid: 7b20d46a97a8a01488b0d351d0da22d4, type: 3}
-    stateName: NoirToSynthwave
   - previousAesthetic: 1
     currentAesthetic: 2
     triggerString: SynthwaveToSpaceTrigger
     lastFrameSprite: {fileID: -136061248, guid: 7b20d46a97a8a01488b0d351d0da22d4, type: 3}
-    stateName: SynthwaveToSpace
   - previousAesthetic: 1
     currentAesthetic: 0
     triggerString: SynthwaveToNoirTrigger
     lastFrameSprite: {fileID: 898629940, guid: 7b20d46a97a8a01488b0d351d0da22d4, type: 3}
-    stateName: SynthwaveToNoir
   - previousAesthetic: 2
     currentAesthetic: 1
     triggerString: SpaceToSynthwaveTrigger
     lastFrameSprite: {fileID: 1234794465, guid: 7b20d46a97a8a01488b0d351d0da22d4, type: 3}
-    stateName: SpaceToSynthwave
 --- !u!1001 &4784472312756552983
 PrefabInstance:
   m_ObjectHideFlags: 0
