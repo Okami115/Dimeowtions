@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8B3CB3C7-D2CE-46D3-AAA2-ADBE6A00E548}" SchemaVersion="103">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{8B3CB3C7-D2CE-46D3-AAA2-ADBE6A00E548}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8B3CB3C7-D2CE-46D3-AAA2-ADBE6A00E548}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Main" ID="{B949098A-1009-4453-AC35-BF7056FC7E26}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Start_BMG_Machine" ID="{6549F208-20ED-41E8-95EC-D773519486CA}" WorkUnitID="{1A6E17A9-A856-4B3F-9779-C02C7BFC44F6}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_BMG_Machine" ID="{CBCF3C69-0D85-43FF-9E2F-131A68431AB6}" WorkUnitID="{1A6E17A9-A856-4B3F-9779-C02C7BFC44F6}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_Menu" ID="{9F4616B3-01CE-445C-A09E-68EFBD71E49D}" WorkUnitID="{1A6E17A9-A856-4B3F-9779-C02C7BFC44F6}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_Noir" ID="{375088A1-391F-4717-AA59-D97A862C15BB}" WorkUnitID="{1A6E17A9-A856-4B3F-9779-C02C7BFC44F6}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="UI_Play_Button" ID="{16D3F2CB-F4ED-43E8-81C5-5071371AE436}" WorkUnitID="{1A6E17A9-A856-4B3F-9779-C02C7BFC44F6}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Menu" ID="{A41B3307-2AD3-46DA-8BB2-1DA8C4E718C6}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

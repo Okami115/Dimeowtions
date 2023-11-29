@@ -1,0 +1,35 @@
+Event	ID	Name			Wwise Object Path	Notes
+	21388497	Set_State_Synthwave			\Default Work Unit\Music\Set_State_Synthwave	
+	454668116	Stop_BMG_Machine			\Default Work Unit\Music\Stop_BMG_Machine	
+	705989075	UI_Play_Button			\Default Work Unit\UI\Main Menu\UI_Play_Button	
+	1337377386	UI_Slice_Menu			\Default Work Unit\UI\Main Menu\UI_Slice_Menu	
+	1446812956	Set_State_SciFi			\Default Work Unit\Music\Set_State_SciFi	
+	2170883505	UI_Exit_Button			\Default Work Unit\UI\Main Menu\UI_Exit_Button	
+	2302270969	Set_State_Menu			\Default Work Unit\Music\Set_State_Menu	
+	3187317502	SFX_Lateral_Movement			\Default Work Unit\Player\SFX_Lateral_Movement	
+	3695098761	SFX_Jump			\Default Work Unit\Player\SFX_Jump	
+	3913579892	SFX_Open_Door			\Default Work Unit\Player\SFX_Open_Door	
+	3941323550	Start_BMG_Machine			\Default Work Unit\Music\Start_BMG_Machine	
+	4109907276	Set_State_Noir			\Default Work Unit\Music\Set_State_Noir	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1690668539	Music_States			\Default Work Unit\Music_States	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Music_States			
+	799227909	Noir	Music_States			
+	1794634511	SciFi	Music_States			
+	2607556080	Menu	Music_States			
+	2932583730	Synthwave	Music_States			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	84006049	Dimeowtions - Noir - v1_0	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Windows\SFX\Dimeowtions - Noir - v1.0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BMG_Machine\Noir\Dimeowtions - Noir - v1_0\Dimeowtions - Noir - v1_0		25251904
+	101592148	DOORWood	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Windows\SFX\DOORWood_065B1781.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\Player\Open_Door\DOORWood		75244
+	284843365	UI, Modern, Positive, SciFi, InterfaceUI, Selection 1	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Windows\SFX\UI, Modern, Positive, SciFi, InterfaceUI, Selection 1_38C52126.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\UI\Menu UI\UI_Play_Button\UI, Modern, Positive, SciFi, InterfaceUI, Selection 1		284500
+	289874703	Dimeowtions - Synthwave - v1_0	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Windows\SFX\Dimeowtions - Synthwave - v1.0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BMG_Machine\Synthwave\Dimeowtions - Synthwave - v1_0\Dimeowtions - Synthwave - v1_0		24917400
+	314025992	GAMEVideo_Retro Games 8Bit Menu Tune With Melody CMajor 120BPM 01_B00M_ONE	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Windows\SFX\GAMEVideo_Retro Games 8Bit Menu Tune With Melody CMajor 120BPM 01_B00M_ONE_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BMG_Machine\Menu\GAMEVideo_Retro Games 8Bit Menu Tune With Melody CMajor 120BPM 01_B00M_ONE\GAMEVideo_Retro Games 8Bit Menu Tune With Melody CMajor 120BPM 01_B00M_ONE		1536064
+	330658490	SALTO	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Windows\SFX\SALTO_14E41BE2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\Player\Jump\SALTO		48600
+	827511146	MOVIMIENTO_LATERAL	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Windows\SFX\MOVIMIENTO_LATERAL_0FB4E377.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\Player\Lateral_Movement\MOVIMIENTO_LATERAL		45184
+	1028913379	UI_SELECTION	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Windows\SFX\UI_SELECTION_E9A99D26.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\UI\Menu UI\UI_Exit_Button\UI_SELECTION		68912
+	1045465036	Noir_To_Synth_Translation	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Windows\SFX\Noir_To_Synth_Translation_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Translations\Noir_To_Synth_Translation\Noir_To_Synth_Translation		1406360
+
