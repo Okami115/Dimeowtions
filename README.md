@@ -2,9 +2,9 @@
 <img src="logo.png" alt="Poner nombre del jego aca"/>
 </p>
 
-# Poner nombre del juego acá
+# DIMEOWTIONS
 
-PONER LA DESCRIPCION LARGA DEL JUEGO ACA.
+Dimeowtions is a 3D first person runner about Bareton the cat, a kitten who, while trying to follow his human to work, accidentally falls into a mysterious tunnel that takes him to unknown dimensions. He must find a way to escape from there, facing numerous challenges across several worlds.
 
 This is a game being developed by students from <a href="https://www.imagecampus.edu.ar/">Image Campus</a>
 
@@ -17,14 +17,18 @@ This is a game being developed by students from <a href="https://www.imagecampus
 
 ## Credits
 
-- **Nombre Apellido (ORDENAR IGUAL QUE CREDITOS EN JUEGO)** - *Programming*
-- **Nombre Apellido** - *Programming*
-- **Nombre Apellido** - *Art*
-- **Nombre Apellido** - *Art*
-- **Nombre Apellido** - *Audio*
-- **Nombre Apellido** - *Audio*
-- **Nombre Apellido** - *Testing*
-- **Nombre Apellido** - *Testing*
+- **Matias Pierpaoli** - *Programming*
+- **Tomas ‘Okami’ Porte Petit** - *Programming*
+- **Candela ‘Gochie’ Formigo** - *Art*
+- **Ezequiel ‘Drawnah’ Nicanor Muñoz** - *Art*
+- - **Tomas ‘Cenfe’ Verhagen** - *Art*
+- **Daria Chiroleu** - *Audio*
+- **Felipe ‘Flippa’ Goizueta** - *Audio*
+-  **Emiliano Laiño** - *Audio*
+- **Nicolas Nahuel Carnota** - *Testing*
+- **Sebastian Cretella** - *Testing*
+- **Valentin Andres Gamero** - *Testing*
+- **Mateo ‘Tylr2’ Taylor** - *Testing*
 
 
 This game was also possible thanks to the support of these professors:
@@ -43,9 +47,7 @@ This game was also possible thanks to the support of these professors:
 - **Franco Guerra**
 - **Silvina Lemos Hoffmann**
 
-OTRAS PERSONAS A LAS QUE QUIERAN AGRADECERLES ACÁ, SINO SACAR ESTE TEXTO
-
 
 ## Links
 
-Download it from itch.io: PONER LINK AL JUEGO DE ITCH ACA
+Download it from itch.io: [PONER LINK AL JUEGO DE ITCH ACA](https://drawnah.itch.io/dimeowtions)https://drawnah.itch.io/dimeowtions
