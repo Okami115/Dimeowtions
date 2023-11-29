@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: New PlayerStats
   m_EditorClassIdentifier: 
   accelerationRate: 0.005
-  currentSpeed: 1.8199445
+  currentSpeed: 1.3658787
   initialSpeed: 1
   maxSpeed: 2
-  distanceTraveled: 6200
+  distanceTraveled: 500
   collectedObjectsNoir: 0
-  collectedObjectsSynthwave: 3
+  collectedObjectsSynthwave: 0
   collectedObjectsSpace: 0
   objectsToCollectNoir: 5
   objectsToCollectSynthwave: 5
@@ -28,4 +28,4 @@ MonoBehaviour:
   isEndlessActive: 1
   isEndlessAvailable: 0
   isStoryModeFinished: 0
-  endlessAestheticSelected: 1
+  endlessAestheticSelected: 0

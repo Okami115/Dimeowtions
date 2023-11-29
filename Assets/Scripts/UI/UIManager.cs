@@ -17,10 +17,6 @@ namespace Menu
         [SerializeField] private PlayerController player;
         [SerializeField] private CheckColision playerCollision;
 
-        [SerializeField] private Image jumpCooldownImage;
-        [SerializeField] private Sprite jumpCooldownSprite;
-        [SerializeField] private Sprite noJumpCooldownSprite;
-
         [SerializeField] private TextMeshProUGUI noirScoreText;
         [SerializeField] private TextMeshProUGUI synthwaveScoreText;
         [SerializeField] private TextMeshProUGUI spaceScoreText;
@@ -40,7 +36,6 @@ namespace Menu
 
         private void OnEnable()
         {
-            player.jumpCooldown += ChangeJumpCooldownImage;
             playerCollision.deathAction += CalculateScoreTexts;
             OpenDoor.canOpen += ChangeMensajes;
             gameManager.CallPortal += CallPortal;
@@ -51,7 +46,6 @@ namespace Menu
 
         private void OnDisable()
         {
-            player.jumpCooldown -= ChangeJumpCooldownImage;
             playerCollision.deathAction -= CalculateScoreTexts;
             OpenDoor.canOpen -= ChangeMensajes;
             gameManager.CallPortal -= CallPortal;
@@ -95,14 +89,6 @@ namespace Menu
         {
             portalAnimator.SetBool(portalBoolName, true);
             portalBool = true;
-        }
-
-        private void ChangeJumpCooldownImage(bool isCooldownActive)
-        {
-            if (!isCooldownActive)
-                jumpCooldownImage.sprite = jumpCooldownSprite;
-            else
-                jumpCooldownImage.sprite = noJumpCooldownSprite;
         }
 
         private void CalculateScoreTexts()

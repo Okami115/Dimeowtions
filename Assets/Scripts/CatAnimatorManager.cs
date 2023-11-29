@@ -25,16 +25,22 @@ public class CatAnimatorManager : MonoBehaviour
 
     private void ChangeAnimation()
     {
+        animator.SetBool("isChangingLevel", true);
         animator.SetInteger("Level", (int)gameManager.CurrentAesthetic);
     }
 
     void ChangeOpenDoorAnimaton()
     {
-        animator.SetBool("isOpeningDoor", true);
+        animator.SetTrigger("OpenDoor");
     }
 
     void ChangeJumpAnimaton()
     {
-        animator.SetBool("isJumping", true);
+        animator.SetTrigger("Jump");
+    }
+
+    public void ResetWalkStateSwitch()
+    {
+        animator.SetBool("isChangingLevel", false);
     }
 }
