@@ -4691,6 +4691,20 @@ MonoBehaviour:
   UI:
   - {fileID: 1162649121}
   - {fileID: 626292356}
+--- !u!114 &963194236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918041415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a96009830cdb53a4f9b21c959519fb33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  postProcessVolume: {fileID: 963194231}
+  gameManager: {fileID: 26147096}
 --- !u!1 &965950522
 GameObject:
   m_ObjectHideFlags: 0
@@ -5674,7 +5688,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f63f2b09c9fef5d43b8392b71404da40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mensajesText: {fileID: 600240939}
   pausePanel: {fileID: 37427336}
   playerStats: {fileID: 11400000, guid: 3b0d911bf7ddf6b4f91f7798a73b6989, type: 2}
   player: {fileID: 4874120583695425626}
@@ -16715,6 +16728,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6464156403485631533, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 963194235}
+    - targetCorrespondingSourceObject: {fileID: 6464156403485631533, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 963194236}
   m_SourcePrefab: {fileID: 100100000, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
 --- !u!114 &4874120583695425626 stripped
 MonoBehaviour:

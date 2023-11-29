@@ -29,8 +29,8 @@ public class MoveCameraMenu : MonoBehaviour
         if (playerStats.isStoryModeFinished && indexPos > 0)
         {
             indexPos--;
-            currentPos = camaraPos[indexPos];
         }      
+        currentPos = camaraPos[indexPos];
     }
 
     public void MoveCameraRight()
@@ -38,8 +38,8 @@ public class MoveCameraMenu : MonoBehaviour
         if (playerStats.isStoryModeFinished  && indexPos < camaraPos.Length - 1)
         {
             indexPos++;
-            currentPos = camaraPos[indexPos];
         }
+        currentPos = camaraPos[indexPos];
     }
 
     void Start()
