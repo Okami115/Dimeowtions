@@ -19,6 +19,7 @@ public class PortalState : State
     public override void Exit()
     {
         Debug.LogWarning("Exit: PORTAL :: State");
+        gameManager.ExitPortalState();
     }
 
     public override void Update()

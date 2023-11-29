@@ -26,6 +26,7 @@ namespace Manager
         public event Action nextLevel;
         public event Action SetInmortalState;
         public event Action CallPortal;
+        public event Action ExitPortal;
 
         private bool inTutorial;
         public bool InTutorial { get => inTutorial; set => inTutorial = value; }
@@ -78,6 +79,11 @@ namespace Manager
         public void CallPortalState()
         {
             CallPortal?.Invoke();
+        }
+
+        public void ExitPortalState()
+        {
+            ExitPortal?.Invoke();
         }
     }
 }
