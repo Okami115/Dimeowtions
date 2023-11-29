@@ -1,6 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8B3CB3C7-D2CE-46D3-AAA2-ADBE6A00E548}" SchemaVersion="103">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{8B3CB3C7-D2CE-46D3-AAA2-ADBE6A00E548}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8B3CB3C7-D2CE-46D3-AAA2-ADBE6A00E548}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Main" ID="{B949098A-1009-4453-AC35-BF7056FC7E26}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Start_BMG_Machine" ID="{6549F208-20ED-41E8-95EC-D773519486CA}" WorkUnitID="{1A6E17A9-A856-4B3F-9779-C02C7BFC44F6}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_Alive" ID="{BF54EA71-68D3-4015-9BB8-82F4227FA157}" WorkUnitID="{1A6E17A9-A856-4B3F-9779-C02C7BFC44F6}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_BMG_Machine" ID="{CBCF3C69-0D85-43FF-9E2F-131A68431AB6}" WorkUnitID="{1A6E17A9-A856-4B3F-9779-C02C7BFC44F6}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_Menu" ID="{9F4616B3-01CE-445C-A09E-68EFBD71E49D}" WorkUnitID="{1A6E17A9-A856-4B3F-9779-C02C7BFC44F6}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_Noir" ID="{375088A1-391F-4717-AA59-D97A862C15BB}" WorkUnitID="{1A6E17A9-A856-4B3F-9779-C02C7BFC44F6}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_Synthwave" ID="{B50A2BE3-6CEE-4EC8-BB47-C8BF2EE42EE0}" WorkUnitID="{1A6E17A9-A856-4B3F-9779-C02C7BFC44F6}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_Paused" ID="{140EC170-137A-4B15-8F59-4C456FE869A2}" WorkUnitID="{1A6E17A9-A856-4B3F-9779-C02C7BFC44F6}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_SciFi" ID="{4FF1A0EE-B7E1-48A3-95C5-AF5C95E91AE2}" WorkUnitID="{1A6E17A9-A856-4B3F-9779-C02C7BFC44F6}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SFX_Open_Door" ID="{9DF4A856-85DE-4663-B7B3-01656106FBC7}" WorkUnitID="{1A6E17A9-A856-4B3F-9779-C02C7BFC44F6}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_Play_Defeat" ID="{37F900D5-133A-4C7D-BBD7-6AF979044370}" WorkUnitID="{1A6E17A9-A856-4B3F-9779-C02C7BFC44F6}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Items" ID="{BF463D71-643A-406B-B5A5-FD4C58438C8A}" WorkUnitID="{1A6E17A9-A856-4B3F-9779-C02C7BFC44F6}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Paused" ID="{79DDC1B6-CA10-4511-9C5B-ABF849536C7C}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Menu" ID="{A41B3307-2AD3-46DA-8BB2-1DA8C4E718C6}"/>
+						<CurrentStateRef Name="Alive" ID="{1EE1E351-BAFB-4226-8C0A-3B7E5DF3E4EA}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Synthwave" ID="{DDA43DE5-5959-4FD4-8040-7C06964E5FE3}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

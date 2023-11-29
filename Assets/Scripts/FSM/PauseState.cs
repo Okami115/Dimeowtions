@@ -6,20 +6,24 @@ using UnityEngine;
 
 public class PauseState : State
 {
+    
     public PauseState(StateMachine machine, GameManager gameManager) : base(machine)
     {
         this.gameManager = gameManager;
         conditions.Add(typeof(Pause), new Pause(gameManager.playerStats));
+        
     }
 
     public override void Enter()
     {
-        Debug.LogWarning("Enter: PAUSE :: State");
+        Debug.LogWarning("Enter: PAUSE :: State");        
+
     }
 
     public override void Exit()
     {
-        Debug.LogWarning("Exit: PAUSE :: State");
+        Debug.LogWarning("Exit: PAUSE :: State");        
+
     }
 
     public override void Update()

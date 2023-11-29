@@ -6,10 +6,12 @@ using UnityEngine;
 
 public class TutorialState : State
 {
-    public TutorialState(StateMachine machine, GameManager gameManager) : base(machine)
+    GameObject noirSong;
+    public TutorialState(StateMachine machine, GameManager gameManager, GameObject noirSong) : base(machine)
     {
         this.gameManager = gameManager;
         conditions.Add(typeof(EndLevelNoir), new EndLevelNoir(gameManager.playerStats));
+        this.noirSong = noirSong;
     }
 
     public override void Enter()
@@ -23,6 +25,8 @@ public class TutorialState : State
     {
         Debug.LogWarning("Exit: TUTORIAL :: State");
         gameManager.InTutorial = false;
+        noirSong.GetComponent<PlaySound>().ChangeMusicState();
+
     }
 
     public override void Update()

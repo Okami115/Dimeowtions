@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{CB4730C1-BB91-4DCD-B1D8-599A2F488FC8}" SchemaVersion="103">
 	<Triggers>
-		<WorkUnit Name="Default Work Unit" ID="{CB4730C1-BB91-4DCD-B1D8-599A2F488FC8}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{CB4730C1-BB91-4DCD-B1D8-599A2F488FC8}" PersistMode="Standalone">
+			<ChildrenList>
+				<Trigger Name="Portal_Trigger" ID="{66053570-9C11-40DA-8AEE-B58B288FDD4D}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Triggers>
 </WwiseDocument>

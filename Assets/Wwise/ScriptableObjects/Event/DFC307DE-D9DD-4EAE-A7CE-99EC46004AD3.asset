@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a595f5eaeb184204da9c10f31a47f2fe, type: 3}
-  m_Name: 3693CACD-33EC-494D-B816-663A74EF341E
+  m_Script: {fileID: 11500000, guid: 09eed86af57e9c1458f972bfe19fc8a1, type: 3}
+  m_Name: DFC307DE-D9DD-4EAE-A7CE-99EC46004AD3
   m_EditorClassIdentifier: 
-  objectName: Main
-  id: 3161908922
-  guid: 3693CACD-33EC-494D-B816-663A74EF341E
+  objectName: UI_Slice_Menu
+  id: 1337377386
+  guid: DFC307DE-D9DD-4EAE-A7CE-99EC46004AD3
