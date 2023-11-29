@@ -759,7 +759,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 77cedc27f7e89814592ab7d26832ac97, type: 2}
-  ip: {fileID: 943539938}
+  ip: {fileID: 943539940}
 --- !u!1 &260694695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1830,7 +1830,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 943539937}
-  - component: {fileID: 943539938}
+  - component: {fileID: 943539940}
   - component: {fileID: 943539939}
   m_Layer: 0
   m_Name: InputManager
@@ -1854,18 +1854,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &943539938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 943539936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c609fc15ae5013448f1c7ce539ebb93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &943539939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1896,6 +1884,18 @@ MonoBehaviour:
   m_DefaultActionMap: Menu
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &943539940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943539936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 501fe8545b3424b4e9aa60b2bdc7ab88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &964006975
 GameObject:
   m_ObjectHideFlags: 0
@@ -4536,6 +4536,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4291778342334868596, guid: 9ea207f23f977fc4f85d48767841b4f8, type: 3}
+      propertyPath: menuInputManger
+      value: 
+      objectReference: {fileID: 943539940}
+    - target: {fileID: 4291778342334868596, guid: 9ea207f23f977fc4f85d48767841b4f8, type: 3}
       propertyPath: gameSceneIndexer
       value: 2
       objectReference: {fileID: 0}
@@ -4644,6 +4648,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6421546407273354955, guid: 9ea207f23f977fc4f85d48767841b4f8, type: 3}
+      propertyPath: menuInputManger
+      value: 
+      objectReference: {fileID: 943539940}
+    - target: {fileID: 6421546407273354955, guid: 9ea207f23f977fc4f85d48767841b4f8, type: 3}
       propertyPath: gameSceneIndexer
       value: 2
       objectReference: {fileID: 0}
@@ -4687,6 +4695,10 @@ PrefabInstance:
       propertyPath: fadeInDuration
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7822670940882935869, guid: 9ea207f23f977fc4f85d48767841b4f8, type: 3}
+      propertyPath: menuInputManger
+      value: 
+      objectReference: {fileID: 943539940}
     - target: {fileID: 7822670940882935869, guid: 9ea207f23f977fc4f85d48767841b4f8, type: 3}
       propertyPath: gameSceneIndexer
       value: 2

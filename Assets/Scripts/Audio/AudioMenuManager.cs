@@ -10,7 +10,25 @@ public class AudioMenuManager : MonoBehaviour
     public AK.Wwise.Event creditsButton;
     public AK.Wwise.Event pointerUI;
 
-    [SerializeField] InputManager ip;
+    [SerializeField] private MenuInputManger ip;
+
+    public void OnEnable()
+    {
+        if (ip != null)
+        {
+            ip.moveCameraLeft += SlideMenu;
+            ip.moveCameraRight += SlideMenu;
+        }
+    }
+
+    public void OnDisable()
+    {
+        if (ip != null)
+        {
+            ip.moveCameraLeft -= SlideMenu;
+            ip.moveCameraRight -= SlideMenu;
+        }
+    }
 
     public void SlideMenu()
     {
@@ -34,12 +52,5 @@ public class AudioMenuManager : MonoBehaviour
     public void PointerUI()
     {
         pointerUI.Post(gameObject);
-    }
-    public void Start()
-    {
-        InputManager.onMoveLeft += SlideMenu;
-        InputManager.onMoveRight += SlideMenu;
-        //InputManager.onClick += ClickMenu;
-       
     }
 }
