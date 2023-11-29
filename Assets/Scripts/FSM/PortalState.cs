@@ -14,12 +14,14 @@ public class PortalState : State
     {
         Debug.LogWarning("Enter: PORTAL :: State");
         gameManager.CallPortalState();
+        gameManager.playerStats.inPortalState = true;
     }
 
     public override void Exit()
     {
         Debug.LogWarning("Exit: PORTAL :: State");
         gameManager.ExitPortalState();
+        gameManager.playerStats.inPortalState = false;
     }
 
     public override void Update()
