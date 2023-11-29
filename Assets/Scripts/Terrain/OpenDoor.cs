@@ -10,13 +10,14 @@ public class OpenDoor : MonoBehaviour
     [SerializeField] private GameObject door;
     [SerializeField] private Animator animator;
     [SerializeField] private BoxCollider boxCollider;
-    public static event Action<String> canOpen;
     public static event Action openDoor;
     [SerializeField] private string doorOpenTriggerName;
+    [SerializeField] private string doorOpenBoolName;
 
     private void Awake()
     {
         pm = FindAnyObjectByType<player.PlayerController>();
+        animator.SetBool(doorOpenBoolName, true);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -24,7 +25,7 @@ public class OpenDoor : MonoBehaviour
         if (other.tag == "Player")
         {
             pm.interaction += OpenningDoor;
-            canOpen?.Invoke("");
+            animator.SetBool(doorOpenBoolName, false);
         }
     }
 
@@ -32,16 +33,16 @@ public class OpenDoor : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            canOpen?.Invoke("");
             pm.interaction -= OpenningDoor;
+            animator.SetBool(doorOpenBoolName, true);
         }
     }
 
     private void OpenningDoor()
     {
-        canOpen?.Invoke("");
         openDoor?.Invoke();
         animator.SetTrigger(doorOpenTriggerName);
+        animator.SetBool(doorOpenBoolName, true);
         boxCollider.enabled = false;
     }
 }

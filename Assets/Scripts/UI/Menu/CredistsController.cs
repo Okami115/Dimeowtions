@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CredistsController : MonoBehaviour
 {
+    [SerializeField] private MenuInputManger menuInputManger;
     [SerializeField] private GameObject menu;
     [SerializeField] private GameObject credits;
 
@@ -11,16 +12,12 @@ public class CredistsController : MonoBehaviour
 
     private void OnEnable()
     {
-        InputManager.onMoveLeft += ShowMenu;
-        InputManager.onMoveRight += ShowMenu;
-        creditScroll.endCredits += ShowMenu;
+        menuInputManger.back += ShowMenu;
     }
 
     private void OnDisable()
     {
-        InputManager.onMoveLeft -= ShowMenu;
-        InputManager.onMoveRight -= ShowMenu;
-        creditScroll.endCredits -= ShowMenu;
+        menuInputManger.back -= ShowMenu;
     }
 
     public void ShowMenu()

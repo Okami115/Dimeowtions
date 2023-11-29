@@ -10,16 +10,12 @@ namespace Menu
 {
     public class UIManager : MonoBehaviour
     {
-        [SerializeField] private TextMeshProUGUI mensajesText;
+        //[SerializeField] private TextMeshProUGUI mensajesText;
         [SerializeField] private GameObject pausePanel;
 
         [SerializeField] private PlayerStats playerStats;
         [SerializeField] private PlayerController player;
         [SerializeField] private CheckColision playerCollision;
-
-        [SerializeField] private Image jumpCooldownImage;
-        [SerializeField] private Sprite jumpCooldownSprite;
-        [SerializeField] private Sprite noJumpCooldownSprite;
 
         [SerializeField] private TextMeshProUGUI noirScoreText;
         [SerializeField] private TextMeshProUGUI synthwaveScoreText;
@@ -29,9 +25,6 @@ namespace Menu
 
         public event Action nextLevel;
         [SerializeField] private GameManager gameManager;
-
-        //[SerializeField] public RawImage portalImage;
-        //[SerializeField] public VideoPlayer portal;
 
         [SerializeField] public Animator portalAnimator;
         [SerializeField] public string portalBoolName;
@@ -43,9 +36,7 @@ namespace Menu
 
         private void OnEnable()
         {
-            player.jumpCooldown += ChangeJumpCooldownImage;
             playerCollision.deathAction += CalculateScoreTexts;
-            OpenDoor.canOpen += ChangeMensajes;
             gameManager.CallPortal += CallPortal;
             portalVideo.loopPointReached += VideoPlaybackComplete;
 
@@ -54,10 +45,7 @@ namespace Menu
 
         private void OnDisable()
         {
-            player.jumpCooldown -= ChangeJumpCooldownImage;
             playerCollision.deathAction -= CalculateScoreTexts;
-            OpenDoor.canOpen -= ChangeMensajes;
-            //ameManager.nextLevel -= SetSkybox;
             gameManager.CallPortal -= CallPortal;
             portalVideo.loopPointReached -= VideoPlaybackComplete;
 
@@ -74,33 +62,6 @@ namespace Menu
         {
             pausePanel.SetActive(active);
         }
-
-        private void ChangeMensajes(string mensajes)
-        {
-            mensajesText.text = mensajes;
-        }
-
-        //private void SetSkybox()
-        //{
-        //    if(playerStats.collectedObjectsNoir == playerStats.objectsToCollectNoir)
-        //    {
-        //        RenderSettings.skybox = noirSkybox;
-        //    }
-
-        //    if (playerStats.collectedObjectsSynthwave == playerStats.objectsToCollectSynthwave)
-        //    {
-        //        // Trigger
-        //        // Mover a scenography
-        //        RenderSettings.skybox = synthweaveSkybox;
-        //    }
-
-        //    if (playerStats.collectedObjectsSpace == playerStats.objectsToCollectSpace)
-        //    {
-        //        // Trigger
-        //        // Mover a scenography
-        //        RenderSettings.skybox = scifiSkybox;
-        //    }
-        //}
 
         private void Update()
         {
@@ -122,14 +83,6 @@ namespace Menu
         {
             portalAnimator.SetBool(portalBoolName, true);
             portalBool = true;
-        }
-
-        private void ChangeJumpCooldownImage(bool isCooldownActive)
-        {
-            if (!isCooldownActive)
-                jumpCooldownImage.sprite = jumpCooldownSprite;
-            else
-                jumpCooldownImage.sprite = noJumpCooldownSprite;
         }
 
         private void CalculateScoreTexts()

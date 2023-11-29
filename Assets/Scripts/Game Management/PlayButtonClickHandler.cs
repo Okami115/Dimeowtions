@@ -1,3 +1,4 @@
+using Manager;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -10,6 +11,7 @@ public class PlayButtonClickHandler : MonoBehaviour
 {
     [SerializeField] private PlayerStats playerStats;
     [SerializeField] private int playerDistanceTraveled;
+    [SerializeField] private MenuInputManger menuInputManger;
 
     [SerializeField] private Camera mainCamera;
     [SerializeField] private Transform camZoomPos;
@@ -23,6 +25,8 @@ public class PlayButtonClickHandler : MonoBehaviour
     private Color initialColor;
     private Color targetColor;
 
+    [SerializeField] private Aesthetic aestheticSelected;
+
     private void Start()
     {
         initialColor = panel.color;
@@ -31,12 +35,12 @@ public class PlayButtonClickHandler : MonoBehaviour
 
     private void OnEnable()
     {
-        InputManager.onClick += TriggerRaycast;
+        menuInputManger.onClick += TriggerRaycast;
     }
 
     private void OnDisable()
     {
-        InputManager.onClick -= TriggerRaycast;
+        menuInputManger.onClick -= TriggerRaycast;
     }
 
     private void TriggerRaycast()
@@ -51,7 +55,6 @@ public class PlayButtonClickHandler : MonoBehaviour
             {
                 StartCoroutine(FadeInAnimation());
                 StartCoroutine(ZoomAnimation());
-                //playerStats.distanceTraveled = playerDistanceTraveled;
             }
         }
     }
@@ -100,6 +103,11 @@ public class PlayButtonClickHandler : MonoBehaviour
         }
 
         mainCamera.transform.position = new Vector3 (mainCamera.transform.position.x, mainCamera.transform.position.y, camZoomPos.position.z);
+
+        if (playerStats.isEndlessActive)
+        {
+            playerStats.endlessAestheticSelected = aestheticSelected;
+        }
 
         sceneLoader.LoadLevel(gameSceneIndexer);
     }

@@ -10,7 +10,7 @@ public class ScoreSpritesManager : MonoBehaviour
     [SerializeField] private CheckColision playerCollision;
     [SerializeField] private GameObject[] scoreObjectsParents;
     [SerializeField] private GameObject[] scoreObjects;
-    [SerializeField] private float relativeOffsetPorcentage;
+    [SerializeField] private float[] relativeOffsetPorcentage;
 
     //[SerializeField] private UIManager uiManager;
     [SerializeField] private GameManager gameManager;
@@ -46,7 +46,7 @@ public class ScoreSpritesManager : MonoBehaviour
                 for (int j = 1; j < maxObjects; j++)
                 {
                     GameObject newObj = Instantiate(scoreObjects[i], scoreObjects[i].transform.position, scoreObjects[i].transform.rotation, scoreObjectsParents[i].transform);
-                    float relativeOffset = Screen.width * relativeOffsetPorcentage;
+                    float relativeOffset = Screen.width * relativeOffsetPorcentage[i];
                     newObj.transform.position = newObj.transform.position + new Vector3(j * relativeOffset, 0f, 0f);
                 }
             }

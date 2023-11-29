@@ -5,48 +5,41 @@ using UnityEngine;
 
 public class MoveCameraMenu : MonoBehaviour
 {
-
-    [SerializeField] private Transform creditsPos;
+    [SerializeField] private MenuInputManger menuInputManger;
+    [SerializeField] private PlayerStats playerStats;
     [SerializeField] private float speed;
     public Transform[] camaraPos;
     private int indexPos = 0;
     private Transform currentPos;
 
-    public event Action moveCameraLeft;
-    public event Action moveCameraRight;
-    public event Action back;
-
-    public void OnLeft()
+    private void OnEnable()
     {
-        indexPos--;
-        if (indexPos < 0)        
-            indexPos = 0;   
-        
-        moveCameraLeft?.Invoke();
-
-        currentPos = camaraPos[indexPos];
+        menuInputManger.moveCameraLeft += MoveCameraLeft;
+        menuInputManger.moveCameraRight += MoveCameraRight;
     }
 
-    public void OnRight()
+    private void OnDisable()
     {
-        indexPos++;
-        if (indexPos > camaraPos.Length - 1)       
-            indexPos = camaraPos.Length - 1;
-        
-        moveCameraRight?.Invoke();
-
-        currentPos = camaraPos[indexPos];
+        menuInputManger.moveCameraLeft -= MoveCameraLeft;
+        menuInputManger.moveCameraRight -= MoveCameraRight;
     }
 
-    public void OnPause()
-    {
-        back?.Invoke();
-        currentPos = camaraPos[indexPos];
+    public void MoveCameraLeft()
+    {       
+        if (playerStats.isStoryModeFinished && indexPos > 0)
+        {
+            indexPos--;
+            currentPos = camaraPos[indexPos];
+        }      
     }
 
-    public void CredistOpen()
-    {
-        currentPos = creditsPos;
+    public void MoveCameraRight()
+    {        
+        if (playerStats.isStoryModeFinished  && indexPos < camaraPos.Length - 1)
+        {
+            indexPos++;
+            currentPos = camaraPos[indexPos];
+        }
     }
 
     void Start()
@@ -62,10 +55,4 @@ public class MoveCameraMenu : MonoBehaviour
 
         transform.position = Vector3.MoveTowards(transform.position, currentPos.position, newDistance);
     }
-
-    public int GetIndex()
-    {
-        return indexPos;
-    }
-
 }

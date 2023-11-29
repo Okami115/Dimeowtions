@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 namespace player
@@ -9,7 +10,6 @@ namespace player
 
         [SerializeField] private Transform pivot;
 
-        [SerializeField] private GameObject[] UI;
         [SerializeField] private LayerMask ground;
 
         [SerializeField] private GameObject pauseManager;
@@ -41,10 +41,10 @@ namespace player
                 if (hitInfo.collider.CompareTag(obstacleTag))
                 {
                     pauseManager.SetActive(false);
-                    UI[2].SetActive(false);
-                    UI[1].SetActive(true);
                     deathAction?.Invoke();
                     playerStats.isPause = true;
+                    hitInfo.collider.gameObject.SetActive(false);
+                    
                 }
                 
                 if (hitInfo.collider.CompareTag(noirCoinTag))
@@ -66,9 +66,7 @@ namespace player
                     Destroy(hitInfo.collider.gameObject);
                 }
             }
-
         }
-
 
         private void OnDrawGizmos()
         {
@@ -80,13 +78,9 @@ namespace player
         {
             if (other.gameObject.CompareTag(emptyTag))
             {
-                UI[2].SetActive(false);
-                UI[1].SetActive(true);
                 deathAction?.Invoke();
                 playerStats.isPause = true;
             }
         }
-
-
     }
 }

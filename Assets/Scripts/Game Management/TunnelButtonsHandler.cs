@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,31 +5,41 @@ public class TunnelButtonsHandler : MonoBehaviour
 {
     [SerializeField] private GameObject leftButton;
     [SerializeField] private GameObject rightButton;
-    [SerializeField] private MoveCameraMenu moveCameraMenu;
+    [SerializeField] private MenuAestheticManager menuAestheticManager;
 
     private void Start()
     {
-        UpdateButtons();
+        UpdateButtons(menuAestheticManager.PreviousAesthetic, menuAestheticManager.CurrentAesthetic);
     }
 
     private void OnEnable()
     {
-        moveCameraMenu.moveCameraLeft += UpdateButtons;
-        moveCameraMenu.moveCameraRight += UpdateButtons;
+        menuAestheticManager.menuAestheticChanged +=  UpdateButtons;
     }
 
     private void OnDisable()
     {
-        moveCameraMenu.moveCameraLeft -= UpdateButtons;
-        moveCameraMenu.moveCameraRight -= UpdateButtons;
+        menuAestheticManager.menuAestheticChanged -= UpdateButtons;
     }
 
-    private void UpdateButtons()
+    private void UpdateButtons(MenuAesthetic previousAesthetic, MenuAesthetic currentAesthetic)
     {
-        int currentIndex = moveCameraMenu.GetIndex();
-        int maxIndex = moveCameraMenu.camaraPos.Length - 1;
+        var buttonStates = new Dictionary<MenuAesthetic, (bool left, bool right)>()
+        {
+            { MenuAesthetic.Noir, (false, true) },
+            { MenuAesthetic.Scifi, (true, false) },
+            { MenuAesthetic.Synthwave, (true, true) },
+        };
 
-        leftButton.SetActive(currentIndex > 0);
-        rightButton.SetActive(currentIndex < maxIndex);
+        if (buttonStates.TryGetValue(currentAesthetic, out var states))
+        {
+            leftButton.SetActive(states.left);
+            rightButton.SetActive(states.right);
+        }
+        else
+        {
+            leftButton.SetActive(true);
+            rightButton.SetActive(true);
+        }
     }
 }

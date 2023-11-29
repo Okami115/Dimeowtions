@@ -9,8 +9,6 @@ public class CreditScroll : MonoBehaviour
     [SerializeField] private RectTransform rectTransform;
     [SerializeField] private Vector3 initialPos;
 
-    public event Action endCredits;
-
     private Vector3 newPos;
 
     private void OnEnable()

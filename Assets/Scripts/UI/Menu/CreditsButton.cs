@@ -5,20 +5,20 @@ using UnityEngine;
 
 public class CreditsButton : MonoBehaviour
 {
-    [SerializeField] private MoveCameraMenu m_Menu;
+    [SerializeField] private MenuInputManger menuInputManger;
     [SerializeField] private GameObject credits;
     [SerializeField] private float speed;
 
     private Transform target;
     private void OnEnable()
     {
-        m_Menu.back += CloseCredits;
+        menuInputManger.back += CloseCredits;
         target = transform;
     }
 
     private void OnDisable()
     {
-        m_Menu.back -= CloseCredits;
+        menuInputManger.back -= CloseCredits;
     }
 
     public void Credits()

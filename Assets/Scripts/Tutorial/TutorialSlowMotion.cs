@@ -18,40 +18,41 @@ public class TutorialSlowMotion : MonoBehaviour
     [SerializeField] private GameObject door;
 
     [SerializeField] private TutorialUIManager tutorialUIManager;
+    [SerializeField] private CheckColision playerCollision;
 
     private void OnEnable()
     {
-        if (!playerStats.isEndlessActive)
-        {
-            if (isSlowMoAfterJump)
-                player.jump += ExitSlowMotion;
-            if (isSlowMoAfterDoor)
-                player.interaction += ExitSlowMotion;
-            if (isSlowMoAfterMoving)
-                player.moveAction += ExitSlowMotion;
-            if (isSlowMoAfterChangeGrav)
-                player.changeGravAction += ExitSlowMotion;
-        }       
+        if (isSlowMoAfterJump)
+            player.jump += ExitSlowMotion;
+        if (isSlowMoAfterDoor)
+            player.interaction += ExitSlowMotion;
+        if (isSlowMoAfterMoving)
+            player.moveAction += ExitSlowMotion;
+        if (isSlowMoAfterChangeGrav)
+            player.changeGravAction += ExitSlowMotion;
+
+        playerCollision.deathAction += ExitSlowMotion;
+
+
     }
 
     private void OnTriggerEnter(Collider other)
-    {
-        if (!playerStats.isEndlessActive)
-        {
-            gameManager.InTutorial = true;
-            Time.timeScale = 0.1f;
-            tutorialUIManager.ToggleImage(true);
-            tutorialUIManager.ChangeText();
-        }      
+    {       
+        gameManager.InTutorial = true;
+        Time.timeScale = 0.1f;
+        tutorialUIManager.ToggleImage(true);
+        tutorialUIManager.ChangeText();
+            
     }
 
     private void ExitSlowMotion()
     {
-        if (!playerStats.isEndlessActive)
+        if (!playerStats.isPause)
         {
-            Time.timeScale = 1f;
             tutorialUIManager.ToggleImage(false);
             gameManager.InTutorial = false;
-        }      
+        }
+
+        Time.timeScale = 1f;
     }
 }

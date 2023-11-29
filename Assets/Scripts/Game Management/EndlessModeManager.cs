@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class EndlessModeManager : MonoBehaviour
 {
-
     [SerializeField] private PlayerStats playerStats;
     [SerializeField] private Image endlessModeImage;
 
@@ -13,25 +12,33 @@ public class EndlessModeManager : MonoBehaviour
     [SerializeField] private Sprite[] highlitedSprites;
 
     private int modeIndexer;
-     
-    // Start is called before the first frame update
+
+
     void Start()
     {
         playerStats.isEndlessActive = false;
         modeIndexer = 0;
+
+        if (!playerStats.isStoryModeFinished)
+        {
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            gameObject.SetActive(true);
+        }
     }
 
     public void ToggleEndlessMode()
     {
-        if (playerStats.isEndlessAvailable)
-        {
-            playerStats.isEndlessActive = !playerStats.isEndlessActive;
+        
+        playerStats.isEndlessActive = !playerStats.isEndlessActive;
 
-            if (!playerStats.isEndlessActive) modeIndexer = 0;
-            else modeIndexer = 1;
+        if (!playerStats.isStoryModeFinished) modeIndexer = 0;
+        else modeIndexer = 1;
 
-            endlessModeImage.sprite = baseSprites[modeIndexer];
-        }
+        endlessModeImage.sprite = baseSprites[modeIndexer];
+        
     }
 
     public void ApplyBaseSprite()

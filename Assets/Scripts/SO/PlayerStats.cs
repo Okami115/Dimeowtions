@@ -1,3 +1,4 @@
+using Manager;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New PlayerStats", menuName = "Custom/PlayerStats")]
@@ -18,5 +19,7 @@ public class PlayerStats : ScriptableObject
     public bool isPause;
     public bool isEndlessActive;
     public bool isEndlessAvailable;
+    public bool isStoryModeFinished;
+    public Aesthetic endlessAestheticSelected;
     public bool inPortalState;
 }
