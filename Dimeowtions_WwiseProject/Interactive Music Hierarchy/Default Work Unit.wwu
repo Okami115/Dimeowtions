@@ -1041,6 +1041,66 @@
 										</SourceFadeOut>
 									</TransitionInfo>
 								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{C2522BEA-4300-4FD4-AD98-8D8590A59398}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
+										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Synthwave" ID="{1B8AB862-0AB4-41E6-B6CE-59C59E11507A}" WorkUnitID="{AC0EC91E-8641-4A0B-9DAE-5B42680BA471}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Menu" ID="{BEB97D36-571E-41AD-9FDC-46E851998C24}" WorkUnitID="{AC0EC91E-8641-4A0B-9DAE-5B42680BA471}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="Portal" ID="{EB1C343F-546C-4754-BFF2-86C1ACC79648}" WorkUnitID="{AC0EC91E-8641-4A0B-9DAE-5B42680BA471}"/>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{8A1006E7-38E1-4E32-AEEC-7CDF207D04DF}">
+												<PropertyList>
+													<Property Name="FadeTime" Type="Real64" Value="0.4"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{364EB639-EABC-487F-979D-86B20706597A}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
+										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="SciFi" ID="{FA97EC06-501D-42D0-A7C2-BD306DAB00B0}" WorkUnitID="{AC0EC91E-8641-4A0B-9DAE-5B42680BA471}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Menu" ID="{BEB97D36-571E-41AD-9FDC-46E851998C24}" WorkUnitID="{AC0EC91E-8641-4A0B-9DAE-5B42680BA471}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="Portal" ID="{EB1C343F-546C-4754-BFF2-86C1ACC79648}" WorkUnitID="{AC0EC91E-8641-4A0B-9DAE-5B42680BA471}"/>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{8F588D70-218C-4E8C-A166-9916DFA74977}">
+												<PropertyList>
+													<Property Name="FadeTime" Type="Real64" Value="0.4"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
 								<MusicTransition Name="Transition" ID="{FC8D3D8C-A96B-41FE-B8B2-4F4F1B9B1353}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
