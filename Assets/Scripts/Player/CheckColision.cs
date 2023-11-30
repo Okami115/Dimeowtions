@@ -48,7 +48,8 @@ namespace player
                     deathAction?.Invoke();
                     playerStats.isPause = true;
                     hitInfo.collider.gameObject.SetActive(false);
-                    
+                    soundDefeat.Post(gameObject);
+
                 }
                 
                 if (hitInfo.collider.CompareTag(noirCoinTag))

@@ -25,6 +25,7 @@ namespace Manager
         
         [SerializeField] private GameObject synthToSciFi;
         [SerializeField] private GameObject noirToSynth;
+        [SerializeField] private GameObject noirSong;
     
 
         public event Action nextLevel;
@@ -48,11 +49,11 @@ namespace Manager
 
             stateMachine = new StateMachine();
             stateMachine.AddState<PauseState>(new PauseState(stateMachine, this));
-            stateMachine.AddState<PortalState>(new PortalState(stateMachine, this, uiManager));
+            stateMachine.AddState<PortalState>(new PortalState(stateMachine, this, uiManager, noirSong, noirToSynth, synthToSciFi));
             stateMachine.AddState<EndState>(new EndState(stateMachine, sceneLoader, 3, this));
 
-            stateMachine.AddState<TutorialState>(new TutorialState(stateMachine, this, noirToSynth));
-            stateMachine.AddState<NoirState>(new NoirState(stateMachine, this, noirToSynth));
+            stateMachine.AddState<TutorialState>(new TutorialState(stateMachine, this, noirSong, noirToSynth));
+            stateMachine.AddState<NoirState>(new NoirState(stateMachine, this, noirSong));
             stateMachine.AddState<SynthwaveState>(new SynthwaveState(stateMachine, this, synthToSciFi));
             stateMachine.AddState<SciFiState>(new SciFiState(stateMachine, this));
 

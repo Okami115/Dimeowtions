@@ -157,6 +157,7 @@ MonoBehaviour:
   sceneLoader: {fileID: 250916035}
   synthToSciFi: {fileID: 1107498068}
   noirToSynth: {fileID: 2019118501}
+  noirSong: {fileID: 673341046}
 --- !u!4 &26147097
 Transform:
   m_ObjectHideFlags: 0
@@ -2635,14 +2636,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 454056523}
-  - component: {fileID: 454056524}
   m_Layer: 0
   m_Name: GameMusicManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &454056523
 Transform:
   m_ObjectHideFlags: 0
@@ -2658,30 +2658,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1974139941}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &454056524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 454056522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 604148b846732534daf7c6fd333812cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 58300322612c6e24d949c6400a18de57, type: 2}
-  valueIdInternal: 0
-  groupIdInternal: 0
-  valueGuidInternal: 
-  groupGuidInternal: 
 --- !u!1 &463054831
 GameObject:
   m_ObjectHideFlags: 0
@@ -3576,6 +3552,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 664885595}
   m_CullTransparentMesh: 1
+--- !u!1 &673341046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 673341047}
+  - component: {fileID: 673341048}
+  m_Layer: 0
+  m_Name: NoirSong
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &673341047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673341046}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -27.082336, y: 35.568146, z: 105.759346}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1974139941}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &673341048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673341046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09a863ed9d65c7c45abb6c02a52b7df2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 72e47cccf544cfe43a7a920771b83662, type: 2}
 --- !u!1 &676645694
 GameObject:
   m_ObjectHideFlags: 0
@@ -16116,6 +16140,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 454056523}
+  - {fileID: 673341047}
   - {fileID: 2019118502}
   - {fileID: 1107498069}
   - {fileID: 438279475}

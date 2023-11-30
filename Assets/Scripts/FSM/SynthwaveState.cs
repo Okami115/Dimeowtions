@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class SynthwaveState : State
 {
-    GameObject synthToSciFi;
-    public SynthwaveState(StateMachine machine, GameManager gameManager, GameObject synthToSciFi) : base(machine)
+    GameObject synthToScifi;
+    public SynthwaveState(StateMachine machine, GameManager gameManager, GameObject synthToScifi) : base(machine)
     {
         this.gameManager = gameManager;
         conditions.Add(typeof(EndLevelSynthwave), new EndLevelSynthwave(gameManager.playerStats));
-        this.synthToSciFi = synthToSciFi;
+        this.synthToScifi = synthToScifi;
     }
 
     public override void Enter()
@@ -23,7 +23,8 @@ public class SynthwaveState : State
     public override void Exit()
     {
         Debug.LogWarning("Exit: SYNTHWAVE :: State");
-        synthToSciFi.GetComponent<PlaySound>().ChangeMusicState();
+        // Add synthToSciFi in the future      
+        synthToScifi.GetComponent<PlaySound>().ChangeMusicState();
 
     }
 

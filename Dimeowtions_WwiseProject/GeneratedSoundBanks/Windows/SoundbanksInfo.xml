@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
@@ -29,7 +29,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="95515881">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1769581967">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -136,7 +136,7 @@
 					<IncludedMemoryFiles>
 						<File Id="1050336964" Language="SFX">
 							<ShortName>HKAP2 Seq1.2 Whoosh.wav</ShortName>
-							<Path>SFX\HKAP2 Seq1.2 Whoosh_88057BA1.wem</Path>
+							<Path>SFX\HKAP2 Seq1.2 Whoosh_F834A0B8.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -164,7 +164,7 @@
 						</File>
 						<File Id="884788154" Language="SFX">
 							<ShortName>Render_Door_01-001.wav</ShortName>
-							<Path>SFX\Render_Door_01-001_F212EB87.wem</Path>
+							<Path>SFX\Render_Door_01-001_9001B902.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{0C24CD74-5ED8-4788-B9CF-FD978AEC8262}</DefaultSwitchValue>
@@ -435,7 +435,7 @@
 				</File>
 				<File Id="884788154" Language="SFX">
 					<ShortName>Render_Door_01-001.wav</ShortName>
-					<Path>SFX\Render_Door_01-001_F212EB87.wem</Path>
+					<Path>SFX\Render_Door_01-001_9001B902.wem</Path>
 				</File>
 				<File Id="900356677" Language="SFX">
 					<ShortName>Score - Noir - Bitcrushed.wav</ShortName>
@@ -451,7 +451,7 @@
 				</File>
 				<File Id="1050336964" Language="SFX">
 					<ShortName>HKAP2 Seq1.2 Whoosh.wav</ShortName>
-					<Path>SFX\HKAP2 Seq1.2 Whoosh_88057BA1.wem</Path>
+					<Path>SFX\HKAP2 Seq1.2 Whoosh_F834A0B8.wem</Path>
 				</File>
 				<File Id="1063440004" Language="SFX">
 					<ShortName>SFX_Defeat.wav</ShortName>
