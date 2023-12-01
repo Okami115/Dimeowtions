@@ -36,7 +36,8 @@ public class TutorialSlowMotion : MonoBehaviour
         if (isSlowMoAfterChangeGrav)
             player.changeGravAction += ExitSlowMotion;
 
-        playerCollision.deathAction += ExitSlowMotion;
+        playerCollision.deathActionColision += ExitSlowMotion;
+        playerCollision.deathActionFall += ExitSlowMotion;
     }
 
     private void OnDisable()

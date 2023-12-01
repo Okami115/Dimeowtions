@@ -43,7 +43,8 @@ namespace Menu
 
         private void OnEnable()
         {
-            playerCollision.deathAction += CalculateScoreTexts;
+            playerCollision.deathActionColision += CalculateScoreTexts;
+            playerCollision.deathActionFall += CalculateScoreTexts;
             gameManager.CallPortal += CallPortal;
             portalVideo.loopPointReached += VideoPlaybackComplete;
 
@@ -52,7 +53,8 @@ namespace Menu
 
         private void OnDisable()
         {
-            playerCollision.deathAction -= CalculateScoreTexts;
+            playerCollision.deathActionColision -= CalculateScoreTexts;
+            playerCollision.deathActionFall -= CalculateScoreTexts;
             gameManager.CallPortal -= CallPortal;
             portalVideo.loopPointReached -= VideoPlaybackComplete;
 

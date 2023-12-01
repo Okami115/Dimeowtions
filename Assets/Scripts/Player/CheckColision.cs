@@ -28,7 +28,8 @@ namespace player
         Ray objetcRay;
         Ray groundRay;
 
-        public event Action deathAction;
+        public event Action deathActionFall;
+        public event Action deathActionColision;
         public event Action objectCollected;
 
         void Update()
@@ -45,7 +46,7 @@ namespace player
                 if (hitInfo.collider.CompareTag(obstacleTag))
                 {
                     pauseManager.SetActive(false);
-                    deathAction?.Invoke();
+                    deathActionColision?.Invoke();
                     playerStats.isPause = true;
                     hitInfo.collider.gameObject.SetActive(false);
                     soundDefeat.Post(gameObject);
@@ -86,7 +87,7 @@ namespace player
         {
             if (other.gameObject.CompareTag(emptyTag))
             {
-                deathAction?.Invoke();
+                deathActionFall?.Invoke();
                 playerStats.isPause = true;
                 soundDefeat.Post(gameObject);                
 

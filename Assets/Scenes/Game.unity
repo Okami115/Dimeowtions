@@ -981,6 +981,7 @@ MonoBehaviour:
   playerCollision: {fileID: 4874120583695425628}
   catAnimator: {fileID: 141360650}
   deathTrigger: Death
+  deathObject: {fileID: 1992633915}
 --- !u!1 &176276610
 GameObject:
   m_ObjectHideFlags: 0
@@ -5131,9 +5132,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCollision: {fileID: 4874120583695425628}
   cameraTransform: {fileID: 963194228}
-  deathCameraOffsetPosition: {x: 1.95, y: 0, z: 0}
-  deathCameraOffsetRotation: {x: 0, y: 0, z: -28.218}
-  deathAnimationLenght: 1.5
+  deathCameraOffsetPositionFall: {x: 0, y: 2.99, z: 1.75}
+  deathCameraOffsetRotationFall: {x: 38.287, y: 0, z: 0}
+  deathAnimationLenghtFall: 2
+  deathCameraOffsetPositionCollision: {x: 0.000000017676848, y: 1.1860001, z: 0.332}
+  deathCameraOffsetRotationCollision: {x: 11.008, y: 0, z: -25.435}
+  deathAnimationLenghtCollision: 1.5
   UI:
   - {fileID: 1162649121}
   - {fileID: 626292356}
@@ -16332,7 +16336,7 @@ GameObject:
   - component: {fileID: 1992633919}
   - component: {fileID: 1992633918}
   m_Layer: 0
-  m_Name: Death Animation
+  m_Name: Death Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17531,7 +17535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9156460752029213544, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1860001
+      value: 1.186
       objectReference: {fileID: 0}
     - target: {fileID: 9156460752029213544, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
       propertyPath: m_LocalPosition.z
