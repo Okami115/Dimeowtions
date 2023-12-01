@@ -21,6 +21,9 @@ public class PlayButtonClickHandler : MonoBehaviour
     [SerializeField] private float zoomDuration;
     [SerializeField] private string obstacleTag;
 
+    [SerializeField] private AudioMenuManager audioMenuManager;
+   
+
     [SerializeField] private Image panel;
     private Color initialColor;
     private Color targetColor;
@@ -53,6 +56,8 @@ public class PlayButtonClickHandler : MonoBehaviour
         {
             if (hitInfo.collider.CompareTag(obstacleTag))
             {
+                audioMenuManager.PlayButton();
+
                 StartCoroutine(FadeInAnimation());
                 StartCoroutine(ZoomAnimation());
             }
