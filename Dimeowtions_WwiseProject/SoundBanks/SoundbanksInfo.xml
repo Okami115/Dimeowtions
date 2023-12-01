@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\SoundBanks\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2938606796">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="2741294056">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3695098761" Name="SFX_Jump" ObjectPath="\Events\Default Work Unit\Player\SFX_Jump" DurationType="OneShot" DurationMin="0.241152" DurationMax="0.270684">
+					<IncludedMemoryFiles>
+						<File Id="330658490" Language="SFX">
+							<ShortName>SALTO.wav</ShortName>
+							<Path>SFX\SALTO_0DBAE016.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3187317502" Name="SFX_Lateral_Movement" ObjectPath="\Events\Default Work Unit\Player\SFX_Lateral_Movement" DurationType="OneShot" DurationMin="0.204597" DurationMax="0.229652">
+					<IncludedMemoryFiles>
+						<File Id="827511146" Language="SFX">
+							<ShortName>MOVIMIENTO_LATERAL.wav</ShortName>
+							<Path>SFX\MOVIMIENTO_LATERAL_B9493597.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3913579892" Name="SFX_Open_Door" ObjectPath="\Events\Default Work Unit\Player\SFX_Open_Door" DurationType="OneShot" DurationMin="0.439835" DurationMax="0.479643">
+					<IncludedMemoryFiles>
+						<File Id="101592148" Language="SFX">
+							<ShortName>DOORWood.wav</ShortName>
+							<Path>SFX\DOORWood_6D702AE5.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="101592148" Language="SFX">
+					<ShortName>DOORWood.wav</ShortName>
+					<Path>SFX\DOORWood_6D702AE5.wem</Path>
+				</File>
+				<File Id="284843365" Language="SFX">
+					<ShortName>UI, Modern, Positive, SciFi, InterfaceUI, Selection 1.wav</ShortName>
+					<Path>SFX\UI, Modern, Positive, SciFi, InterfaceUI, Selection 1_0236B7B5.wem</Path>
+				</File>
+				<File Id="330658490" Language="SFX">
+					<ShortName>SALTO.wav</ShortName>
+					<Path>SFX\SALTO_0DBAE016.wem</Path>
+				</File>
+				<File Id="332556917" Language="SFX">
+					<ShortName>SciFi Magic Portal Open (2023_07_15 23_59_24 UTC).wav</ShortName>
+					<Path>SFX\SciFi Magic Portal Open (2023_07_15 23_59_24 UTC)_D79FB2B7.wem</Path>
+				</File>
+				<File Id="827511146" Language="SFX">
+					<ShortName>MOVIMIENTO_LATERAL.wav</ShortName>
+					<Path>SFX\MOVIMIENTO_LATERAL_B9493597.wem</Path>
+				</File>
+				<File Id="1028913379" Language="SFX">
+					<ShortName>UI_SELECTION.wav</ShortName>
+					<Path>SFX\UI_SELECTION_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

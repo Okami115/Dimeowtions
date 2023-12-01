@@ -1,0 +1,13 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3187317502	SFX_Lateral_Movement			\Default Work Unit\Player\SFX_Lateral_Movement	
+	3695098761	SFX_Jump			\Default Work Unit\Player\SFX_Jump	
+	3913579892	SFX_Open_Door			\Default Work Unit\Player\SFX_Open_Door	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	101592148	Open_Door	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Windows\SFX\DOORWood_6D702AE5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\Player\Open_Door\Open_Door		111492
+	284843365	UI, Modern, Positive, SciFi, InterfaceUI, Selection 1	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Windows\SFX\UI, Modern, Positive, SciFi, InterfaceUI, Selection 1_0236B7B5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu\UI_Play_Button\UI, Modern, Positive, SciFi, InterfaceUI, Selection 1		344232
+	330658490	SALTO	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Windows\SFX\SALTO_0DBAE016.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\Player\Jump\SALTO		45136
+	332556917	SciFi Magic Portal Open (2023_07_15 23_59_24 UTC)	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Windows\SFX\SciFi Magic Portal Open (2023_07_15 23_59_24 UTC)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Portal\Portal\SciFi Magic Portal Open (2023_07_15 23_59_24 UTC)		1408064
+	827511146	MOVIMIENTO_LATERAL	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Windows\SFX\MOVIMIENTO_LATERAL_B9493597.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\Player\Lateral_Movement\MOVIMIENTO_LATERAL		38300
+	1028913379	UI_SELECTION	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Windows\SFX\UI_SELECTION_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu\UI_Selection\UI_SELECTION		68912
+

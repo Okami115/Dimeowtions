@@ -1,0 +1,2107 @@
+fileFormatVersion: 2
+guid: 1e13210f53e151b41b543df4a8b2fbf4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Transicion_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 920.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf4b822e512c774d90b157c98438dba
+      internalID: 2058612749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 920.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b937c874ac8036e4da8100a26bb35b06
+      internalID: 541709882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 920.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eedeb5e91ac44544afb0f0303bb96fc
+      internalID: -2022737127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 920.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53f50caaf0459048a7f6fb0ff8b42ad
+      internalID: 2067087590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 920.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ba83237e0042048ba00d846108c38e
+      internalID: -1429498875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 920.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c704b3ce913fa9746a298e1a45797e36
+      internalID: -648841249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 920.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae648e2c9f55e094fac2450688ef9a28
+      internalID: -338916040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 920.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1796c13c035e0884a80e01ab66e304c7
+      internalID: 1888245665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 920.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab56c76e5b0720149b02dc7d54f6bf24
+      internalID: -1801486593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 920.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc69509f1229294a82426a745447570
+      internalID: -1382284626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 805.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cca157906ecb8c49b1882c773ea4055
+      internalID: -334933000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 805.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e3615490ac0e1a4985dc141e6ed92b8
+      internalID: -1483643855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 805.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ffff6eb84f73964593a610af766e433
+      internalID: 1769197244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 805.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb96fb39e903c04ebfe883213f4c76c
+      internalID: 622786858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 805.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfca023d01e38e144a63618fdb968d41
+      internalID: 770282581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 805.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d791acecc9bb042bd9e34386d5142a
+      internalID: -1025037340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 805.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81cb294610867614e99586aec295824d
+      internalID: 407396371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 805.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be99c81f9a58e349b200a501ae04a69
+      internalID: 838097154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 805.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0def2493225b70d4390bc5b74b374230
+      internalID: -70388239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 805.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 962cf4e67b709cc43b4821584f548296
+      internalID: 23879361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 690.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03080059f8261104abd16d75cb236c36
+      internalID: -321396983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 690.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42253da84b4381a499a99ee97066895d
+      internalID: 331040930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 690.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c6446fdea5f7545beea19136167820
+      internalID: -1088055028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 690.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036add0a37f97314ba0d1447dd805208
+      internalID: 2068217153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 690.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204a57a72401fdd47b073755cfc2c771
+      internalID: 1433228543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 690.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69711c0f91478c48b0624abd1c63225
+      internalID: -385526667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 690.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01029439bef5c98418cac7ac3b8a12dd
+      internalID: -481373355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 690.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390bbda09e137c9438cdb8642a559b7a
+      internalID: -1122714013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 690.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442d6e8091880bf458eaf85aa2d80327
+      internalID: 1792330294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 690.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4dc79e0956497a4f86908a79292b5f2
+      internalID: 944120564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 575.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a3ba3c593ce8540819e9f6042eb5b5
+      internalID: 1349384241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 575.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786c89b399fd8964db6534620725419e
+      internalID: -1970764853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 575.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d76d3d01e356994b82d2257092d0c1e
+      internalID: -2010672893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 575.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940f54d667ebf384199090c472bca2ad
+      internalID: 2061027033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 575.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 121b326dbc0dd7840859cd464cee83f8
+      internalID: 599427730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 575.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a419f0b24cad1e439e1c0fbb6a4fea7
+      internalID: 170380734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_36
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 575.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ab40866a8398a44ae7631ce2a33063
+      internalID: 1566119127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_37
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 575.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f212841d0086a45811d987777e83f3
+      internalID: 935034945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_38
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 575.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441b09746d180c44e9e7bbef15e24410
+      internalID: 652216325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 575.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d12082cfdaa2643b7d88f33cda3865
+      internalID: -953985590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 460.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45b8bfa8db031b4d9ec9a3263a9076a
+      internalID: 1389447852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_41
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 460.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c732d323a063734ba69d5e6e588f40d
+      internalID: 344982797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_42
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 460.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e58704c63e176e418c036dff8382bb5
+      internalID: -2128105719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_43
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 460.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c509ec4d7aaeb24c96437b7dbb1eee2
+      internalID: -2016407241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_44
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 460.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc3e3fa4e3ecd240a12122c81ad0bb9
+      internalID: 559657621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 460.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b964c2c773d4f42a38081575d505bc
+      internalID: -891572414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_46
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 460.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2532caa83cc32874ba85bb67fe690edb
+      internalID: 2038425097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_47
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 460.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7c20f0f54cb5345a199edf61f9783c
+      internalID: 734817270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_48
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 460.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9271fbc474385ea4e8fa8ae1890a6a7f
+      internalID: 950618188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_49
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 460.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7e0b06af11db942b5b41c009ba99ba
+      internalID: -1602709195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 345.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c9f83a6c9aede469c5712e6ef8b7bc
+      internalID: -1325882952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_51
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 345.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3267e4c64f388a4296bb5ad5305f8e3
+      internalID: 1926614776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_52
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 345.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7639bbdd9e4c0e41a59c543123189c4
+      internalID: 1044329072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_53
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 345.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b993010756c03546a5d47237a66ac19
+      internalID: -1274389776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_54
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 345.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b643ce7c4a52244ea583e589c25c0cb
+      internalID: -801434777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_55
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 345.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1909f44abe76e77479badf66f8530aac
+      internalID: -748657382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_56
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 345.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34182f1004534e34ba267c2a17072fb1
+      internalID: 1444066657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_57
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 345.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc0d8a8124e3c4c49baabd14e9c2900c
+      internalID: -843086336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_58
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 345.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72dcb5adff198340a436f6b1cfa26c0
+      internalID: -2002161998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_59
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 345.8889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526cf27349cb2d24897cf33ee8a8298e
+      internalID: -1236143781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 230.88889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26907fc08c053394c9b339b03c94a22f
+      internalID: -288344611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_61
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 230.88889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85988a459f73ac488a2357bd9364e69
+      internalID: 1945515294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_62
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 230.88889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7bf25f15d05eff4899bc9dd08a2db8e
+      internalID: 889842994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_63
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 230.88889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a292e3fd7452964bb2f23f3089b3e32
+      internalID: -785832085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_64
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 230.88889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a333d971532a14da72bac6b1e7cd26
+      internalID: -1954580751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_65
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 230.88889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c8ea59b0f3b3045a528f7ce2ecaa7c
+      internalID: 112841630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_66
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 230.88889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf89f7d123622d64d801cc1e696cf191
+      internalID: -481573950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_67
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 230.88889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b70c958f71e65240812c34ac63e49b7
+      internalID: -533022394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_68
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 230.88889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e47b8658231b8dc45bde07b560656130
+      internalID: -387989813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_69
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 230.88889
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa963e1f8f22f64fb919e870539d88f
+      internalID: 1210666058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 115.888885
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98130753b9f792b4fa59e3aeb4328690
+      internalID: -664474706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_71
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 115.888885
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae15c586ce3c1cb48a81ac6cc5cbccee
+      internalID: -1143064614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_72
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 115.888885
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b9bbb4ed9db584aa7bebea97f09e45
+      internalID: 777412745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_73
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 115.888885
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527b0a1de4763e64bb404364598dd300
+      internalID: -980512787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_74
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 115.888885
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e787b51e6891c4c9909ef99b913f6c
+      internalID: -930417971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_75
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 115.888885
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0974e73be2cfd246ba7108e60853ede
+      internalID: 339997569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_76
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 115.888885
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4acdca36f03a4d144bb0fe7ea9ffb9b7
+      internalID: 2133918133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_77
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 115.888885
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9385034dc7c76ba418ca56cc6421f4d3
+      internalID: 1783975218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_78
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 115.888885
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421ebd8f2666b2047ab5b9225f1c0145
+      internalID: 1953370544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_79
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 115.888885
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df453955127be54ca4dc7fcc040ed98
+      internalID: -1910333934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.8888855
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1e96c865814274dad8daf33c02c342
+      internalID: 1994042602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_81
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 0.8888855
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfbcd91a090b6e645bd62b6d8d573b6b
+      internalID: 1107719453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_82
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 0.8888855
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3ec1621bdcd8c49890b00e62ae47c0
+      internalID: -782477786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_83
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 0.8888855
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd17000d34e851e47bf8dc107c145a25
+      internalID: 469212934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_84
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 0.8888855
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57992472a25649a48887e092d8a20278
+      internalID: -804697946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_85
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 0.8888855
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845eff05470414c42895ddda3bd40b18
+      internalID: 1963709541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_86
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 0.8888855
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb388fcd85971ae43aad2e1062cb6ae8
+      internalID: 902620922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_87
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 0.8888855
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abed4968cf7a5394e81feac31d89d551
+      internalID: -255881847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_88
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 0.8888855
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31256736e8485a842b3607f40aca5380
+      internalID: 485769355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_sheet_89
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 0.8888855
+        width: 204.6
+        height: 115.111115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc91eeda2fd4fcf45b5b474f74d3d31f
+      internalID: -1372367835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: df0e3a6973b9a7f4e8288faecfdcbf0a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Transicion_sheet_0: 2058612749
+      Transicion_sheet_1: 541709882
+      Transicion_sheet_10: -334933000
+      Transicion_sheet_11: -1483643855
+      Transicion_sheet_12: 1769197244
+      Transicion_sheet_13: 622786858
+      Transicion_sheet_14: 770282581
+      Transicion_sheet_15: -1025037340
+      Transicion_sheet_16: 407396371
+      Transicion_sheet_17: 838097154
+      Transicion_sheet_18: -70388239
+      Transicion_sheet_19: 23879361
+      Transicion_sheet_2: -2022737127
+      Transicion_sheet_20: -321396983
+      Transicion_sheet_21: 331040930
+      Transicion_sheet_22: -1088055028
+      Transicion_sheet_23: 2068217153
+      Transicion_sheet_24: 1433228543
+      Transicion_sheet_25: -385526667
+      Transicion_sheet_26: -481373355
+      Transicion_sheet_27: -1122714013
+      Transicion_sheet_28: 1792330294
+      Transicion_sheet_29: 944120564
+      Transicion_sheet_3: 2067087590
+      Transicion_sheet_30: 1349384241
+      Transicion_sheet_31: -1970764853
+      Transicion_sheet_32: -2010672893
+      Transicion_sheet_33: 2061027033
+      Transicion_sheet_34: 599427730
+      Transicion_sheet_35: 170380734
+      Transicion_sheet_36: 1566119127
+      Transicion_sheet_37: 935034945
+      Transicion_sheet_38: 652216325
+      Transicion_sheet_39: -953985590
+      Transicion_sheet_4: -1429498875
+      Transicion_sheet_40: 1389447852
+      Transicion_sheet_41: 344982797
+      Transicion_sheet_42: -2128105719
+      Transicion_sheet_43: -2016407241
+      Transicion_sheet_44: 559657621
+      Transicion_sheet_45: -891572414
+      Transicion_sheet_46: 2038425097
+      Transicion_sheet_47: 734817270
+      Transicion_sheet_48: 950618188
+      Transicion_sheet_49: -1602709195
+      Transicion_sheet_5: -648841249
+      Transicion_sheet_50: -1325882952
+      Transicion_sheet_51: 1926614776
+      Transicion_sheet_52: 1044329072
+      Transicion_sheet_53: -1274389776
+      Transicion_sheet_54: -801434777
+      Transicion_sheet_55: -748657382
+      Transicion_sheet_56: 1444066657
+      Transicion_sheet_57: -843086336
+      Transicion_sheet_58: -2002161998
+      Transicion_sheet_59: -1236143781
+      Transicion_sheet_6: -338916040
+      Transicion_sheet_60: -288344611
+      Transicion_sheet_61: 1945515294
+      Transicion_sheet_62: 889842994
+      Transicion_sheet_63: -785832085
+      Transicion_sheet_64: -1954580751
+      Transicion_sheet_65: 112841630
+      Transicion_sheet_66: -481573950
+      Transicion_sheet_67: -533022394
+      Transicion_sheet_68: -387989813
+      Transicion_sheet_69: 1210666058
+      Transicion_sheet_7: 1888245665
+      Transicion_sheet_70: -664474706
+      Transicion_sheet_71: -1143064614
+      Transicion_sheet_72: 777412745
+      Transicion_sheet_73: -980512787
+      Transicion_sheet_74: -930417971
+      Transicion_sheet_75: 339997569
+      Transicion_sheet_76: 2133918133
+      Transicion_sheet_77: 1783975218
+      Transicion_sheet_78: 1953370544
+      Transicion_sheet_79: -1910333934
+      Transicion_sheet_8: -1801486593
+      Transicion_sheet_80: 1994042602
+      Transicion_sheet_81: 1107719453
+      Transicion_sheet_82: -782477786
+      Transicion_sheet_83: 469212934
+      Transicion_sheet_84: -804697946
+      Transicion_sheet_85: 1963709541
+      Transicion_sheet_86: 902620922
+      Transicion_sheet_87: -255881847
+      Transicion_sheet_88: 485769355
+      Transicion_sheet_89: -1372367835
+      Transicion_sheet_9: -1382284626
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
