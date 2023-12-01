@@ -59,10 +59,10 @@ public class PortalState : State
 
             if (!gameManager.playerStats.isEndlessActive)
             {
+                if (gameManager.playerStats.collectedObjectsSpace == gameManager.playerStats.objectsToCollectSpace) { machine.ChangeState<EndState>(); return; }
+                if (gameManager.playerStats.collectedObjectsSynthwave == gameManager.playerStats.objectsToCollectSynthwave) { machine.ChangeState<SciFiState>(); return; }
+                if (gameManager.playerStats.collectedObjectsNoir == gameManager.playerStats.objectsToCollectNoir) { machine.ChangeState<SynthwaveState>(); return; }
                 if (gameManager.InTutorial) { machine.ChangeState<TutorialState>(); }
-                if (gameManager.playerStats.collectedObjectsNoir == gameManager.playerStats.objectsToCollectNoir) { machine.ChangeState<SynthwaveState>(); }
-                if (gameManager.playerStats.collectedObjectsSynthwave == gameManager.playerStats.objectsToCollectSynthwave) { machine.ChangeState<SciFiState>(); }
-                if (gameManager.playerStats.collectedObjectsSpace == gameManager.playerStats.objectsToCollectSpace) { machine.ChangeState<EndState>(); }
             }
             else
             {

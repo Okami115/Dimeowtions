@@ -319,7 +319,7 @@ MonoBehaviour:
   m_listeners:
     initialListenerList: []
     useDefaultListeners: 1
-  isEnvironmentAware: 0
+  isEnvironmentAware: 1
   isStaticObject: 0
   m_positionOffsetData:
     KeepMe: 0
@@ -483,7 +483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuInputManger: {fileID: 943539940}
   credits: {fileID: 1389922727}
-  speed: 0
+  speed: 100
 --- !u!1 &233415939
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,6 +584,7 @@ GameObject:
   m_Component:
   - component: {fileID: 255654186}
   - component: {fileID: 255654187}
+  - component: {fileID: 255654188}
   m_Layer: 0
   m_Name: Buttons
   m_TagString: Untagged
@@ -652,6 +653,39 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &255654188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255654185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef4f8740289d85a4493547293b5dc4ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slideMenu:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 63072181a95bb0746aa49188da31ccab, type: 2}
+  playButton:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e95d7bb0411375845a3822d3207c1893, type: 2}
+  exitButton:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 52ab281c00ff48c42985565797e3445e, type: 2}
+  creditsButton:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 209ed52d329371641afd384b57528425, type: 2}
+  pointerUI:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 77cedc27f7e89814592ab7d26832ac97, type: 2}
+  ip: {fileID: 943539940}
 --- !u!1 &287842973
 GameObject:
   m_ObjectHideFlags: 0
@@ -1269,12 +1303,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367729626}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 20.432602, y: 0.12390518, z: -3.7780056}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 734805221}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &534688149
 MonoBehaviour:
@@ -1395,7 +1429,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 534688148}
   - {fileID: 1259062818}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1441,15 +1474,15 @@ RectTransform:
   m_GameObject: {fileID: 779619897}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2033, y: 1.2033, z: 1.2033}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 255654186}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -53.199707, y: 23.7}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0.897, y: 0.032}
+  m_AnchorMax: {x: 0.96400005, y: 0.11466666}
+  m_AnchoredPosition: {x: -2, y: 1}
+  m_SizeDelta: {x: 723, y: 491}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &779619899
 MonoBehaviour:
@@ -1617,6 +1650,7 @@ GameObject:
   m_Component:
   - component: {fileID: 798689926}
   - component: {fileID: 798689927}
+  - component: {fileID: 798689928}
   m_Layer: 0
   m_Name: MenuMusic
   m_TagString: Untagged
@@ -1659,6 +1693,30 @@ MonoBehaviour:
     groupIdInternal: 0
     groupGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: eb07f8d277f441e47a73923ffa6ece6f, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
+--- !u!114 &798689928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798689925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 604148b846732534daf7c6fd333812cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 05c3ee89884e13f49acb30b7f4cf3b63, type: 2}
   valueIdInternal: 0
   groupIdInternal: 0
   valueGuidInternal: 
@@ -2214,8 +2272,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 943539937}
-  - component: {fileID: 943539940}
   - component: {fileID: 943539939}
+  - component: {fileID: 943539940}
   m_Layer: 0
   m_Name: InputManager
   m_TagString: Untagged
@@ -2277,7 +2335,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 943539936}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a6983aec388ee64a915b6c0b08cf3cf, type: 3}
+  m_Script: {fileID: 11500000, guid: 501fe8545b3424b4e9aa60b2bdc7ab88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &964006975
@@ -2399,7 +2457,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &984276698
@@ -3062,6 +3120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1057449892}
   - component: {fileID: 1057449891}
+  - component: {fileID: 1057449893}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -3102,13 +3161,37 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1057449890}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1057449893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057449890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c979a81c0d93f446aa30c781ebf28d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ff46a01c1f77b43468b1f5862c0ac745, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &1057668584
 GameObject:
   m_ObjectHideFlags: 0
@@ -3149,7 +3232,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1057668584}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2249.9072, y: -13061.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3637,6 +3720,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 255654188}
+          m_TargetAssemblyTypeName: AudioMenuManager, Assembly-CSharp
+          m_MethodName: PointerUI
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - eventID: 1
     callback:
       m_PersistentCalls:
@@ -3731,7 +3826,7 @@ MonoBehaviour:
   m_listeners:
     initialListenerList: []
     useDefaultListeners: 1
-  isEnvironmentAware: 1
+  isEnvironmentAware: 0
   isStaticObject: 0
   m_positionOffsetData:
     KeepMe: 0
@@ -3971,7 +4066,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 534688147}
+      - m_Target: {fileID: 255654188}
+        m_TargetAssemblyTypeName: AudioMenuManager, Assembly-CSharp
+        m_MethodName: SlideMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 534688149}
         m_TargetAssemblyTypeName: MenuAestheticManager, Assembly-CSharp
         m_MethodName: CalculateAestheticLeft
         m_Mode: 1
@@ -4286,11 +4393,11 @@ RectTransform:
   - {fileID: 2119893688}
   m_Father: {fileID: 291224255}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -8040}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: -679}
   m_SizeDelta: {x: 0, y: 12500}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1389922729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4502,7 +4609,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 534688147}
+      - m_Target: {fileID: 255654188}
+        m_TargetAssemblyTypeName: AudioMenuManager, Assembly-CSharp
+        m_MethodName: SlideMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 534688149}
         m_TargetAssemblyTypeName: MenuAestheticManager, Assembly-CSharp
         m_MethodName: CalculateAestheticRight
         m_Mode: 1
@@ -6909,12 +7028,12 @@ SceneRoots:
   - {fileID: 1754686818}
   - {fileID: 909688959}
   - {fileID: 865525706}
-  - {fileID: 1057449892}
   - {fileID: 943539937}
-  - {fileID: 534688148}
   - {fileID: 2118897641}
-  - {fileID: 1057668586}
+  - {fileID: 534688148}
   - {fileID: 291224255}
+  - {fileID: 1057668586}
   - {fileID: 1829729413}
   - {fileID: 4784472312756552983}
   - {fileID: 734805221}
+  - {fileID: 1057449892}

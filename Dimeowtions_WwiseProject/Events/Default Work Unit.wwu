@@ -11,16 +11,6 @@
 					<ChildrenList>
 						<Event Name="Start_BMG_Machine" ID="{6549F208-20ED-41E8-95EC-D773519486CA}">
 							<ChildrenList>
-								<Action Name="" ID="{17B6B487-88A9-464B-8408-9E81629A45C0}" ShortID="233767730">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="BMG_Machine" ID="{75292FDD-B6EA-4D03-AD92-DB33474AD063}" WorkUnitID="{AC0EC91E-8641-4A0B-9DAE-5B42680BA471}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 								<Action Name="" ID="{F385C5DB-724C-4112-8AC8-7D0758B57110}" ShortID="146307323">
 									<ReferenceList>
 										<Reference Name="Target">

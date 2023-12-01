@@ -34,7 +34,8 @@ public class EndlessModeManager : MonoBehaviour
         
         playerStats.isEndlessActive = !playerStats.isEndlessActive;
 
-        if (!playerStats.isStoryModeFinished) modeIndexer = 0;
+        if (!playerStats.isEndlessActive) 
+            modeIndexer = 0;
         else modeIndexer = 1;
 
         endlessModeImage.sprite = baseSprites[modeIndexer];

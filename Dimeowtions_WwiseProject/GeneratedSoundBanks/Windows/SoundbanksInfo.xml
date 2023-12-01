@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\tomas\Escritorio\Dimeowtions\Dimeowtions_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\tomas\Escritorio\Dimeowtions\Dimeowtions_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\tomas\Escritorio\Dimeowtions\Dimeowtions_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\tomas\Escritorio\Dimeowtions\Dimeowtions_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
@@ -29,7 +29,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1769581967">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3075693604">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
