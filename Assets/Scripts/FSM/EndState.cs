@@ -12,6 +12,7 @@ public class EndState : State
     {
         this.sceneManager = sceneManager;
         this.endSceneIndex = endSceneIndex;
+        this.gameManager = gameManager;
     }
 
     public override void Enter()
