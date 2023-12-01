@@ -17,6 +17,7 @@ public class CameraDeathAnimation : MonoBehaviour
     [SerializeField] private float deathAnimationLenghtCollision;
 
     [SerializeField] private GameObject[] UI;
+    [SerializeField] private float fadeInDuration;
 
     private void OnEnable()
     {
@@ -96,9 +97,34 @@ public class CameraDeathAnimation : MonoBehaviour
         ResetUI();
     }
 
+    private IEnumerator FadeInPanel(CanvasGroup panelCanvasGroup, float duration)
+    {
+        float elapsedTime = 0.0f;
+        float startAlpha = 0f; 
+        float targetAlpha = 1f;
+
+        while (elapsedTime < duration)
+        {
+            float newAlpha = Mathf.Lerp(startAlpha, targetAlpha, elapsedTime / duration);
+            panelCanvasGroup.alpha = newAlpha;
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        panelCanvasGroup.alpha = targetAlpha;
+    }
+
     private void ResetUI()
     {
-        UI[1].SetActive(false);
+        UI[1].SetActive(false); 
+
         UI[0].SetActive(true);
+
+        CanvasGroup panelCanvasGroup = UI[0].GetComponent<CanvasGroup>();
+
+        if (panelCanvasGroup != null)
+        {
+            StartCoroutine(FadeInPanel(panelCanvasGroup, fadeInDuration));
+        }
     }
 }
