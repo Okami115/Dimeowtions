@@ -41,10 +41,18 @@ namespace Menu
         [SerializeField] private float changeInterval;
         [SerializeField] private int totalDuration;
 
+        [SerializeField] private TutorialSlowMotion[] tutorialSlowMotions;
+
         private void OnEnable()
         {
             playerCollision.deathActionColision += CalculateScoreTexts;
             playerCollision.deathActionFall += CalculateScoreTexts;
+
+            for (int i = 0; i < tutorialSlowMotions.Length; i++)
+            {
+                tutorialSlowMotions[i].tutorialFinished += TriggerObjetiveImage;
+            }
+
             gameManager.CallPortal += CallPortal;
             portalVideo.loopPointReached += VideoPlaybackComplete;
 
@@ -55,6 +63,12 @@ namespace Menu
         {
             playerCollision.deathActionColision -= CalculateScoreTexts;
             playerCollision.deathActionFall -= CalculateScoreTexts;
+
+            for (int i = 0; i < tutorialSlowMotions.Length; i++)
+            {
+                tutorialSlowMotions[i].tutorialFinished -= TriggerObjetiveImage;
+            }
+
             gameManager.CallPortal -= CallPortal;
             portalVideo.loopPointReached -= VideoPlaybackComplete;
 

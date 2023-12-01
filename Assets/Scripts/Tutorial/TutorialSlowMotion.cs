@@ -21,9 +21,13 @@ public class TutorialSlowMotion : MonoBehaviour
     [SerializeField] private CheckColision playerCollision;
 
     [SerializeField] private int tutorialStep;
+    [SerializeField] private bool isThisLastStep;
+
 
     public event Action<int> tutorialStepInProgress; 
-    public event Action<int> tutorialStepCompleted; 
+    public event Action<int> tutorialStepCompleted;
+    public event Action tutorialFinished;
+
 
     private void OnEnable()
     {
@@ -72,5 +76,11 @@ public class TutorialSlowMotion : MonoBehaviour
         Time.timeScale = 1f;
 
         tutorialStepCompleted?.Invoke(tutorialStep);
+
+        if (isThisLastStep)
+        {
+            isThisLastStep = false;
+            tutorialFinished?.Invoke();
+        }
     }
 }

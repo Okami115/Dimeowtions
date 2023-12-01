@@ -26,7 +26,7 @@ public class TutorialState : State
         gameManager.CurrentAesthetic = Aesthetic.Noir;
         gameManager.playerStats.distanceTraveled = 0;
         noirSong.GetComponent<PlaySound>().ChangeMusicState();
-        uiManager.TriggerObjetiveImage();
+        //uiManager.TriggerObjetiveImage();
     }
 
     public override void Exit()
