@@ -18,13 +18,18 @@ namespace player
         [SerializeField] private string synthwaveCoinTag;
         [SerializeField] private string spaceCoinTag;
 
+        [SerializeField] public AK.Wwise.Event soundDefeat;
+        [SerializeField] public AK.Wwise.Event soundItems;
+        
+
         private string obstacleTag = "Obstacle"; 
         private string emptyTag = "Empty"; 
         private float raycastDistanceObjetc = 1f;
         Ray objetcRay;
         Ray groundRay;
 
-        public event Action deathAction;
+        public event Action deathActionFall;
+        public event Action deathActionColision;
         public event Action objectCollected;
 
         void Update()
@@ -41,10 +46,11 @@ namespace player
                 if (hitInfo.collider.CompareTag(obstacleTag))
                 {
                     pauseManager.SetActive(false);
-                    deathAction?.Invoke();
+                    deathActionColision?.Invoke();
                     playerStats.isPause = true;
                     hitInfo.collider.gameObject.SetActive(false);
-                    
+                    soundDefeat.Post(gameObject);
+
                 }
                 
                 if (hitInfo.collider.CompareTag(noirCoinTag))
@@ -52,18 +58,21 @@ namespace player
                     playerStats.collectedObjectsNoir += 1;
                     objectCollected?.Invoke();
                     Destroy(hitInfo.collider.gameObject);
+                    soundItems.Post(gameObject);
                 }
                 else if (hitInfo.collider.CompareTag(synthwaveCoinTag))
                 {
                     playerStats.collectedObjectsSynthwave += 1;
                     objectCollected?.Invoke();
                     Destroy(hitInfo.collider.gameObject);
+                    soundItems.Post(gameObject);
                 }
                 else if (hitInfo.collider.CompareTag(spaceCoinTag))
                 {
                     playerStats.collectedObjectsSpace += 1;
                     objectCollected?.Invoke();
                     Destroy(hitInfo.collider.gameObject);
+                    soundItems.Post(gameObject);
                 }
             }
         }
@@ -78,8 +87,10 @@ namespace player
         {
             if (other.gameObject.CompareTag(emptyTag))
             {
-                deathAction?.Invoke();
+                deathActionFall?.Invoke();
                 playerStats.isPause = true;
+                soundDefeat.Post(gameObject);                
+
             }
         }
     }

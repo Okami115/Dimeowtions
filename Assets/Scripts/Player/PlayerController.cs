@@ -11,6 +11,7 @@ namespace player
     public class PlayerController : MonoBehaviour
     {
         [SerializeField] private PlayerStats playerStats;
+        [SerializeField] private InputManager inputManager;
 
         private Transform currentPos;
 
@@ -25,10 +26,12 @@ namespace player
         [SerializeField] private int jumpVelocity = 500;
         [SerializeField] private int gravChangeVelocity = 1000;
 
-        private bool isMovingAvailable = false;
-        private bool isOpeningDoorAvailable = true;
-        private bool isJumpingAvailable = false;
-        private bool isAntiGravityAvailable = false;
+        [SerializeField] private TutorialSlowMotion[] tutorialSlowMotions;
+        private bool isMovingAvailable;
+        private bool isOpeningDoorAvailable;
+        private bool isJumpingAvailable;
+        private bool isAntiGravityAvailable;
+
 
         private int indexPos = 0;
 
@@ -53,11 +56,62 @@ namespace player
             currentPos = pos[indexPos];
             halfPosCount = pos.Length / 2;
             cooldown = maxJumpCooldown;
+
+            if (playerStats.isEndlessActive)
+            {
+                isMovingAvailable = true;
+                isOpeningDoorAvailable = true;
+                isJumpingAvailable = true; 
+                isAntiGravityAvailable = true;
+            }
+            else
+            {
+                isMovingAvailable = false;
+                isOpeningDoorAvailable = false;
+                isJumpingAvailable = false;
+                isAntiGravityAvailable = false;
+            }
         }
 
-        public void OnLeft()
+        private void OnEnable()
         {
-            if (!isCounting && isMovingAvailable && !playerStats.inPortalState || playerStats.isEndlessActive)
+            inputManager.onMoveLeftInput += OnMoveLeft;
+            inputManager.onMoveRightInput += OnMoveRight;
+            inputManager.onOpenDoorInput += OnInteraction;
+            inputManager.onJumpInput += OnJump;
+            inputManager.onGravitationalChangeInput += OnGravitationalChange;
+
+            if (!playerStats.isEndlessActive)
+            {
+                for (int i = 0; i < tutorialSlowMotions.Length; i++)
+                {
+                    tutorialSlowMotions[i].tutorialStepInProgress += CompleteTutorialStep;
+                    tutorialSlowMotions[i].tutorialStepCompleted += ResetTutorialMovility;
+                }
+            }
+        }
+
+        private void OnDisable()
+        {
+            inputManager.onMoveLeftInput -= OnMoveLeft;
+            inputManager.onMoveRightInput -= OnMoveRight;
+            inputManager.onOpenDoorInput -= OnInteraction;
+            inputManager.onJumpInput -= OnJump;
+            inputManager.onGravitationalChangeInput -= OnGravitationalChange;
+
+            if (!playerStats.isEndlessActive)
+            {
+                for (int i = 0; i < tutorialSlowMotions.Length; i++)
+                {
+                    tutorialSlowMotions[i].tutorialStepInProgress -= CompleteTutorialStep;
+                    tutorialSlowMotions[i].tutorialStepCompleted -= ResetTutorialMovility;
+                }
+            }
+        }
+
+        public void OnMoveLeft()
+        {
+            if (!isCounting && !inCooldown && isMovingAvailable)
             {
                 indexPos++;
                 if (indexPos > pos.Length - 1)
@@ -66,12 +120,11 @@ namespace player
                 currentPos = pos[indexPos];
                 moveAction?.Invoke();
             }
-
         }
 
-        public void OnRight()
+        public void OnMoveRight()
         {
-            if (!isCounting && isMovingAvailable && !playerStats.inPortalState || playerStats.isEndlessActive)
+            if (!isCounting && !inCooldown && isMovingAvailable)
             {
                 indexPos--;
                 if (indexPos < 0)
@@ -80,28 +133,25 @@ namespace player
                 currentPos = pos[indexPos];
                 moveAction?.Invoke();
             }
-
         }
 
         public void OnInteraction()
         {
-            if (isOpeningDoorAvailable && !playerStats.inPortalState || playerStats.isEndlessActive)
+            if (isOpeningDoorAvailable)
             {
                 interaction?.Invoke();
-                isJumpingAvailable = true;
             }
         }
 
         public void OnJump()
         {
-            if (!inCooldown && isJumpingAvailable && !playerStats.inPortalState || playerStats.isEndlessActive)
+            if (!inCooldown && isJumpingAvailable)
             {
                 boxCollider.enabled = false;
                 inCooldown = true;
                 isCounting = true;
                 jump?.Invoke();
                 jumpCooldown?.Invoke(true);
-                isAntiGravityAvailable = true;
             }
         }
 
@@ -137,12 +187,42 @@ namespace player
                             currentPos = pos[i += halfPosCount];
                         }
 
-                        isMovingAvailable = true;
                         changeGravAction?.Invoke();
                         return;
                     }
                 }
             }
+        }
+
+        private void CompleteTutorialStep(int tutorialStep)
+        {
+            switch (tutorialStep)
+            {
+                case 0:
+                    isOpeningDoorAvailable = true;
+                    break;
+                case 1:
+                    isJumpingAvailable = true;
+                    break;
+                case 2:
+                    isAntiGravityAvailable = true;
+                     break;
+                case 3:
+                    isMovingAvailable = true;
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void ResetTutorialMovility(int tutorialStep)
+        {
+            bool enableAll = (tutorialStep == tutorialSlowMotions.Length - 1);
+
+            isMovingAvailable = enableAll;
+            isOpeningDoorAvailable = enableAll;
+            isJumpingAvailable = enableAll;
+            isAntiGravityAvailable = enableAll;
         }
 
         private void Update()
@@ -176,7 +256,6 @@ namespace player
                         jumpCooldown?.Invoke(false);
                     }
                 }
-
 
                 float speed = moveVelocity * Time.deltaTime;
 

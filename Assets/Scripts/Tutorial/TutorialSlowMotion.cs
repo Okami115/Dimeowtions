@@ -20,6 +20,15 @@ public class TutorialSlowMotion : MonoBehaviour
     [SerializeField] private TutorialUIManager tutorialUIManager;
     [SerializeField] private CheckColision playerCollision;
 
+    [SerializeField] private int tutorialStep;
+    [SerializeField] private bool isThisLastStep;
+
+
+    public event Action<int> tutorialStepInProgress; 
+    public event Action<int> tutorialStepCompleted;
+    public event Action tutorialFinished;
+
+
     private void OnEnable()
     {
         if (isSlowMoAfterJump)
@@ -31,9 +40,20 @@ public class TutorialSlowMotion : MonoBehaviour
         if (isSlowMoAfterChangeGrav)
             player.changeGravAction += ExitSlowMotion;
 
-        playerCollision.deathAction += ExitSlowMotion;
+        playerCollision.deathActionColision += ExitSlowMotion;
+        playerCollision.deathActionFall += ExitSlowMotion;
+    }
 
-
+    private void OnDisable()
+    {
+        if (isSlowMoAfterJump)
+            player.jump -= ExitSlowMotion;
+        if (isSlowMoAfterDoor)
+            player.interaction -= ExitSlowMotion;
+        if (isSlowMoAfterMoving)
+            player.moveAction -= ExitSlowMotion;
+        if (isSlowMoAfterChangeGrav)
+            player.changeGravAction -= ExitSlowMotion;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -42,7 +62,7 @@ public class TutorialSlowMotion : MonoBehaviour
         Time.timeScale = 0.1f;
         tutorialUIManager.ToggleImage(true);
         tutorialUIManager.ChangeText();
-            
+        tutorialStepInProgress?.Invoke(tutorialStep);
     }
 
     private void ExitSlowMotion()
@@ -54,5 +74,13 @@ public class TutorialSlowMotion : MonoBehaviour
         }
 
         Time.timeScale = 1f;
+
+        tutorialStepCompleted?.Invoke(tutorialStep);
+
+        if (isThisLastStep)
+        {
+            isThisLastStep = false;
+            tutorialFinished?.Invoke();
+        }
     }
 }

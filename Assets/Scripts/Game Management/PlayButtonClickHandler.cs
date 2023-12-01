@@ -102,7 +102,12 @@ public class PlayButtonClickHandler : MonoBehaviour
             yield return null;
         }
 
-        mainCamera.transform.position = new Vector3 (mainCamera.transform.position.x, mainCamera.transform.position.y, camZoomPos.position.z);
+        mainCamera.transform.position = new Vector3(mainCamera.transform.position.x, mainCamera.transform.position.y, camZoomPos.position.z);
+
+        if (playerStats.isEndlessActive)
+        {
+            playerStats.endlessAestheticSelected = aestheticSelected;
+        }
 
         if (playerStats.isEndlessActive)
         {

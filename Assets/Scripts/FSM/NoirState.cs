@@ -5,10 +5,12 @@ using UnityEngine;
 
 public class NoirState : State
 {
-    public NoirState(StateMachine machine, GameManager gameManager) : base(machine)
+    GameObject noirSong;
+    public NoirState(StateMachine machine, GameManager gameManager, GameObject noirSong) : base(machine)
     {
         this.gameManager = gameManager;
-        conditions.Add(typeof(EndLevelNoir), new EndLevelNoir(gameManager.playerStats));
+        conditions.Add(typeof(EndLevelNoir), new EndLevelNoir(gameManager.playerStats));        
+        this.noirSong = noirSong;
     }
 
     public override void Enter()
@@ -18,12 +20,12 @@ public class NoirState : State
         gameManager.playerStats.distanceTraveled = 0;
         gameManager.CallInmortalState();
         gameManager.CallNextLevel();
+        //noirSong.GetComponent<PlaySound>().ChangeMusicState();
     }
 
     public override void Exit()
     {
-        Debug.LogWarning("Exit: NOIR :: State");
-        
+        Debug.LogWarning("Exit: NOIR :: State");        
     }
 
     public override void Update()

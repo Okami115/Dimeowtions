@@ -4,10 +4,18 @@ using UnityEngine;
 
 public class PortalState : State
 {
-    public PortalState(StateMachine machine,GameManager gameManager, UIManager uiManager) : base(machine)
+    GameObject noirSong;
+    GameObject noirToSynth;
+    GameObject synthToSciFi;
+
+
+    public PortalState(StateMachine machine,GameManager gameManager, UIManager uiManager, GameObject noirSong, GameObject noirToSynth, GameObject synthToSciFi) : base(machine)
     {
         this.gameManager = gameManager;
         conditions.Add(typeof(ClosePortal), new ClosePortal(uiManager));
+        this.noirSong = noirSong;
+        this.noirToSynth = noirToSynth;
+        this.synthToSciFi = synthToSciFi;
     }
 
     public override void Enter()
@@ -15,6 +23,24 @@ public class PortalState : State
         Debug.LogWarning("Enter: PORTAL :: State");
         gameManager.CallPortalState();
         gameManager.playerStats.inPortalState = true;
+
+        if (gameManager.playerStats.isEndlessActive)
+        {
+            Aesthetic aesthetic = GetCurrentAesthetic();
+
+            if (aesthetic == Aesthetic.Noir)
+            {
+                noirSong.GetComponent<PlaySound>().ChangeMusicState();
+            }
+            else if (aesthetic == Aesthetic.Synthwave)
+            {
+                noirToSynth.GetComponent<PlaySound>().ChangeMusicState();
+            }
+            else if (aesthetic == Aesthetic.Scifi)
+            {
+                synthToSciFi.GetComponent<PlaySound>().ChangeMusicState();
+            }
+        }
     }
 
     public override void Exit()
@@ -40,14 +66,37 @@ public class PortalState : State
             }
             else
             {
-                if (gameManager.playerStats.endlessAestheticSelected == Aesthetic.Noir)
+                Aesthetic aesthetic = GetCurrentAesthetic();
+
+                if (aesthetic == Aesthetic.Noir)              
                     machine.ChangeState<NoirState>();
-                else if (gameManager.playerStats.endlessAestheticSelected == Aesthetic.Synthwave)
+                else if (aesthetic == Aesthetic.Synthwave)
                     machine.ChangeState<SynthwaveState>();
-                else if (gameManager.playerStats.endlessAestheticSelected == Aesthetic.Scifi)
+                else if (aesthetic == Aesthetic.Scifi)
                     machine.ChangeState<SciFiState>();
             }
-            
         }
+    }
+
+    private Aesthetic GetCurrentAesthetic()
+    {
+        Aesthetic aesthetic;
+        if (gameManager.playerStats.endlessAestheticSelected == Aesthetic.Noir)
+        {
+            aesthetic = Aesthetic.Noir;
+            return aesthetic;
+        }
+        else if (gameManager.playerStats.endlessAestheticSelected == Aesthetic.Synthwave)
+        {
+            aesthetic = Aesthetic.Synthwave;
+            return aesthetic;
+        }
+        else if (gameManager.playerStats.endlessAestheticSelected == Aesthetic.Scifi)
+        {
+            aesthetic = Aesthetic.Scifi;
+            return aesthetic;
+        }
+        else
+            return Aesthetic.Noir;
     }
 }

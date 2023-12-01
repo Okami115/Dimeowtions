@@ -14,6 +14,14 @@
 						<State Name="Noir" ID="{700F9545-3EEC-44E4-8BF5-4DD30F8A13FD}"/>
 						<State Name="Synthwave" ID="{EDAF366B-2A4A-4DE3-AACB-22CE40D9F13C}"/>
 						<State Name="SciFi" ID="{A2490D6C-925A-4A40-A4A6-C2588FD26AD5}"/>
+						<State Name="Defeat" ID="{FFD59923-E386-42A2-B3CE-54EB81812417}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="InGame" ID="{E71106E7-A057-4C5B-A2A3-FB7BE5715342}">
+					<ChildrenList>
+						<State Name="None" ID="{DFF86F03-33EF-4B6E-8A42-E2E69712C66B}"/>
+						<State Name="Alive" ID="{1EE1E351-BAFB-4226-8C0A-3B7E5DF3E4EA}"/>
+						<State Name="Paused" ID="{AA742997-7483-48B8-BFD5-E3BCED7452DC}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

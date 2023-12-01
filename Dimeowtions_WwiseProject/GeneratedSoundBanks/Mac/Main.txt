@@ -1,35 +1,78 @@
 Event	ID	Name			Wwise Object Path	Notes
 	21388497	Set_State_Synthwave			\Default Work Unit\Music\Set_State_Synthwave	
 	454668116	Stop_BMG_Machine			\Default Work Unit\Music\Stop_BMG_Machine	
+	693379014	Play_Items			\Default Work Unit\Player\Play_Items	
 	705989075	UI_Play_Button			\Default Work Unit\UI\Main Menu\UI_Play_Button	
+	1039583472	SFX_Gravity_Change			\Default Work Unit\Player\SFX_Gravity_Change	
+	1314850096	UI_Credit_Button			\Default Work Unit\UI\Main Menu\UI_Credit_Button	
 	1337377386	UI_Slice_Menu			\Default Work Unit\UI\Main Menu\UI_Slice_Menu	
 	1446812956	Set_State_SciFi			\Default Work Unit\Music\Set_State_SciFi	
+	1814951015	Set_State_Alive			\Default Work Unit\Music\Set_State_Alive	
 	2170883505	UI_Exit_Button			\Default Work Unit\UI\Main Menu\UI_Exit_Button	
+	2266380775	SFX_Portal			\Default Work Unit\Player\SFX_Portal	
 	2302270969	Set_State_Menu			\Default Work Unit\Music\Set_State_Menu	
+	2902924586	Set_State_Paused			\Default Work Unit\Music\Set_State_Paused	
+	3169691074	Set_Play_Defeat			\Default Work Unit\Music\Set_Play_Defeat	
 	3187317502	SFX_Lateral_Movement			\Default Work Unit\Player\SFX_Lateral_Movement	
 	3695098761	SFX_Jump			\Default Work Unit\Player\SFX_Jump	
 	3913579892	SFX_Open_Door			\Default Work Unit\Player\SFX_Open_Door	
 	3941323550	Start_BMG_Machine			\Default Work Unit\Music\Start_BMG_Machine	
+	4050451069	UI_Pointer			\Default Work Unit\UI\UI_Pointer	
 	4109907276	Set_State_Noir			\Default Work Unit\Music\Set_State_Noir	
 
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2150196036	Doors			\Default Work Unit\Doors	
+
+Switch	ID	Name	Switch Group			Notes
+	799227909	Noir	Doors			
+	1794634511	SciFi	Doors			
+	2932583730	Synthwave	Doors			
+
 State Group	ID	Name			Wwise Object Path	Notes
+	984691642	InGame			\Default Work Unit\InGame	
 	1690668539	Music_States			\Default Work Unit\Music_States	
 
 State	ID	Name	State Group			Notes
+	319258907	Paused	InGame			
+	655265632	Alive	InGame			
+	748895195	None	InGame			
 	748895195	None	Music_States			
 	799227909	Noir	Music_States			
+	1593864692	Defeat	Music_States			
 	1794634511	SciFi	Music_States			
 	2607556080	Menu	Music_States			
 	2932583730	Synthwave	Music_States			
 
+Custom State	ID	Name	State Group	Owner		Notes
+	1005751565	Paused	InGame	\Interactive Music Hierarchy\Default Work Unit\BMG_Machine		
+
+Effect plug-ins	ID	Name	Type				Notes
+	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	84006049	Dimeowtions - Noir - v1_0	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\Dimeowtions - Noir - v1.0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BMG_Machine\Noir\Dimeowtions - Noir - v1_0\Dimeowtions - Noir - v1_0		25251904
-	101592148	DOORWood	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\DOORWood_065B1781.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\Player\Open_Door\DOORWood		75244
-	284843365	UI, Modern, Positive, SciFi, InterfaceUI, Selection 1	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\UI, Modern, Positive, SciFi, InterfaceUI, Selection 1_38C52126.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\UI\Menu UI\UI_Play_Button\UI, Modern, Positive, SciFi, InterfaceUI, Selection 1		284500
-	289874703	Dimeowtions - Synthwave - v1_0	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\Dimeowtions - Synthwave - v1.0_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BMG_Machine\Synthwave\Dimeowtions - Synthwave - v1_0\Dimeowtions - Synthwave - v1_0		24917400
-	314025992	GAMEVideo_Retro Games 8Bit Menu Tune With Melody CMajor 120BPM 01_B00M_ONE	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\GAMEVideo_Retro Games 8Bit Menu Tune With Melody CMajor 120BPM 01_B00M_ONE_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BMG_Machine\Menu\GAMEVideo_Retro Games 8Bit Menu Tune With Melody CMajor 120BPM 01_B00M_ONE\GAMEVideo_Retro Games 8Bit Menu Tune With Melody CMajor 120BPM 01_B00M_ONE		1536064
-	330658490	SALTO	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\SALTO_14E41BE2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\Player\Jump\SALTO		48600
-	827511146	MOVIMIENTO_LATERAL	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\MOVIMIENTO_LATERAL_0FB4E377.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\Player\Lateral_Movement\MOVIMIENTO_LATERAL		45184
-	1028913379	UI_SELECTION	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\UI_SELECTION_E9A99D26.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\UI\Menu UI\UI_Exit_Button\UI_SELECTION		68912
-	1045465036	Noir_To_Synth_Translation	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\Noir_To_Synth_Translation_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Translations\Noir_To_Synth_Translation\Noir_To_Synth_Translation		1406360
+	88210808	sci-fi_device_item_power_up_flash_01	D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\sci-fi_device_item_power_up_flash_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\Player\Items\SciFi\SciFi_1\sci-fi_device_item_power_up_flash_01		231232
+	101592148	DOORWood	D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\DOORWood_065B1781.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\Player\Doors\Noir\DOORWood		75244
+	107801780	Score - Noir - Bitcrushed_04	D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\Score - Noir - Bitcrushed_1A2324B8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\Player\Items\Noir\Score - Noir - Bitcrushed_04		341000
+	250533506	Score - Noir - Bitcrushed_03	D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\Score - Noir - Bitcrushed_0B319842.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\Player\Items\Noir\Score - Noir - Bitcrushed_03		366572
+	281084068	Dimeowtions_Portal	D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\Dimeowtions_Portal_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Portal\Portal\Dimeowtions_Portal		1035668
+	284843365	UI, Modern, Positive, SciFi, InterfaceUI, Selection 1	D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\UI, Modern, Positive, SciFi, InterfaceUI, Selection 1_38C52126.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\UI\Menu UI\UI_Play_Button\UI, Modern, Positive, SciFi, InterfaceUI, Selection 1		284500
+	330658490	SALTO	D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\SALTO_14E41BE2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\Player\Jump\SALTO		48600
+	695190307	Shorted - Noir To Synth Translation	D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\Shorted - Noir To Synth Translation_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Translations\Shorted - Noir To Synth Translation\Shorted - Noir To Synth Translation		703616
+	738275713	Dimeowtions - Main Menu	D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\Dimeowtions - Main Menu_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\BMG_Machine\Menu\Dimeowtions - Main Menu\Dimeowtions - Main Menu		920798
+	755049272	Score - Noir - Bitcrushed_02	D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\Score - Noir - Bitcrushed_CE07022E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\Player\Items\Noir\Score - Noir - Bitcrushed_02		379356
+	802693972	Score - Noir - Bitcrushed	D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\Score - Noir - Bitcrushed_6B0F2589.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\Player\Items\Noir\Score - Noir - Bitcrushed		366572
+	827511146	MOVIMIENTO_LATERAL	D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\MOVIMIENTO_LATERAL_0FB4E377.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\UI\Menu UI\UI_Slice_Menu\MOVIMIENTO_LATERAL		45184
+	827853671	Writing With Pencil 04	D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\Writing With Pencil 04_D3FC0081.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\UI\Menu UI\UI_Credit_Button\Writing With Pencil 04		345348
+	830079761	SFX-ARCADIA_ItemPickUp16	D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\SFX-ARCADIA_ItemPickUp16_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\Player\Items\Synthwave\Synthwave_1\SFX-ARCADIA_ItemPickUp16		103840
+	884788154	Render_Door_01-001	D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\Render_Door_01-001_9001B902.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\Player\Doors\Synthwave\Render_Door_01-001		90984
+	900356677	Score - Noir - Bitcrushed_01	D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\Score - Noir - Bitcrushed_AD5F2F46.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\Player\Items\Noir\Score - Noir - Bitcrushed_01		370836
+	993685651	button_on_off_064	D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\button_on_off_064_A450ADC1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\UI\Menu UI\UI_Pointer\button_on_off_064		18568
+	1028913379	UI_SELECTION	D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\UI_SELECTION_E9A99D26.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\UI\Menu UI\UI_Exit_Button\UI_SELECTION		68912
+	1050336964	HKAP2 Seq1_2 Whoosh	D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\HKAP2 Seq1.2 Whoosh_F834A0B8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\Player\Gravity_Change\HKAP2 Seq1_2 Whoosh		155876
+	1063440004	SFX_Defeat	D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\SFX_Defeat_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\BMG_Machine\Defeat\SFX_Defeat\SFX_Defeat		659416
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	84006049	Dimeowtions - Noir - v1_0	D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\Dimeowtions - Noir - v1.0_9EDFC787.wem	84006049.wem	\Interactive Music Hierarchy\Default Work Unit\BMG_Machine\Noir\Dimeowtions - Noir - v1_0\Dimeowtions - Noir - v1_0	
+	289874703	Dimeowtions - Synthwave - v1_0	D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\Dimeowtions - Synthwave - v1.0_9EDFC787.wem	289874703.wem	\Interactive Music Hierarchy\Default Work Unit\BMG_Machine\Synthwave\Dimeowtions - Synthwave - v1_0\Dimeowtions - Synthwave - v1_0	
+	881549374	dstpchaos - mix	D:\Users\Matias\Documents\Image Campus\2 Año\2do cuatrimestre\Desarrollo 3\Project_Entity\Project-entity\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\dstpchaos - mix_9EDFC787.wem	881549374.wem	\Interactive Music Hierarchy\Default Work Unit\BMG_Machine\SciFi\dstpchaos - mix\dstpchaos - mix	
 

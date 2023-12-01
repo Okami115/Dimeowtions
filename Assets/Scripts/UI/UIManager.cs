@@ -1,6 +1,7 @@
 using Manager;
 using player;
 using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -32,11 +33,26 @@ namespace Menu
 
         [SerializeField] private GameObject portalVideoObject; 
         [SerializeField] private VideoPlayer portalVideo; 
-        private bool isPortalVideoReachable; 
+        private bool isPortalVideoReachable;
+
+        [SerializeField] private GameObject objetiveImage;
+        [SerializeField] private Sprite objectiveSpriteFilled;
+        [SerializeField] private Sprite objectiveSpriteEmpty;
+        [SerializeField] private float changeInterval;
+        [SerializeField] private int totalDuration;
+
+        [SerializeField] private TutorialSlowMotion[] tutorialSlowMotions;
 
         private void OnEnable()
         {
-            playerCollision.deathAction += CalculateScoreTexts;
+            playerCollision.deathActionColision += CalculateScoreTexts;
+            playerCollision.deathActionFall += CalculateScoreTexts;
+
+            for (int i = 0; i < tutorialSlowMotions.Length; i++)
+            {
+                tutorialSlowMotions[i].tutorialFinished += TriggerObjetiveImage;
+            }
+
             gameManager.CallPortal += CallPortal;
             portalVideo.loopPointReached += VideoPlaybackComplete;
 
@@ -45,7 +61,14 @@ namespace Menu
 
         private void OnDisable()
         {
-            playerCollision.deathAction -= CalculateScoreTexts;
+            playerCollision.deathActionColision -= CalculateScoreTexts;
+            playerCollision.deathActionFall -= CalculateScoreTexts;
+
+            for (int i = 0; i < tutorialSlowMotions.Length; i++)
+            {
+                tutorialSlowMotions[i].tutorialFinished -= TriggerObjetiveImage;
+            }
+
             gameManager.CallPortal -= CallPortal;
             portalVideo.loopPointReached -= VideoPlaybackComplete;
 
@@ -98,6 +121,34 @@ namespace Menu
             {
                 portalVideoObject.SetActive(false);
             }
+        }
+
+        public void TriggerObjetiveImage()
+        {
+            StartCoroutine(ObjetiveImageSequence());
+        }
+
+        private IEnumerator ObjetiveImageSequence()
+        {
+            objetiveImage.SetActive(true);
+
+            bool isFilled = false;
+            float elapsedTime = 0.0f;
+
+            while (elapsedTime < totalDuration)
+            {
+                if (isFilled)
+                    objetiveImage.GetComponent<Image>().sprite = objectiveSpriteFilled;
+                else
+                    objetiveImage.GetComponent<Image>().sprite = objectiveSpriteEmpty;
+
+                isFilled = !isFilled; // Toggle between empty and filled
+
+                elapsedTime += changeInterval;
+                yield return new WaitForSeconds(changeInterval);
+            }
+
+            objetiveImage.SetActive(false);
         }
     }
 }

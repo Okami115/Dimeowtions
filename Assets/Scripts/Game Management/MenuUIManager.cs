@@ -14,7 +14,7 @@ public class MenuUIManager : MonoBehaviour
         if (!PlayerPrefs.HasKey("StoryMode"))
         {
             PlayerPrefs.SetInt("StoryMode", 1);
-            playerStats.isStoryModeFinished = PlayerPrefs.GetInt("StoryMode") != 0;
+            playerStats.isStoryModeFinished = false;
         }
         //else
         //{

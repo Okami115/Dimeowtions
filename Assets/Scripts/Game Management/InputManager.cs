@@ -3,31 +3,50 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
-    public static event Action onMoveLeft;
-    public static event Action onMoveRight;
-    public static event Action onClick;
+    public event Action onMoveLeftInput;
+    public event Action onMoveRightInput;
+    public event Action onOpenDoorInput;
+    public event Action onJumpInput;
+    public event Action onGravitationalChangeInput;
 
-    public void OnMoveLeft()
+    public void OnLeft()
     {
-        if (onMoveLeft != null)
+        if (onMoveLeftInput != null)
         {
-            onMoveLeft.Invoke();
+            onMoveLeftInput.Invoke();
         }
     }
 
-    public void OnMoveRight()
+    public void OnRight()
     {
-        if (onMoveRight != null)
+        if (onMoveRightInput != null)
         {
-            onMoveRight.Invoke();
+            onMoveRightInput.Invoke();
         }
     }
 
-    public void OnClick()
+    public void OnInteraction()
     {
-        if (onClick != null)
+        if (onOpenDoorInput != null)
         {
-            onClick.Invoke();
+            onOpenDoorInput.Invoke();
         }
     }
+
+    public void OnJump()
+    {
+        if (onJumpInput != null)
+        {
+            onJumpInput.Invoke();
+        }
+    }
+
+    public void OnGravitationalChange()
+    {
+        if (onGravitationalChangeInput != null)
+        {
+            onGravitationalChangeInput.Invoke();
+        }
+    }
+
 }
