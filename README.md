@@ -21,7 +21,7 @@ This is a game being developed by students from <a href="https://www.imagecampus
 - **Tomas ‘Okami’ Porte Petit** - *Programming*
 - **Candela ‘Gochie’ Formigo** - *Art*
 - **Ezequiel ‘Drawnah’ Nicanor Muñoz** - *Art*
-- - **Tomas ‘Cenfe’ Verhagen** - *Art*
+- **Tomas ‘Cenfe’ Verhagen** - *Art*
 - **Daria Chiroleu** - *Audio*
 - **Felipe ‘Flippa’ Goizueta** - *Audio*
 -  **Emiliano Laiño** - *Audio*
