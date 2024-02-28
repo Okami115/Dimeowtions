@@ -5,6 +5,7 @@ using UnityEngine;
 
 public enum MenuAesthetic
 {
+    Egypt,
     Noir,
     Synthwave,
     Scifi,
@@ -38,13 +39,15 @@ public class MenuAestheticManager : MonoBehaviour
 
     void Awake()
     {
-        ChangeAesthetic(MenuAesthetic.Noir);
+        ChangeAesthetic(MenuAesthetic.Egypt);
     }
 
     public void CalculateAestheticLeft()
     {
         if (currentAesthetic == MenuAesthetic.Synthwave)
             ChangeAesthetic(MenuAesthetic.Noir);
+        else if (currentAesthetic == MenuAesthetic.Noir)
+            ChangeAesthetic(MenuAesthetic.Egypt);
         else if (currentAesthetic == MenuAesthetic.Scifi)
             ChangeAesthetic(MenuAesthetic.Synthwave);
     }
@@ -53,6 +56,8 @@ public class MenuAestheticManager : MonoBehaviour
     {
         if (currentAesthetic == MenuAesthetic.Noir)
             ChangeAesthetic(MenuAesthetic.Synthwave);
+        else if (currentAesthetic == MenuAesthetic.Egypt)
+            ChangeAesthetic(MenuAesthetic.Noir);
         else if (currentAesthetic == MenuAesthetic.Synthwave)
             ChangeAesthetic(MenuAesthetic.Scifi);
     }
