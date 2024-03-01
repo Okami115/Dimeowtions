@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2662960830726365951}
   - component: {fileID: 9053504765262771844}
   - component: {fileID: 5825585223055903899}
-  - component: {fileID: 9001238582964106435}
+  - component: {fileID: 5488313360611829302}
   m_Layer: 0
   m_Name: Lentes
   m_TagString: SynthwaveCoin
@@ -106,7 +106,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!65 &9001238582964106435
+--- !u!65 &5488313360611829302
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,8 +125,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.02, y: 0.02, z: 0.03}
-  m_Center: {x: -0.000007674798, y: 0.00020115357, z: -0.00058866077}
+  m_Size: {x: 0.04, y: 0.03, z: 0.04}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &85428881738024524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -280,7 +280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 206ca3e200a076348847f72745f71e6b, type: 3}
       propertyPath: m_TagString
-      value: Tile
+      value: SynthwaveCoin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

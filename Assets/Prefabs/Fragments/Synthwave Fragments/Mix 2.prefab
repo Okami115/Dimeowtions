@@ -533,6 +533,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin Synthwave
       objectReference: {fileID: 0}
+    - target: {fileID: 9001238582964106435, guid: 33b7aaacb0b79aa4083f56e2b07ef2cd, type: 3}
+      propertyPath: m_Size.y
+      value: 0.027939703
+      objectReference: {fileID: 0}
+    - target: {fileID: 9001238582964106435, guid: 33b7aaacb0b79aa4083f56e2b07ef2cd, type: 3}
+      propertyPath: m_Size.z
+      value: 0.07009654
+      objectReference: {fileID: 0}
+    - target: {fileID: 9001238582964106435, guid: 33b7aaacb0b79aa4083f56e2b07ef2cd, type: 3}
+      propertyPath: m_Center.x
+      value: -0.000007675094
+      objectReference: {fileID: 0}
+    - target: {fileID: 9001238582964106435, guid: 33b7aaacb0b79aa4083f56e2b07ef2cd, type: 3}
+      propertyPath: m_Center.y
+      value: 0.0041710055
+      objectReference: {fileID: 0}
+    - target: {fileID: 9001238582964106435, guid: 33b7aaacb0b79aa4083f56e2b07ef2cd, type: 3}
+      propertyPath: m_Center.z
+      value: 0.0025293084
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
