@@ -348,6 +348,17 @@
                 },
                 {
                     "name": "",
+                    "id": "f744132c-838d-4f47-9986-6d17b157f7b0",
+                    "path": "<DualShockGamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "542dbf9c-d6d2-4f4f-9959-72fbe2aba223",
                     "path": "<Keyboard>/upArrow",
                     "interactions": "",
@@ -370,6 +381,17 @@
                 },
                 {
                     "name": "",
+                    "id": "4e8145d2-b137-4cfc-875f-4d8841fc08a7",
+                    "path": "<DualShockGamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Up",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "5ada5574-3552-4992-8fc7-d4bdb46d7d7f",
                     "path": "<Keyboard>/s",
                     "interactions": "",
@@ -383,6 +405,17 @@
                     "name": "",
                     "id": "30a38524-e572-4204-8a92-55cf9c92e9b9",
                     "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Down",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3b7d9241-3639-4a35-8ee3-6cacff057c8a",
+                    "path": "<DualShockGamepad>/dpad/down",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -425,6 +458,17 @@
                 },
                 {
                     "name": "",
+                    "id": "13c09037-b5ab-4707-bce7-86fc1d24d84b",
+                    "path": "<DualShockGamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveLeft",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "8982a8d1-c741-4629-8a74-a75aae2649fb",
                     "path": "<Keyboard>/d",
                     "interactions": "",
@@ -438,6 +482,17 @@
                     "name": "",
                     "id": "03d8d4fe-8497-400d-8778-7d6f30dab0c8",
                     "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7925fcf0-514c-47b4-ad8d-df5e8a7d43d8",
+                    "path": "<DualShockGamepad>/rightShoulder",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -482,6 +537,17 @@
                     "name": "",
                     "id": "e02841dc-6f8a-4952-996b-1c25047f0a1e",
                     "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "85c7f698-2a83-4367-9e16-a571084fcc82",
+                    "path": "<DualShockGamepad>/start",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
