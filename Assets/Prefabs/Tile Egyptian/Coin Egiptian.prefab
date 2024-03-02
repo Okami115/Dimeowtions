@@ -68,6 +68,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile_Piso_Egipto
       objectReference: {fileID: 0}
+    - target: {fileID: 2889235998405488856, guid: ab1f904196d4d2748acb1ad0f7dea713, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44037cb3483416841ace1656c8ee0214, type: 2}
+    - target: {fileID: 7525855286722494653, guid: ab1f904196d4d2748acb1ad0f7dea713, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44037cb3483416841ace1656c8ee0214, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -86,6 +94,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2390581648886313244}
     m_Modifications:
+    - target: {fileID: -8905255491606579319, guid: 0cbb366af61df26439630ab25c5b6c6e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: aa19d86cb1f56454e806e83645575b0a, type: 2}
     - target: {fileID: -8679921383154817045, guid: 0cbb366af61df26439630ab25c5b6c6e, type: 3}
       propertyPath: m_LocalScale.x
       value: 11
@@ -150,6 +162,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Egyptian Coin
       objectReference: {fileID: 0}
+    - target: {fileID: 3240084807735318267, guid: 0cbb366af61df26439630ab25c5b6c6e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44037cb3483416841ace1656c8ee0214, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -157,6 +173,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0cbb366af61df26439630ab25c5b6c6e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1783455605282112223}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0cbb366af61df26439630ab25c5b6c6e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4021901708572067713}
   m_SourcePrefab: {fileID: 100100000, guid: 0cbb366af61df26439630ab25c5b6c6e, type: 3}
 --- !u!1 &1723659791656672644 stripped
 GameObject:
@@ -184,6 +203,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &4021901708572067713
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723659791656672644}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 024b9b31eaf4c6d4c86c3d17d912ecef, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &2062784823317071678 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0cbb366af61df26439630ab25c5b6c6e, type: 3}
@@ -345,6 +385,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile_Piso_Egipto (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2889235998405488856, guid: ab1f904196d4d2748acb1ad0f7dea713, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44037cb3483416841ace1656c8ee0214, type: 2}
+    - target: {fileID: 7525855286722494653, guid: ab1f904196d4d2748acb1ad0f7dea713, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44037cb3483416841ace1656c8ee0214, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -12,9 +12,11 @@ public class PlayerStats : ScriptableObject
     public int collectedObjectsNoir;
     public int collectedObjectsSynthwave;
     public int collectedObjectsSpace;
+    public int collectedObjectsEgypt;
     public int objectsToCollectNoir;
     public int objectsToCollectSynthwave;
     public int objectsToCollectSpace;
+    public int objectsToCollectEgypt;
     public int maxScore;
     public bool isPause;
     public bool isEndlessActive;
