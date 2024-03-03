@@ -81,7 +81,9 @@ PrefabInstance:
       value: Puerta_Scifi
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: -3702523448182640658, guid: 3f5adb600e428244c961235bde035c6f, type: 3}
+    - {fileID: -2586837052074400480, guid: 3f5adb600e428244c961235bde035c6f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f5adb600e428244c961235bde035c6f, type: 3}
