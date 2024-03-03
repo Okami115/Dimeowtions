@@ -25,12 +25,14 @@ public class ScoreSpritesManager : MonoBehaviour
     private void OnEnable()
     {
         playerCollision.objectCollected += ChangeScoreSprite;
+        playerCollision.infectedObjectCollected += ChangeScoreSpriteInfected;
         gameManager.nextLevel += ResetCollectiblesIndexer;
     }
 
     private void OnDisable()
     {
         playerCollision.objectCollected -= ChangeScoreSprite;
+        playerCollision.infectedObjectCollected -= ChangeScoreSpriteInfected;
         gameManager.nextLevel -= ResetCollectiblesIndexer;
     }
 
@@ -92,6 +94,43 @@ public class ScoreSpritesManager : MonoBehaviour
             }
         }
                            
+    }
+
+    private void ChangeScoreSpriteInfected()
+    {
+        if (!playerStats.isEndlessActive)
+        {
+            CalculateMaxObjects();
+
+            for (int i = 0; i < scoreObjectsParents.Length; i++)
+            {
+                if (lastCollectedIndex > 0 && lastCollectedIndex < maxObjects)
+                {
+                    lastCollectedIndex--;
+                    GameObject childObject = scoreObjectsParents[i].transform.GetChild(lastCollectedIndex).gameObject;
+
+                    if (childObject.activeInHierarchy)
+                    {
+                        ScoreSprite scoreSprite = childObject.GetComponent<ScoreSprite>();
+
+                        if (scoreSprite != null)
+                        {
+                            scoreSprite.ChangeToEmptySprite();
+
+                            if (lastCollectedIndex <= portalAnimatorPreviousTriggerNames.Length)
+                            {
+                                portalAnimator.SetTrigger(portalAnimatorPreviousTriggerNames[portalAnimatorPreviousTriggerSteps]);
+                                portalAnimatorPreviousTriggerSteps++;
+                            }
+
+                            if (lastCollectedIndex == maxObjects)
+                                portalAnimator.SetBool(portalBoolPhasesFinishedName, true);
+                        }
+                    }
+                }
+            }
+        }
+
     }
 
     private void ResetCollectiblesIndexer()

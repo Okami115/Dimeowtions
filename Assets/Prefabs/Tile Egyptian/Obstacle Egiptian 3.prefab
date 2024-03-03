@@ -68,6 +68,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile_Piso_Egipto
       objectReference: {fileID: 0}
+    - target: {fileID: 2889235998405488856, guid: ab1f904196d4d2748acb1ad0f7dea713, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44037cb3483416841ace1656c8ee0214, type: 2}
+    - target: {fileID: 7525855286722494653, guid: ab1f904196d4d2748acb1ad0f7dea713, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44037cb3483416841ace1656c8ee0214, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -230,6 +238,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -5050502379967206738, guid: af2e6a6168427df48b89752c84ad6b07, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44037cb3483416841ace1656c8ee0214, type: 2}
+    - target: {fileID: -1676107201544193186, guid: af2e6a6168427df48b89752c84ad6b07, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44037cb3483416841ace1656c8ee0214, type: 2}
     - target: {fileID: 919132149155446097, guid: af2e6a6168427df48b89752c84ad6b07, type: 3}
       propertyPath: m_Name
       value: Obstaculo03_Egipto
@@ -312,6 +328,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile_Piso_Egipto (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2889235998405488856, guid: ab1f904196d4d2748acb1ad0f7dea713, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44037cb3483416841ace1656c8ee0214, type: 2}
+    - target: {fileID: 7525855286722494653, guid: ab1f904196d4d2748acb1ad0f7dea713, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44037cb3483416841ace1656c8ee0214, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

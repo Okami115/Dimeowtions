@@ -17,6 +17,8 @@ namespace player
         [SerializeField] private string noirCoinTag;
         [SerializeField] private string synthwaveCoinTag;
         [SerializeField] private string spaceCoinTag;
+        [SerializeField] private string egyptCoinTag;
+        [SerializeField] private string infectedEgyptCoinTag;
 
         [SerializeField] public AK.Wwise.Event soundDefeat;
         [SerializeField] public AK.Wwise.Event soundItems;
@@ -31,6 +33,7 @@ namespace player
         public event Action deathActionFall;
         public event Action deathActionColision;
         public event Action objectCollected;
+        public event Action infectedObjectCollected;
 
         void Update()
         {
@@ -71,6 +74,20 @@ namespace player
                 {
                     playerStats.collectedObjectsSpace += 1;
                     objectCollected?.Invoke();
+                    Destroy(hitInfo.collider.gameObject);
+                    soundItems.Post(gameObject);
+                }
+                else if (hitInfo.collider.CompareTag(egyptCoinTag))
+                {
+                    playerStats.collectedObjectsNoir += 1;
+                    objectCollected?.Invoke();
+                    Destroy(hitInfo.collider.gameObject);
+                    soundItems.Post(gameObject);
+                }
+                else if (hitInfo.collider.CompareTag(infectedEgyptCoinTag))
+                {
+                    playerStats.collectedObjectsNoir -= 1;
+                    infectedObjectCollected?.Invoke();
                     Destroy(hitInfo.collider.gameObject);
                     soundItems.Post(gameObject);
                 }

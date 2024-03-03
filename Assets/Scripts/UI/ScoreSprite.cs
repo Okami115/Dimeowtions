@@ -16,4 +16,9 @@ public class ScoreSprite : MonoBehaviour
         gameObject.GetComponent<Image>().sprite = filledSprite;
     }
 
+    public void ChangeToEmptySprite()
+    {
+        gameObject.GetComponent<Image>().sprite = baseSprite;
+    }
+
 }

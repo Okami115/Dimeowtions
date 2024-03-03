@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -8381253021070475641, guid: 4666ecdb42d811646b2633102dc0987f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44037cb3483416841ace1656c8ee0214, type: 2}
     - target: {fileID: 919132149155446097, guid: 4666ecdb42d811646b2633102dc0987f, type: 3}
       propertyPath: m_Name
       value: Obstaculo01_Egipto
@@ -72,6 +76,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 1198940347837031142, guid: 4666ecdb42d811646b2633102dc0987f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44037cb3483416841ace1656c8ee0214, type: 2}
+    - target: {fileID: 5049687352918024182, guid: 4666ecdb42d811646b2633102dc0987f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44037cb3483416841ace1656c8ee0214, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -179,6 +191,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile_Piso_Egipto
       objectReference: {fileID: 0}
+    - target: {fileID: 2889235998405488856, guid: ab1f904196d4d2748acb1ad0f7dea713, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44037cb3483416841ace1656c8ee0214, type: 2}
+    - target: {fileID: 7525855286722494653, guid: ab1f904196d4d2748acb1ad0f7dea713, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44037cb3483416841ace1656c8ee0214, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -345,6 +365,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile_Piso_Egipto (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2889235998405488856, guid: ab1f904196d4d2748acb1ad0f7dea713, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44037cb3483416841ace1656c8ee0214, type: 2}
+    - target: {fileID: 7525855286722494653, guid: ab1f904196d4d2748acb1ad0f7dea713, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44037cb3483416841ace1656c8ee0214, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

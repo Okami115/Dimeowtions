@@ -15,6 +15,9 @@ TagManager:
   - NoirCoin
   - SynthwaveCoin
   - SpaceCoin
+  - EgyptButton
+  - EgyptInfectedCoin
+  - Egyptian Coin
   layers:
   - Default
   - TransparentFX

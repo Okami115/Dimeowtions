@@ -68,6 +68,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile_Piso_Egipto
       objectReference: {fileID: 0}
+    - target: {fileID: 2889235998405488856, guid: ab1f904196d4d2748acb1ad0f7dea713, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44037cb3483416841ace1656c8ee0214, type: 2}
+    - target: {fileID: 7525855286722494653, guid: ab1f904196d4d2748acb1ad0f7dea713, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44037cb3483416841ace1656c8ee0214, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -174,6 +182,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2390581648886313244}
     m_Modifications:
+    - target: {fileID: -8993702132804424678, guid: 711b3d1497743ab40828ba2a91bce682, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44037cb3483416841ace1656c8ee0214, type: 2}
     - target: {fileID: -8679921383154817045, guid: 711b3d1497743ab40828ba2a91bce682, type: 3}
       propertyPath: m_LocalScale.x
       value: 11
@@ -230,6 +242,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -8245456499849779064, guid: 711b3d1497743ab40828ba2a91bce682, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44037cb3483416841ace1656c8ee0214, type: 2}
     - target: {fileID: 919132149155446097, guid: 711b3d1497743ab40828ba2a91bce682, type: 3}
       propertyPath: m_Name
       value: Obstaculo02_Egipto
@@ -345,6 +361,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile_Piso_Egipto (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2889235998405488856, guid: ab1f904196d4d2748acb1ad0f7dea713, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44037cb3483416841ace1656c8ee0214, type: 2}
+    - target: {fileID: 7525855286722494653, guid: ab1f904196d4d2748acb1ad0f7dea713, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 44037cb3483416841ace1656c8ee0214, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
