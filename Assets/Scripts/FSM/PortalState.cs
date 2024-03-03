@@ -27,8 +27,11 @@ public class PortalState : State
         if (gameManager.playerStats.isEndlessActive)
         {
             Aesthetic aesthetic = GetCurrentAesthetic();
-
-            if (aesthetic == Aesthetic.Noir)
+            if (aesthetic == Aesthetic.Egyptian)
+            {
+                noirSong.GetComponent<PlaySound>().ChangeMusicState();
+            }
+            else if (aesthetic == Aesthetic.Noir)
             {
                 noirSong.GetComponent<PlaySound>().ChangeMusicState();
             }
@@ -62,13 +65,16 @@ public class PortalState : State
                 if (gameManager.playerStats.collectedObjectsSpace == gameManager.playerStats.objectsToCollectSpace) { machine.ChangeState<EndState>(); return; }
                 if (gameManager.playerStats.collectedObjectsSynthwave == gameManager.playerStats.objectsToCollectSynthwave) { machine.ChangeState<SciFiState>(); return; }
                 if (gameManager.playerStats.collectedObjectsNoir == gameManager.playerStats.objectsToCollectNoir) { machine.ChangeState<SynthwaveState>(); return; }
+                if (gameManager.playerStats.collectedObjectsEgypt == gameManager.playerStats.objectsToCollectEgypt) { machine.ChangeState<NoirState>(); return; }
                 if (gameManager.InTutorial) { machine.ChangeState<TutorialState>(); }
             }
             else
             {
                 Aesthetic aesthetic = GetCurrentAesthetic();
 
-                if (aesthetic == Aesthetic.Noir)              
+                if (aesthetic == Aesthetic.Egyptian)
+                    machine.ChangeState<EgyptianState>();
+                else if (aesthetic == Aesthetic.Noir)              
                     machine.ChangeState<NoirState>();
                 else if (aesthetic == Aesthetic.Synthwave)
                     machine.ChangeState<SynthwaveState>();
@@ -81,7 +87,12 @@ public class PortalState : State
     private Aesthetic GetCurrentAesthetic()
     {
         Aesthetic aesthetic;
-        if (gameManager.playerStats.endlessAestheticSelected == Aesthetic.Noir)
+        if (gameManager.playerStats.endlessAestheticSelected == Aesthetic.Egyptian)
+        {
+            aesthetic = Aesthetic.Egyptian;
+            return aesthetic;
+        }
+        else if (gameManager.playerStats.endlessAestheticSelected == Aesthetic.Noir)
         {
             aesthetic = Aesthetic.Noir;
             return aesthetic;
@@ -97,6 +108,6 @@ public class PortalState : State
             return aesthetic;
         }
         else
-            return Aesthetic.Noir;
+            return Aesthetic.Egyptian;
     }
 }

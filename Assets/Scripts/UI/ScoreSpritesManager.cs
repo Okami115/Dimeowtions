@@ -142,7 +142,9 @@ public class ScoreSpritesManager : MonoBehaviour
 
     private void CalculateMaxObjects()
     {
-        if (gameManager.CurrentAesthetic == Aesthetic.Noir)
+        if (gameManager.CurrentAesthetic == Aesthetic.Egyptian)
+            maxObjects = playerStats.objectsToCollectEgypt;
+        else if (gameManager.CurrentAesthetic == Aesthetic.Noir)
             maxObjects = playerStats.objectsToCollectNoir;
         else if (gameManager.CurrentAesthetic == Aesthetic.Synthwave)
             maxObjects = playerStats.objectsToCollectSynthwave;

@@ -9,6 +9,7 @@ namespace Manager
 {
     public enum Aesthetic
     {
+        Egyptian,
         Noir,
         Synthwave,
         Scifi,
@@ -41,6 +42,7 @@ namespace Manager
 
         private void Start()
         {
+            playerStats.collectedObjectsEgypt = 0;
             playerStats.collectedObjectsNoir = 0;
             playerStats.collectedObjectsSynthwave = 0;
             playerStats.collectedObjectsSpace = 0;
@@ -54,6 +56,7 @@ namespace Manager
             stateMachine.AddState<EndState>(new EndState(stateMachine, sceneLoader, 3, this));
 
             stateMachine.AddState<TutorialState>(new TutorialState(stateMachine, this, uiManager, noirSong, noirToSynth));
+            stateMachine.AddState<EgyptianState>(new EgyptianState(stateMachine, this, noirSong));
             stateMachine.AddState<NoirState>(new NoirState(stateMachine, this, noirSong));
             stateMachine.AddState<SynthwaveState>(new SynthwaveState(stateMachine, this, synthToSciFi));
             stateMachine.AddState<SciFiState>(new SciFiState(stateMachine, this));

@@ -9,14 +9,16 @@ public class PlayerStats : ScriptableObject
     public float initialSpeed;
     public float maxSpeed;
     public int distanceTraveled;
+    public int collectedObjectsEgypt;
     public int collectedObjectsNoir;
     public int collectedObjectsSynthwave;
     public int collectedObjectsSpace;
-    public int collectedObjectsEgypt;
+
+    public int objectsToCollectEgypt;
     public int objectsToCollectNoir;
     public int objectsToCollectSynthwave;
     public int objectsToCollectSpace;
-    public int objectsToCollectEgypt;
+
     public int maxScore;
     public bool isPause;
     public bool isEndlessActive;

@@ -6,13 +6,6 @@ using UnityEngine;
 
 public class ScenographyManager : MonoBehaviour
 {
-    [Obsolete]
-    [SerializeField] private GameObject[] scenographyNoir; 
-    [Obsolete]
-    [SerializeField] private GameObject[] scenographySynthWave; 
-    [Obsolete]
-    [SerializeField] private GameObject[] scenographySciFi;
-
     private Aesthetic currentAesthetic;
 
     [SerializeField] private GameManager gameManager;

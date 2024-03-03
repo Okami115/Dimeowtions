@@ -11,6 +11,7 @@ namespace Terrain
         [SerializeField] private GameObject[] Noir;
         [SerializeField] private GameObject[] Synthwave;
         [SerializeField] private GameObject[] SciFi;
+        [SerializeField] private GameObject[] Egyptian;
         [SerializeField] private GameObject children;
         [SerializeField] private GameManager gameManager;
         private TerrainMovement tMovement;
@@ -30,7 +31,12 @@ namespace Terrain
             currentAesthetic = gameManager.CurrentAesthetic;
             Destroy(children);
 
-            if(currentAesthetic == Aesthetic.Noir)
+            if (currentAesthetic == Aesthetic.Egyptian)
+            {
+                value = Random.Range(0, Egyptian.Length);
+                children = Instantiate(Egyptian[value]);
+            }
+            else if(currentAesthetic == Aesthetic.Noir)
             {
                 value = Random.Range(0, Noir.Length);
                 children = Instantiate(Noir[value]); 
@@ -42,7 +48,7 @@ namespace Terrain
             }
             else if (currentAesthetic == Aesthetic.Scifi)
             {
-                value = Random.Range(0, Synthwave.Length);
+                value = Random.Range(0, SciFi.Length);
                 children = Instantiate(SciFi[value]);
             }
 

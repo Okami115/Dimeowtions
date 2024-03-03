@@ -15,7 +15,7 @@ public class TutorialState : State
     {
         this.gameManager = gameManager;
         this.uiManager = uiManager;
-        conditions.Add(typeof(EndLevelNoir), new EndLevelNoir(gameManager.playerStats));
+        conditions.Add(typeof(EndLevelEgyptian), new EndLevelEgyptian(gameManager.playerStats));
         this.noirSong = noirSong;
         this.noirToSynth = noirToSynth;
     }
@@ -23,7 +23,7 @@ public class TutorialState : State
     public override void Enter()
     {
         Debug.LogWarning("Enter: TUTORIAL :: State");
-        gameManager.CurrentAesthetic = Aesthetic.Noir;
+        gameManager.CurrentAesthetic = Aesthetic.Egyptian;
         gameManager.playerStats.distanceTraveled = 0;
         noirSong.GetComponent<PlaySound>().ChangeMusicState();
         //uiManager.TriggerObjetiveImage();
@@ -38,7 +38,7 @@ public class TutorialState : State
 
     public override void Update()
     {
-        if (CheckCondition<EndLevelNoir>())
+        if (CheckCondition<EndLevelEgyptian>())
         {
             machine.ChangeState<PortalState>();
             return;

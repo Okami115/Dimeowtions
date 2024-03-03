@@ -93,6 +93,21 @@ public class Condition
     public virtual bool Check() => true;
 }
 
+public class EndLevelEgyptian : Condition
+{
+    private PlayerStats playerStats;
+
+    public EndLevelEgyptian(PlayerStats playerStats)
+    {
+        this.playerStats = playerStats;
+    }
+
+    public override bool Check()
+    {
+        return playerStats.collectedObjectsEgypt == playerStats.objectsToCollectEgypt;
+    }
+}
+
 public class EndLevelNoir : Condition
 {
     private PlayerStats playerStats;
