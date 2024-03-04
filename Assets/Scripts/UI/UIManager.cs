@@ -110,6 +110,7 @@ namespace Menu
 
         private void CalculateScoreTexts()
         {
+            noirScoreText.text = playerStats.collectedObjectsEgypt.ToString() + " X ";
             noirScoreText.text = playerStats.collectedObjectsNoir.ToString() + " X ";
             synthwaveScoreText.text = playerStats.collectedObjectsSynthwave.ToString() + " X ";
             spaceScoreText.text = playerStats.collectedObjectsSpace.ToString() + " X ";
