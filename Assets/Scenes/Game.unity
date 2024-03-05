@@ -502,17 +502,17 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   Egyptian:
   - {fileID: 1642843760390861595, guid: 9eea85569da093e46b9c0290b3626caa, type: 3}
+  - {fileID: 1642843760390861595, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
   - {fileID: 1642843760390861595, guid: 31582d83c044a804baf74453789cfd4c, type: 3}
   - {fileID: 1642843760390861595, guid: d4987818184974942a95e96c3996c47a, type: 3}
   - {fileID: 1642843760390861595, guid: aa803ba374967de44b4b3ffb012d47b3, type: 3}
+  - {fileID: 1642843760390861595, guid: f49ba87e8754991409883d8b681aef1d, type: 3}
+  - {fileID: 1642843760390861595, guid: d350de614efe5f7408f0798ed4ff738b, type: 3}
   - {fileID: 1642843760390861595, guid: 4a9a5041bd4847e4ca88050a0234fe94, type: 3}
   - {fileID: 1642843760390861595, guid: ac3f28ddac8bfe94e8d27f1f7114eba2, type: 3}
   - {fileID: 1642843760390861595, guid: bb3c9e97b33198f49a7b4e71d0ed8d23, type: 3}
   - {fileID: 1642843760390861595, guid: f97a530df4cfeb04fabd038574cff47b, type: 3}
   - {fileID: 1642843760390861595, guid: cd5da215355034f4db9da5fa5b8174a3, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
@@ -653,17 +653,17 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   Egyptian:
   - {fileID: 1642843760390861595, guid: 9eea85569da093e46b9c0290b3626caa, type: 3}
+  - {fileID: 1642843760390861595, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
   - {fileID: 1642843760390861595, guid: 31582d83c044a804baf74453789cfd4c, type: 3}
   - {fileID: 1642843760390861595, guid: d4987818184974942a95e96c3996c47a, type: 3}
   - {fileID: 1642843760390861595, guid: aa803ba374967de44b4b3ffb012d47b3, type: 3}
+  - {fileID: 1642843760390861595, guid: f49ba87e8754991409883d8b681aef1d, type: 3}
+  - {fileID: 1642843760390861595, guid: d350de614efe5f7408f0798ed4ff738b, type: 3}
   - {fileID: 1642843760390861595, guid: 4a9a5041bd4847e4ca88050a0234fe94, type: 3}
   - {fileID: 1642843760390861595, guid: ac3f28ddac8bfe94e8d27f1f7114eba2, type: 3}
   - {fileID: 1642843760390861595, guid: bb3c9e97b33198f49a7b4e71d0ed8d23, type: 3}
   - {fileID: 1642843760390861595, guid: f97a530df4cfeb04fabd038574cff47b, type: 3}
   - {fileID: 1642843760390861595, guid: cd5da215355034f4db9da5fa5b8174a3, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
@@ -1064,7 +1064,6 @@ MonoBehaviour:
   isSlowMoAfterDoor: 0
   isSlowMoAfterMoving: 0
   isSlowMoAfterChangeGrav: 1
-  door: {fileID: 0}
   tutorialUIManager: {fileID: 1065173196}
   playerCollision: {fileID: 4874120583695425628}
   tutorialStep: 2
@@ -1328,17 +1327,17 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   Egyptian:
   - {fileID: 1642843760390861595, guid: 9eea85569da093e46b9c0290b3626caa, type: 3}
+  - {fileID: 1642843760390861595, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
   - {fileID: 1642843760390861595, guid: 31582d83c044a804baf74453789cfd4c, type: 3}
   - {fileID: 1642843760390861595, guid: d4987818184974942a95e96c3996c47a, type: 3}
   - {fileID: 1642843760390861595, guid: aa803ba374967de44b4b3ffb012d47b3, type: 3}
+  - {fileID: 1642843760390861595, guid: f49ba87e8754991409883d8b681aef1d, type: 3}
+  - {fileID: 1642843760390861595, guid: d350de614efe5f7408f0798ed4ff738b, type: 3}
   - {fileID: 1642843760390861595, guid: 4a9a5041bd4847e4ca88050a0234fe94, type: 3}
   - {fileID: 1642843760390861595, guid: ac3f28ddac8bfe94e8d27f1f7114eba2, type: 3}
   - {fileID: 1642843760390861595, guid: bb3c9e97b33198f49a7b4e71d0ed8d23, type: 3}
   - {fileID: 1642843760390861595, guid: f97a530df4cfeb04fabd038574cff47b, type: 3}
   - {fileID: 1642843760390861595, guid: cd5da215355034f4db9da5fa5b8174a3, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
@@ -1580,7 +1579,6 @@ MonoBehaviour:
   isSlowMoAfterDoor: 0
   isSlowMoAfterMoving: 1
   isSlowMoAfterChangeGrav: 0
-  door: {fileID: 0}
   tutorialUIManager: {fileID: 1065173196}
   playerCollision: {fileID: 4874120583695425628}
   tutorialStep: 3
@@ -2111,17 +2109,17 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   Egyptian:
   - {fileID: 1642843760390861595, guid: 9eea85569da093e46b9c0290b3626caa, type: 3}
+  - {fileID: 1642843760390861595, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
   - {fileID: 1642843760390861595, guid: 31582d83c044a804baf74453789cfd4c, type: 3}
   - {fileID: 1642843760390861595, guid: d4987818184974942a95e96c3996c47a, type: 3}
   - {fileID: 1642843760390861595, guid: aa803ba374967de44b4b3ffb012d47b3, type: 3}
+  - {fileID: 1642843760390861595, guid: f49ba87e8754991409883d8b681aef1d, type: 3}
+  - {fileID: 1642843760390861595, guid: d350de614efe5f7408f0798ed4ff738b, type: 3}
   - {fileID: 1642843760390861595, guid: 4a9a5041bd4847e4ca88050a0234fe94, type: 3}
   - {fileID: 1642843760390861595, guid: ac3f28ddac8bfe94e8d27f1f7114eba2, type: 3}
   - {fileID: 1642843760390861595, guid: bb3c9e97b33198f49a7b4e71d0ed8d23, type: 3}
   - {fileID: 1642843760390861595, guid: f97a530df4cfeb04fabd038574cff47b, type: 3}
   - {fileID: 1642843760390861595, guid: cd5da215355034f4db9da5fa5b8174a3, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
@@ -2533,84 +2531,6 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: dccd80c8c01612e4d8d309a97f3353c1, type: 2}
---- !u!1 &438540053
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 438540054}
-  - component: {fileID: 438540056}
-  - component: {fileID: 438540055}
-  m_Layer: 0
-  m_Name: Door Tutorial
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &438540054
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 438540053}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.03199768, y: -0.9260025, z: -1.2759094}
-  m_LocalScale: {x: 2.6, y: 2.6, z: 2.0481498}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 469394121}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &438540055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 438540053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bf679eec90be1243854896ff794b5f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 4874120583695425626}
-  playerStats: {fileID: 11400000, guid: 3b0d911bf7ddf6b4f91f7798a73b6989, type: 2}
-  gameManager: {fileID: 26147096}
-  isSlowMoAfterJump: 0
-  isSlowMoAfterDoor: 1
-  isSlowMoAfterMoving: 0
-  isSlowMoAfterChangeGrav: 0
-  door: {fileID: 0}
-  tutorialUIManager: {fileID: 1065173196}
-  playerCollision: {fileID: 4874120583695425628}
-  tutorialStep: 0
-  isThisLastStep: 0
---- !u!65 &438540056
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 438540053}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 7.8106537, y: 2.0759974, z: 5.6240673}
-  m_Center: {x: -0.29272318, y: 0.5379987, z: -2.3120337}
 --- !u!1 &454056522
 GameObject:
   m_ObjectHideFlags: 0
@@ -2673,76 +2593,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1818809790}
   m_LocalEulerAnglesHint: {x: 180, y: -180, z: -45}
---- !u!1001 &469394120
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1627605476}
-    m_Modifications:
-    - target: {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-      propertyPath: m_Name
-      value: Base
-      objectReference: {fileID: 0}
-    - target: {fileID: 6815016041834156212, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6815016041834156212, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6815016041834156212, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6815016041834156212, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6815016041834156212, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6815016041834156212, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6815016041834156212, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6815016041834156212, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6815016041834156212, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6815016041834156212, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 6815016041834156212, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 438540054}
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
---- !u!4 &469394121 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6815016041834156212, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  m_PrefabInstance: {fileID: 469394120}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &469394122 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  m_PrefabInstance: {fileID: 469394120}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &473218244
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3438,17 +3288,17 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   Egyptian:
   - {fileID: 1642843760390861595, guid: 9eea85569da093e46b9c0290b3626caa, type: 3}
+  - {fileID: 1642843760390861595, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
   - {fileID: 1642843760390861595, guid: 31582d83c044a804baf74453789cfd4c, type: 3}
   - {fileID: 1642843760390861595, guid: d4987818184974942a95e96c3996c47a, type: 3}
   - {fileID: 1642843760390861595, guid: aa803ba374967de44b4b3ffb012d47b3, type: 3}
+  - {fileID: 1642843760390861595, guid: f49ba87e8754991409883d8b681aef1d, type: 3}
+  - {fileID: 1642843760390861595, guid: d350de614efe5f7408f0798ed4ff738b, type: 3}
   - {fileID: 1642843760390861595, guid: 4a9a5041bd4847e4ca88050a0234fe94, type: 3}
   - {fileID: 1642843760390861595, guid: ac3f28ddac8bfe94e8d27f1f7114eba2, type: 3}
   - {fileID: 1642843760390861595, guid: bb3c9e97b33198f49a7b4e71d0ed8d23, type: 3}
   - {fileID: 1642843760390861595, guid: f97a530df4cfeb04fabd038574cff47b, type: 3}
   - {fileID: 1642843760390861595, guid: cd5da215355034f4db9da5fa5b8174a3, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
@@ -4438,7 +4288,6 @@ MonoBehaviour:
   isSlowMoAfterDoor: 0
   isSlowMoAfterMoving: 0
   isSlowMoAfterChangeGrav: 0
-  door: {fileID: 0}
   tutorialUIManager: {fileID: 1065173196}
   playerCollision: {fileID: 4874120583695425628}
   tutorialStep: 1
@@ -4630,17 +4479,17 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   Egyptian:
   - {fileID: 1642843760390861595, guid: 9eea85569da093e46b9c0290b3626caa, type: 3}
+  - {fileID: 1642843760390861595, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
   - {fileID: 1642843760390861595, guid: 31582d83c044a804baf74453789cfd4c, type: 3}
   - {fileID: 1642843760390861595, guid: d4987818184974942a95e96c3996c47a, type: 3}
   - {fileID: 1642843760390861595, guid: aa803ba374967de44b4b3ffb012d47b3, type: 3}
+  - {fileID: 1642843760390861595, guid: f49ba87e8754991409883d8b681aef1d, type: 3}
+  - {fileID: 1642843760390861595, guid: d350de614efe5f7408f0798ed4ff738b, type: 3}
   - {fileID: 1642843760390861595, guid: 4a9a5041bd4847e4ca88050a0234fe94, type: 3}
   - {fileID: 1642843760390861595, guid: ac3f28ddac8bfe94e8d27f1f7114eba2, type: 3}
   - {fileID: 1642843760390861595, guid: bb3c9e97b33198f49a7b4e71d0ed8d23, type: 3}
   - {fileID: 1642843760390861595, guid: f97a530df4cfeb04fabd038574cff47b, type: 3}
   - {fileID: 1642843760390861595, guid: cd5da215355034f4db9da5fa5b8174a3, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
@@ -5410,17 +5259,17 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   Egyptian:
   - {fileID: 1642843760390861595, guid: 9eea85569da093e46b9c0290b3626caa, type: 3}
+  - {fileID: 1642843760390861595, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
   - {fileID: 1642843760390861595, guid: 31582d83c044a804baf74453789cfd4c, type: 3}
   - {fileID: 1642843760390861595, guid: d4987818184974942a95e96c3996c47a, type: 3}
   - {fileID: 1642843760390861595, guid: aa803ba374967de44b4b3ffb012d47b3, type: 3}
+  - {fileID: 1642843760390861595, guid: f49ba87e8754991409883d8b681aef1d, type: 3}
+  - {fileID: 1642843760390861595, guid: d350de614efe5f7408f0798ed4ff738b, type: 3}
   - {fileID: 1642843760390861595, guid: 4a9a5041bd4847e4ca88050a0234fe94, type: 3}
   - {fileID: 1642843760390861595, guid: ac3f28ddac8bfe94e8d27f1f7114eba2, type: 3}
   - {fileID: 1642843760390861595, guid: bb3c9e97b33198f49a7b4e71d0ed8d23, type: 3}
   - {fileID: 1642843760390861595, guid: f97a530df4cfeb04fabd038574cff47b, type: 3}
   - {fileID: 1642843760390861595, guid: cd5da215355034f4db9da5fa5b8174a3, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
@@ -5662,17 +5511,17 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   Egyptian:
   - {fileID: 1642843760390861595, guid: 9eea85569da093e46b9c0290b3626caa, type: 3}
+  - {fileID: 1642843760390861595, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
   - {fileID: 1642843760390861595, guid: 31582d83c044a804baf74453789cfd4c, type: 3}
   - {fileID: 1642843760390861595, guid: d4987818184974942a95e96c3996c47a, type: 3}
   - {fileID: 1642843760390861595, guid: aa803ba374967de44b4b3ffb012d47b3, type: 3}
+  - {fileID: 1642843760390861595, guid: f49ba87e8754991409883d8b681aef1d, type: 3}
+  - {fileID: 1642843760390861595, guid: d350de614efe5f7408f0798ed4ff738b, type: 3}
   - {fileID: 1642843760390861595, guid: 4a9a5041bd4847e4ca88050a0234fe94, type: 3}
   - {fileID: 1642843760390861595, guid: ac3f28ddac8bfe94e8d27f1f7114eba2, type: 3}
   - {fileID: 1642843760390861595, guid: bb3c9e97b33198f49a7b4e71d0ed8d23, type: 3}
   - {fileID: 1642843760390861595, guid: f97a530df4cfeb04fabd038574cff47b, type: 3}
   - {fileID: 1642843760390861595, guid: cd5da215355034f4db9da5fa5b8174a3, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
@@ -6112,17 +5961,17 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   Egyptian:
   - {fileID: 1642843760390861595, guid: 9eea85569da093e46b9c0290b3626caa, type: 3}
+  - {fileID: 1642843760390861595, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
   - {fileID: 1642843760390861595, guid: 31582d83c044a804baf74453789cfd4c, type: 3}
   - {fileID: 1642843760390861595, guid: d4987818184974942a95e96c3996c47a, type: 3}
   - {fileID: 1642843760390861595, guid: aa803ba374967de44b4b3ffb012d47b3, type: 3}
+  - {fileID: 1642843760390861595, guid: f49ba87e8754991409883d8b681aef1d, type: 3}
+  - {fileID: 1642843760390861595, guid: d350de614efe5f7408f0798ed4ff738b, type: 3}
   - {fileID: 1642843760390861595, guid: 4a9a5041bd4847e4ca88050a0234fe94, type: 3}
   - {fileID: 1642843760390861595, guid: ac3f28ddac8bfe94e8d27f1f7114eba2, type: 3}
   - {fileID: 1642843760390861595, guid: bb3c9e97b33198f49a7b4e71d0ed8d23, type: 3}
   - {fileID: 1642843760390861595, guid: f97a530df4cfeb04fabd038574cff47b, type: 3}
   - {fileID: 1642843760390861595, guid: cd5da215355034f4db9da5fa5b8174a3, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
@@ -6551,7 +6400,7 @@ MonoBehaviour:
   changeInterval: 0.3
   totalDuration: 2
   tutorialSlowMotions:
-  - {fileID: 438540055}
+  - {fileID: 1762759611}
   - {fileID: 780099592}
   - {fileID: 192628695}
   - {fileID: 301012609}
@@ -7054,17 +6903,17 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   Egyptian:
   - {fileID: 1642843760390861595, guid: 9eea85569da093e46b9c0290b3626caa, type: 3}
+  - {fileID: 1642843760390861595, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
   - {fileID: 1642843760390861595, guid: 31582d83c044a804baf74453789cfd4c, type: 3}
   - {fileID: 1642843760390861595, guid: d4987818184974942a95e96c3996c47a, type: 3}
   - {fileID: 1642843760390861595, guid: aa803ba374967de44b4b3ffb012d47b3, type: 3}
+  - {fileID: 1642843760390861595, guid: f49ba87e8754991409883d8b681aef1d, type: 3}
+  - {fileID: 1642843760390861595, guid: d350de614efe5f7408f0798ed4ff738b, type: 3}
   - {fileID: 1642843760390861595, guid: 4a9a5041bd4847e4ca88050a0234fe94, type: 3}
   - {fileID: 1642843760390861595, guid: ac3f28ddac8bfe94e8d27f1f7114eba2, type: 3}
   - {fileID: 1642843760390861595, guid: bb3c9e97b33198f49a7b4e71d0ed8d23, type: 3}
   - {fileID: 1642843760390861595, guid: f97a530df4cfeb04fabd038574cff47b, type: 3}
   - {fileID: 1642843760390861595, guid: cd5da215355034f4db9da5fa5b8174a3, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
@@ -7655,17 +7504,17 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   Egyptian:
   - {fileID: 1642843760390861595, guid: 9eea85569da093e46b9c0290b3626caa, type: 3}
+  - {fileID: 1642843760390861595, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
   - {fileID: 1642843760390861595, guid: 31582d83c044a804baf74453789cfd4c, type: 3}
   - {fileID: 1642843760390861595, guid: d4987818184974942a95e96c3996c47a, type: 3}
   - {fileID: 1642843760390861595, guid: aa803ba374967de44b4b3ffb012d47b3, type: 3}
+  - {fileID: 1642843760390861595, guid: f49ba87e8754991409883d8b681aef1d, type: 3}
+  - {fileID: 1642843760390861595, guid: d350de614efe5f7408f0798ed4ff738b, type: 3}
   - {fileID: 1642843760390861595, guid: 4a9a5041bd4847e4ca88050a0234fe94, type: 3}
   - {fileID: 1642843760390861595, guid: ac3f28ddac8bfe94e8d27f1f7114eba2, type: 3}
   - {fileID: 1642843760390861595, guid: bb3c9e97b33198f49a7b4e71d0ed8d23, type: 3}
   - {fileID: 1642843760390861595, guid: f97a530df4cfeb04fabd038574cff47b, type: 3}
   - {fileID: 1642843760390861595, guid: cd5da215355034f4db9da5fa5b8174a3, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
@@ -7873,17 +7722,17 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   Egyptian:
   - {fileID: 1642843760390861595, guid: 9eea85569da093e46b9c0290b3626caa, type: 3}
+  - {fileID: 1642843760390861595, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
   - {fileID: 1642843760390861595, guid: 31582d83c044a804baf74453789cfd4c, type: 3}
   - {fileID: 1642843760390861595, guid: d4987818184974942a95e96c3996c47a, type: 3}
   - {fileID: 1642843760390861595, guid: aa803ba374967de44b4b3ffb012d47b3, type: 3}
+  - {fileID: 1642843760390861595, guid: f49ba87e8754991409883d8b681aef1d, type: 3}
+  - {fileID: 1642843760390861595, guid: d350de614efe5f7408f0798ed4ff738b, type: 3}
   - {fileID: 1642843760390861595, guid: 4a9a5041bd4847e4ca88050a0234fe94, type: 3}
   - {fileID: 1642843760390861595, guid: ac3f28ddac8bfe94e8d27f1f7114eba2, type: 3}
   - {fileID: 1642843760390861595, guid: bb3c9e97b33198f49a7b4e71d0ed8d23, type: 3}
   - {fileID: 1642843760390861595, guid: f97a530df4cfeb04fabd038574cff47b, type: 3}
   - {fileID: 1642843760390861595, guid: cd5da215355034f4db9da5fa5b8174a3, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
@@ -8364,17 +8213,17 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   Egyptian:
   - {fileID: 1642843760390861595, guid: 9eea85569da093e46b9c0290b3626caa, type: 3}
+  - {fileID: 1642843760390861595, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
   - {fileID: 1642843760390861595, guid: 31582d83c044a804baf74453789cfd4c, type: 3}
   - {fileID: 1642843760390861595, guid: d4987818184974942a95e96c3996c47a, type: 3}
   - {fileID: 1642843760390861595, guid: aa803ba374967de44b4b3ffb012d47b3, type: 3}
+  - {fileID: 1642843760390861595, guid: f49ba87e8754991409883d8b681aef1d, type: 3}
+  - {fileID: 1642843760390861595, guid: d350de614efe5f7408f0798ed4ff738b, type: 3}
   - {fileID: 1642843760390861595, guid: 4a9a5041bd4847e4ca88050a0234fe94, type: 3}
   - {fileID: 1642843760390861595, guid: ac3f28ddac8bfe94e8d27f1f7114eba2, type: 3}
   - {fileID: 1642843760390861595, guid: bb3c9e97b33198f49a7b4e71d0ed8d23, type: 3}
   - {fileID: 1642843760390861595, guid: f97a530df4cfeb04fabd038574cff47b, type: 3}
   - {fileID: 1642843760390861595, guid: cd5da215355034f4db9da5fa5b8174a3, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
@@ -13978,6 +13827,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1818809790}
   m_LocalEulerAnglesHint: {x: 180, y: -180, z: 45}
+--- !u!1 &1425049119 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1642843760390861595, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
+  m_PrefabInstance: {fileID: 1694576891}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1431614253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15087,7 +14941,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 469394121}
+  - {fileID: 1694576892}
   m_Father: {fileID: 2105941126}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1627605477
@@ -15186,9 +15040,12 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   Egyptian:
   - {fileID: 1642843760390861595, guid: 9eea85569da093e46b9c0290b3626caa, type: 3}
+  - {fileID: 1642843760390861595, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
   - {fileID: 1642843760390861595, guid: 31582d83c044a804baf74453789cfd4c, type: 3}
   - {fileID: 1642843760390861595, guid: d4987818184974942a95e96c3996c47a, type: 3}
   - {fileID: 1642843760390861595, guid: aa803ba374967de44b4b3ffb012d47b3, type: 3}
+  - {fileID: 1642843760390861595, guid: f49ba87e8754991409883d8b681aef1d, type: 3}
+  - {fileID: 1642843760390861595, guid: d350de614efe5f7408f0798ed4ff738b, type: 3}
   - {fileID: 1642843760390861595, guid: 4a9a5041bd4847e4ca88050a0234fe94, type: 3}
   - {fileID: 1642843760390861595, guid: ac3f28ddac8bfe94e8d27f1f7114eba2, type: 3}
   - {fileID: 1642843760390861595, guid: bb3c9e97b33198f49a7b4e71d0ed8d23, type: 3}
@@ -15202,10 +15059,7 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  children: {fileID: 469394122}
+  children: {fileID: 1425049119}
   gameManager: {fileID: 26147096}
 --- !u!1001 &1663790357
 PrefabInstance:
@@ -15868,17 +15722,17 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   Egyptian:
   - {fileID: 1642843760390861595, guid: 9eea85569da093e46b9c0290b3626caa, type: 3}
+  - {fileID: 1642843760390861595, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
   - {fileID: 1642843760390861595, guid: 31582d83c044a804baf74453789cfd4c, type: 3}
   - {fileID: 1642843760390861595, guid: d4987818184974942a95e96c3996c47a, type: 3}
   - {fileID: 1642843760390861595, guid: aa803ba374967de44b4b3ffb012d47b3, type: 3}
+  - {fileID: 1642843760390861595, guid: f49ba87e8754991409883d8b681aef1d, type: 3}
+  - {fileID: 1642843760390861595, guid: d350de614efe5f7408f0798ed4ff738b, type: 3}
   - {fileID: 1642843760390861595, guid: 4a9a5041bd4847e4ca88050a0234fe94, type: 3}
   - {fileID: 1642843760390861595, guid: ac3f28ddac8bfe94e8d27f1f7114eba2, type: 3}
   - {fileID: 1642843760390861595, guid: bb3c9e97b33198f49a7b4e71d0ed8d23, type: 3}
   - {fileID: 1642843760390861595, guid: f97a530df4cfeb04fabd038574cff47b, type: 3}
   - {fileID: 1642843760390861595, guid: cd5da215355034f4db9da5fa5b8174a3, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
@@ -15996,6 +15850,71 @@ VideoPlayer:
   m_WaitForFirstFrame: 0
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!1001 &1694576891
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1627605476}
+    m_Modifications:
+    - target: {fileID: 1642843760390861595, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
+      propertyPath: m_Name
+      value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 6815016041834156212, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6815016041834156212, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6815016041834156212, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6815016041834156212, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6815016041834156212, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6815016041834156212, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6815016041834156212, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6815016041834156212, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6815016041834156212, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6815016041834156212, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6815016041834156212, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1762759610}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
+--- !u!4 &1694576892 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6815016041834156212, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
+  m_PrefabInstance: {fileID: 1694576891}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1697202510
 GameObject:
   m_ObjectHideFlags: 0
@@ -16184,6 +16103,83 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   m_PrefabInstance: {fileID: 1724806926}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1762759609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1762759610}
+  - component: {fileID: 1762759612}
+  - component: {fileID: 1762759611}
+  m_Layer: 0
+  m_Name: Door Tutorial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1762759610
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762759609}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -2.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1694576892}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1762759611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762759609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf679eec90be1243854896ff794b5f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 4874120583695425626}
+  playerStats: {fileID: 11400000, guid: 3b0d911bf7ddf6b4f91f7798a73b6989, type: 2}
+  gameManager: {fileID: 26147096}
+  isSlowMoAfterJump: 0
+  isSlowMoAfterDoor: 1
+  isSlowMoAfterMoving: 0
+  isSlowMoAfterChangeGrav: 0
+  tutorialUIManager: {fileID: 1065173196}
+  playerCollision: {fileID: 4874120583695425628}
+  tutorialStep: 0
+  isThisLastStep: 0
+--- !u!65 &1762759612
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762759609}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 14.167189, y: 2.8525152, z: 6.3957205}
+  m_Center: {x: -0.9292631, y: 0.9262576, z: -0.27995253}
 --- !u!1 &1763611295
 GameObject:
   m_ObjectHideFlags: 0
@@ -16611,17 +16607,17 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   Egyptian:
   - {fileID: 1642843760390861595, guid: 9eea85569da093e46b9c0290b3626caa, type: 3}
+  - {fileID: 1642843760390861595, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
   - {fileID: 1642843760390861595, guid: 31582d83c044a804baf74453789cfd4c, type: 3}
   - {fileID: 1642843760390861595, guid: d4987818184974942a95e96c3996c47a, type: 3}
   - {fileID: 1642843760390861595, guid: aa803ba374967de44b4b3ffb012d47b3, type: 3}
+  - {fileID: 1642843760390861595, guid: f49ba87e8754991409883d8b681aef1d, type: 3}
+  - {fileID: 1642843760390861595, guid: d350de614efe5f7408f0798ed4ff738b, type: 3}
   - {fileID: 1642843760390861595, guid: 4a9a5041bd4847e4ca88050a0234fe94, type: 3}
   - {fileID: 1642843760390861595, guid: ac3f28ddac8bfe94e8d27f1f7114eba2, type: 3}
   - {fileID: 1642843760390861595, guid: bb3c9e97b33198f49a7b4e71d0ed8d23, type: 3}
   - {fileID: 1642843760390861595, guid: f97a530df4cfeb04fabd038574cff47b, type: 3}
   - {fileID: 1642843760390861595, guid: cd5da215355034f4db9da5fa5b8174a3, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
@@ -16762,17 +16758,17 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   Egyptian:
   - {fileID: 1642843760390861595, guid: 9eea85569da093e46b9c0290b3626caa, type: 3}
+  - {fileID: 1642843760390861595, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
   - {fileID: 1642843760390861595, guid: 31582d83c044a804baf74453789cfd4c, type: 3}
   - {fileID: 1642843760390861595, guid: d4987818184974942a95e96c3996c47a, type: 3}
   - {fileID: 1642843760390861595, guid: aa803ba374967de44b4b3ffb012d47b3, type: 3}
+  - {fileID: 1642843760390861595, guid: f49ba87e8754991409883d8b681aef1d, type: 3}
+  - {fileID: 1642843760390861595, guid: d350de614efe5f7408f0798ed4ff738b, type: 3}
   - {fileID: 1642843760390861595, guid: 4a9a5041bd4847e4ca88050a0234fe94, type: 3}
   - {fileID: 1642843760390861595, guid: ac3f28ddac8bfe94e8d27f1f7114eba2, type: 3}
   - {fileID: 1642843760390861595, guid: bb3c9e97b33198f49a7b4e71d0ed8d23, type: 3}
   - {fileID: 1642843760390861595, guid: f97a530df4cfeb04fabd038574cff47b, type: 3}
   - {fileID: 1642843760390861595, guid: cd5da215355034f4db9da5fa5b8174a3, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
@@ -17032,17 +17028,17 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   Egyptian:
   - {fileID: 1642843760390861595, guid: 9eea85569da093e46b9c0290b3626caa, type: 3}
+  - {fileID: 1642843760390861595, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
   - {fileID: 1642843760390861595, guid: 31582d83c044a804baf74453789cfd4c, type: 3}
   - {fileID: 1642843760390861595, guid: d4987818184974942a95e96c3996c47a, type: 3}
   - {fileID: 1642843760390861595, guid: aa803ba374967de44b4b3ffb012d47b3, type: 3}
+  - {fileID: 1642843760390861595, guid: f49ba87e8754991409883d8b681aef1d, type: 3}
+  - {fileID: 1642843760390861595, guid: d350de614efe5f7408f0798ed4ff738b, type: 3}
   - {fileID: 1642843760390861595, guid: 4a9a5041bd4847e4ca88050a0234fe94, type: 3}
   - {fileID: 1642843760390861595, guid: ac3f28ddac8bfe94e8d27f1f7114eba2, type: 3}
   - {fileID: 1642843760390861595, guid: bb3c9e97b33198f49a7b4e71d0ed8d23, type: 3}
   - {fileID: 1642843760390861595, guid: f97a530df4cfeb04fabd038574cff47b, type: 3}
   - {fileID: 1642843760390861595, guid: cd5da215355034f4db9da5fa5b8174a3, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
@@ -17183,17 +17179,17 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   Egyptian:
   - {fileID: 1642843760390861595, guid: 9eea85569da093e46b9c0290b3626caa, type: 3}
+  - {fileID: 1642843760390861595, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
   - {fileID: 1642843760390861595, guid: 31582d83c044a804baf74453789cfd4c, type: 3}
   - {fileID: 1642843760390861595, guid: d4987818184974942a95e96c3996c47a, type: 3}
   - {fileID: 1642843760390861595, guid: aa803ba374967de44b4b3ffb012d47b3, type: 3}
+  - {fileID: 1642843760390861595, guid: f49ba87e8754991409883d8b681aef1d, type: 3}
+  - {fileID: 1642843760390861595, guid: d350de614efe5f7408f0798ed4ff738b, type: 3}
   - {fileID: 1642843760390861595, guid: 4a9a5041bd4847e4ca88050a0234fe94, type: 3}
   - {fileID: 1642843760390861595, guid: ac3f28ddac8bfe94e8d27f1f7114eba2, type: 3}
   - {fileID: 1642843760390861595, guid: bb3c9e97b33198f49a7b4e71d0ed8d23, type: 3}
   - {fileID: 1642843760390861595, guid: f97a530df4cfeb04fabd038574cff47b, type: 3}
   - {fileID: 1642843760390861595, guid: cd5da215355034f4db9da5fa5b8174a3, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
@@ -17367,17 +17363,17 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   Egyptian:
   - {fileID: 1642843760390861595, guid: 9eea85569da093e46b9c0290b3626caa, type: 3}
+  - {fileID: 1642843760390861595, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
   - {fileID: 1642843760390861595, guid: 31582d83c044a804baf74453789cfd4c, type: 3}
   - {fileID: 1642843760390861595, guid: d4987818184974942a95e96c3996c47a, type: 3}
   - {fileID: 1642843760390861595, guid: aa803ba374967de44b4b3ffb012d47b3, type: 3}
+  - {fileID: 1642843760390861595, guid: f49ba87e8754991409883d8b681aef1d, type: 3}
+  - {fileID: 1642843760390861595, guid: d350de614efe5f7408f0798ed4ff738b, type: 3}
   - {fileID: 1642843760390861595, guid: 4a9a5041bd4847e4ca88050a0234fe94, type: 3}
   - {fileID: 1642843760390861595, guid: ac3f28ddac8bfe94e8d27f1f7114eba2, type: 3}
   - {fileID: 1642843760390861595, guid: bb3c9e97b33198f49a7b4e71d0ed8d23, type: 3}
   - {fileID: 1642843760390861595, guid: f97a530df4cfeb04fabd038574cff47b, type: 3}
   - {fileID: 1642843760390861595, guid: cd5da215355034f4db9da5fa5b8174a3, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
@@ -18140,17 +18136,17 @@ MonoBehaviour:
   - {fileID: 1642843760390861595, guid: 9d62a40479355324091b28c1db385b8d, type: 3}
   Egyptian:
   - {fileID: 1642843760390861595, guid: 9eea85569da093e46b9c0290b3626caa, type: 3}
+  - {fileID: 1642843760390861595, guid: 9abc67d99fc442d48b7628a7d8e701a4, type: 3}
   - {fileID: 1642843760390861595, guid: 31582d83c044a804baf74453789cfd4c, type: 3}
   - {fileID: 1642843760390861595, guid: d4987818184974942a95e96c3996c47a, type: 3}
   - {fileID: 1642843760390861595, guid: aa803ba374967de44b4b3ffb012d47b3, type: 3}
+  - {fileID: 1642843760390861595, guid: f49ba87e8754991409883d8b681aef1d, type: 3}
+  - {fileID: 1642843760390861595, guid: d350de614efe5f7408f0798ed4ff738b, type: 3}
   - {fileID: 1642843760390861595, guid: 4a9a5041bd4847e4ca88050a0234fe94, type: 3}
   - {fileID: 1642843760390861595, guid: ac3f28ddac8bfe94e8d27f1f7114eba2, type: 3}
   - {fileID: 1642843760390861595, guid: bb3c9e97b33198f49a7b4e71d0ed8d23, type: 3}
   - {fileID: 1642843760390861595, guid: f97a530df4cfeb04fabd038574cff47b, type: 3}
   - {fileID: 1642843760390861595, guid: cd5da215355034f4db9da5fa5b8174a3, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
-  - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
   - {fileID: 1642843760390861595, guid: 623b1a25e7cacf1438028b15670331ff, type: 3}
@@ -18628,8 +18624,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5138559eb2c4b754aa1b26f42dfbdae2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rawImage: {fileID: 0}
-  videoPlayer: {fileID: 0}
 --- !u!1 &2144403863
 GameObject:
   m_ObjectHideFlags: 0
@@ -18800,7 +18794,7 @@ PrefabInstance:
     - target: {fileID: 1409219202622637206, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
       propertyPath: tutorialSlowMotions.Array.data[0]
       value: 
-      objectReference: {fileID: 438540055}
+      objectReference: {fileID: 1762759611}
     - target: {fileID: 1409219202622637206, guid: be164a467ff0a074ebf28ba67df3e6a1, type: 3}
       propertyPath: tutorialSlowMotions.Array.data[1]
       value: 

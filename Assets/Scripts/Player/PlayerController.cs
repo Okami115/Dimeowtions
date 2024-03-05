@@ -1,10 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.InputSystem;
 using UnityEngine;
 using System;
-using UnityEngine.Windows;
-using Menu;
 
 namespace player
 {
@@ -31,7 +26,6 @@ namespace player
         private bool isOpeningDoorAvailable;
         private bool isJumpingAvailable;
         private bool isAntiGravityAvailable;
-
 
         private int indexPos = 0;
 
