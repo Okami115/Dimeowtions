@@ -18,6 +18,7 @@ namespace Menu
         [SerializeField] private PlayerController player;
         [SerializeField] private CheckColision playerCollision;
 
+        [SerializeField] private TextMeshProUGUI egyptScoreText;
         [SerializeField] private TextMeshProUGUI noirScoreText;
         [SerializeField] private TextMeshProUGUI synthwaveScoreText;
         [SerializeField] private TextMeshProUGUI spaceScoreText;
@@ -110,10 +111,10 @@ namespace Menu
 
         private void CalculateScoreTexts()
         {
-            noirScoreText.text = playerStats.collectedObjectsEgypt.ToString() + " X ";
-            noirScoreText.text = playerStats.collectedObjectsNoir.ToString() + " X ";
-            synthwaveScoreText.text = playerStats.collectedObjectsSynthwave.ToString() + " X ";
-            spaceScoreText.text = playerStats.collectedObjectsSpace.ToString() + " X ";
+            egyptScoreText.text = playerStats.collectedObjectsEgypt.ToString() + " / " + playerStats.objectsToCollectEgypt;
+            noirScoreText.text = playerStats.collectedObjectsNoir.ToString() + " / " + playerStats.objectsToCollectNoir;
+            synthwaveScoreText.text = playerStats.collectedObjectsSynthwave.ToString() + " / " + playerStats.objectsToCollectSynthwave;
+            spaceScoreText.text = playerStats.collectedObjectsSpace.ToString() + " / " + playerStats.objectsToCollectSpace;
         }
 
         private void VideoPlaybackComplete(VideoPlayer vp)
