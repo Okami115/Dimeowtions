@@ -86,10 +86,13 @@ namespace player
                 }
                 else if (hitInfo.collider.CompareTag(infectedEgyptCoinTag))
                 {
-                    playerStats.collectedObjectsEgypt -= 1;
-                    infectedObjectCollected?.Invoke();
+                    if (playerStats.collectedObjectsEgypt > 0)
+                    {
+                        playerStats.collectedObjectsEgypt -= 1;
+                        infectedObjectCollected?.Invoke();
+                        soundItems.Post(gameObject);
+                    }
                     Destroy(hitInfo.collider.gameObject);
-                    soundItems.Post(gameObject);
                 }
             }
         }
