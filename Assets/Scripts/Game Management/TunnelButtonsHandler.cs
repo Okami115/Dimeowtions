@@ -26,7 +26,8 @@ public class TunnelButtonsHandler : MonoBehaviour
     {
         var buttonStates = new Dictionary<MenuAesthetic, (bool left, bool right)>()
         {
-            { MenuAesthetic.Noir, (false, true) },
+            { MenuAesthetic.Egypt, (false, true) },
+            { MenuAesthetic.Noir, (true, true) },
             { MenuAesthetic.Scifi, (true, false) },
             { MenuAesthetic.Synthwave, (true, true) },
         };

@@ -115,16 +115,7 @@ public class ScoreSpritesManager : MonoBehaviour
 
                         if (scoreSprite != null)
                         {
-                            scoreSprite.ChangeToEmptySprite();
-
-                            if (lastCollectedIndex <= portalAnimatorPreviousTriggerNames.Length)
-                            {
-                                portalAnimator.SetTrigger(portalAnimatorPreviousTriggerNames[portalAnimatorPreviousTriggerSteps]);
-                                portalAnimatorPreviousTriggerSteps++;
-                            }
-
-                            if (lastCollectedIndex == maxObjects)
-                                portalAnimator.SetBool(portalBoolPhasesFinishedName, true);
+                            scoreSprite.ChangeToEmptySprite();                           
                         }
                     }
                 }
