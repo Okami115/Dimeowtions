@@ -79,14 +79,14 @@ namespace player
                 }
                 else if (hitInfo.collider.CompareTag(egyptCoinTag))
                 {
-                    playerStats.collectedObjectsNoir += 1;
+                    playerStats.collectedObjectsEgypt += 1;
                     objectCollected?.Invoke();
                     Destroy(hitInfo.collider.gameObject);
                     soundItems.Post(gameObject);
                 }
                 else if (hitInfo.collider.CompareTag(infectedEgyptCoinTag))
                 {
-                    playerStats.collectedObjectsNoir -= 1;
+                    playerStats.collectedObjectsEgypt -= 1;
                     infectedObjectCollected?.Invoke();
                     Destroy(hitInfo.collider.gameObject);
                     soundItems.Post(gameObject);
