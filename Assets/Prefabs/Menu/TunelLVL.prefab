@@ -297,7 +297,7 @@ MonoBehaviour:
   obstacleTag: 
   audioMenuManager: {fileID: 0}
   panel: {fileID: 0}
-  aestheticSelected: 0
+  aestheticSelected: 2
 --- !u!65 &2428821581059847816
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -806,6 +806,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4214340768595122580}
   - component: {fileID: 167582706737741127}
+  - component: {fileID: 6755345578639272459}
   m_Layer: 0
   m_Name: Ankh_Egipto
   m_TagString: Untagged
@@ -850,6 +851,31 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6755345578639272459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4648986379333991222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef0c5397d62ae3d46bab639d703b006d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats: {fileID: 0}
+  playerDistanceTraveled: 0
+  menuInputManger: {fileID: 0}
+  mainCamera: {fileID: 0}
+  camZoomPos: {fileID: 0}
+  sceneLoader: {fileID: 0}
+  gameSceneIndexer: 0
+  fadeInDuration: 0
+  zoomDuration: 0
+  obstacleTag: 
+  audioMenuManager: {fileID: 0}
+  panel: {fileID: 0}
+  aestheticSelected: 0
 --- !u!1 &4887646154911816266
 GameObject:
   m_ObjectHideFlags: 0
@@ -1659,7 +1685,7 @@ MonoBehaviour:
   obstacleTag: 
   audioMenuManager: {fileID: 0}
   panel: {fileID: 0}
-  aestheticSelected: 0
+  aestheticSelected: 1
 --- !u!65 &2403030304181370092
 BoxCollider:
   m_ObjectHideFlags: 0

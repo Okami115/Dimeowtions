@@ -111,10 +111,20 @@ namespace Menu
 
         private void CalculateScoreTexts()
         {
-            egyptScoreText.text = playerStats.collectedObjectsEgypt.ToString() + " / " + playerStats.objectsToCollectEgypt;
-            noirScoreText.text = playerStats.collectedObjectsNoir.ToString() + " / " + playerStats.objectsToCollectNoir;
-            synthwaveScoreText.text = playerStats.collectedObjectsSynthwave.ToString() + " / " + playerStats.objectsToCollectSynthwave;
-            spaceScoreText.text = playerStats.collectedObjectsSpace.ToString() + " / " + playerStats.objectsToCollectSpace;
+            if (!playerStats.isEndlessActive)
+            {
+                egyptScoreText.text = playerStats.collectedObjectsEgypt.ToString() + " / " + playerStats.objectsToCollectEgypt;
+                noirScoreText.text = playerStats.collectedObjectsNoir.ToString() + " / " + playerStats.objectsToCollectNoir;
+                synthwaveScoreText.text = playerStats.collectedObjectsSynthwave.ToString() + " / " + playerStats.objectsToCollectSynthwave;
+                spaceScoreText.text = playerStats.collectedObjectsSpace.ToString() + " / " + playerStats.objectsToCollectSpace;
+            }
+            else 
+            {
+                egyptScoreText.text = playerStats.collectedObjectsEgypt.ToString();
+                noirScoreText.text = playerStats.collectedObjectsNoir.ToString();
+                synthwaveScoreText.text = playerStats.collectedObjectsSynthwave.ToString();
+                spaceScoreText.text = playerStats.collectedObjectsSpace.ToString();
+            }
         }
 
         private void VideoPlaybackComplete(VideoPlayer vp)

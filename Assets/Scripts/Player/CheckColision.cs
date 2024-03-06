@@ -19,6 +19,9 @@ namespace player
         [SerializeField] private string spaceCoinTag;
         [SerializeField] private string egyptCoinTag;
         [SerializeField] private string infectedEgyptCoinTag;
+        [SerializeField] private string infectedNoirCoinTag;
+        [SerializeField] private string infectedSynthCoinTag;
+        [SerializeField] private string infectedSapceCoinTag;
 
         [SerializeField] public AK.Wwise.Event soundDefeat;
         [SerializeField] public AK.Wwise.Event soundItems;
@@ -89,6 +92,39 @@ namespace player
                     if (playerStats.collectedObjectsEgypt > 0)
                     {
                         playerStats.collectedObjectsEgypt -= 1;
+                        infectedObjectCollected?.Invoke();
+                    }
+                    
+                    soundItems.Post(gameObject);
+                    Destroy(hitInfo.collider.gameObject);
+                }
+                else if (hitInfo.collider.CompareTag(infectedNoirCoinTag))
+                {
+                    if (playerStats.collectedObjectsNoir > 0)
+                    {
+                        playerStats.collectedObjectsNoir -= 1;
+                        infectedObjectCollected?.Invoke();
+                    }
+                    
+                    soundItems.Post(gameObject);
+                    Destroy(hitInfo.collider.gameObject);
+                }
+                else if (hitInfo.collider.CompareTag(infectedSynthCoinTag))
+                {
+                    if (playerStats.collectedObjectsSynthwave > 0)
+                    {
+                        playerStats.collectedObjectsSynthwave -= 1;
+                        infectedObjectCollected?.Invoke();
+                    }
+                    
+                    soundItems.Post(gameObject);
+                    Destroy(hitInfo.collider.gameObject);
+                }
+                else if (hitInfo.collider.CompareTag(infectedSapceCoinTag))
+                {
+                    if (playerStats.collectedObjectsSpace > 0)
+                    {
+                        playerStats.collectedObjectsSpace -= 1;
                         infectedObjectCollected?.Invoke();
                     }
                     
