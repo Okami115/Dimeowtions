@@ -24,12 +24,15 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1369446964">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3567442839">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="2918011349" Name="MasterVolume" ObjectPath="\Game Parameters\Default Work Unit\MasterVolume"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2688847453">
+		<SoundBank Id="3161908922" Language="SFX" Hash="680462759">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -338,6 +341,7 @@
 					</SwitchContainers>
 				</Event>
 				<Event Id="454668116" Name="Stop_BMG_Machine" ObjectPath="\Events\Default Work Unit\Music\Stop_BMG_Machine" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2559952604" Name="Stop_Cinematica" ObjectPath="\Events\Default Work Unit\Stop_Cinematica" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1314850096" Name="UI_Credit_Button" ObjectPath="\Events\Default Work Unit\UI\Main Menu\UI_Credit_Button" DurationType="OneShot" DurationMin="1.798349" DurationMax="1.798349">
 					<IncludedMemoryFiles>
 						<File Id="827853671" Language="SFX">

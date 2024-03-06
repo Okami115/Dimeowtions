@@ -29,6 +29,7 @@ namespace AK
         static const AkUniqueID SFX_PORTAL = 2266380775U;
         static const AkUniqueID START_BMG_MACHINE = 3941323550U;
         static const AkUniqueID STOP_BMG_MACHINE = 454668116U;
+        static const AkUniqueID STOP_CINEMATICA = 2559952604U;
         static const AkUniqueID UI_CREDIT_BUTTON = 1314850096U;
         static const AkUniqueID UI_EXIT_BUTTON = 2170883505U;
         static const AkUniqueID UI_PLAY_BUTTON = 705989075U;
@@ -85,6 +86,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID MASTERVOLUME = 2918011349U;
         static const AkUniqueID PAUSED = 319258907U;
     } // namespace GAME_PARAMETERS
 

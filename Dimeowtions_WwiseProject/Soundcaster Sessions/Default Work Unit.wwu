@@ -55,10 +55,14 @@
 							<GameParameterRef Name="Paused" ID="{79DDC1B6-CA10-4511-9C5B-ABF849536C7C}"/>
 							<Value>0</Value>
 						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="MasterVolume" ID="{00CFB1DF-F58F-4FC0-9A92-459B498F53B6}"/>
+							<Value>30.1158301158301</Value>
+						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{F7301A1F-0EF8-4CEE-9CC7-A616666E230D}"/>
-						<CurrentStateRef Name="None" ID="{DFF86F03-33EF-4B6E-8A42-E2E69712C66B}"/>
+						<CurrentStateRef Name="Menu" ID="{A41B3307-2AD3-46DA-8BB2-1DA8C4E718C6}"/>
+						<CurrentStateRef Name="Alive" ID="{1EE1E351-BAFB-4226-8C0A-3B7E5DF3E4EA}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Noir" ID="{0C24CD74-5ED8-4788-B9CF-FD978AEC8262}"/>

@@ -12,6 +12,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2170883505	UI_Exit_Button			\Default Work Unit\UI\Main Menu\UI_Exit_Button	
 	2266380775	SFX_Portal			\Default Work Unit\Player\SFX_Portal	
 	2302270969	Set_State_Menu			\Default Work Unit\Music\Set_State_Menu	
+	2559952604	Stop_Cinematica			\Default Work Unit\Stop_Cinematica	
 	2902924586	Set_State_Paused			\Default Work Unit\Music\Set_State_Paused	
 	3169691074	Set_Play_Defeat			\Default Work Unit\Music\Set_Play_Defeat	
 	3187317502	SFX_Lateral_Movement			\Default Work Unit\Player\SFX_Lateral_Movement	
