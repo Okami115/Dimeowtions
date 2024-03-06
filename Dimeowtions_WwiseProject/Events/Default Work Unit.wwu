@@ -164,6 +164,23 @@
 						</Event>
 						<Event Name="Play_Cinematica" ID="{FF85C195-3739-4A70-9A15-76DFC58BC411}">
 							<ChildrenList>
+								<Action Name="" ID="{311C649A-2E4E-4A52-A9D5-F99B845B79E3}" ShortID="855889114">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="11"/>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B36DD272-AAEF-4C58-AC14-F37AB13D3284}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FA5E459-1B02-46DD-8489-E7668FDC6496}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{1B7575F0-E632-4890-8CE2-323FD00E2BB7}" ShortID="341980672">
 									<ReferenceList>
 										<Reference Name="Target">
