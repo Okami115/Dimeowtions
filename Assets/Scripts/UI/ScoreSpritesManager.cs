@@ -70,8 +70,7 @@ public class ScoreSpritesManager : MonoBehaviour
 
             for (int i = 0; i < scoreObjectsParents.Length; i++)
             {
-                //if (currentObjectsCollected < maxObjects)
-                //{
+                
                 GameObject childObject = scoreObjectsParents[i].transform.GetChild(currentObjectsCollected).gameObject;
 
                 if (childObject.activeInHierarchy)
@@ -80,24 +79,21 @@ public class ScoreSpritesManager : MonoBehaviour
 
                     if (scoreSprite != null)
                     {
-                        //lastCollectedIndex++;
                         scoreSprite.ChangeToFilledSprite();
 
                         if (currentObjectsCollected < portalAnimatorPreviousTriggerNames.Length)
                         {
                             portalAnimatorPreviousTriggerSteps++;
-                            if (portalAnimatorPreviousTriggerSteps > maxObjects) portalAnimatorPreviousTriggerSteps = currentObjectsCollected;
-                            portalAnimator.SetTrigger(portalAnimatorPreviousTriggerNames[portalAnimatorPreviousTriggerSteps - 1]);
+                            if (portalAnimatorPreviousTriggerSteps >= maxObjects) portalAnimatorPreviousTriggerSteps = currentObjectsCollected;
+                            portalAnimator.SetTrigger(portalAnimatorPreviousTriggerNames[portalAnimatorPreviousTriggerSteps]);
                         }
 
-                        if (currentObjectsCollected == maxObjects)
+                        if (currentObjectsCollected == maxObjects - 1)
                             portalAnimator.SetBool(portalBoolPhasesFinishedName, true);
                     }
                 }
-                //}
             }
         }
-                           
     }
 
     private void ChangeScoreSpriteInfected()
