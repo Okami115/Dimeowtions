@@ -5077,6 +5077,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 4874120583695425626}
   camera: {fileID: 963194227}
+  JumpMultiplier: 70
+  MoveMultiplier: 50
 --- !u!114 &963194235
 MonoBehaviour:
   m_ObjectHideFlags: 0
