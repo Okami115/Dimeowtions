@@ -24,16 +24,27 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1369446964">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3567442839">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="2918011349" Name="MasterVolume" ObjectPath="\Game Parameters\Default Work Unit\MasterVolume"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1490713672">
+		<SoundBank Id="3161908922" Language="SFX" Hash="680462759">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1875134770" Name="Play_Cinematica" ObjectPath="\Events\Default Work Unit\Music\Play_Cinematica" DurationType="OneShot" DurationMin="49.939018" DurationMax="49.939018">
+					<IncludedMemoryFiles>
+						<File Id="303265437" Language="SFX">
+							<ShortName>Dimeowtions - Sonido Cinematica v2-001.wav</ShortName>
+							<Path>SFX\Dimeowtions - Sonido Cinematica v2-001_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="693379014" Name="Play_Items" ObjectPath="\Events\Default Work Unit\Player\Play_Items" DurationType="OneShot" DurationMin="0.5405" DurationMax="1.975491">
 					<IncludedMemoryFiles>
 						<File Id="88210808" Language="SFX">
@@ -330,6 +341,7 @@
 					</SwitchContainers>
 				</Event>
 				<Event Id="454668116" Name="Stop_BMG_Machine" ObjectPath="\Events\Default Work Unit\Music\Stop_BMG_Machine" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2559952604" Name="Stop_Cinematica" ObjectPath="\Events\Default Work Unit\Stop_Cinematica" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1314850096" Name="UI_Credit_Button" ObjectPath="\Events\Default Work Unit\UI\Main Menu\UI_Credit_Button" DurationType="OneShot" DurationMin="1.798349" DurationMax="1.798349">
 					<IncludedMemoryFiles>
 						<File Id="827853671" Language="SFX">
@@ -400,6 +412,10 @@
 				<File Id="284843365" Language="SFX">
 					<ShortName>UI, Modern, Positive, SciFi, InterfaceUI, Selection 1.wav</ShortName>
 					<Path>SFX\UI, Modern, Positive, SciFi, InterfaceUI, Selection 1_38C52126.wem</Path>
+				</File>
+				<File Id="303265437" Language="SFX">
+					<ShortName>Dimeowtions - Sonido Cinematica v2-001.wav</ShortName>
+					<Path>SFX\Dimeowtions - Sonido Cinematica v2-001_D79FB2B7.wem</Path>
 				</File>
 				<File Id="330658490" Language="SFX">
 					<ShortName>SALTO.wav</ShortName>

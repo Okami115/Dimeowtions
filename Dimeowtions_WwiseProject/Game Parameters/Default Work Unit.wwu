@@ -9,6 +9,11 @@
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="MasterVolume" ID="{00CFB1DF-F58F-4FC0-9A92-459B498F53B6}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

@@ -162,6 +162,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Cinematica" ID="{FF85C195-3739-4A70-9A15-76DFC58BC411}">
+							<ChildrenList>
+								<Action Name="" ID="{1B7575F0-E632-4890-8CE2-323FD00E2BB7}" ShortID="341980672">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Dimeowtions - Sonido Cinematica v2-001" ID="{2136AB6F-974F-442A-9403-56107257A0CF}" WorkUnitID="{AC0EC91E-8641-4A0B-9DAE-5B42680BA471}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Player" ID="{048ADCFD-EEBE-43D2-BB66-AC265CD62E51}" ShortID="744647767">
@@ -307,6 +318,20 @@
 						<Folder Name="Options" ID="{EFB02B5C-4DDC-4C37-A38F-BE441F6F704A}" ShortID="339013651"/>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Stop_Cinematica" ID="{EF1C1F10-28CF-4A8F-AC74-2347B09870C3}">
+					<ChildrenList>
+						<Action Name="" ID="{B1CA9BDF-C1CF-4C7F-9236-0C7B152232F0}" ShortID="164128111">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dimeowtions - Sonido Cinematica v2-001" ID="{2136AB6F-974F-442A-9403-56107257A0CF}" WorkUnitID="{AC0EC91E-8641-4A0B-9DAE-5B42680BA471}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

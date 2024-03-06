@@ -8,9 +8,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	1337377386	UI_Slice_Menu			\Default Work Unit\UI\Main Menu\UI_Slice_Menu	
 	1446812956	Set_State_SciFi			\Default Work Unit\Music\Set_State_SciFi	
 	1814951015	Set_State_Alive			\Default Work Unit\Music\Set_State_Alive	
+	1875134770	Play_Cinematica			\Default Work Unit\Music\Play_Cinematica	
 	2170883505	UI_Exit_Button			\Default Work Unit\UI\Main Menu\UI_Exit_Button	
 	2266380775	SFX_Portal			\Default Work Unit\Player\SFX_Portal	
 	2302270969	Set_State_Menu			\Default Work Unit\Music\Set_State_Menu	
+	2559952604	Stop_Cinematica			\Default Work Unit\Stop_Cinematica	
 	2902924586	Set_State_Paused			\Default Work Unit\Music\Set_State_Paused	
 	3169691074	Set_Play_Defeat			\Default Work Unit\Music\Set_Play_Defeat	
 	3187317502	SFX_Lateral_Movement			\Default Work Unit\Player\SFX_Lateral_Movement	
@@ -56,6 +58,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	250533506	Score - Noir - Bitcrushed_03	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\Score - Noir - Bitcrushed_0B319842.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\Player\Items\Noir\Score - Noir - Bitcrushed_03		366572
 	281084068	Dimeowtions_Portal	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\Dimeowtions_Portal_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Portal\Portal\Dimeowtions_Portal		1035668
 	284843365	UI, Modern, Positive, SciFi, InterfaceUI, Selection 1	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\UI, Modern, Positive, SciFi, InterfaceUI, Selection 1_38C52126.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\UI\Menu UI\UI_Play_Button\UI, Modern, Positive, SciFi, InterfaceUI, Selection 1		284500
+	303265437	Dimeowtions - Sonido Cinematica v2-001	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\Dimeowtions - Sonido Cinematica v2-001_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Cinematic\Dimeowtions - Sonido Cinematica v2-001\Dimeowtions - Sonido Cinematica v2-001		9588356
 	330658490	SALTO	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\SALTO_14E41BE2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\SFX\Player\Jump\SALTO		48600
 	695190307	Shorted - Noir To Synth Translation	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\Shorted - Noir To Synth Translation_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Translations\Shorted - Noir To Synth Translation\Shorted - Noir To Synth Translation		703616
 	738275713	Dimeowtions - Main Menu	E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\SFX\Dimeowtions - Main Menu_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\BMG_Machine\Menu\Dimeowtions - Main Menu\Dimeowtions - Main Menu		920798

@@ -1487,6 +1487,94 @@
 						</MusicSegment>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Cinematic" ID="{CAEA430D-5510-4B64-B348-E07179D346AC}" ShortID="1004621522">
+					<ChildrenList>
+						<MusicSegment Name="Dimeowtions - Sonido Cinematica v2-001" ID="{2136AB6F-974F-442A-9403-56107257A0CF}" ShortID="904186063">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="49939.0208333333"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BD8A155B-1097-49E3-8D55-20A05F7338DA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FA5E459-1B02-46DD-8489-E7668FDC6496}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Dimeowtions - Sonido Cinematica v2-001" ID="{C0FAE278-5CD3-4911-8DC2-DD03143F64EB}" ShortID="885093896">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9FA5E459-1B02-46DD-8489-E7668FDC6496}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dimeowtions - Sonido Cinematica v2-001" ID="{75DB066E-E052-417F-AB03-3BABDED33094}">
+											<Language>SFX</Language>
+											<AudioFile>Dimeowtions - Sonido Cinematica v2-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="303265437"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{C62623F5-FE68-48E5-8764-EAB1D765B54E}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{944C9B63-6D23-4EA7-9D04-7C8289071952}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Dimeowtions - Sonido Cinematica v2-001" ID="{69C3A55A-DCF5-418F-94F3-E656643F482D}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="49939.0208333333"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Dimeowtions - Sonido Cinematica v2-001" ID="{75DB066E-E052-417F-AB03-3BABDED33094}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{E228A4AD-4AB2-4BD6-85E5-369689E4584E}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{7E059F06-176D-40EF-B8B0-B0DB583F6F19}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="49939.0208333333"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>
