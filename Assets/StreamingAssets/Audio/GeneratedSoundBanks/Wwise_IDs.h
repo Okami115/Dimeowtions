@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_CINEMATICA = 1875134770U;
         static const AkUniqueID PLAY_ITEMS = 693379014U;
         static const AkUniqueID SET_PLAY_DEFEAT = 3169691074U;
         static const AkUniqueID SET_STATE_ALIVE = 1814951015U;

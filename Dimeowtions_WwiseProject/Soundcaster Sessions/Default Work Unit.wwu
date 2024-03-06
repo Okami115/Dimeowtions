@@ -57,11 +57,11 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Synthwave" ID="{EDAF366B-2A4A-4DE3-AACB-22CE40D9F13C}"/>
-						<CurrentStateRef Name="Alive" ID="{1EE1E351-BAFB-4226-8C0A-3B7E5DF3E4EA}"/>
+						<CurrentStateRef Name="None" ID="{F7301A1F-0EF8-4CEE-9CC7-A616666E230D}"/>
+						<CurrentStateRef Name="None" ID="{DFF86F03-33EF-4B6E-8A42-E2E69712C66B}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="SciFi" ID="{BA2F9147-CBBA-4D68-B7A1-90467D5ABD5C}"/>
+						<CurrentSwitchRef Name="Noir" ID="{0C24CD74-5ED8-4788-B9CF-FD978AEC8262}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
