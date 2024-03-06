@@ -4,6 +4,41 @@
 		<WorkUnit Name="Default Work Unit" ID="{9FA5E459-1B02-46DD-8489-E7668FDC6496}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{705DBF34-B009-43FD-B0B8-BE43B650BDB8}" ShortID="87208324">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="MasterVolume" ID="{00CFB1DF-F58F-4FC0-9A92-459B498F53B6}" WorkUnitID="{4C0DB5EC-629B-4F31-BD18-9013D475EE2F}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{99E5929B-5081-4F38-8D71-FC114738A3C4}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{7378FEDA-562B-4AF1-B8A0-1102A096E677}" WorkUnitID="{F8D06492-72EC-47EC-B1D7-458AC4CC7A78}"/>
