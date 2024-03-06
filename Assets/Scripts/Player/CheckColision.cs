@@ -58,29 +58,29 @@ namespace player
                 
                 if (hitInfo.collider.CompareTag(noirCoinTag))
                 {
-                    playerStats.collectedObjectsNoir += 1;
                     objectCollected?.Invoke();
+                    playerStats.collectedObjectsNoir += 1;
                     Destroy(hitInfo.collider.gameObject);
                     soundItems.Post(gameObject);
                 }
                 else if (hitInfo.collider.CompareTag(synthwaveCoinTag))
                 {
-                    playerStats.collectedObjectsSynthwave += 1;
                     objectCollected?.Invoke();
+                    playerStats.collectedObjectsSynthwave += 1;
                     Destroy(hitInfo.collider.gameObject);
                     soundItems.Post(gameObject);
                 }
                 else if (hitInfo.collider.CompareTag(spaceCoinTag))
                 {
-                    playerStats.collectedObjectsSpace += 1;
                     objectCollected?.Invoke();
+                    playerStats.collectedObjectsSpace += 1;
                     Destroy(hitInfo.collider.gameObject);
                     soundItems.Post(gameObject);
                 }
                 else if (hitInfo.collider.CompareTag(egyptCoinTag))
                 {
-                    playerStats.collectedObjectsEgypt += 1;
                     objectCollected?.Invoke();
+                    playerStats.collectedObjectsEgypt += 1;
                     Destroy(hitInfo.collider.gameObject);
                     soundItems.Post(gameObject);
                 }
@@ -90,8 +90,9 @@ namespace player
                     {
                         playerStats.collectedObjectsEgypt -= 1;
                         infectedObjectCollected?.Invoke();
-                        soundItems.Post(gameObject);
                     }
+                    
+                    soundItems.Post(gameObject);
                     Destroy(hitInfo.collider.gameObject);
                 }
             }

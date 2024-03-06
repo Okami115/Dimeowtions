@@ -21,6 +21,7 @@ public class ScoreSpritesManager : MonoBehaviour
 
     private int lastCollectedIndex;
     int maxObjects = 0;
+    int currentObjectsCollected = 0;
 
     private void OnEnable()
     {
@@ -44,6 +45,7 @@ public class ScoreSpritesManager : MonoBehaviour
             for (int i = 0; i < scoreObjectsParents.Length; i++)
             {
                 CalculateMaxObjects();
+                CalculateCurrentObjectsCollected();
 
                 for (int j = 1; j < maxObjects; j++)
                 {
@@ -64,33 +66,35 @@ public class ScoreSpritesManager : MonoBehaviour
         if (!playerStats.isEndlessActive)
         {
             CalculateMaxObjects();
+            CalculateCurrentObjectsCollected();
 
             for (int i = 0; i < scoreObjectsParents.Length; i++)
             {
-                if (lastCollectedIndex < maxObjects)
+                //if (currentObjectsCollected < maxObjects)
+                //{
+                GameObject childObject = scoreObjectsParents[i].transform.GetChild(currentObjectsCollected).gameObject;
+
+                if (childObject.activeInHierarchy)
                 {
-                    GameObject childObject = scoreObjectsParents[i].transform.GetChild(lastCollectedIndex).gameObject;
+                    ScoreSprite scoreSprite = childObject.GetComponent<ScoreSprite>();
 
-                    if (childObject.activeInHierarchy)
+                    if (scoreSprite != null)
                     {
-                        ScoreSprite scoreSprite = childObject.GetComponent<ScoreSprite>();
+                        //lastCollectedIndex++;
+                        scoreSprite.ChangeToFilledSprite();
 
-                        if (scoreSprite != null)
+                        if (currentObjectsCollected < portalAnimatorPreviousTriggerNames.Length)
                         {
-                            scoreSprite.ChangeToFilledSprite();
-                            lastCollectedIndex++;
-
-                            if (lastCollectedIndex <= portalAnimatorPreviousTriggerNames.Length)
-                            {
-                                portalAnimator.SetTrigger(portalAnimatorPreviousTriggerNames[portalAnimatorPreviousTriggerSteps]);
-                                portalAnimatorPreviousTriggerSteps++;
-                            }
-
-                            if (lastCollectedIndex == maxObjects)
-                                portalAnimator.SetBool(portalBoolPhasesFinishedName, true);
+                            portalAnimatorPreviousTriggerSteps++;
+                            if (portalAnimatorPreviousTriggerSteps > maxObjects) portalAnimatorPreviousTriggerSteps = currentObjectsCollected;
+                            portalAnimator.SetTrigger(portalAnimatorPreviousTriggerNames[portalAnimatorPreviousTriggerSteps - 1]);
                         }
+
+                        if (currentObjectsCollected == maxObjects)
+                            portalAnimator.SetBool(portalBoolPhasesFinishedName, true);
                     }
                 }
+                //}
             }
         }
                            
@@ -101,24 +105,29 @@ public class ScoreSpritesManager : MonoBehaviour
         if (!playerStats.isEndlessActive)
         {
             CalculateMaxObjects();
+            CalculateCurrentObjectsCollected();
 
             for (int i = 0; i < scoreObjectsParents.Length; i++)
             {
-                if (lastCollectedIndex > 0 && lastCollectedIndex < maxObjects)
+                GameObject childObject = scoreObjectsParents[i].transform.GetChild(currentObjectsCollected).gameObject;
+
+                if (childObject.activeInHierarchy)
                 {
-                    lastCollectedIndex--;
-                    GameObject childObject = scoreObjectsParents[i].transform.GetChild(lastCollectedIndex).gameObject;
+                    ScoreSprite scoreSprite = childObject.GetComponent<ScoreSprite>();
 
-                    if (childObject.activeInHierarchy)
+                    if (scoreSprite != null)
                     {
-                        ScoreSprite scoreSprite = childObject.GetComponent<ScoreSprite>();
+                        //lastCollectedIndex--;
+                        //if (lastCollectedIndex < 0) lastCollectedIndex = 0;
 
-                        if (scoreSprite != null)
-                        {
-                            scoreSprite.ChangeToEmptySprite();                           
-                        }
+                        portalAnimatorPreviousTriggerSteps--;
+                        if (portalAnimatorPreviousTriggerSteps < 0) portalAnimatorPreviousTriggerSteps = 0;
+                        portalAnimator.SetTrigger(portalAnimatorPreviousTriggerNames[portalAnimatorPreviousTriggerSteps]);
+
+                        scoreSprite.ChangeToEmptySprite();                           
                     }
                 }
+                
             }
         }
 
@@ -126,7 +135,7 @@ public class ScoreSpritesManager : MonoBehaviour
 
     private void ResetCollectiblesIndexer()
     {
-        lastCollectedIndex = 0;
+        //lastCollectedIndex = 0;
         portalAnimatorPreviousTriggerSteps = 0;
         portalAnimator.SetBool(portalBoolPhasesFinishedName, false);
     }
@@ -141,5 +150,17 @@ public class ScoreSpritesManager : MonoBehaviour
             maxObjects = playerStats.objectsToCollectSynthwave;
         else if (gameManager.CurrentAesthetic == Aesthetic.Scifi)
             maxObjects = playerStats.objectsToCollectSpace;
+    }
+    
+    private void CalculateCurrentObjectsCollected()
+    {
+        if (gameManager.CurrentAesthetic == Aesthetic.Egyptian)
+            currentObjectsCollected  = playerStats.collectedObjectsEgypt;
+        else if (gameManager.CurrentAesthetic == Aesthetic.Noir)
+            currentObjectsCollected = playerStats.collectedObjectsNoir;
+        else if (gameManager.CurrentAesthetic == Aesthetic.Synthwave)
+            currentObjectsCollected = playerStats.collectedObjectsSynthwave;
+        else if (gameManager.CurrentAesthetic == Aesthetic.Scifi)
+            currentObjectsCollected = playerStats.collectedObjectsSpace;
     }
 }

@@ -1358,7 +1358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da4c0149c2e966847a6c9636b00a568b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSprite: {fileID: 1242492965, guid: b7c495196299f834a899b1470cb20c9d, type: 3}
+  deathSprite: {fileID: -434179756, guid: 43bd6ca571b5699468d83ba9e4cc77c4, type: 3}
 --- !u!1101 &6031474708939637026
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
