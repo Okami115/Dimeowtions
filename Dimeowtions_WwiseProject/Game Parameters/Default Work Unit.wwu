@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4C0DB5EC-629B-4F31-BD18-9013D475EE2F}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{4C0DB5EC-629B-4F31-BD18-9013D475EE2F}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Paused" ID="{79DDC1B6-CA10-4511-9C5B-ABF849536C7C}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="MasterVolume" ID="{00CFB1DF-F58F-4FC0-9A92-459B498F53B6}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

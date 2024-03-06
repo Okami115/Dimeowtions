@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D62F7344-F132-4465-952B-6E6F6C63A02B}" SchemaVersion="103">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{D62F7344-F132-4465-952B-6E6F6C63A02B}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Music_States" ID="{0E621186-0661-41AA-B501-A85125FF6C48}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="13"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{F7301A1F-0EF8-4CEE-9CC7-A616666E230D}"/>
+						<State Name="Menu" ID="{A41B3307-2AD3-46DA-8BB2-1DA8C4E718C6}"/>
+						<State Name="Noir" ID="{700F9545-3EEC-44E4-8BF5-4DD30F8A13FD}"/>
+						<State Name="Synthwave" ID="{EDAF366B-2A4A-4DE3-AACB-22CE40D9F13C}"/>
+						<State Name="SciFi" ID="{A2490D6C-925A-4A40-A4A6-C2588FD26AD5}"/>
+						<State Name="Defeat" ID="{FFD59923-E386-42A2-B3CE-54EB81812417}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="InGame" ID="{E71106E7-A057-4C5B-A2A3-FB7BE5715342}">
+					<ChildrenList>
+						<State Name="None" ID="{DFF86F03-33EF-4B6E-8A42-E2E69712C66B}"/>
+						<State Name="Alive" ID="{1EE1E351-BAFB-4226-8C0A-3B7E5DF3E4EA}"/>
+						<State Name="Paused" ID="{AA742997-7483-48B8-BFD5-E3BCED7452DC}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

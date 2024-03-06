@@ -1,0 +1,2107 @@
+fileFormatVersion: 2
+guid: 5e24f2cee4144e849a4ed28dd91903d7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1840.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f8bd53da54294439ec0baae54b661e
+      internalID: -898478533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1840.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f31f37f82495946adaef6da910f84e
+      internalID: 702849520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1840.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd551a41e5ebfb419d085c6abb19242
+      internalID: 254645229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1840.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b201d2772c472714f8abafc6ea5eafa9
+      internalID: 894909792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1840.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa3bb9795c8c0204593a8bcd320a7cea
+      internalID: -1016091275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 1840.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce69d9888d5509429f3ed8c7116ec92
+      internalID: 1469279163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 1840.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d19566b7206844b877daae9a041bb1
+      internalID: 630235942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 1840.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b412161595b6a47aa5511d83607de2
+      internalID: 869119419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 1840.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44b820bdc2fed544acdd4385aed806d
+      internalID: 200871296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 1840.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffac86ed22770c346b9da9010987d358
+      internalID: -1400276929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1610.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80a05ad825a1ff47910669f81058bae
+      internalID: -600510080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1610.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c5e2d653eb90a489dd053dc6a0be91
+      internalID: 2124806521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1610.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ae4ccd47faf6d44af053ee1d0ea225
+      internalID: 811497937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1610.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99bade2371580a4f87179b81ce6b855
+      internalID: 610981462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1610.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee45299fe871e14499b684daace947d
+      internalID: -1347646035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 1610.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2258ab030bd73459b3ea22ec8d5171
+      internalID: 2044355188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 1610.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64440a3d4907bd241b726865f7d621ed
+      internalID: 1866849912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 1610.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e677b43c587f1c4498a2ebc7e49262f
+      internalID: -68406945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 1610.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d44926a1fb9cd4a8737de8fc1ee235
+      internalID: -2066374552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 1610.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113d106028d888a44872f13bc46a3ffe
+      internalID: 621242023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1380.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba565cc40566754fa34ac4bc69189cf
+      internalID: -511293458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1380.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90ef7bde53099248ba1e60d65b7893d
+      internalID: -772207358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1380.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d74a11be1a97ab49a1b53ee7a6f5bbe
+      internalID: -117769604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1380.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e93f676cd5efc7409496c4f47b2a036
+      internalID: -1684331179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1380.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 999c32d058566a245b64e86a75bb062f
+      internalID: 1745810470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 1380.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f95da32b1356d41b96b29b593ef420
+      internalID: -791519854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 1380.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 028a297e157f85846ba8771bf47557cb
+      internalID: -1632982720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 1380.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61cb96e5b0145bd4cb2f023649fe06c4
+      internalID: 619425117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 1380.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7cce7a17ea1be45a4998d4ecdcad8f
+      internalID: 972591706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 1380.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe6c6a97cdd4d041b4d34602b75773f
+      internalID: 1191544359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1150.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e6d09cf95ac674e996695c901aa822
+      internalID: -782393834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1150.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78fee8a67281a94b87e6f247a00d8ec
+      internalID: -85323547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1150.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd03a10d80aa67a4eb4b8f4814916c70
+      internalID: -2043285680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1150.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8838e69f35911584a891adf1dad649ae
+      internalID: 1704853724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 1150.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12437fbaf7f2d4e48a1729641885485d
+      internalID: 1078177563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 1150.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832cc6dd9b47d9248b951b74114d78fe
+      internalID: 338875712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 1150.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23afad343328ff54fad29bd04054ea77
+      internalID: 1919271366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 1150.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735a5f07a5f571d4996e34fea20062d7
+      internalID: -878697250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 1150.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c841c3ba62f9b14bb6692f54ff0f4c5
+      internalID: 344022809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 1150.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0afa80b3f67911145a13a6e98db92f98
+      internalID: -1093145034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 920.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8684a04c6cf95640996d4ce5a988e75
+      internalID: -27258888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 920.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b841bc5682ee741a55dfbc313ba031
+      internalID: 1118241426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 920.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12d175458f7ba0445af1d43ff53931af
+      internalID: -542495941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 920.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0132c7b731311424d88d7db470262eb5
+      internalID: 1893627621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 920.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2452b9e6786a9e4594b75f3188e4a58
+      internalID: 2114463541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 920.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072b7b1efa1db594190af6de48f25553
+      internalID: -176783330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 920.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46fe0c40270b47845a118fc4514e7ddf
+      internalID: 346209434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 920.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8149f4665c397bf4da149243eb0ad7f7
+      internalID: 1749703130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 920.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0c2f4eb37fd9043a2c012e9499134a
+      internalID: -466388742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 920.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef738ad1f56f0e4ea674f2baa388d78
+      internalID: 1991646193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 690.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14137a5e85afd543a480c205678c269
+      internalID: -1263377440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 690.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040704d48c9ff824ebe122f769e683d0
+      internalID: -2088613432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 690.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e726dcf3533311428783070aae9e182
+      internalID: -244809052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 690.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7436a09deb1442244bf4ad148109e376
+      internalID: 1346006985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 690.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adbacd919b2541647861a90c5da03b71
+      internalID: 1485662301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 690.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b8b07917041b34fbcf19cca66ca226
+      internalID: -245766701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 690.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d3ad246505d0d438f50c7420267f82
+      internalID: 144555191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 690.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50a578de1b01ed74b9795c4205af0441
+      internalID: -1843394049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 690.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9363faa09fd2a468bf5f9ee603ffdb
+      internalID: -1203131509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 690.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df33572731a68c439b09feae6920c1e
+      internalID: 2043570316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 460.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5482ce0a1ab0c6142a0801224d1dbeed
+      internalID: -482424754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 460.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94690b9c8ace9342b55ac262e34d13d
+      internalID: 1299421519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 460.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db267cbbe00d8c4096a81ca65638393
+      internalID: 1353229018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 460.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ff1167aac251b41bef1f0365311fb3
+      internalID: -651167344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 460.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b80ebc9b9cd154babfef50e18ab243
+      internalID: -420136080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 460.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 004529a291d5ebd43a8498c029d8592f
+      internalID: 1528293564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 460.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a49320a36a3f2c449d7f88cf186e886
+      internalID: -2050326778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 460.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec6eaa86e2f4b7d4f8b845292b2a3d38
+      internalID: -751167815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 460.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d2eafebf422c54296f9fe98a21f14c
+      internalID: -1305521498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 460.8889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f57c4eee04767946bd05b0300995297
+      internalID: -269690345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 230.88889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 882491cf14c64284d83db8a1a446f3e7
+      internalID: -1304585998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 230.88889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df4f1e1d9533694ab0a0bd1ff358d38
+      internalID: -181111963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 230.88889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981a152c7d5e2ae41908a96cf86100f6
+      internalID: -1429611872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 230.88889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d656535e6a6b60140ae010b9fcc87315
+      internalID: -266931288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 230.88889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da03465a5a599514ebab3549f4809d81
+      internalID: -1594853867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 230.88889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2b41babd95e0142a6415a56ba75ed3
+      internalID: -1392045680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 230.88889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a992e3b88aa1df4aa79cdc63166e0de
+      internalID: -2022819108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 230.88889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d0b7c026edfe449b6f767b94b501fa
+      internalID: -2033078856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 230.88889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9846be329960c4693f4969bb20d3f0
+      internalID: 1323820225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 230.88889
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97725a6a4d6a97e42a46cd07d542d72e
+      internalID: 1057124814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.8888855
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7efd116e3ceeb4b817c46233f25d21
+      internalID: -1087643444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 0.8888855
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11461462dfb368448b50d27ad93bf19
+      internalID: -943734944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 0.8888855
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f663bc4c1f0bf4a93699d983e28e9b
+      internalID: -1136364854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 0.8888855
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb56805851aa8934289f1a5e5ae36c90
+      internalID: 1791386932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 0.8888855
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030d5836f89817f44b6cbf8c37917c96
+      internalID: -740298264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 0.8888855
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8dc0cd758c88f4c85142c4555726eb
+      internalID: -1869766330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 0.8888855
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe869acd0e5ac745afc094187aba2e7
+      internalID: -2143255589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 0.8888855
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2187942aba7a5ea47b23c593f41a7d0e
+      internalID: -1341755779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 0.8888855
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af3067d787b1fc45b42fc4b33c50c74
+      internalID: 1367163416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Transicion_de_niveles_Sheet_89
+      rect:
+        serializedVersion: 2
+        x: 3681
+        y: 0.8888855
+        width: 409.6
+        height: 230.11111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ac7c09ee260f84e90f2e89ed935463
+      internalID: -707652350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e440039c028305348935ef3f7fdc6da2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Transicion_de_niveles_Sheet_0: -898478533
+      Transicion_de_niveles_Sheet_1: 702849520
+      Transicion_de_niveles_Sheet_10: -600510080
+      Transicion_de_niveles_Sheet_11: 2124806521
+      Transicion_de_niveles_Sheet_12: 811497937
+      Transicion_de_niveles_Sheet_13: 610981462
+      Transicion_de_niveles_Sheet_14: -1347646035
+      Transicion_de_niveles_Sheet_15: 2044355188
+      Transicion_de_niveles_Sheet_16: 1866849912
+      Transicion_de_niveles_Sheet_17: -68406945
+      Transicion_de_niveles_Sheet_18: -2066374552
+      Transicion_de_niveles_Sheet_19: 621242023
+      Transicion_de_niveles_Sheet_2: 254645229
+      Transicion_de_niveles_Sheet_20: -511293458
+      Transicion_de_niveles_Sheet_21: -772207358
+      Transicion_de_niveles_Sheet_22: -117769604
+      Transicion_de_niveles_Sheet_23: -1684331179
+      Transicion_de_niveles_Sheet_24: 1745810470
+      Transicion_de_niveles_Sheet_25: -791519854
+      Transicion_de_niveles_Sheet_26: -1632982720
+      Transicion_de_niveles_Sheet_27: 619425117
+      Transicion_de_niveles_Sheet_28: 972591706
+      Transicion_de_niveles_Sheet_29: 1191544359
+      Transicion_de_niveles_Sheet_3: 894909792
+      Transicion_de_niveles_Sheet_30: -782393834
+      Transicion_de_niveles_Sheet_31: -85323547
+      Transicion_de_niveles_Sheet_32: -2043285680
+      Transicion_de_niveles_Sheet_33: 1704853724
+      Transicion_de_niveles_Sheet_34: 1078177563
+      Transicion_de_niveles_Sheet_35: 338875712
+      Transicion_de_niveles_Sheet_36: 1919271366
+      Transicion_de_niveles_Sheet_37: -878697250
+      Transicion_de_niveles_Sheet_38: 344022809
+      Transicion_de_niveles_Sheet_39: -1093145034
+      Transicion_de_niveles_Sheet_4: -1016091275
+      Transicion_de_niveles_Sheet_40: -27258888
+      Transicion_de_niveles_Sheet_41: 1118241426
+      Transicion_de_niveles_Sheet_42: -542495941
+      Transicion_de_niveles_Sheet_43: 1893627621
+      Transicion_de_niveles_Sheet_44: 2114463541
+      Transicion_de_niveles_Sheet_45: -176783330
+      Transicion_de_niveles_Sheet_46: 346209434
+      Transicion_de_niveles_Sheet_47: 1749703130
+      Transicion_de_niveles_Sheet_48: -466388742
+      Transicion_de_niveles_Sheet_49: 1991646193
+      Transicion_de_niveles_Sheet_5: 1469279163
+      Transicion_de_niveles_Sheet_50: -1263377440
+      Transicion_de_niveles_Sheet_51: -2088613432
+      Transicion_de_niveles_Sheet_52: -244809052
+      Transicion_de_niveles_Sheet_53: 1346006985
+      Transicion_de_niveles_Sheet_54: 1485662301
+      Transicion_de_niveles_Sheet_55: -245766701
+      Transicion_de_niveles_Sheet_56: 144555191
+      Transicion_de_niveles_Sheet_57: -1843394049
+      Transicion_de_niveles_Sheet_58: -1203131509
+      Transicion_de_niveles_Sheet_59: 2043570316
+      Transicion_de_niveles_Sheet_6: 630235942
+      Transicion_de_niveles_Sheet_60: -482424754
+      Transicion_de_niveles_Sheet_61: 1299421519
+      Transicion_de_niveles_Sheet_62: 1353229018
+      Transicion_de_niveles_Sheet_63: -651167344
+      Transicion_de_niveles_Sheet_64: -420136080
+      Transicion_de_niveles_Sheet_65: 1528293564
+      Transicion_de_niveles_Sheet_66: -2050326778
+      Transicion_de_niveles_Sheet_67: -751167815
+      Transicion_de_niveles_Sheet_68: -1305521498
+      Transicion_de_niveles_Sheet_69: -269690345
+      Transicion_de_niveles_Sheet_7: 869119419
+      Transicion_de_niveles_Sheet_70: -1304585998
+      Transicion_de_niveles_Sheet_71: -181111963
+      Transicion_de_niveles_Sheet_72: -1429611872
+      Transicion_de_niveles_Sheet_73: -266931288
+      Transicion_de_niveles_Sheet_74: -1594853867
+      Transicion_de_niveles_Sheet_75: -1392045680
+      Transicion_de_niveles_Sheet_76: -2022819108
+      Transicion_de_niveles_Sheet_77: -2033078856
+      Transicion_de_niveles_Sheet_78: 1323820225
+      Transicion_de_niveles_Sheet_79: 1057124814
+      Transicion_de_niveles_Sheet_8: 200871296
+      Transicion_de_niveles_Sheet_80: -1087643444
+      Transicion_de_niveles_Sheet_81: -943734944
+      Transicion_de_niveles_Sheet_82: -1136364854
+      Transicion_de_niveles_Sheet_83: 1791386932
+      Transicion_de_niveles_Sheet_84: -740298264
+      Transicion_de_niveles_Sheet_85: -1869766330
+      Transicion_de_niveles_Sheet_86: -2143255589
+      Transicion_de_niveles_Sheet_87: -1341755779
+      Transicion_de_niveles_Sheet_88: 1367163416
+      Transicion_de_niveles_Sheet_89: -707652350
+      Transicion_de_niveles_Sheet_9: -1400276929
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

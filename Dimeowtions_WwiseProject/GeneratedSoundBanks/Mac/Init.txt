@@ -1,0 +1,25 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	984691642	InGame			\Default Work Unit\InGame	
+	1690668539	Music_States			\Default Work Unit\Music_States	
+
+State	ID	Name	State Group			Notes
+	319258907	Paused	InGame			
+	655265632	Alive	InGame			
+	748895195	None	InGame			
+	748895195	None	Music_States			
+	799227909	Noir	Music_States			
+	1593864692	Defeat	Music_States			
+	1794634511	SciFi	Music_States			
+	2607556080	Menu	Music_States			
+	2932583730	Synthwave	Music_States			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2918011349	MasterVolume			\Default Work Unit\MasterVolume	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>E:\Documents\GitHub\Dimeowtions\Dimeowtions_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles>
+		<File Id="84006049" Language="SFX">
+			<ShortName>Dimeowtions - Noir - v1.0.wav</ShortName>
+			<Path>SFX\Dimeowtions - Noir - v1.0_9EDFC787.wem</Path>
+		</File>
+		<File Id="289874703" Language="SFX">
+			<ShortName>Dimeowtions - Synthwave - v1.0.wav</ShortName>
+			<Path>SFX\Dimeowtions - Synthwave - v1.0_9EDFC787.wem</Path>
+		</File>
+		<File Id="881549374" Language="SFX">
+			<ShortName>dstpchaos - mix.wav</ShortName>
+			<Path>SFX\dstpchaos - mix_9EDFC787.wem</Path>
+		</File>
+	</StreamedFiles>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="3920507494">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="2918011349" Name="MasterVolume" ObjectPath="\Game Parameters\Default Work Unit\MasterVolume"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="2819192956">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1875134770" Name="Play_Cinematica" ObjectPath="\Events\Default Work Unit\Music\Play_Cinematica" DurationType="OneShot" DurationMin="49.939018" DurationMax="49.939018">
+					<IncludedMemoryFiles>
+						<File Id="303265437" Language="SFX">
+							<ShortName>Dimeowtions - Sonido Cinematica v2-001.wav</ShortName>
+							<Path>SFX\Dimeowtions - Sonido Cinematica v2-001_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="693379014" Name="Play_Items" ObjectPath="\Events\Default Work Unit\Player\Play_Items" DurationType="OneShot" DurationMin="0.5405" DurationMax="1.975491">
+					<IncludedMemoryFiles>
+						<File Id="88210808" Language="SFX">
+							<ShortName>sci-fi_device_item_power_up_flash_01.wav</ShortName>
+							<Path>SFX\sci-fi_device_item_power_up_flash_01_10C4C929.wem</Path>
+						</File>
+						<File Id="107801780" Language="SFX">
+							<ShortName>Score - Noir - Bitcrushed.wav</ShortName>
+							<Path>SFX\Score - Noir - Bitcrushed_1A2324B8.wem</Path>
+						</File>
+						<File Id="250533506" Language="SFX">
+							<ShortName>Score - Noir - Bitcrushed.wav</ShortName>
+							<Path>SFX\Score - Noir - Bitcrushed_0B319842.wem</Path>
+						</File>
+						<File Id="755049272" Language="SFX">
+							<ShortName>Score - Noir - Bitcrushed.wav</ShortName>
+							<Path>SFX\Score - Noir - Bitcrushed_CE07022E.wem</Path>
+						</File>
+						<File Id="802693972" Language="SFX">
+							<ShortName>Score - Noir - Bitcrushed.wav</ShortName>
+							<Path>SFX\Score - Noir - Bitcrushed_6B0F2589.wem</Path>
+						</File>
+						<File Id="830079761" Language="SFX">
+							<ShortName>SFX-ARCADIA_ItemPickUp16.wav</ShortName>
+							<Path>SFX\SFX-ARCADIA_ItemPickUp16_10C4C929.wem</Path>
+						</File>
+						<File Id="900356677" Language="SFX">
+							<ShortName>Score - Noir - Bitcrushed.wav</ShortName>
+							<Path>SFX\Score - Noir - Bitcrushed_AD5F2F46.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{0C24CD74-5ED8-4788-B9CF-FD978AEC8262}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{BA2F9147-CBBA-4D68-B7A1-90467D5ABD5C}">
+							<Media>
+								<File Id="88210808"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{0C24CD74-5ED8-4788-B9CF-FD978AEC8262}">
+							<Media>
+								<File Id="107801780"/>
+								<File Id="250533506"/>
+								<File Id="755049272"/>
+								<File Id="802693972"/>
+								<File Id="900356677"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{DDA43DE5-5959-4FD4-8040-7C06964E5FE3}">
+							<Media>
+								<File Id="830079761"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3169691074" Name="Set_Play_Defeat" ObjectPath="\Events\Default Work Unit\Music\Set_Play_Defeat" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1593864692" Name="Defeat" ObjectPath="\States\Default Work Unit\Music_States\Defeat"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1814951015" Name="Set_State_Alive" ObjectPath="\Events\Default Work Unit\Music\Set_State_Alive" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="655265632" Name="Alive" ObjectPath="\States\Default Work Unit\InGame\Alive"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2302270969" Name="Set_State_Menu" ObjectPath="\Events\Default Work Unit\Music\Set_State_Menu" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="2607556080" Name="Menu" ObjectPath="\States\Default Work Unit\Music_States\Menu"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="4109907276" Name="Set_State_Noir" ObjectPath="\Events\Default Work Unit\Music\Set_State_Noir" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="799227909" Name="Noir" ObjectPath="\States\Default Work Unit\Music_States\Noir"/>
+					</ActionSetState>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="799227909" Name="Noir" ObjectPath="\Switches\Default Work Unit\Doors\Noir"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="2902924586" Name="Set_State_Paused" ObjectPath="\Events\Default Work Unit\Music\Set_State_Paused" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="319258907" Name="Paused" ObjectPath="\States\Default Work Unit\InGame\Paused"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1446812956" Name="Set_State_SciFi" ObjectPath="\Events\Default Work Unit\Music\Set_State_SciFi" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1794634511" Name="SciFi" ObjectPath="\States\Default Work Unit\Music_States\SciFi"/>
+					</ActionSetState>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="1794634511" Name="SciFi" ObjectPath="\Switches\Default Work Unit\Doors\SciFi"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="21388497" Name="Set_State_Synthwave" ObjectPath="\Events\Default Work Unit\Music\Set_State_Synthwave" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="2932583730" Name="Synthwave" ObjectPath="\States\Default Work Unit\Music_States\Synthwave"/>
+					</ActionSetState>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="2932583730" Name="Synthwave" ObjectPath="\Switches\Default Work Unit\Doors\Synthwave"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="1039583472" Name="SFX_Gravity_Change" ObjectPath="\Events\Default Work Unit\Player\SFX_Gravity_Change" DurationType="OneShot" DurationMin="0.900432" DurationMax="0.981928">
+					<IncludedMemoryFiles>
+						<File Id="1050336964" Language="SFX">
+							<ShortName>HKAP2 Seq1.2 Whoosh.wav</ShortName>
+							<Path>SFX\HKAP2 Seq1.2 Whoosh_F834A0B8.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3695098761" Name="SFX_Jump" ObjectPath="\Events\Default Work Unit\Player\SFX_Jump" DurationType="OneShot" DurationMin="0.259702" DurationMax="0.291505">
+					<IncludedMemoryFiles>
+						<File Id="330658490" Language="SFX">
+							<ShortName>SALTO.wav</ShortName>
+							<Path>SFX\SALTO_14E41BE2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3187317502" Name="SFX_Lateral_Movement" ObjectPath="\Events\Default Work Unit\Player\SFX_Lateral_Movement" DurationType="OneShot" DurationMin="0.241424" DurationMax="0.27099">
+					<IncludedMemoryFiles>
+						<File Id="827511146" Language="SFX">
+							<ShortName>MOVIMIENTO_LATERAL.wav</ShortName>
+							<Path>SFX\MOVIMIENTO_LATERAL_0FB4E377.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3913579892" Name="SFX_Open_Door" ObjectPath="\Events\Default Work Unit\Player\SFX_Open_Door" DurationType="OneShot" DurationMin="0." DurationMax="0.487416">
+					<IncludedMemoryFiles>
+						<File Id="101592148" Language="SFX">
+							<ShortName>DOORWood.wav</ShortName>
+							<Path>SFX\DOORWood_065B1781.wem</Path>
+						</File>
+						<File Id="884788154" Language="SFX">
+							<ShortName>Render_Door_01-001.wav</ShortName>
+							<Path>SFX\Render_Door_01-001_9001B902.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{0C24CD74-5ED8-4788-B9CF-FD978AEC8262}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{0C24CD74-5ED8-4788-B9CF-FD978AEC8262}">
+							<Media>
+								<File Id="101592148"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{DDA43DE5-5959-4FD4-8040-7C06964E5FE3}">
+							<Media>
+								<File Id="884788154"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="2266380775" Name="SFX_Portal" ObjectPath="\Events\Default Work Unit\Player\SFX_Portal" DurationType="OneShot" DurationMin="4.893771" DurationMax="4.893771">
+					<IncludedMemoryFiles>
+						<File Id="281084068" Language="SFX">
+							<ShortName>Dimeowtions_Portal.wav</ShortName>
+							<Path>SFX\Dimeowtions_Portal_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3941323550" Name="Start_BMG_Machine" ObjectPath="\Events\Default Work Unit\Music\Start_BMG_Machine" DurationType="Infinite">
+					<ReferencedStreamedFiles>
+						<File Id="84006049" Language="SFX">
+							<ShortName>Dimeowtions - Noir - v1.0.wav</ShortName>
+							<Path>SFX\Dimeowtions - Noir - v1.0_9EDFC787.wem</Path>
+						</File>
+						<File Id="289874703" Language="SFX">
+							<ShortName>Dimeowtions - Synthwave - v1.0.wav</ShortName>
+							<Path>SFX\Dimeowtions - Synthwave - v1.0_9EDFC787.wem</Path>
+						</File>
+						<File Id="881549374" Language="SFX">
+							<ShortName>dstpchaos - mix.wav</ShortName>
+							<Path>SFX\dstpchaos - mix_9EDFC787.wem</Path>
+						</File>
+					</ReferencedStreamedFiles>
+					<IncludedMemoryFiles>
+						<File Id="281084068" Language="SFX">
+							<ShortName>Dimeowtions_Portal.wav</ShortName>
+							<Path>SFX\Dimeowtions_Portal_D79FB2B7.wem</Path>
+						</File>
+						<File Id="695190307" Language="SFX">
+							<ShortName>Shorted - Noir To Synth Translation.wav</ShortName>
+							<Path>SFX\Shorted - Noir To Synth Translation_D79FB2B7.wem</Path>
+						</File>
+						<File Id="738275713" Language="SFX">
+							<ShortName>Dimeowtions - Main Menu.wav</ShortName>
+							<Path>SFX\Dimeowtions - Main Menu_9EDFC787.wem</Path>
+						</File>
+						<File Id="1063440004" Language="SFX">
+							<ShortName>SFX_Defeat.wav</ShortName>
+							<Path>SFX\SFX_Defeat_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{1EE1E351-BAFB-4226-8C0A-3B7E5DF3E4EA}">
+							<Children>
+								<SwitchContainer SwitchValue="{700F9545-3EEC-44E4-8BF5-4DD30F8A13FD}">
+									<Children>
+										<SwitchContainer SwitchValue="{EA390B2E-7E84-4454-BE95-3C6125354FAF}">
+											<Media>
+												<File Id="84006049"/>
+											</Media>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{1EE1E351-BAFB-4226-8C0A-3B7E5DF3E4EA}">
+							<Children>
+								<SwitchContainer SwitchValue="{A41B3307-2AD3-46DA-8BB2-1DA8C4E718C6}">
+									<Children>
+										<SwitchContainer SwitchValue="{EA390B2E-7E84-4454-BE95-3C6125354FAF}">
+											<Media>
+												<File Id="738275713"/>
+											</Media>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{1EE1E351-BAFB-4226-8C0A-3B7E5DF3E4EA}">
+							<Children>
+								<SwitchContainer SwitchValue="{A2490D6C-925A-4A40-A4A6-C2588FD26AD5}">
+									<Children>
+										<SwitchContainer SwitchValue="{EA390B2E-7E84-4454-BE95-3C6125354FAF}">
+											<Media>
+												<File Id="881549374"/>
+											</Media>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{1EE1E351-BAFB-4226-8C0A-3B7E5DF3E4EA}">
+							<Children>
+								<SwitchContainer SwitchValue="{EDAF366B-2A4A-4DE3-AACB-22CE40D9F13C}">
+									<Children>
+										<SwitchContainer SwitchValue="{EA390B2E-7E84-4454-BE95-3C6125354FAF}">
+											<Media>
+												<File Id="289874703"/>
+											</Media>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{AA742997-7483-48B8-BFD5-E3BCED7452DC}">
+							<Children>
+								<SwitchContainer SwitchValue="{700F9545-3EEC-44E4-8BF5-4DD30F8A13FD}">
+									<Children>
+										<SwitchContainer SwitchValue="{EA390B2E-7E84-4454-BE95-3C6125354FAF}">
+											<Media>
+												<File Id="84006049"/>
+											</Media>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{AA742997-7483-48B8-BFD5-E3BCED7452DC}">
+							<Children>
+								<SwitchContainer SwitchValue="{A2490D6C-925A-4A40-A4A6-C2588FD26AD5}">
+									<Children>
+										<SwitchContainer SwitchValue="{EA390B2E-7E84-4454-BE95-3C6125354FAF}">
+											<Media>
+												<File Id="881549374"/>
+											</Media>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{AA742997-7483-48B8-BFD5-E3BCED7452DC}">
+							<Children>
+								<SwitchContainer SwitchValue="{EDAF366B-2A4A-4DE3-AACB-22CE40D9F13C}">
+									<Children>
+										<SwitchContainer SwitchValue="{EA390B2E-7E84-4454-BE95-3C6125354FAF}">
+											<Media>
+												<File Id="289874703"/>
+											</Media>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{1EE1E351-BAFB-4226-8C0A-3B7E5DF3E4EA}">
+							<Children>
+								<SwitchContainer SwitchValue="{FFD59923-E386-42A2-B3CE-54EB81812417}">
+									<Children>
+										<SwitchContainer SwitchValue="{EA390B2E-7E84-4454-BE95-3C6125354FAF}">
+											<Media>
+												<File Id="1063440004"/>
+											</Media>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="454668116" Name="Stop_BMG_Machine" ObjectPath="\Events\Default Work Unit\Music\Stop_BMG_Machine" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2559952604" Name="Stop_Cinematica" ObjectPath="\Events\Default Work Unit\Stop_Cinematica" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1314850096" Name="UI_Credit_Button" ObjectPath="\Events\Default Work Unit\UI\Main Menu\UI_Credit_Button" DurationType="OneShot" DurationMin="1.798349" DurationMax="1.798349">
+					<IncludedMemoryFiles>
+						<File Id="827853671" Language="SFX">
+							<ShortName>Writing With Pencil 04.wav</ShortName>
+							<Path>SFX\Writing With Pencil 04_D3FC0081.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2170883505" Name="UI_Exit_Button" ObjectPath="\Events\Default Work Unit\UI\Main Menu\UI_Exit_Button" DurationType="OneShot" DurationMin="0.78059" DurationMax="0.78059">
+					<IncludedMemoryFiles>
+						<File Id="1028913379" Language="SFX">
+							<ShortName>UI_SELECTION.wav</ShortName>
+							<Path>SFX\UI_SELECTION_E9A99D26.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="705989075" Name="UI_Play_Button" ObjectPath="\Events\Default Work Unit\UI\Main Menu\UI_Play_Button" DurationType="OneShot" DurationMin="1.481449" DurationMax="1.481449">
+					<IncludedMemoryFiles>
+						<File Id="284843365" Language="SFX">
+							<ShortName>UI, Modern, Positive, SciFi, InterfaceUI, Selection 1.wav</ShortName>
+							<Path>SFX\UI, Modern, Positive, SciFi, InterfaceUI, Selection 1_38C52126.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4050451069" Name="UI_Pointer" ObjectPath="\Events\Default Work Unit\UI\UI_Pointer" DurationType="OneShot" DurationMin="0.061424" DurationMax="0.061424">
+					<IncludedMemoryFiles>
+						<File Id="993685651" Language="SFX">
+							<ShortName>button_on_off_064.wav</ShortName>
+							<Path>SFX\button_on_off_064_A450ADC1.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1337377386" Name="UI_Slice_Menu" ObjectPath="\Events\Default Work Unit\UI\Main Menu\UI_Slice_Menu" DurationType="OneShot" DurationMin="0.241424" DurationMax="0.27099">
+					<IncludedMemoryFiles>
+						<File Id="827511146" Language="SFX">
+							<ShortName>MOVIMIENTO_LATERAL.wav</ShortName>
+							<Path>SFX\MOVIMIENTO_LATERAL_0FB4E377.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<ReferencedStreamedFiles>
+				<File Id="84006049"/>
+				<File Id="289874703"/>
+				<File Id="881549374"/>
+			</ReferencedStreamedFiles>
+			<IncludedMemoryFiles>
+				<File Id="88210808" Language="SFX">
+					<ShortName>sci-fi_device_item_power_up_flash_01.wav</ShortName>
+					<Path>SFX\sci-fi_device_item_power_up_flash_01_10C4C929.wem</Path>
+				</File>
+				<File Id="101592148" Language="SFX">
+					<ShortName>DOORWood.wav</ShortName>
+					<Path>SFX\DOORWood_065B1781.wem</Path>
+				</File>
+				<File Id="107801780" Language="SFX">
+					<ShortName>Score - Noir - Bitcrushed.wav</ShortName>
+					<Path>SFX\Score - Noir - Bitcrushed_1A2324B8.wem</Path>
+				</File>
+				<File Id="250533506" Language="SFX">
+					<ShortName>Score - Noir - Bitcrushed.wav</ShortName>
+					<Path>SFX\Score - Noir - Bitcrushed_0B319842.wem</Path>
+				</File>
+				<File Id="281084068" Language="SFX">
+					<ShortName>Dimeowtions_Portal.wav</ShortName>
+					<Path>SFX\Dimeowtions_Portal_D79FB2B7.wem</Path>
+				</File>
+				<File Id="284843365" Language="SFX">
+					<ShortName>UI, Modern, Positive, SciFi, InterfaceUI, Selection 1.wav</ShortName>
+					<Path>SFX\UI, Modern, Positive, SciFi, InterfaceUI, Selection 1_38C52126.wem</Path>
+				</File>
+				<File Id="303265437" Language="SFX">
+					<ShortName>Dimeowtions - Sonido Cinematica v2-001.wav</ShortName>
+					<Path>SFX\Dimeowtions - Sonido Cinematica v2-001_D79FB2B7.wem</Path>
+				</File>
+				<File Id="330658490" Language="SFX">
+					<ShortName>SALTO.wav</ShortName>
+					<Path>SFX\SALTO_14E41BE2.wem</Path>
+				</File>
+				<File Id="695190307" Language="SFX">
+					<ShortName>Shorted - Noir To Synth Translation.wav</ShortName>
+					<Path>SFX\Shorted - Noir To Synth Translation_D79FB2B7.wem</Path>
+				</File>
+				<File Id="738275713" Language="SFX">
+					<ShortName>Dimeowtions - Main Menu.wav</ShortName>
+					<Path>SFX\Dimeowtions - Main Menu_9EDFC787.wem</Path>
+				</File>
+				<File Id="755049272" Language="SFX">
+					<ShortName>Score - Noir - Bitcrushed.wav</ShortName>
+					<Path>SFX\Score - Noir - Bitcrushed_CE07022E.wem</Path>
+				</File>
+				<File Id="802693972" Language="SFX">
+					<ShortName>Score - Noir - Bitcrushed.wav</ShortName>
+					<Path>SFX\Score - Noir - Bitcrushed_6B0F2589.wem</Path>
+				</File>
+				<File Id="827511146" Language="SFX">
+					<ShortName>MOVIMIENTO_LATERAL.wav</ShortName>
+					<Path>SFX\MOVIMIENTO_LATERAL_0FB4E377.wem</Path>
+				</File>
+				<File Id="827853671" Language="SFX">
+					<ShortName>Writing With Pencil 04.wav</ShortName>
+					<Path>SFX\Writing With Pencil 04_D3FC0081.wem</Path>
+				</File>
+				<File Id="830079761" Language="SFX">
+					<ShortName>SFX-ARCADIA_ItemPickUp16.wav</ShortName>
+					<Path>SFX\SFX-ARCADIA_ItemPickUp16_10C4C929.wem</Path>
+				</File>
+				<File Id="884788154" Language="SFX">
+					<ShortName>Render_Door_01-001.wav</ShortName>
+					<Path>SFX\Render_Door_01-001_9001B902.wem</Path>
+				</File>
+				<File Id="900356677" Language="SFX">
+					<ShortName>Score - Noir - Bitcrushed.wav</ShortName>
+					<Path>SFX\Score - Noir - Bitcrushed_AD5F2F46.wem</Path>
+				</File>
+				<File Id="993685651" Language="SFX">
+					<ShortName>button_on_off_064.wav</ShortName>
+					<Path>SFX\button_on_off_064_A450ADC1.wem</Path>
+				</File>
+				<File Id="1028913379" Language="SFX">
+					<ShortName>UI_SELECTION.wav</ShortName>
+					<Path>SFX\UI_SELECTION_E9A99D26.wem</Path>
+				</File>
+				<File Id="1050336964" Language="SFX">
+					<ShortName>HKAP2 Seq1.2 Whoosh.wav</ShortName>
+					<Path>SFX\HKAP2 Seq1.2 Whoosh_F834A0B8.wem</Path>
+				</File>
+				<File Id="1063440004" Language="SFX">
+					<ShortName>SFX_Defeat.wav</ShortName>
+					<Path>SFX\SFX_Defeat_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+			<StateGroups>
+				<StateGroup Id="319258907" Name="Paused" ObjectPath="\States\Default Work Unit\InGame\Paused" GUID="{AA742997-7483-48B8-BFD5-E3BCED7452DC}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="655265632" Name="Alive" ObjectPath="\States\Default Work Unit\InGame\Alive" GUID="{1EE1E351-BAFB-4226-8C0A-3B7E5DF3E4EA}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="799227909" Name="Noir" ObjectPath="\States\Default Work Unit\Music_States\Noir" GUID="{700F9545-3EEC-44E4-8BF5-4DD30F8A13FD}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="984691642" Name="InGame" ObjectPath="\States\Default Work Unit\InGame" GUID="{E71106E7-A057-4C5B-A2A3-FB7BE5715342}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\InGame\None" GUID="{DFF86F03-33EF-4B6E-8A42-E2E69712C66B}"/>
+						<State Id="655265632" Name="Alive" ObjectPath="\States\Default Work Unit\InGame\Alive" GUID="{1EE1E351-BAFB-4226-8C0A-3B7E5DF3E4EA}"/>
+						<State Id="319258907" Name="Paused" ObjectPath="\States\Default Work Unit\InGame\Paused" GUID="{AA742997-7483-48B8-BFD5-E3BCED7452DC}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="1593864692" Name="Defeat" ObjectPath="\States\Default Work Unit\Music_States\Defeat" GUID="{FFD59923-E386-42A2-B3CE-54EB81812417}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="1690668539" Name="Music_States" ObjectPath="\States\Default Work Unit\Music_States" GUID="{0E621186-0661-41AA-B501-A85125FF6C48}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music_States\None" GUID="{F7301A1F-0EF8-4CEE-9CC7-A616666E230D}"/>
+						<State Id="2607556080" Name="Menu" ObjectPath="\States\Default Work Unit\Music_States\Menu" GUID="{A41B3307-2AD3-46DA-8BB2-1DA8C4E718C6}"/>
+						<State Id="799227909" Name="Noir" ObjectPath="\States\Default Work Unit\Music_States\Noir" GUID="{700F9545-3EEC-44E4-8BF5-4DD30F8A13FD}"/>
+						<State Id="2932583730" Name="Synthwave" ObjectPath="\States\Default Work Unit\Music_States\Synthwave" GUID="{EDAF366B-2A4A-4DE3-AACB-22CE40D9F13C}"/>
+						<State Id="1794634511" Name="SciFi" ObjectPath="\States\Default Work Unit\Music_States\SciFi" GUID="{A2490D6C-925A-4A40-A4A6-C2588FD26AD5}"/>
+						<State Id="1593864692" Name="Defeat" ObjectPath="\States\Default Work Unit\Music_States\Defeat" GUID="{FFD59923-E386-42A2-B3CE-54EB81812417}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="1794634511" Name="SciFi" ObjectPath="\States\Default Work Unit\Music_States\SciFi" GUID="{A2490D6C-925A-4A40-A4A6-C2588FD26AD5}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2607556080" Name="Menu" ObjectPath="\States\Default Work Unit\Music_States\Menu" GUID="{A41B3307-2AD3-46DA-8BB2-1DA8C4E718C6}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2932583730" Name="Synthwave" ObjectPath="\States\Default Work Unit\Music_States\Synthwave" GUID="{EDAF366B-2A4A-4DE3-AACB-22CE40D9F13C}">
+					<States/>
+				</StateGroup>
+			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="799227909" Name="Noir" ObjectPath="\Switches\Default Work Unit\Doors\Noir" GUID="{0C24CD74-5ED8-4788-B9CF-FD978AEC8262}">
+					<Switches/>
+				</SwitchGroup>
+				<SwitchGroup Id="1794634511" Name="SciFi" ObjectPath="\Switches\Default Work Unit\Doors\SciFi" GUID="{BA2F9147-CBBA-4D68-B7A1-90467D5ABD5C}">
+					<Switches/>
+				</SwitchGroup>
+				<SwitchGroup Id="2150196036" Name="Doors" ObjectPath="\Switches\Default Work Unit\Doors" GUID="{EA390B2E-7E84-4454-BE95-3C6125354FAF}">
+					<Switches>
+						<Switch Id="799227909" Name="Noir" ObjectPath="\Switches\Default Work Unit\Doors\Noir" GUID="{0C24CD74-5ED8-4788-B9CF-FD978AEC8262}"/>
+						<Switch Id="2932583730" Name="Synthwave" ObjectPath="\Switches\Default Work Unit\Doors\Synthwave" GUID="{DDA43DE5-5959-4FD4-8040-7C06964E5FE3}"/>
+						<Switch Id="1794634511" Name="SciFi" ObjectPath="\Switches\Default Work Unit\Doors\SciFi" GUID="{BA2F9147-CBBA-4D68-B7A1-90467D5ABD5C}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="2932583730" Name="Synthwave" ObjectPath="\Switches\Default Work Unit\Doors\Synthwave" GUID="{DDA43DE5-5959-4FD4-8040-7C06964E5FE3}">
+					<Switches/>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

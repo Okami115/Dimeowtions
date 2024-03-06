@@ -1,0 +1,765 @@
+fileFormatVersion: 2
+guid: 368ebec34c12b9046b75f40692f46028
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1552
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1136ac307843c343935048835f6df66
+      internalID: -918459360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_1
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 1552
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413fd8d1e1940f44dbc71f1f9887cd91
+      internalID: 1472042282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_2
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 1552
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2969fc19b4688084c8848f0b90261b1a
+      internalID: 1097387172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_3
+      rect:
+        serializedVersion: 2
+        x: 2622
+        y: 1552
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1fc0ea0aaa379d41b9ccbd947b7cc02
+      internalID: 994307888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_4
+      rect:
+        serializedVersion: 2
+        x: 3496
+        y: 1552
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84bf72870b9c6d24cb07632d2dbafeb9
+      internalID: -1799309466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_5
+      rect:
+        serializedVersion: 2
+        x: 4370
+        y: 1552
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f145d8e7487dee4b873ce99b6420da6
+      internalID: -1882553069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1164
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e857a820ce25a440a32cc9f8985b63e
+      internalID: 1351141400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_7
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 1164
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08e3a7ee8a2ab4449bb8a2f7492b419
+      internalID: 97169051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_8
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 1164
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f147c4c20b769468dbb6c931e3e4b3
+      internalID: -1453015414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_9
+      rect:
+        serializedVersion: 2
+        x: 2622
+        y: 1164
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160a53d2eb312114492974da2d07f9d0
+      internalID: 2301461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_10
+      rect:
+        serializedVersion: 2
+        x: 3496
+        y: 1164
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f4168b39b246b49ad86cb73d33a911
+      internalID: 1577591390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_11
+      rect:
+        serializedVersion: 2
+        x: 4370
+        y: 1164
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ea857a67a44094f8c05e91f702e3b8
+      internalID: 1455826327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 776
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac7b309949d95748b4470e4a91131b4
+      internalID: -1404095074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_13
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 776
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288ce2c22b75c2b418394ddee0bd4f68
+      internalID: 1604803707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_14
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 776
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5087db578e616674482dddfb26605102
+      internalID: -1152659905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_15
+      rect:
+        serializedVersion: 2
+        x: 2622
+        y: 776
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0482af9eb0ae4bd4597355f7ac114cea
+      internalID: 2033484248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_16
+      rect:
+        serializedVersion: 2
+        x: 3496
+        y: 776
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9ef64e24e1cc54daf7d5878963f273
+      internalID: 16605324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_17
+      rect:
+        serializedVersion: 2
+        x: 4370
+        y: 776
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 669bc26c19ecebc438d456962e7fd3ba
+      internalID: 807389970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 388
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc18bbbb79a592a429567ceef5c22c77
+      internalID: 6781030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_19
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 388
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd290a518a7e8784fab23f72d83db68e
+      internalID: 549494610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_20
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 388
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d41d0ea5f0f5f64eac87157c192ec7a
+      internalID: -1851352014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_21
+      rect:
+        serializedVersion: 2
+        x: 2622
+        y: 388
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1d292d22b479549b735d26c94f40b8
+      internalID: -1134462719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_22
+      rect:
+        serializedVersion: 2
+        x: 3496
+        y: 388
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe110904560d7654fb48a458cfb6ed9f
+      internalID: 106334081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_23
+      rect:
+        serializedVersion: 2
+        x: 4370
+        y: 388
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27aaff886c2a5574383f5d2478b86f3f
+      internalID: -640473452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba6b43c75a684547b1414e48ca0d80e
+      internalID: -761705257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_25
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 0
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff2804d5f8c6654d9ac8aaa80d7ad52
+      internalID: 1645672670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_26
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 0
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9336add6a6f722a47812e59c65d82217
+      internalID: -15155038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_27
+      rect:
+        serializedVersion: 2
+        x: 2622
+        y: 0
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 397191022b2f2ac418ac2ad5d88bb6cf
+      internalID: -748673267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dimeowtions_Spritesheet_menu_28
+      rect:
+        serializedVersion: 2
+        x: 3496
+        y: 0
+        width: 874
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0622a65a21ab8044e989c9650fcb23ed
+      internalID: -2015259852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Dimeowtions_Spritesheet_menu_0: -918459360
+      Dimeowtions_Spritesheet_menu_1: 1472042282
+      Dimeowtions_Spritesheet_menu_10: 1577591390
+      Dimeowtions_Spritesheet_menu_11: 1455826327
+      Dimeowtions_Spritesheet_menu_12: -1404095074
+      Dimeowtions_Spritesheet_menu_13: 1604803707
+      Dimeowtions_Spritesheet_menu_14: -1152659905
+      Dimeowtions_Spritesheet_menu_15: 2033484248
+      Dimeowtions_Spritesheet_menu_16: 16605324
+      Dimeowtions_Spritesheet_menu_17: 807389970
+      Dimeowtions_Spritesheet_menu_18: 6781030
+      Dimeowtions_Spritesheet_menu_19: 549494610
+      Dimeowtions_Spritesheet_menu_2: 1097387172
+      Dimeowtions_Spritesheet_menu_20: -1851352014
+      Dimeowtions_Spritesheet_menu_21: -1134462719
+      Dimeowtions_Spritesheet_menu_22: 106334081
+      Dimeowtions_Spritesheet_menu_23: -640473452
+      Dimeowtions_Spritesheet_menu_24: -761705257
+      Dimeowtions_Spritesheet_menu_25: 1645672670
+      Dimeowtions_Spritesheet_menu_26: -15155038
+      Dimeowtions_Spritesheet_menu_27: -748673267
+      Dimeowtions_Spritesheet_menu_28: -2015259852
+      Dimeowtions_Spritesheet_menu_3: 994307888
+      Dimeowtions_Spritesheet_menu_4: -1799309466
+      Dimeowtions_Spritesheet_menu_5: -1882553069
+      Dimeowtions_Spritesheet_menu_6: 1351141400
+      Dimeowtions_Spritesheet_menu_7: 97169051
+      Dimeowtions_Spritesheet_menu_8: -1453015414
+      Dimeowtions_Spritesheet_menu_9: 2301461
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

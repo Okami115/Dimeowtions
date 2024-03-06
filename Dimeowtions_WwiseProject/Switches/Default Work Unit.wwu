@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EC0EAEDD-B8ED-40E5-ABCE-73F7B407AE16}" SchemaVersion="103">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{EC0EAEDD-B8ED-40E5-ABCE-73F7B407AE16}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Doors" ID="{EA390B2E-7E84-4454-BE95-3C6125354FAF}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="8"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Noir" ID="{0C24CD74-5ED8-4788-B9CF-FD978AEC8262}"/>
+						<Switch Name="Synthwave" ID="{DDA43DE5-5959-4FD4-8040-7C06964E5FE3}"/>
+						<Switch Name="SciFi" ID="{BA2F9147-CBBA-4D68-B7A1-90467D5ABD5C}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
